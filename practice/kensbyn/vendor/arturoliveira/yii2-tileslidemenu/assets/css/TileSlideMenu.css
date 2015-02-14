@@ -1,0 +1,59 @@
+/**
+ * @name TileSlideMenu
+ * @author Artur Oliveira - artur.oliveira@gmail.com - 2012-06-02
+ * @version 1.0
+ *
+ */
+@CHARSET "UTF-8";
+div.tile-slide-menu-title {
+        font-size: 250%;
+        background-color: black;
+        color: white;
+        text-align: center;
+}
+div.tile-slide-menu-items {
+        /* Set it so we could calculate the offsetLeft */
+        position: relative;
+        overflow: auto;
+}
+ul.tile-slide-menu-item {
+        display: block;
+        height: 150px;
+        /* max width here, for users without javascript */
+        width: 5000px;
+        padding: 15px 0 0 15px;
+        /* removing default styling */
+        margin: 0;
+/*        background: url('navigation.png'); */
+        list-style: none;
+}
+.tile-slide-menu-item li {
+        display: block;
+        float: left;
+        padding: 0 4px;
+}
+.tile-slide-menu-item a {
+        display: block;
+        text-decoration: none;
+}
+.tile-slide-menu-item span {
+        display: none;
+        margin-top: 3px;
+        text-align: center;
+        font-size: 20px;
+        font: "Verdana";
+        color: white;
+        background-color: gray;
+}
+.tile-slide-menu-item a:hover span {
+        display: block;
+}
+.tile-slide-menu-item img {
+        border: 3px #fff solid;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+.tile-slide-menu-item a:hover img {
+        filter:alpha(opacity=50);
+        opacity: 0.5;
+}
