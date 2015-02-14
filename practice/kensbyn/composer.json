@@ -19,8 +19,7 @@
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
 		"arturoliveira/yii2-tileslidemenu": "*",
-		"nemmo/yii2-attachments": "*"
-		"bower-asset/admin-lte": "*"
+        "kartik-v/yii2-icons": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
