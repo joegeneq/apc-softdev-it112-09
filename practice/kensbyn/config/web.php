@@ -40,8 +40,8 @@ $config = [
         ],
         'view' => [
         'theme' => [
-            'pathMap' => ['@app/views' => '@app/themes/simple-blue'],
-            'baseUrl' => '@web/../themes/simple-blue',
+            'pathMap' => ['@app/views' => '@app/themes/zendefault'],
+            'baseUrl' => '@web/../themes/zendefault',
         ],
     ],
         'db' => require(__DIR__ . '/db.php'),
