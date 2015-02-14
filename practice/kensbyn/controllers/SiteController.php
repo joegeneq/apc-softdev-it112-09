@@ -102,11 +102,10 @@ class SiteController extends Controller
 		
 		if($model->load(Yii::$app->request->post()) && $model->validate())
 		{
-				// let's write this later
-		}else{
+				Yii::$app->session->setFlash('success','You have entered the data correctly');
+		}
 			return $this->render('stdregform',[
 				'model' => $model,
 				]);
-		}
 	}
 }

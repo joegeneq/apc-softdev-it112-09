@@ -26,7 +26,7 @@ AppAsset::register($this);
     <div class="wrap">
         <?php
             NavBar::begin([
-                'brandLabel' => '<img src="..\assets\apcLogo.png" width="60%"> ',
+                'brandLabel' => Yii::$app->name,
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
                     'class' => 'navbar-inverse navbar-fixed-top',
@@ -59,8 +59,8 @@ AppAsset::register($this);
 
     <footer class="footer">
         <div class="container">
-            <p class="pull-left">&copy; Asia Pacific College - Career Placement Office <?= date('Y') ?></p>
-            <p class="pull-right"><?= Yii::powered() ?></p>
+            <p class="pull-right"> &copy; <?php echo Html::encode(\Yii::$app->name); ?> <?= date('Y') ?></p>
+            <p class="pull-left"><?= Yii::powered() ?></p>
         </div>
     </footer>
 
