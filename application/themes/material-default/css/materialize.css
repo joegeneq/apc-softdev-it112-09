@@ -2079,7 +2079,8 @@ footer {
     background-color: rgba(51, 51, 51, 0.08); }
 
 table, th, td {
-  border: none; }
+  border: 1px solid black;
+  text-align: center;  }
 
 table {
   width: 100%;

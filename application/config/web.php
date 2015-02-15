@@ -4,6 +4,7 @@ $params = require(__DIR__ . '/params.php');
 
 $config = [
     'id' => 'basic',
+	'name' => 'APC Career Placement Office',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'components' => [
@@ -37,12 +38,12 @@ $config = [
                 ],
             ],
         ],
-        'view' => [
-        'theme' => [
-            'pathMap' => ['@app/views' => '@app/themes/simple-blue'],
-            'baseUrl' => '@web/../themes/simple-blue',
-        ],
-    ],
+ //       'view' => [
+   //     'theme' => [
+     //       'pathMap' => ['@app/views' => '@app/themes/material-default'],
+       //     'baseUrl' => '@web/../themes/material-default',
+     //   ],
+   // ],
         'db' => require(__DIR__ . '/db.php'),
     ],
     'params' => $params,

@@ -73,9 +73,9 @@ use yii\debug\Toolbar;
     </div>
     <div id="footer-wrap">
       <div id="footer">
-        <?php echo Html::encode(\Yii::$app->name); ?>
-
-        <div class="clear"></div>
+       &copy; <?= date('Y') ?> <?php echo Html::encode(\Yii::$app->name); ?><br/>
+       <?= Yii::powered() ?>
+	   <div class="clear"></div>
       </div>
     </div>
   </div>

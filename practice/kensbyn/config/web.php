@@ -38,12 +38,12 @@ $config = [
                 ],
             ],
         ],
-        'view' => [
-        'theme' => [
-            'pathMap' => ['@app/views' => '@app/themes/zendefault'],
-            'baseUrl' => '@web/../themes/zendefault',
-        ],
-    ],
+ //       'view' => [
+   //     'theme' => [
+     //       'pathMap' => ['@app/views' => '@app/themes/material-default'],
+       //     'baseUrl' => '@web/../themes/material-default',
+     //   ],
+   // ],
         'db' => require(__DIR__ . '/db.php'),
     ],
     'params' => $params,
