@@ -39,11 +39,11 @@ $config = [
             ],
         ],
  //       'view' => [
-   //     'theme' => [
-     //       'pathMap' => ['@app/views' => '@app/themes/material-default'],
-       //     'baseUrl' => '@web/../themes/material-default',
-     //   ],
-   // ],
+ //       'theme' => [
+//			'pathMap' => ['@app/views' => '@app/themes/simple-blue'],
+ //           'baseUrl' => '@web/../themes/simple-blue',
+//        ],	
+//    ],
         'db' => require(__DIR__ . '/db.php'),
     ],
     'params' => $params,
