@@ -10,8 +10,16 @@ use yii\widgets\ActiveForm;
 		echo "<div class='alert alert-success'>".Yii::$app->session->getFlash('success')."</div>";
 	}
 ?>
+<div class="site-signup">
+    <h1><?= Html::encode($this->title) ?></h1>
 
+    <p>Please fill out the following fields to sign up:</p>
+
+    <div class="row">
+        <div class="col-lg-5">
 <?php $form = ActiveForm::begin(); ?>
+<div>
+<dib
 <table>
 
 <?= $form->field($model,'stdnt_num')->label('Student Number:'); ?><br/>
@@ -24,3 +32,6 @@ use yii\widgets\ActiveForm;
 
 <?= Html::submitButton('Submit',['class'=>'btn btn-success']); ?>
 </table>
+        </div>
+    </div>
+</div>
