@@ -25,7 +25,8 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
     <div class="wrap">
         <?php
-            NavBar::begin([
+			
+			NavBar::begin([
                 'brandLabel' => Yii::$app->name,
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
@@ -36,15 +37,32 @@ AppAsset::register($this);
             echo Nav::widget([
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => [
-                    ['label' => 'Home', 'url' => ['/site/index']],
+
+					Yii::$app->user->isGuest ?
+						['label' => 'Home', 'url' => ['/site/index']] :
+                        ['label' => Yii::$app->user->identity->username, 'url' => ['/site/index']],
+					['label' => 'Contact', 'url' => ['/site/contact']],
                     ['label' => 'About', 'url' => ['/site/about']],
-                    ['label' => 'Contact', 'url' => ['/site/contact']],
                     Yii::$app->user->isGuest ?
-                        ['label' => 'Login', 'url' => ['/site/login']] :
-                        ['label' => 'Logout (' . Yii::$app->user->identity->username . ')',
-                            'url' => ['/site/logout'],
-                            'linkOptions' => ['data-method' => 'post']],
-                ],
+						['label' => '',
+							'items' => [
+								['label' => 'Login', 'url' => ['/site/login'],],
+									'<li class="divider"></li>',
+								['label' => 'Signup', 'url' => ['/site/studentreg'],],
+							]
+						] :
+                        
+						['label' => '',
+							'items' => [
+								['label' => 'Profile', 'url' => ['site/index'],],
+									'<li class="divider"></li>',
+								['label' => 'Logout (' . Yii::$app->user->identity->username . ')',
+									'url' => ['/site/logout'],
+									'linkOptions' => ['data-method' => 'post']],
+							]
+						]			
+			],
+				
             ]);
             NavBar::end();
         ?>
