@@ -9,6 +9,8 @@ use yii\bootstrap\ActiveForm;
 $this->title = 'Signup';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+
+
 <div class="site-signup">
     <h1><?= Html::encode($this->title) ?></h1>
 
@@ -21,7 +23,9 @@ $this->params['breadcrumbs'][] = $this->title;
 				<?= $form->field($model, 'username')->label('Username:') ?>
 				<?= $form->field($model, 'firstname')->label('Given name:') ?>
 				<?= $form->field($model, 'lastname') ?>
-                <?= $form->field($model, 'password')->passwordInput() ?>
+				<?= $form->field($model, 'roles')->dropDownList(['Student','Industry Partner'], ['prompt'=>'Select...'])->label('Account Type') ?>
+                
+				<?= $form->field($model, 'password')->passwordInput() ?>
                 <div class="form-group">
                     <?= Html::submitButton('Signup', ['class' => 'btn btn-primary', 'name' => 'signup-button']) ?>
                 </div>
