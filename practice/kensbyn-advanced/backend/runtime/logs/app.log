@@ -1,0 +1,1047 @@
+2015-02-26 02:05:21 [127.0.0.1][1][-][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('logout', Array)
+#6 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/logout', Array)
+#7 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-02-26 02:05:21 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    '_csrf' => 'e5204b21cf933e80c6726c55f2c0392457877ea497130506bfd6fe27c76e67a9s:32:\"Riq8kfzNLqNvtIDJLvcXtV7O55S4x5AO\";'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+    'PHPSESSID' => 'i9psh9dl26b8v9fmvm36a39m54'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kensbyn-advanced/backend/web/index.php?r=site%2Flogout'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VO5xUX8AAQEAAA@nfmkAAAAF'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/kensbyn-advanced/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=e5204b21cf933e80c6726c55f2c0392457877ea497130506bfd6fe27c76e67a9s%3A32%3A%22Riq8kfzNLqNvtIDJLvcXtV7O55S4x5AO%22%3B; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B; PHPSESSID=i9psh9dl26b8v9fmvm36a39m54'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/kensbyn-advanced/backend/web/index.php'
+    'REMOTE_PORT' => '43754'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/kensbyn-advanced/backend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/kensbyn-advanced/backend/web/index.php'
+    'PHP_SELF' => '/kensbyn-advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1424912721.518
+    'REQUEST_TIME' => 1424912721
+]
+2015-02-26 04:09:03 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: dataProvider' in /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/modules/management/views/default/index.php:23
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/modules/management/views/default/index.php(23): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/home/kensbyn/a...', 23, Array)
+#1 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/View.php(325): require('/home/kensbyn/a...')
+#2 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/kensbyn/a...', Array)
+#3 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/kensbyn/a...', Array, Object(backend\modules\management\controllers\DefaultController))
+#4 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('index', Array, Object(backend\modules\management\controllers\DefaultController))
+#5 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/modules/management/controllers/DefaultController.php(11): yii\base\Controller->render('index')
+#6 [internal function]: backend\modules\management\controllers\DefaultController->actionIndex()
+#7 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#10 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('partman', Array)
+#11 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2015-02-26 04:09:03 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'partman'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'pe83idoqab863k0nfup4uplp30'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+    '_csrf' => 'de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s:32:\"JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK\";'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VO6OT38AAQEAAA@nfnoAAAAF'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=pe83idoqab863k0nfup4uplp30; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B; _csrf=de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s%3A32%3A%22JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/kensbyn-advanced/backend/web/index.php'
+    'REMOTE_PORT' => '44083'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=partman'
+    'REQUEST_URI' => '/kensbyn-advanced/backend/web/index.php?r=partman'
+    'SCRIPT_NAME' => '/kensbyn-advanced/backend/web/index.php'
+    'PHP_SELF' => '/kensbyn-advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1424920143.713
+    'REQUEST_TIME' => 1424920143
+]
+2015-02-26 04:10:19 [127.0.0.1][1][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "partmna".' in /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('partmna', Array)
+#1 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-02-26 04:10:19 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'partmna'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'pe83idoqab863k0nfup4uplp30'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+    '_csrf' => 'de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s:32:\"JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VO6Om38AAQEAABC8LXsAAAAI'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=pe83idoqab863k0nfup4uplp30; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B; _csrf=de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s%3A32%3A%22JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/kensbyn-advanced/backend/web/index.php'
+    'REMOTE_PORT' => '44094'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=partmna'
+    'REQUEST_URI' => '/kensbyn-advanced/backend/web/index.php?r=partmna'
+    'SCRIPT_NAME' => '/kensbyn-advanced/backend/web/index.php'
+    'PHP_SELF' => '/kensbyn-advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1424920219.93
+    'REQUEST_TIME' => 1424920219
+]
+2015-02-26 04:10:23 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/modules/management/views/default/index.php' in /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/View.php:226
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/kensbyn/a...', Array, Object(backend\modules\management\controllers\DefaultController))
+#1 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('index', Array, Object(backend\modules\management\controllers\DefaultController))
+#2 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/modules/management/controllers/DefaultController.php(11): yii\base\Controller->render('index')
+#3 [internal function]: backend\modules\management\controllers\DefaultController->actionIndex()
+#4 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#7 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('partman', Array)
+#8 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2015-02-26 04:10:23 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'partman'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'pe83idoqab863k0nfup4uplp30'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+    '_csrf' => 'de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s:32:\"JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK\";'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VO6On38AAQEAABC8LX0AAAAI'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=pe83idoqab863k0nfup4uplp30; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B; _csrf=de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s%3A32%3A%22JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/kensbyn-advanced/backend/web/index.php'
+    'REMOTE_PORT' => '44094'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=partman'
+    'REQUEST_URI' => '/kensbyn-advanced/backend/web/index.php?r=partman'
+    'SCRIPT_NAME' => '/kensbyn-advanced/backend/web/index.php'
+    'PHP_SELF' => '/kensbyn-advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1424920223.347
+    'REQUEST_TIME' => 1424920223
+]
+2015-02-26 04:12:26 [127.0.0.1][1][9csmiln5ge4gjvqmiq06moc3i5][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ','' in /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/views/layouts/main.php:41
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-02-26 04:12:26 [127.0.0.1][1][9csmiln5ge4gjvqmiq06moc3i5][info][application] $_COOKIE = [
+    '_csrf' => 'de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s:32:\"JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK\";'
+    'PHPSESSID' => '9csmiln5ge4gjvqmiq06moc3i5'
+    '_identity' => '078a879ccde10294e390b6422b4bf75187929b1a0483a122edc065504075dee9s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kensbyn-advanced/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VO6PGn8AAQEAAA6lvXYAAAAC'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/kensbyn-advanced/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s%3A32%3A%22JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK%22%3B; PHPSESSID=9csmiln5ge4gjvqmiq06moc3i5; _identity=078a879ccde10294e390b6422b4bf75187929b1a0483a122edc065504075dee9s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/kensbyn-advanced/backend/web/index.php'
+    'REMOTE_PORT' => '44117'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kensbyn-advanced/backend/web/index.php'
+    'SCRIPT_NAME' => '/kensbyn-advanced/backend/web/index.php'
+    'PHP_SELF' => '/kensbyn-advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1424920346.029
+    'REQUEST_TIME' => 1424920346
+]
+2015-02-26 04:13:13 [127.0.0.1][1][9csmiln5ge4gjvqmiq06moc3i5][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']'' in /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/views/layouts/main.php:42
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-02-26 04:13:13 [127.0.0.1][1][9csmiln5ge4gjvqmiq06moc3i5][info][application] $_COOKIE = [
+    '_csrf' => 'de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s:32:\"JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK\";'
+    'PHPSESSID' => '9csmiln5ge4gjvqmiq06moc3i5'
+    '_identity' => '078a879ccde10294e390b6422b4bf75187929b1a0483a122edc065504075dee9s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kensbyn-advanced/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VO6PSX8AAQEAABC8LY0AAAAI'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/kensbyn-advanced/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s%3A32%3A%22JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK%22%3B; PHPSESSID=9csmiln5ge4gjvqmiq06moc3i5; _identity=078a879ccde10294e390b6422b4bf75187929b1a0483a122edc065504075dee9s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/kensbyn-advanced/backend/web/index.php'
+    'REMOTE_PORT' => '44128'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kensbyn-advanced/backend/web/index.php'
+    'SCRIPT_NAME' => '/kensbyn-advanced/backend/web/index.php'
+    'PHP_SELF' => '/kensbyn-advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1424920393.936
+    'REQUEST_TIME' => 1424920393
+]
+2015-02-26 04:13:19 [127.0.0.1][1][9csmiln5ge4gjvqmiq06moc3i5][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ';', expecting ']'' in /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/views/layouts/main.php:45
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-02-26 04:13:19 [127.0.0.1][1][9csmiln5ge4gjvqmiq06moc3i5][info][application] $_COOKIE = [
+    '_csrf' => 'de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s:32:\"JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK\";'
+    'PHPSESSID' => '9csmiln5ge4gjvqmiq06moc3i5'
+    '_identity' => '078a879ccde10294e390b6422b4bf75187929b1a0483a122edc065504075dee9s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kensbyn-advanced/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VO6PT38AAQEAAA6lvXcAAAAC'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/kensbyn-advanced/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s%3A32%3A%22JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK%22%3B; PHPSESSID=9csmiln5ge4gjvqmiq06moc3i5; _identity=078a879ccde10294e390b6422b4bf75187929b1a0483a122edc065504075dee9s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/kensbyn-advanced/backend/web/index.php'
+    'REMOTE_PORT' => '44129'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kensbyn-advanced/backend/web/index.php'
+    'SCRIPT_NAME' => '/kensbyn-advanced/backend/web/index.php'
+    'PHP_SELF' => '/kensbyn-advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1424920399.415
+    'REQUEST_TIME' => 1424920399
+]
+2015-02-26 04:13:30 [127.0.0.1][1][9csmiln5ge4gjvqmiq06moc3i5][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ','' in /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/views/layouts/main.php:46
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-02-26 04:13:30 [127.0.0.1][1][9csmiln5ge4gjvqmiq06moc3i5][info][application] $_COOKIE = [
+    '_csrf' => 'de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s:32:\"JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK\";'
+    'PHPSESSID' => '9csmiln5ge4gjvqmiq06moc3i5'
+    '_identity' => '078a879ccde10294e390b6422b4bf75187929b1a0483a122edc065504075dee9s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kensbyn-advanced/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VO6PWn8AAQEAAA6m78wAAAAD'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/kensbyn-advanced/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s%3A32%3A%22JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK%22%3B; PHPSESSID=9csmiln5ge4gjvqmiq06moc3i5; _identity=078a879ccde10294e390b6422b4bf75187929b1a0483a122edc065504075dee9s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/kensbyn-advanced/backend/web/index.php'
+    'REMOTE_PORT' => '44132'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kensbyn-advanced/backend/web/index.php'
+    'SCRIPT_NAME' => '/kensbyn-advanced/backend/web/index.php'
+    'PHP_SELF' => '/kensbyn-advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1424920410.534
+    'REQUEST_TIME' => 1424920410
+]
+2015-02-26 04:13:37 [127.0.0.1][1][9csmiln5ge4gjvqmiq06moc3i5][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ';', expecting ']'' in /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/views/layouts/main.php:45
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-02-26 04:13:37 [127.0.0.1][1][9csmiln5ge4gjvqmiq06moc3i5][info][application] $_COOKIE = [
+    '_csrf' => 'de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s:32:\"JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK\";'
+    'PHPSESSID' => '9csmiln5ge4gjvqmiq06moc3i5'
+    '_identity' => '078a879ccde10294e390b6422b4bf75187929b1a0483a122edc065504075dee9s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kensbyn-advanced/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VO6PYX8AAQEAAA6jGzQAAAAA'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/kensbyn-advanced/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s%3A32%3A%22JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK%22%3B; PHPSESSID=9csmiln5ge4gjvqmiq06moc3i5; _identity=078a879ccde10294e390b6422b4bf75187929b1a0483a122edc065504075dee9s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/kensbyn-advanced/backend/web/index.php'
+    'REMOTE_PORT' => '44135'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kensbyn-advanced/backend/web/index.php'
+    'SCRIPT_NAME' => '/kensbyn-advanced/backend/web/index.php'
+    'PHP_SELF' => '/kensbyn-advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1424920417.39
+    'REQUEST_TIME' => 1424920417
+]
+2015-02-26 04:13:46 [127.0.0.1][1][9csmiln5ge4gjvqmiq06moc3i5][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ','' in /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/views/layouts/main.php:46
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-02-26 04:13:46 [127.0.0.1][1][9csmiln5ge4gjvqmiq06moc3i5][info][application] $_COOKIE = [
+    '_csrf' => 'de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s:32:\"JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK\";'
+    'PHPSESSID' => '9csmiln5ge4gjvqmiq06moc3i5'
+    '_identity' => '078a879ccde10294e390b6422b4bf75187929b1a0483a122edc065504075dee9s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kensbyn-advanced/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VO6Pan8AAQEAAB34ftAAAAAJ'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/kensbyn-advanced/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s%3A32%3A%22JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK%22%3B; PHPSESSID=9csmiln5ge4gjvqmiq06moc3i5; _identity=078a879ccde10294e390b6422b4bf75187929b1a0483a122edc065504075dee9s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/kensbyn-advanced/backend/web/index.php'
+    'REMOTE_PORT' => '44137'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kensbyn-advanced/backend/web/index.php'
+    'SCRIPT_NAME' => '/kensbyn-advanced/backend/web/index.php'
+    'PHP_SELF' => '/kensbyn-advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1424920426.844
+    'REQUEST_TIME' => 1424920426
+]
+2015-02-26 04:13:50 [127.0.0.1][1][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The 'label' option is required.' in /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2-bootstrap/Nav.php:151
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2-bootstrap/Nav.php(133): yii\bootstrap\Nav->renderItem(Array)
+#1 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2-bootstrap/Nav.php(118): yii\bootstrap\Nav->renderItems()
+#2 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Widget.php(96): yii\bootstrap\Nav->run()
+#3 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/views/layouts/main.php(51): yii\base\Widget::widget(Array)
+#4 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/View.php(325): require('/home/kensbyn/a...')
+#5 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/kensbyn/a...', Array)
+#6 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\View->renderFile('/home/kensbyn/a...', Array, Object(backend\controllers\SiteController))
+#7 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Controller.php(368): yii\base\Controller->renderContent('<div class="sit...')
+#8 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/controllers/SiteController.php(58): yii\base\Controller->render('index')
+#9 [internal function]: backend\controllers\SiteController->actionIndex()
+#10 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#11 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#13 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('', Array)
+#14 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/web/index.php(18): yii\base\Application->run()
+#16 {main}
+2015-02-26 04:13:50 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_csrf' => 'de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s:32:\"JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK\";'
+    'PHPSESSID' => '9csmiln5ge4gjvqmiq06moc3i5'
+    '_identity' => '078a879ccde10294e390b6422b4bf75187929b1a0483a122edc065504075dee9s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kensbyn-advanced/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VO6Pbn8AAQEAAA6nL@gAAAAE'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/kensbyn-advanced/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s%3A32%3A%22JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK%22%3B; PHPSESSID=9csmiln5ge4gjvqmiq06moc3i5; _identity=078a879ccde10294e390b6422b4bf75187929b1a0483a122edc065504075dee9s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/kensbyn-advanced/backend/web/index.php'
+    'REMOTE_PORT' => '44139'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kensbyn-advanced/backend/web/index.php'
+    'SCRIPT_NAME' => '/kensbyn-advanced/backend/web/index.php'
+    'PHP_SELF' => '/kensbyn-advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1424920430.391
+    'REQUEST_TIME' => 1424920430
+]
+2015-02-26 04:14:47 [127.0.0.1][1][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The 'label' option is required.' in /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2-bootstrap/Nav.php:151
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2-bootstrap/Nav.php(133): yii\bootstrap\Nav->renderItem(Array)
+#1 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2-bootstrap/Nav.php(118): yii\bootstrap\Nav->renderItems()
+#2 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Widget.php(96): yii\bootstrap\Nav->run()
+#3 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/views/layouts/main.php(51): yii\base\Widget::widget(Array)
+#4 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/View.php(325): require('/home/kensbyn/a...')
+#5 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/kensbyn/a...', Array)
+#6 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\View->renderFile('/home/kensbyn/a...', Array, Object(backend\controllers\SiteController))
+#7 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Controller.php(368): yii\base\Controller->renderContent('<div class="sit...')
+#8 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/controllers/SiteController.php(58): yii\base\Controller->render('index')
+#9 [internal function]: backend\controllers\SiteController->actionIndex()
+#10 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#11 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#13 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('', Array)
+#14 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/web/index.php(18): yii\base\Application->run()
+#16 {main}
+2015-02-26 04:14:47 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_csrf' => 'de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s:32:\"JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK\";'
+    'PHPSESSID' => '9csmiln5ge4gjvqmiq06moc3i5'
+    '_identity' => '078a879ccde10294e390b6422b4bf75187929b1a0483a122edc065504075dee9s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kensbyn-advanced/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VO6Pp38AAQEAAA6kKxMAAAAB'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/kensbyn-advanced/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s%3A32%3A%22JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK%22%3B; PHPSESSID=9csmiln5ge4gjvqmiq06moc3i5; _identity=078a879ccde10294e390b6422b4bf75187929b1a0483a122edc065504075dee9s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/kensbyn-advanced/backend/web/index.php'
+    'REMOTE_PORT' => '44146'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kensbyn-advanced/backend/web/index.php'
+    'SCRIPT_NAME' => '/kensbyn-advanced/backend/web/index.php'
+    'PHP_SELF' => '/kensbyn-advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1424920487.767
+    'REQUEST_TIME' => 1424920487
+]
+2015-02-26 04:14:55 [127.0.0.1][1][9csmiln5ge4gjvqmiq06moc3i5][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ','' in /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/views/layouts/main.php:47
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-02-26 04:14:55 [127.0.0.1][1][9csmiln5ge4gjvqmiq06moc3i5][info][application] $_COOKIE = [
+    '_csrf' => 'de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s:32:\"JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK\";'
+    'PHPSESSID' => '9csmiln5ge4gjvqmiq06moc3i5'
+    '_identity' => '078a879ccde10294e390b6422b4bf75187929b1a0483a122edc065504075dee9s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kensbyn-advanced/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VO6Pr38AAQEAAA6nL@kAAAAE'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/kensbyn-advanced/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s%3A32%3A%22JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK%22%3B; PHPSESSID=9csmiln5ge4gjvqmiq06moc3i5; _identity=078a879ccde10294e390b6422b4bf75187929b1a0483a122edc065504075dee9s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/kensbyn-advanced/backend/web/index.php'
+    'REMOTE_PORT' => '44157'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kensbyn-advanced/backend/web/index.php'
+    'SCRIPT_NAME' => '/kensbyn-advanced/backend/web/index.php'
+    'PHP_SELF' => '/kensbyn-advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1424920495.529
+    'REQUEST_TIME' => 1424920495
+]
+2015-02-26 04:16:41 [127.0.0.1][1][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The 'label' option is required.' in /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2-bootstrap/Nav.php:151
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2-bootstrap/Nav.php(133): yii\bootstrap\Nav->renderItem(Array)
+#1 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2-bootstrap/Nav.php(118): yii\bootstrap\Nav->renderItems()
+#2 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Widget.php(96): yii\bootstrap\Nav->run()
+#3 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/views/layouts/main.php(52): yii\base\Widget::widget(Array)
+#4 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/View.php(325): require('/home/kensbyn/a...')
+#5 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/kensbyn/a...', Array)
+#6 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\View->renderFile('/home/kensbyn/a...', Array, Object(backend\controllers\SiteController))
+#7 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Controller.php(368): yii\base\Controller->renderContent('<div class="sit...')
+#8 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/controllers/SiteController.php(58): yii\base\Controller->render('index')
+#9 [internal function]: backend\controllers\SiteController->actionIndex()
+#10 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#11 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#13 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('', Array)
+#14 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/web/index.php(18): yii\base\Application->run()
+#16 {main}
+2015-02-26 04:16:41 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_csrf' => 'de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s:32:\"JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK\";'
+    'PHPSESSID' => '9csmiln5ge4gjvqmiq06moc3i5'
+    '_identity' => '078a879ccde10294e390b6422b4bf75187929b1a0483a122edc065504075dee9s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kensbyn-advanced/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VO6QGX8AAQEAABC8LZQAAAAI'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/kensbyn-advanced/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s%3A32%3A%22JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK%22%3B; PHPSESSID=9csmiln5ge4gjvqmiq06moc3i5; _identity=078a879ccde10294e390b6422b4bf75187929b1a0483a122edc065504075dee9s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/kensbyn-advanced/backend/web/index.php'
+    'REMOTE_PORT' => '44164'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kensbyn-advanced/backend/web/index.php'
+    'SCRIPT_NAME' => '/kensbyn-advanced/backend/web/index.php'
+    'PHP_SELF' => '/kensbyn-advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1424920601.662
+    'REQUEST_TIME' => 1424920601
+]
+2015-02-26 04:17:06 [127.0.0.1][1][9csmiln5ge4gjvqmiq06moc3i5][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ']'' in /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/views/layouts/main.php:38
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-02-26 04:17:06 [127.0.0.1][1][9csmiln5ge4gjvqmiq06moc3i5][info][application] $_COOKIE = [
+    '_csrf' => 'de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s:32:\"JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK\";'
+    'PHPSESSID' => '9csmiln5ge4gjvqmiq06moc3i5'
+    '_identity' => '078a879ccde10294e390b6422b4bf75187929b1a0483a122edc065504075dee9s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kensbyn-advanced/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VO6QMn8AAQEAAA6m784AAAAD'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/kensbyn-advanced/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s%3A32%3A%22JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK%22%3B; PHPSESSID=9csmiln5ge4gjvqmiq06moc3i5; _identity=078a879ccde10294e390b6422b4bf75187929b1a0483a122edc065504075dee9s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/kensbyn-advanced/backend/web/index.php'
+    'REMOTE_PORT' => '44169'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kensbyn-advanced/backend/web/index.php'
+    'SCRIPT_NAME' => '/kensbyn-advanced/backend/web/index.php'
+    'PHP_SELF' => '/kensbyn-advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1424920626.405
+    'REQUEST_TIME' => 1424920626
+]
+2015-02-26 04:18:22 [127.0.0.1][1][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The 'label' option is required.' in /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2-bootstrap/Nav.php:151
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2-bootstrap/Nav.php(133): yii\bootstrap\Nav->renderItem(Array)
+#1 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2-bootstrap/Nav.php(118): yii\bootstrap\Nav->renderItems()
+#2 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Widget.php(96): yii\bootstrap\Nav->run()
+#3 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/views/layouts/main.php(50): yii\base\Widget::widget(Array)
+#4 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/View.php(325): require('/home/kensbyn/a...')
+#5 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/kensbyn/a...', Array)
+#6 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\View->renderFile('/home/kensbyn/a...', Array, Object(backend\controllers\SiteController))
+#7 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Controller.php(368): yii\base\Controller->renderContent('<div class="sit...')
+#8 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/controllers/SiteController.php(58): yii\base\Controller->render('index')
+#9 [internal function]: backend\controllers\SiteController->actionIndex()
+#10 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#11 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#13 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('', Array)
+#14 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/web/index.php(18): yii\base\Application->run()
+#16 {main}
+2015-02-26 04:18:22 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_csrf' => 'de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s:32:\"JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK\";'
+    'PHPSESSID' => '9csmiln5ge4gjvqmiq06moc3i5'
+    '_identity' => '078a879ccde10294e390b6422b4bf75187929b1a0483a122edc065504075dee9s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kensbyn-advanced/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VO6Qfn8AAQEAAA6nL@oAAAAE'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/kensbyn-advanced/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s%3A32%3A%22JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK%22%3B; PHPSESSID=9csmiln5ge4gjvqmiq06moc3i5; _identity=078a879ccde10294e390b6422b4bf75187929b1a0483a122edc065504075dee9s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/kensbyn-advanced/backend/web/index.php'
+    'REMOTE_PORT' => '44171'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kensbyn-advanced/backend/web/index.php'
+    'SCRIPT_NAME' => '/kensbyn-advanced/backend/web/index.php'
+    'PHP_SELF' => '/kensbyn-advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1424920702.77
+    'REQUEST_TIME' => 1424920702
+]
+2015-02-26 04:19:30 [127.0.0.1][1][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "partman/Partners".' in /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('partman/Partner...', Array)
+#1 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-02-26 04:19:30 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'partman/Partners'
+]
+
+$_COOKIE = [
+    '_csrf' => 'de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s:32:\"JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK\";'
+    'PHPSESSID' => '9csmiln5ge4gjvqmiq06moc3i5'
+    '_identity' => '078a879ccde10294e390b6422b4bf75187929b1a0483a122edc065504075dee9s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kensbyn-advanced/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VO6Qwn8AAQEAAA@nfoQAAAAF'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/kensbyn-advanced/backend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s%3A32%3A%22JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK%22%3B; PHPSESSID=9csmiln5ge4gjvqmiq06moc3i5; _identity=078a879ccde10294e390b6422b4bf75187929b1a0483a122edc065504075dee9s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/kensbyn-advanced/backend/web/index.php'
+    'REMOTE_PORT' => '44185'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=partman%2FPartners'
+    'REQUEST_URI' => '/kensbyn-advanced/backend/web/index.php?r=partman%2FPartners'
+    'SCRIPT_NAME' => '/kensbyn-advanced/backend/web/index.php'
+    'PHP_SELF' => '/kensbyn-advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1424920770.328
+    'REQUEST_TIME' => 1424920770
+]
+2015-02-26 04:19:35 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/modules/management/views/default/index.php' in /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/View.php:226
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/kensbyn/a...', Array, Object(backend\modules\management\controllers\DefaultController))
+#1 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('index', Array, Object(backend\modules\management\controllers\DefaultController))
+#2 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/modules/management/controllers/DefaultController.php(11): yii\base\Controller->render('index')
+#3 [internal function]: backend\modules\management\controllers\DefaultController->actionIndex()
+#4 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#7 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('partman', Array)
+#8 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2015-02-26 04:19:35 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'partman'
+]
+
+$_COOKIE = [
+    '_csrf' => 'de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s:32:\"JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK\";'
+    'PHPSESSID' => '9csmiln5ge4gjvqmiq06moc3i5'
+    '_identity' => '078a879ccde10294e390b6422b4bf75187929b1a0483a122edc065504075dee9s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VO6Qx38AAQEAAA@nfoYAAAAF'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=de7554609beec261c74596746428b3db9273b9f562bd307b4ad3fc0c48518641s%3A32%3A%22JjuZJqse-j9kGn3sstZ8WB4PY-lKPBGK%22%3B; PHPSESSID=9csmiln5ge4gjvqmiq06moc3i5; _identity=078a879ccde10294e390b6422b4bf75187929b1a0483a122edc065504075dee9s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/kensbyn-advanced/backend/web/index.php'
+    'REMOTE_PORT' => '44185'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=partman'
+    'REQUEST_URI' => '/kensbyn-advanced/backend/web/index.php?r=partman'
+    'SCRIPT_NAME' => '/kensbyn-advanced/backend/web/index.php'
+    'PHP_SELF' => '/kensbyn-advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1424920775.049
+    'REQUEST_TIME' => 1424920775
+]

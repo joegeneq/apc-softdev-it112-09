@@ -26,7 +26,7 @@ $this->title = 'APC Career Placement Office';
                     ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                     fugiat nulla pariatur.</p>
 
-                <p><a class="btn btn-default" href="index.php?r=industrypartners">View IPs &raquo;</a></p>
+                <p><a class="btn btn-default" href="index.php?r=partners">View IPs &raquo;</a></p>
             </div>
             <div class="col-lg-4">
                 <h2>Heading</h2>

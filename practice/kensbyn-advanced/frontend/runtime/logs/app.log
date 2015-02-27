@@ -3255,3 +3255,130 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1424680816.831
     'REQUEST_TIME' => 1424680816
 ]
+2015-02-26 02:08:58 [127.0.0.1][1][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "industrypartners".' in /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('industrypartner...', Array)
+#1 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-02-26 02:08:58 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'industrypartners'
+]
+
+$_COOKIE = [
+    '_csrf' => '32ccd0c3533ab8aed315f658c3da1012754ae7dd9ba178e163977ed67bd31e5cs:32:\"_QfU2cGfG4XCgxn844XpzL_2tYv_CDlN\";'
+    'PHPSESSID' => 'pe83idoqab863k0nfup4uplp30'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VO5yKn8AAQEAAA@4s4MAAAAG'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/kensbyn-advanced/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=32ccd0c3533ab8aed315f658c3da1012754ae7dd9ba178e163977ed67bd31e5cs%3A32%3A%22_QfU2cGfG4XCgxn844XpzL_2tYv_CDlN%22%3B; PHPSESSID=pe83idoqab863k0nfup4uplp30; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/kensbyn-advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '43798'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=industrypartners'
+    'REQUEST_URI' => '/kensbyn-advanced/frontend/web/index.php?r=industrypartners'
+    'SCRIPT_NAME' => '/kensbyn-advanced/frontend/web/index.php'
+    'PHP_SELF' => '/kensbyn-advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1424912938.801
+    'REQUEST_TIME' => 1424912938
+]
+2015-02-26 07:20:04 [127.0.0.1][1][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/frontend/views/partners/create.php' in /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/View.php:226
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/kensbyn/a...', Array, Object(frontend\controllers\PartnersController))
+#1 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('create', Array, Object(frontend\controllers\PartnersController))
+#2 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/frontend/controllers/PartnersController.php(82): yii\base\Controller->render('create', Array)
+#3 [internal function]: frontend\controllers\PartnersController->actionCreate()
+#4 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('create', Array)
+#7 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('partners/create', Array)
+#8 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /home/kensbyn/apc-softdev-it112-09/practice/kensbyn-advanced/frontend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2015-02-26 07:20:04 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'partners/create'
+]
+
+$_COOKIE = [
+    '_csrf' => '47fafadfd70863f2aa37d668f1632320cafbadea14ea2932e31993a86c0d7edes:32:\"YdszL8uRfpFjIqWDbAkgNf2XPWALmpbQ\";'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+    'PHPSESSID' => 'qrr4khcsuhtuq0ubvep95t1dd6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kensbyn-advanced/frontend/web/index.php?r=partners%2Fcreate'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VO67FH8AAQEAABC8LZsAAAAI'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/kensbyn-advanced/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=47fafadfd70863f2aa37d668f1632320cafbadea14ea2932e31993a86c0d7edes%3A32%3A%22YdszL8uRfpFjIqWDbAkgNf2XPWALmpbQ%22%3B; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B; PHPSESSID=qrr4khcsuhtuq0ubvep95t1dd6'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/kensbyn-advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '44722'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=partners%2Fcreate'
+    'REQUEST_URI' => '/kensbyn-advanced/frontend/web/index.php?r=partners%2Fcreate'
+    'SCRIPT_NAME' => '/kensbyn-advanced/frontend/web/index.php'
+    'PHP_SELF' => '/kensbyn-advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1424931604.626
+    'REQUEST_TIME' => 1424931604
+]
