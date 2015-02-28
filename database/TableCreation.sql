@@ -2,8 +2,8 @@
 -- version 4.2.11
 -- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Generation Time: Feb 15, 2015 at 02:37 PM
+-- Host: localhost
+-- Generation Time: Feb 23, 2015 at 04:13 AM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -17,120 +17,109 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `apc-softdev-it112-09`
+-- Database: `kensbyn-advanced`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `cpo_officers`
+-- Table structure for table `industry_partners`
 --
 
-CREATE TABLE IF NOT EXISTS `cpo_officers` (
-`userid` int(6) NOT NULL,
-  `firstname` varchar(30) NOT NULL,
-  `lastname` varchar(30) NOT NULL,
-  `email` varchar(50) DEFAULT NULL,
-  `password_hash` varchar(70) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `cpo_officers`
---
-
-INSERT INTO `cpo_officers` (`userid`, `firstname`, `lastname`, `email`, `password_hash`) VALUES
-(1, 'Dummy', 'Dummies', 'dummy@dummy.com', 'asdfghjkl');
+CREATE TABLE IF NOT EXISTS `industry_partners` (
+`id` int(11) NOT NULL,
+  `company_name` varchar(50) NOT NULL,
+  `company_address` varchar(255) NOT NULL,
+  `company_contactnum` varchar(25) NOT NULL,
+  `company_description` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `posts`
+-- Table structure for table `migration`
 --
 
-CREATE TABLE IF NOT EXISTS `posts` (
-`post_id` int(11) NOT NULL,
-  `post_title` varchar(140) NOT NULL,
-  `post_description` text NOT NULL,
-  `post_date` date NOT NULL,
-  `userid` int(6) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+CREATE TABLE IF NOT EXISTS `migration` (
+  `version` varchar(180) NOT NULL,
+  `apply_time` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `posts`
+-- Dumping data for table `migration`
 --
 
-INSERT INTO `posts` (`post_id`, `post_title`, `post_description`, `post_date`, `userid`) VALUES
-(1, 'Welcome Interns!', 'This is the new APC-CPO Microsite', '2015-02-15', 1);
+INSERT INTO `migration` (`version`, `apply_time`) VALUES
+('m000000_000000_base', 1424330563),
+('m130524_201442_init', 1424330580);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `student`
+-- Table structure for table `user`
 --
 
-CREATE TABLE IF NOT EXISTS `student` (
-  `student_num` varchar(12) NOT NULL DEFAULT '',
-  `lastname` varchar(30) DEFAULT NULL,
-  `firstname` varchar(30) DEFAULT NULL,
-  `initial` varchar(5) DEFAULT NULL,
-  `email` varchar(50) DEFAULT NULL,
-  `password_hash` varchar(70) DEFAULT NULL,
-  `enrolled` int(11) DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE IF NOT EXISTS `user` (
+`id` int(11) NOT NULL,
+  `username` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `firstname` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `lastname` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `auth_key` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+  `password_hash` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `password_reset_token` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `roles` int(11) NOT NULL DEFAULT '10',
+  `company` int(11) NOT NULL,
+  `status` smallint(6) NOT NULL DEFAULT '10',
+  `created_at` int(11) NOT NULL,
+  `updated_at` int(11) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `student`
+-- Dumping data for table `user`
 --
 
-INSERT INTO `student` (`student_num`, `lastname`, `firstname`, `initial`, `email`, `password_hash`, `enrolled`) VALUES
-('2011-100121', 'Sibayan', 'Kenneth', 'O', 'kosibayan@student.apc.edu.ph', 'asfdgd', 1);
+INSERT INTO `user` (`id`, `username`, `firstname`, `lastname`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `roles`, `company`, `status`, `created_at`, `updated_at`) VALUES
+(1, 'apccpowebadmin', 'CPO', 'Admin', 'RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5', '$2y$13$Hkw5VzXsJVxP2nJA7RFp9.mG5cnZIh6uYF6vdRWkOCB5bfdXZUAIS', NULL, 'cpo@apc.edu.ph', 20, 0, 10, 1424616849, 1424616849),
+(7, 'kosibayan', 'Kenneth', 'Sibayan', 'ub32EOfN5mwImO_KhgkIKJrG2yl1iKyQ', '$2y$13$HFfEB/CDV5UvYappUC7lEOYLrI0Hifsk.w9i6E8MNeZstQTGy.cYK', NULL, 'kosibayan@student.apc.edu.ph', 10, 0, 10, 1424617778, 1424617778),
+(8, 'acacle', 'Alyssa Mae', 'Acle', 'gqL-AVQT30QEWz83aeo3PJeW03vh3G7P', '$2y$13$ENcnW8KBe/OAawudFbDi2Og5Bj2K7yDkt0ZuRXYqDW.Lrhj12UK7G', NULL, 'acacle@student.apc.edu.ph', 10, 0, 10, 1424660697, 1424660697);
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `cpo_officers`
+-- Indexes for table `industry_partners`
 --
-ALTER TABLE `cpo_officers`
- ADD PRIMARY KEY (`userid`);
+ALTER TABLE `industry_partners`
+ ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `posts`
+-- Indexes for table `migration`
 --
-ALTER TABLE `posts`
- ADD PRIMARY KEY (`post_id`), ADD KEY `userid` (`userid`);
+ALTER TABLE `migration`
+ ADD PRIMARY KEY (`version`);
 
 --
--- Indexes for table `student`
+-- Indexes for table `user`
 --
-ALTER TABLE `student`
- ADD PRIMARY KEY (`student_num`);
+ALTER TABLE `user`
+ ADD PRIMARY KEY (`id`), ADD KEY `company` (`company`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `cpo_officers`
+-- AUTO_INCREMENT for table `industry_partners`
 --
-ALTER TABLE `cpo_officers`
-MODIFY `userid` int(6) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+ALTER TABLE `industry_partners`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `posts`
+-- AUTO_INCREMENT for table `user`
 --
-ALTER TABLE `posts`
-MODIFY `post_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `posts`
---
-ALTER TABLE `posts`
-ADD CONSTRAINT `posts_ibfk_1` FOREIGN KEY (`userid`) REFERENCES `cpo_officers` (`userid`);
-
+ALTER TABLE `user`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
