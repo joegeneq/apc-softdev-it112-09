@@ -31,7 +31,6 @@ $this->params['breadcrumbs'][] = $this->title;
 			'label' => 'Last Name',
 			'value' => 'myaddress.lastname',
 			'filter' => yii\helpers\ArrayHelper::map(app\models\Myaddress::find()->all(),'id','lastname')],
-            'myaddress_id',
             'author',
             'body:ntext',
             'created_at',
