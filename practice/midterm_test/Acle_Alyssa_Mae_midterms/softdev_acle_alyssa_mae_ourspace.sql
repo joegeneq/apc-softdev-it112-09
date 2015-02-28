@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 28, 2015 at 08:20 AM
+-- Generation Time: Feb 28, 2015 at 08:26 AM
 -- Server version: 5.6.14
 -- PHP Version: 5.5.6
 
@@ -34,8 +34,8 @@ CREATE TABLE IF NOT EXISTS `myaddress` (
   `gender` varchar(1) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `home_address` varchar(50) DEFAULT NULL,
-  `lanndline` varchar(20) DEFAULT NULL,
   `cellphone` varchar(20) DEFAULT NULL,
+  `landline` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS `myaddress` (
 -- Dumping data for table `myaddress`
 --
 
-INSERT INTO `myaddress` (`id`, `firstname`, `middlename`, `lastname`, `gender`, `created_at`, `home_address`, `lanndline`, `cellphone`) VALUES
+INSERT INTO `myaddress` (`id`, `firstname`, `middlename`, `lastname`, `gender`, `created_at`, `home_address`, `cellphone`, `landline`) VALUES
 (1, '', '', '', '', '2015-02-28 07:15:59', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
