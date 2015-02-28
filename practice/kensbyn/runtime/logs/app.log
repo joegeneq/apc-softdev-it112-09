@@ -1,0 +1,108 @@
+2015-02-16 03:04:30 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'kensbyn'' in C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\db\Command.php(208): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\db\Command.php(815): yii\db\Command->prepare(true)
+#6 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#8 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\db\Schema.php(139): yii\db\mysql\Schema->loadTableSchema('posts')
+#10 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\db\ActiveRecord.php(297): yii\db\Schema->getTableSchema('posts')
+#11 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\db\ActiveRecord.php(330): yii\db\ActiveRecord::getTableSchema()
+#12 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\db\BaseActiveRecord.php(422): yii\db\ActiveRecord->attributes()
+#13 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\db\BaseActiveRecord.php(241): yii\db\BaseActiveRecord->hasAttribute('post_id')
+#14 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\validators\Validator.php(235): yii\db\BaseActiveRecord->__get('post_id')
+#15 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(app\models\PostsSearch), Array)
+#16 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\models\PostsSearch.php(52): yii\base\Model->validate()
+#17 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\controllers\PostsController.php(36): app\models\PostsSearch->search(Array)
+#18 [internal function]: app\controllers\PostsController->actionIndex()
+#19 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#20 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#21 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#22 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('posts', Array)
+#23 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\web\index.php(12): yii\base\Application->run()
+#25 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1049] Unknown database 'kensbyn'' in C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\db\Command.php(208): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\db\Command.php(815): yii\db\Command->prepare(true)
+#4 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#6 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\db\Schema.php(139): yii\db\mysql\Schema->loadTableSchema('posts')
+#8 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\db\ActiveRecord.php(297): yii\db\Schema->getTableSchema('posts')
+#9 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\db\ActiveRecord.php(330): yii\db\ActiveRecord::getTableSchema()
+#10 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\db\BaseActiveRecord.php(422): yii\db\ActiveRecord->attributes()
+#11 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\db\BaseActiveRecord.php(241): yii\db\BaseActiveRecord->hasAttribute('post_id')
+#12 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\validators\Validator.php(235): yii\db\BaseActiveRecord->__get('post_id')
+#13 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(app\models\PostsSearch), Array)
+#14 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\models\PostsSearch.php(52): yii\base\Model->validate()
+#15 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\controllers\PostsController.php(36): app\models\PostsSearch->search(Array)
+#16 [internal function]: app\controllers\PostsController->actionIndex()
+#17 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#18 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#19 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#20 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('posts', Array)
+#21 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 C:\xampp\htdocs\apc-softdev-it112-09\practice\kensbyn\web\index.php(12): yii\base\Application->run()
+#23 {main}
+Additional Information:
+
+2015-02-16 03:04:30 [::1][-][-][info][application] $_GET = [
+    'r' => 'posts'
+]
+
+$_COOKIE = [
+    '_csrf' => '80ec8675fdf52c327a41b9a67a762a55756609b307ad9305c2c7762ae6d11814s:32:\"F3VDl3koz81VntRyX4e-eMYCmmbKc1Bz\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=80ec8675fdf52c327a41b9a67a762a55756609b307ad9305c2c7762ae6d11814s%3A32%3A%22F3VDl3koz81VntRyX4e-eMYCmmbKc1Bz%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Acer\\Remote Files\\;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/apc-softdev-it112-09/practice/kensbyn/web/index.php'
+    'REMOTE_PORT' => '62916'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=posts'
+    'REQUEST_URI' => '/apc-softdev-it112-09/practice/kensbyn/web/index.php?r=posts'
+    'SCRIPT_NAME' => '/apc-softdev-it112-09/practice/kensbyn/web/index.php'
+    'PHP_SELF' => '/apc-softdev-it112-09/practice/kensbyn/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1424052270.525
+    'REQUEST_TIME' => 1424052270
+]
