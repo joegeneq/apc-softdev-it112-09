@@ -25,6 +25,12 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'gender') ?>
 
+    <?php // echo $form->field($model, 'home_address') ?>
+
+    <?php // echo $form->field($model, 'landline') ?>
+
+    <?php // echo $form->field($model, 'cellphone') ?>
+
     <?php // echo $form->field($model, 'created_at') ?>
 
     <div class="form-group">
