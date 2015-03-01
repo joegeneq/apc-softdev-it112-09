@@ -59,12 +59,12 @@ class mycommentSearch extends mycomment
 
         $query->andFilterWhere([
             'id' => $this->id,
-            'myaddress_id' => $this->myaddress_id,
+           // 'myaddress_id' => $this->myaddress_id,
             'created_at' => $this->created_at,
         ]);
 
         $query->andFilterWhere(['like', 'author', $this->author])
-            ->andFilterWhere(['like', 'body', $this->body]);
+            ->andFilterWhere(['like', 'body', $this->body])
             ->andFilterWhere(['like', 'myaddress.lastname', $this->myaddress_id]);
 
         return $dataProvider;
