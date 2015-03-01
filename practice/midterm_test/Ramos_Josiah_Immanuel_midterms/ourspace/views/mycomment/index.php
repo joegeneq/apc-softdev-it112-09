@@ -26,6 +26,11 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
+            [
+
+                'attribute'=>'myaddress_id', 
+                'value' => 'myaddress.lastname',
+            ],
             'myaddress.lastname',
             'author',
             'body:ntext',

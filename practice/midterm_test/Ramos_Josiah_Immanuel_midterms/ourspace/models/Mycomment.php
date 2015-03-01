@@ -46,7 +46,7 @@ class Mycomment extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'myaddress_id' => 'Myaddress ID',
+            'myaddress_id' => 'Last Name Search',
             'author' => 'Author',
             'body' => 'Body',
             'created_at' => 'Created At',
