@@ -16,14 +16,14 @@ body {
 
 .footer {
     height: 60px;
-    background-color: #f5f5f5;
-    border-top: 1px solid #ddd;
+    background-color: #006CB3;
+    border-top: 1px solid #006CB3;
     padding-top: 20px;
 }
 
 .jumbotron {
     text-align: center;
-    background-color: transparent;
+    background-color: #58D3F7;
 }
 
 .jumbotron .btn {
@@ -41,7 +41,7 @@ a.asc:after, a.desc:after {
     position: relative;
     top: 1px;
     display: inline-block;
-    font-family: 'Glyphicons Halflings';
+    font-family: 'Helvetica';
     font-style: normal;
     font-weight: normal;
     line-height: 1;
