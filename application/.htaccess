@@ -1,5 +1,0 @@
-RewriteCond %{THE_REQUEST} ^GET\ /apt/
-RewriteCond %{HTTP_HOST} ^(\.)?localhost/apc-softdev-it112-09/apc-cpo_microsite$
-RewriteRule ^apt/(.*) /$1 [L,R=301]
-RewriteCond %{HTTP_HOST} ^(\.)?localhost/apc-softdev-it112-09/apc-cpo_microsite$
-RewriteRule !^apt/ apt%{REQUEST_URI} [L]
