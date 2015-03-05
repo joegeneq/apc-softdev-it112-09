@@ -31,7 +31,11 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
+<<<<<<< HEAD
             [label => 'Lastname', 'value' => $model->myaddress->lastname],
+=======
+            ['label' => 'Last Name', 'value' => $model->myaddress->lastname],
+>>>>>>> 96a04d20ee652ff4b2cd8781b1a54d30dd7fbed1
             'author',
             'body:ntext',
             'created_at',

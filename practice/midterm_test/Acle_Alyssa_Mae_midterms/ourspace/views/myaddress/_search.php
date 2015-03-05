@@ -27,6 +27,12 @@ use yii\widgets\ActiveForm;
 
     <?php // echo $form->field($model, 'created_at') ?>
 
+    <?php // echo $form->field($model, 'home_address') ?>
+
+    <?php // echo $form->field($model, 'cellphone') ?>
+
+    <?php // echo $form->field($model, 'landline') ?>
+
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>
         <?= Html::resetButton('Reset', ['class' => 'btn btn-default']) ?>
