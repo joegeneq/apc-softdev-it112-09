@@ -3382,3 +3382,64 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1424931604.626
     'REQUEST_TIME' => 1424931604
 ]
+2015-03-05 08:59:10 [127.0.0.1][1][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "siteusrs/userman".' in /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('siteusrs/userma...', Array)
+#1 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/kensbyn/apc-softdev-it112-09/application/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/kensbyn/apc-softdev-it112-09/application/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-03-05 08:59:10 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'siteusrs/userman'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qmgbq48hu78ilncf6oh2irarh5'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+    '_csrf' => '1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s:32:\"JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VPgMzn8AAQEAADGdom0AAAAG'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=qmgbq48hu78ilncf6oh2irarh5; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B; _csrf=1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s%3A32%3A%22JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/frontend/web/index.php'
+    'REMOTE_PORT' => '51957'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=siteusrs%2Fuserman'
+    'REQUEST_URI' => '/APCCPO-Comms/frontend/web/index.php?r=siteusrs%2Fuserman'
+    'SCRIPT_NAME' => '/APCCPO-Comms/frontend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425542350.158
+    'REQUEST_TIME' => 1425542350
+]

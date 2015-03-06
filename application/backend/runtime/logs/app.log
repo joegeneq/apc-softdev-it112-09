@@ -1045,3 +1045,1348 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1424920775.049
     'REQUEST_TIME' => 1424920775
 ]
+2015-03-05 06:10:24 [127.0.0.1][1][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "userman/userman".' in /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('userman/userman', Array)
+#1 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/kensbyn/apc-softdev-it112-09/application/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/kensbyn/apc-softdev-it112-09/application/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-03-05 06:10:24 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'userman/userman'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qmgbq48hu78ilncf6oh2irarh5'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+    '_csrf' => '3eb0e604c47ca26b6a2498d47194382126831150beb18f267ee70587e876f25es:32:\"oGwhLZ57orqlqQsKQsaM-umYzCf9DBkF\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VPflQH8AAQEAABfNSKYAAAAK'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=qmgbq48hu78ilncf6oh2irarh5; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B; _csrf=3eb0e604c47ca26b6a2498d47194382126831150beb18f267ee70587e876f25es%3A32%3A%22oGwhLZ57orqlqQsKQsaM-umYzCf9DBkF%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/backend/web/index.php'
+    'REMOTE_PORT' => '50957'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=userman%2Fuserman'
+    'REQUEST_URI' => '/APCCPO-Comms/backend/web/index.php?r=userman%2Fuserman'
+    'SCRIPT_NAME' => '/APCCPO-Comms/backend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425532224.704
+    'REQUEST_TIME' => 1425532224
+]
+2015-03-05 06:12:29 [127.0.0.1][1][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "userman".' in /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('userman', Array)
+#1 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/kensbyn/apc-softdev-it112-09/application/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/kensbyn/apc-softdev-it112-09/application/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-03-05 06:12:29 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'userman'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qmgbq48hu78ilncf6oh2irarh5'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+    '_csrf' => '3eb0e604c47ca26b6a2498d47194382126831150beb18f267ee70587e876f25es:32:\"oGwhLZ57orqlqQsKQsaM-umYzCf9DBkF\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VPflvX8AAQEAAA4ZrqUAAAAE'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=qmgbq48hu78ilncf6oh2irarh5; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B; _csrf=3eb0e604c47ca26b6a2498d47194382126831150beb18f267ee70587e876f25es%3A32%3A%22oGwhLZ57orqlqQsKQsaM-umYzCf9DBkF%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/backend/web/index.php'
+    'REMOTE_PORT' => '50992'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=userman'
+    'REQUEST_URI' => '/APCCPO-Comms/backend/web/index.php?r=userman'
+    'SCRIPT_NAME' => '/APCCPO-Comms/backend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425532349.506
+    'REQUEST_TIME' => 1425532349
+]
+2015-03-05 06:52:55 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\modules\managemnetmodels\IndustryPartners' not found' in /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/_form.php:11
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-05 06:52:55 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'siteusrs/userman/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qmgbq48hu78ilncf6oh2irarh5'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+    '_csrf' => 'efb2d6f6d891d9c72132e4ce635ca79223f6d0456f9c5389913bab45b3218868s:32:\"pS3VpAEoIF75Xg6AluQXC-D3Ekt2YgLv\";'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VPfvN38AAQEAAA4XukAAAAAC'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=qmgbq48hu78ilncf6oh2irarh5; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B; _csrf=efb2d6f6d891d9c72132e4ce635ca79223f6d0456f9c5389913bab45b3218868s%3A32%3A%22pS3VpAEoIF75Xg6AluQXC-D3Ekt2YgLv%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/backend/web/index.php'
+    'REMOTE_PORT' => '51241'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=siteusrs%2Fuserman%2Fupdate&id=1'
+    'REQUEST_URI' => '/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/APCCPO-Comms/backend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425534775.422
+    'REQUEST_TIME' => 1425534775
+]
+2015-03-05 06:53:00 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\modules\managemnetmodels\IndustryPartners' not found' in /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/_form.php:11
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-05 06:53:00 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'siteusrs/userman/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qmgbq48hu78ilncf6oh2irarh5'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+    '_csrf' => 'efb2d6f6d891d9c72132e4ce635ca79223f6d0456f9c5389913bab45b3218868s:32:\"pS3VpAEoIF75Xg6AluQXC-D3Ekt2YgLv\";'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VPfvPH8AAQEAAA99QCAAAAAH'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=qmgbq48hu78ilncf6oh2irarh5; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B; _csrf=efb2d6f6d891d9c72132e4ce635ca79223f6d0456f9c5389913bab45b3218868s%3A32%3A%22pS3VpAEoIF75Xg6AluQXC-D3Ekt2YgLv%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/backend/web/index.php'
+    'REMOTE_PORT' => '51242'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=siteusrs%2Fuserman%2Fupdate&id=1'
+    'REQUEST_URI' => '/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/APCCPO-Comms/backend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425534780.501
+    'REQUEST_TIME' => 1425534780
+]
+2015-03-05 06:53:17 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\modules\managementmodels\IndustryPartners' not found' in /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/_form.php:11
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-05 06:53:17 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'siteusrs/userman/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qmgbq48hu78ilncf6oh2irarh5'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+    '_csrf' => 'efb2d6f6d891d9c72132e4ce635ca79223f6d0456f9c5389913bab45b3218868s:32:\"pS3VpAEoIF75Xg6AluQXC-D3Ekt2YgLv\";'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VPfvTX8AAQEAACOnsagAAAAD'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=qmgbq48hu78ilncf6oh2irarh5; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B; _csrf=efb2d6f6d891d9c72132e4ce635ca79223f6d0456f9c5389913bab45b3218868s%3A32%3A%22pS3VpAEoIF75Xg6AluQXC-D3Ekt2YgLv%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/backend/web/index.php'
+    'REMOTE_PORT' => '51249'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=siteusrs%2Fuserman%2Fupdate&id=1'
+    'REQUEST_URI' => '/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/APCCPO-Comms/backend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425534797.845
+    'REQUEST_TIME' => 1425534797
+]
+2015-03-05 06:53:31 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\modules\managementmodels\IndustryPartners' not found' in /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/_form.php:11
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-05 06:53:31 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'siteusrs/userman/update'
+    'id' => '7'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qmgbq48hu78ilncf6oh2irarh5'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+    '_csrf' => '1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s:32:\"JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP\";'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VPfvW38AAQEAABZgUk8AAAAF'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=qmgbq48hu78ilncf6oh2irarh5; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B; _csrf=1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s%3A32%3A%22JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/backend/web/index.php'
+    'REMOTE_PORT' => '51250'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=siteusrs%2Fuserman%2Fupdate&id=7'
+    'REQUEST_URI' => '/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fupdate&id=7'
+    'SCRIPT_NAME' => '/APCCPO-Comms/backend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425534811.447
+    'REQUEST_TIME' => 1425534811
+]
+2015-03-05 07:00:08 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Use of undefined constant values - assumed 'values'' in /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/models/Userman.php:43
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/models/Userman.php(43): yii\base\ErrorHandler->handleError(8, 'Use of undefine...', '/home/kensbyn/a...', 43, Array)
+#1 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Model.php(418): backend\modules\management\models\Userman->rules()
+#2 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Model.php(386): yii\base\Model->createValidators()
+#3 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Model.php(184): yii\base\Model->getValidators()
+#4 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Model.php(736): yii\base\Model->scenarios()
+#5 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/widgets/ActiveField.php(740): yii\base\Model->activeAttributes()
+#6 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/widgets/ActiveField.php(210): yii\widgets\ActiveField->getClientOptions()
+#7 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/widgets/ActiveField.php(200): yii\widgets\ActiveField->begin()
+#8 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/widgets/ActiveField.php(156): yii\widgets\ActiveField->render()
+#9 /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/_form.php(21): yii\widgets\ActiveField->__toString()
+#10 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(325): require('/home/kensbyn/a...')
+#11 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/kensbyn/a...', Array)
+#12 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/kensbyn/a...', Array, NULL)
+#13 /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/update.php(19): yii\base\View->render('_form', Array)
+#14 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(325): require('/home/kensbyn/a...')
+#15 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/kensbyn/a...', Array)
+#16 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/kensbyn/a...', Array, Object(backend\modules\management\controllers\UsermanController))
+#17 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('update', Array, Object(backend\modules\management\controllers\UsermanController))
+#18 /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/controllers/UsermanController.php(89): yii\base\Controller->render('update', Array)
+#19 [internal function]: backend\modules\management\controllers\UsermanController->actionUpdate('7')
+#20 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#21 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#22 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('update', Array)
+#23 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('siteusrs/userma...', Array)
+#24 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 /home/kensbyn/apc-softdev-it112-09/application/backend/web/index.php(18): yii\base\Application->run()
+#26 {main}
+    in /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/models/Userman.php:43
+    in /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/_form.php:21
+    in /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/update.php:19
+2015-03-05 07:00:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'siteusrs/userman/update'
+    'id' => '7'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qmgbq48hu78ilncf6oh2irarh5'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+    '_csrf' => '1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s:32:\"JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP\";'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VPfw6H8AAQEAAA4W6XEAAAAB'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=qmgbq48hu78ilncf6oh2irarh5; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B; _csrf=1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s%3A32%3A%22JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/backend/web/index.php'
+    'REMOTE_PORT' => '51291'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=siteusrs%2Fuserman%2Fupdate&id=7'
+    'REQUEST_URI' => '/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fupdate&id=7'
+    'SCRIPT_NAME' => '/APCCPO-Comms/backend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425535208.202
+    'REQUEST_TIME' => 1425535208
+]
+2015-03-05 07:04:04 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '=>' (T_DOUBLE_ARROW)' in /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/_form.php:30
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-05 07:04:04 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'siteusrs/userman/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qmgbq48hu78ilncf6oh2irarh5'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+    '_csrf' => '1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s:32:\"JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP\";'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VPfx1H8AAQEAACSuiW8AAAAA'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=qmgbq48hu78ilncf6oh2irarh5; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B; _csrf=1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s%3A32%3A%22JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/backend/web/index.php'
+    'REMOTE_PORT' => '51387'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=siteusrs%2Fuserman%2Fupdate&id=1'
+    'REQUEST_URI' => '/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/APCCPO-Comms/backend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425535444.372
+    'REQUEST_TIME' => 1425535444
+]
+2015-03-05 07:05:56 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Use of undefined constant values - assumed 'values'' in /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/models/Userman.php:43
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/models/Userman.php(43): yii\base\ErrorHandler->handleError(8, 'Use of undefine...', '/home/kensbyn/a...', 43, Array)
+#1 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Model.php(418): backend\modules\management\models\Userman->rules()
+#2 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Model.php(386): yii\base\Model->createValidators()
+#3 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Model.php(184): yii\base\Model->getValidators()
+#4 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Model.php(736): yii\base\Model->scenarios()
+#5 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/widgets/ActiveField.php(740): yii\base\Model->activeAttributes()
+#6 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/widgets/ActiveField.php(210): yii\widgets\ActiveField->getClientOptions()
+#7 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/widgets/ActiveField.php(200): yii\widgets\ActiveField->begin()
+#8 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/widgets/ActiveField.php(156): yii\widgets\ActiveField->render()
+#9 /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/_form.php(21): yii\widgets\ActiveField->__toString()
+#10 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(325): require('/home/kensbyn/a...')
+#11 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/kensbyn/a...', Array)
+#12 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/kensbyn/a...', Array, NULL)
+#13 /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/update.php(19): yii\base\View->render('_form', Array)
+#14 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(325): require('/home/kensbyn/a...')
+#15 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/kensbyn/a...', Array)
+#16 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/kensbyn/a...', Array, Object(backend\modules\management\controllers\UsermanController))
+#17 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('update', Array, Object(backend\modules\management\controllers\UsermanController))
+#18 /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/controllers/UsermanController.php(89): yii\base\Controller->render('update', Array)
+#19 [internal function]: backend\modules\management\controllers\UsermanController->actionUpdate('1')
+#20 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#21 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#22 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('update', Array)
+#23 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('siteusrs/userma...', Array)
+#24 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 /home/kensbyn/apc-softdev-it112-09/application/backend/web/index.php(18): yii\base\Application->run()
+#26 {main}
+    in /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/models/Userman.php:43
+    in /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/_form.php:21
+    in /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/update.php:19
+2015-03-05 07:05:56 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'siteusrs/userman/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qmgbq48hu78ilncf6oh2irarh5'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+    '_csrf' => '1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s:32:\"JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP\";'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VPfyRH8AAQEAABg0U3IAAAAJ'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=qmgbq48hu78ilncf6oh2irarh5; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B; _csrf=1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s%3A32%3A%22JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/backend/web/index.php'
+    'REMOTE_PORT' => '51389'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=siteusrs%2Fuserman%2Fupdate&id=1'
+    'REQUEST_URI' => '/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/APCCPO-Comms/backend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425535556.898
+    'REQUEST_TIME' => 1425535556
+]
+2015-03-05 07:49:57 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\modules\management\models\Userman::IndustryPartners' in /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/BaseActiveRecord.php(247): yii\base\Component->__get('IndustryPartner...')
+#1 /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/view.php(42): yii\db\BaseActiveRecord->__get('IndustryPartner...')
+#2 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(325): require('/home/kensbyn/a...')
+#3 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/kensbyn/a...', Array)
+#4 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/kensbyn/a...', Array, Object(backend\modules\management\controllers\UsermanController))
+#5 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('view', Array, Object(backend\modules\management\controllers\UsermanController))
+#6 /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/controllers/UsermanController.php(53): yii\base\Controller->render('view', Array)
+#7 [internal function]: backend\modules\management\controllers\UsermanController->actionView('7')
+#8 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#9 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#11 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('siteusrs/userma...', Array)
+#12 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /home/kensbyn/apc-softdev-it112-09/application/backend/web/index.php(18): yii\base\Application->run()
+#14 {main}
+2015-03-05 07:49:57 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'siteusrs/userman/view'
+    'id' => '7'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qmgbq48hu78ilncf6oh2irarh5'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+    '_csrf' => '1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s:32:\"JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP\";'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VPf8lX8AAQEAABZgUlsAAAAF'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fupdate&id=7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=qmgbq48hu78ilncf6oh2irarh5; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B; _csrf=1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s%3A32%3A%22JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/backend/web/index.php'
+    'REMOTE_PORT' => '51833'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=siteusrs%2Fuserman%2Fview&id=7'
+    'REQUEST_URI' => '/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fview&id=7'
+    'SCRIPT_NAME' => '/APCCPO-Comms/backend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425538197.689
+    'REQUEST_TIME' => 1425538197
+]
+2015-03-05 07:52:48 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ']'' in /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/view.php:42
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-05 07:52:48 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'siteusrs/userman/view'
+    'id' => '7'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qmgbq48hu78ilncf6oh2irarh5'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+    '_csrf' => '1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s:32:\"JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP\";'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VPf9QH8AAQEAACaDrk0AAAAE'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fupdate&id=7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=qmgbq48hu78ilncf6oh2irarh5; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B; _csrf=1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s%3A32%3A%22JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/backend/web/index.php'
+    'REMOTE_PORT' => '51846'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=siteusrs%2Fuserman%2Fview&id=7'
+    'REQUEST_URI' => '/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fview&id=7'
+    'SCRIPT_NAME' => '/APCCPO-Comms/backend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425538368.725
+    'REQUEST_TIME' => 1425538368
+]
+2015-03-05 07:53:03 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ']'' in /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/view.php:42
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-05 07:53:03 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'siteusrs/userman/view'
+    'id' => '7'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qmgbq48hu78ilncf6oh2irarh5'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+    '_csrf' => '1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s:32:\"JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP\";'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VPf9T38AAQEAACCqH1wAAAAK'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fupdate&id=7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=qmgbq48hu78ilncf6oh2irarh5; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B; _csrf=1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s%3A32%3A%22JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/backend/web/index.php'
+    'REMOTE_PORT' => '51850'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=siteusrs%2Fuserman%2Fview&id=7'
+    'REQUEST_URI' => '/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fview&id=7'
+    'SCRIPT_NAME' => '/APCCPO-Comms/backend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425538383.837
+    'REQUEST_TIME' => 1425538383
+]
+2015-03-05 07:53:12 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: IndustryPartners' in /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/view.php:42
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/view.php(42): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/home/kensbyn/a...', 42, Array)
+#1 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(325): require('/home/kensbyn/a...')
+#2 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/kensbyn/a...', Array)
+#3 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/kensbyn/a...', Array, Object(backend\modules\management\controllers\UsermanController))
+#4 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('view', Array, Object(backend\modules\management\controllers\UsermanController))
+#5 /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/controllers/UsermanController.php(53): yii\base\Controller->render('view', Array)
+#6 [internal function]: backend\modules\management\controllers\UsermanController->actionView('7')
+#7 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#10 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('siteusrs/userma...', Array)
+#11 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/kensbyn/apc-softdev-it112-09/application/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2015-03-05 07:53:12 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'siteusrs/userman/view'
+    'id' => '7'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qmgbq48hu78ilncf6oh2irarh5'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+    '_csrf' => '1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s:32:\"JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP\";'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VPf9WH8AAQEAABg0U3kAAAAJ'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fupdate&id=7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=qmgbq48hu78ilncf6oh2irarh5; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B; _csrf=1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s%3A32%3A%22JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/backend/web/index.php'
+    'REMOTE_PORT' => '51852'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=siteusrs%2Fuserman%2Fview&id=7'
+    'REQUEST_URI' => '/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fview&id=7'
+    'SCRIPT_NAME' => '/APCCPO-Comms/backend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425538392.532
+    'REQUEST_TIME' => 1425538392
+]
+2015-03-05 07:54:02 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Use of undefined constant IndustryPartners - assumed 'IndustryPartners'' in /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/view.php:10
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/view.php(10): yii\base\ErrorHandler->handleError(8, 'Use of undefine...', '/home/kensbyn/a...', 10, Array)
+#1 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(325): require('/home/kensbyn/a...')
+#2 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/kensbyn/a...', Array)
+#3 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/kensbyn/a...', Array, Object(backend\modules\management\controllers\UsermanController))
+#4 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('view', Array, Object(backend\modules\management\controllers\UsermanController))
+#5 /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/controllers/UsermanController.php(53): yii\base\Controller->render('view', Array)
+#6 [internal function]: backend\modules\management\controllers\UsermanController->actionView('7')
+#7 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#10 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('siteusrs/userma...', Array)
+#11 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/kensbyn/apc-softdev-it112-09/application/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2015-03-05 07:54:02 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'siteusrs/userman/view'
+    'id' => '7'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qmgbq48hu78ilncf6oh2irarh5'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+    '_csrf' => '1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s:32:\"JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP\";'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VPf9in8AAQEAACKp2pwAAAAI'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fupdate&id=7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=qmgbq48hu78ilncf6oh2irarh5; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B; _csrf=1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s%3A32%3A%22JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/backend/web/index.php'
+    'REMOTE_PORT' => '51854'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=siteusrs%2Fuserman%2Fview&id=7'
+    'REQUEST_URI' => '/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fview&id=7'
+    'SCRIPT_NAME' => '/APCCPO-Comms/backend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425538442.502
+    'REQUEST_TIME' => 1425538442
+]
+2015-03-05 07:55:27 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: model2' in /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/view.php:41
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/view.php(41): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/home/kensbyn/a...', 41, Array)
+#1 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(325): require('/home/kensbyn/a...')
+#2 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/kensbyn/a...', Array)
+#3 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/kensbyn/a...', Array, Object(backend\modules\management\controllers\UsermanController))
+#4 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('view', Array, Object(backend\modules\management\controllers\UsermanController))
+#5 /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/controllers/UsermanController.php(53): yii\base\Controller->render('view', Array)
+#6 [internal function]: backend\modules\management\controllers\UsermanController->actionView('7')
+#7 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#10 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('siteusrs/userma...', Array)
+#11 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/kensbyn/apc-softdev-it112-09/application/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2015-03-05 07:55:27 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'siteusrs/userman/view'
+    'id' => '7'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qmgbq48hu78ilncf6oh2irarh5'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+    '_csrf' => '1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s:32:\"JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP\";'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VPf9338AAQEAACOnsbkAAAAD'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fupdate&id=7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=qmgbq48hu78ilncf6oh2irarh5; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B; _csrf=1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s%3A32%3A%22JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/backend/web/index.php'
+    'REMOTE_PORT' => '51861'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=siteusrs%2Fuserman%2Fview&id=7'
+    'REQUEST_URI' => '/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fview&id=7'
+    'SCRIPT_NAME' => '/APCCPO-Comms/backend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425538527.078
+    'REQUEST_TIME' => 1425538527
+]
+2015-03-05 08:11:30 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'var' (T_VAR)' in /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/view.php:8
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-05 08:11:30 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'siteusrs/userman/view'
+    'id' => '7'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qmgbq48hu78ilncf6oh2irarh5'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+    '_csrf' => '1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s:32:\"JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP\";'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VPgBon8AAQEAAA4Xuk0AAAAC'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fupdate&id=7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=qmgbq48hu78ilncf6oh2irarh5; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B; _csrf=1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s%3A32%3A%22JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/backend/web/index.php'
+    'REMOTE_PORT' => '51885'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=siteusrs%2Fuserman%2Fview&id=7'
+    'REQUEST_URI' => '/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fview&id=7'
+    'SCRIPT_NAME' => '/APCCPO-Comms/backend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425539490.523
+    'REQUEST_TIME' => 1425539490
+]
+2015-03-05 08:11:42 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'var' (T_VAR)' in /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/view.php:8
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-05 08:11:42 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'siteusrs/userman/view'
+    'id' => '7'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qmgbq48hu78ilncf6oh2irarh5'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+    '_csrf' => '1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s:32:\"JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP\";'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VPgBrn8AAQEAABZgUlwAAAAF'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fupdate&id=7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=qmgbq48hu78ilncf6oh2irarh5; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B; _csrf=1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s%3A32%3A%22JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/backend/web/index.php'
+    'REMOTE_PORT' => '51888'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=siteusrs%2Fuserman%2Fview&id=7'
+    'REQUEST_URI' => '/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fview&id=7'
+    'SCRIPT_NAME' => '/APCCPO-Comms/backend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425539502.126
+    'REQUEST_TIME' => 1425539502
+]
+2015-03-05 08:11:46 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'var' (T_VAR)' in /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/view.php:8
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-05 08:11:46 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'siteusrs/userman/view'
+    'id' => '7'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qmgbq48hu78ilncf6oh2irarh5'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+    '_csrf' => '1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s:32:\"JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP\";'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VPgBsn8AAQEAAA99QCwAAAAH'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fupdate&id=7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=qmgbq48hu78ilncf6oh2irarh5; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B; _csrf=1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s%3A32%3A%22JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/backend/web/index.php'
+    'REMOTE_PORT' => '51890'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=siteusrs%2Fuserman%2Fview&id=7'
+    'REQUEST_URI' => '/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fview&id=7'
+    'SCRIPT_NAME' => '/APCCPO-Comms/backend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425539506.739
+    'REQUEST_TIME' => 1425539506
+]
+2015-03-05 08:11:57 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$this' (T_VARIABLE)' in /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/view.php:10
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-05 08:11:57 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'siteusrs/userman/view'
+    'id' => '7'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qmgbq48hu78ilncf6oh2irarh5'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+    '_csrf' => '1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s:32:\"JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP\";'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VPgBvX8AAQEAACaDrk4AAAAE'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fupdate&id=7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=qmgbq48hu78ilncf6oh2irarh5; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B; _csrf=1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s%3A32%3A%22JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/backend/web/index.php'
+    'REMOTE_PORT' => '51892'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=siteusrs%2Fuserman%2Fview&id=7'
+    'REQUEST_URI' => '/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fview&id=7'
+    'SCRIPT_NAME' => '/APCCPO-Comms/backend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425539517.772
+    'REQUEST_TIME' => 1425539517
+]
+2015-03-05 08:12:25 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: model2' in /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/view.php:41
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/view.php(41): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/home/kensbyn/a...', 41, Array)
+#1 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(325): require('/home/kensbyn/a...')
+#2 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/kensbyn/a...', Array)
+#3 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/kensbyn/a...', Array, Object(backend\modules\management\controllers\UsermanController))
+#4 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('view', Array, Object(backend\modules\management\controllers\UsermanController))
+#5 /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/controllers/UsermanController.php(53): yii\base\Controller->render('view', Array)
+#6 [internal function]: backend\modules\management\controllers\UsermanController->actionView('7')
+#7 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#10 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('siteusrs/userma...', Array)
+#11 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/kensbyn/apc-softdev-it112-09/application/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2015-03-05 08:12:25 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'siteusrs/userman/view'
+    'id' => '7'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qmgbq48hu78ilncf6oh2irarh5'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+    '_csrf' => '1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s:32:\"JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP\";'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VPgB2X8AAQEAAA4W6XoAAAAB'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fupdate&id=7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=qmgbq48hu78ilncf6oh2irarh5; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B; _csrf=1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s%3A32%3A%22JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/backend/web/index.php'
+    'REMOTE_PORT' => '51894'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=siteusrs%2Fuserman%2Fview&id=7'
+    'REQUEST_URI' => '/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fview&id=7'
+    'SCRIPT_NAME' => '/APCCPO-Comms/backend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425539545.365
+    'REQUEST_TIME' => 1425539545
+]
+2015-03-05 08:13:06 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Use of undefined constant IndustryPartners - assumed 'IndustryPartners'' in /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/view.php:11
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/view.php(11): yii\base\ErrorHandler->handleError(8, 'Use of undefine...', '/home/kensbyn/a...', 11, Array)
+#1 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(325): require('/home/kensbyn/a...')
+#2 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/kensbyn/a...', Array)
+#3 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/kensbyn/a...', Array, Object(backend\modules\management\controllers\UsermanController))
+#4 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('view', Array, Object(backend\modules\management\controllers\UsermanController))
+#5 /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/controllers/UsermanController.php(53): yii\base\Controller->render('view', Array)
+#6 [internal function]: backend\modules\management\controllers\UsermanController->actionView('7')
+#7 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#10 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('siteusrs/userma...', Array)
+#11 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/kensbyn/apc-softdev-it112-09/application/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2015-03-05 08:13:06 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'siteusrs/userman/view'
+    'id' => '7'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qmgbq48hu78ilncf6oh2irarh5'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+    '_csrf' => '1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s:32:\"JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP\";'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VPgCAn8AAQEAACSuiXUAAAAA'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fupdate&id=7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=qmgbq48hu78ilncf6oh2irarh5; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B; _csrf=1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s%3A32%3A%22JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/backend/web/index.php'
+    'REMOTE_PORT' => '51896'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=siteusrs%2Fuserman%2Fview&id=7'
+    'REQUEST_URI' => '/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fview&id=7'
+    'SCRIPT_NAME' => '/APCCPO-Comms/backend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425539586.716
+    'REQUEST_TIME' => 1425539586
+]
+2015-03-05 08:14:00 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\modules\management\models\Userman::company_name' in /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/BaseActiveRecord.php(247): yii\base\Component->__get('company_name')
+#1 /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/view.php(42): yii\db\BaseActiveRecord->__get('company_name')
+#2 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(325): require('/home/kensbyn/a...')
+#3 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/kensbyn/a...', Array)
+#4 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/kensbyn/a...', Array, Object(backend\modules\management\controllers\UsermanController))
+#5 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('view', Array, Object(backend\modules\management\controllers\UsermanController))
+#6 /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/controllers/UsermanController.php(53): yii\base\Controller->render('view', Array)
+#7 [internal function]: backend\modules\management\controllers\UsermanController->actionView('7')
+#8 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#9 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#11 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('siteusrs/userma...', Array)
+#12 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /home/kensbyn/apc-softdev-it112-09/application/backend/web/index.php(18): yii\base\Application->run()
+#14 {main}
+2015-03-05 08:14:00 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'siteusrs/userman/view'
+    'id' => '7'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qmgbq48hu78ilncf6oh2irarh5'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+    '_csrf' => '1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s:32:\"JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP\";'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VPgCOH8AAQEAACCqH10AAAAK'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fupdate&id=7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=qmgbq48hu78ilncf6oh2irarh5; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B; _csrf=1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s%3A32%3A%22JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/backend/web/index.php'
+    'REMOTE_PORT' => '51898'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=siteusrs%2Fuserman%2Fview&id=7'
+    'REQUEST_URI' => '/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fview&id=7'
+    'SCRIPT_NAME' => '/APCCPO-Comms/backend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425539640.697
+    'REQUEST_TIME' => 1425539640
+]
+2015-03-05 08:14:20 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\modules\management\models\Userman::IndustryPartners' in /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/BaseActiveRecord.php(247): yii\base\Component->__get('IndustryPartner...')
+#1 /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/views/userman/view.php(42): yii\db\BaseActiveRecord->__get('IndustryPartner...')
+#2 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(325): require('/home/kensbyn/a...')
+#3 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/kensbyn/a...', Array)
+#4 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/kensbyn/a...', Array, Object(backend\modules\management\controllers\UsermanController))
+#5 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('view', Array, Object(backend\modules\management\controllers\UsermanController))
+#6 /home/kensbyn/apc-softdev-it112-09/application/backend/modules/management/controllers/UsermanController.php(53): yii\base\Controller->render('view', Array)
+#7 [internal function]: backend\modules\management\controllers\UsermanController->actionView('7')
+#8 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#9 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#11 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('siteusrs/userma...', Array)
+#12 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /home/kensbyn/apc-softdev-it112-09/application/backend/web/index.php(18): yii\base\Application->run()
+#14 {main}
+2015-03-05 08:14:19 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'siteusrs/userman/view'
+    'id' => '7'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qmgbq48hu78ilncf6oh2irarh5'
+    '_identity' => '584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s:46:\"[1,\"RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5\",2592000]\";'
+    '_csrf' => '1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s:32:\"JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP\";'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VPgCS38AAQEAACKp2p0AAAAI'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fupdate&id=7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=qmgbq48hu78ilncf6oh2irarh5; _identity=584b2f60b3bac6b6f6719ef767b30a69dab4fd529e8bbaebd2f649628b2c05b8s%3A46%3A%22%5B1%2C%22RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5%22%2C2592000%5D%22%3B; _csrf=1cc78320f2afaabcb577482fca20fafd0a28d50a2b37384518ae8467e7dbe304s%3A32%3A%22JF2LEF3ag2g3gixufbDZQ1LhT7Ois0sP%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/backend/web/index.php'
+    'REMOTE_PORT' => '51901'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=siteusrs%2Fuserman%2Fview&id=7'
+    'REQUEST_URI' => '/APCCPO-Comms/backend/web/index.php?r=siteusrs%2Fuserman%2Fview&id=7'
+    'SCRIPT_NAME' => '/APCCPO-Comms/backend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425539659.971
+    'REQUEST_TIME' => 1425539659
+]

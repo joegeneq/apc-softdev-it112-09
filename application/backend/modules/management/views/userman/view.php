@@ -4,15 +4,15 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\MyComment */
-    
-            use app\models\Myaddress;
+/* @var $model backend\modules\management\models\Userman */
+
+        use backend\modules\management\models\IndustryPartners;
 
 $this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'My Comments', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Usermen', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="my-comment-view">
+<div class="userman-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
@@ -31,11 +31,18 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
-            ['label' => 'Lastname', 'value' => $model->myaddress->lastname],
-            ['label' => 'Last Name', 'value' => $model->myaddress->lastname],
-            'author',
-            'body:ntext',
+            'username',
+            'firstname',
+            'lastname',
+            'auth_key',
+            'password_hash',
+            'password_reset_token',
+            'email:email',
+            'roles',
+            ['label' => ' Company', 'value' =>$model->IndustryPartner->company_name],
+            'status',
             'created_at',
+            'updated_at',
         ],
     ]) ?>
 

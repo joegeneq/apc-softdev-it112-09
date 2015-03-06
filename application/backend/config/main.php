@@ -15,6 +15,9 @@ return [
                 'partman' => [
                     'class' => 'backend\modules\management\Partners',
                 ],
+                'siteusrs' => [
+                    'class' => 'backend\modules\management\Users',
+                ],
     ],
     'components' => [
         'user' => [
