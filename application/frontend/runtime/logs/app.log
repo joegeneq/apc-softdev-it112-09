@@ -3443,3 +3443,113 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1425542350.158
     'REQUEST_TIME' => 1425542350
 ]
+2015-03-06 14:44:43 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'apc-cpo-commsweb_database'' in D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=127....', 'root', '', NULL)
+#1 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\db\Command.php(208): yii\db\Connection->getSlavePdo()
+#5 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\db\Command.php(815): yii\db\Command->prepare(true)
+#6 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#8 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\db\Schema.php(139): yii\db\mysql\Schema->loadTableSchema('industry_partne...')
+#10 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\db\ActiveRecord.php(297): yii\db\Schema->getTableSchema('industry_partne...')
+#11 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\db\ActiveRecord.php(330): yii\db\ActiveRecord::getTableSchema()
+#12 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\db\BaseActiveRecord.php(422): yii\db\ActiveRecord->attributes()
+#13 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\db\BaseActiveRecord.php(241): yii\db\BaseActiveRecord->hasAttribute('id')
+#14 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\validators\Validator.php(235): yii\db\BaseActiveRecord->__get('id')
+#15 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(frontend\models\PartnersSearch), Array)
+#16 D:\My Files\apc-softdev-it112-09\application\frontend\models\PartnersSearch.php(52): yii\base\Model->validate()
+#17 D:\My Files\apc-softdev-it112-09\application\frontend\controllers\PartnersController.php(48): frontend\models\PartnersSearch->search(Array)
+#18 [internal function]: frontend\controllers\PartnersController->actionIndex()
+#19 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#20 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#21 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#22 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('partners/index', Array)
+#23 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 D:\My Files\apc-softdev-it112-09\application\frontend\web\index.php(18): yii\base\Application->run()
+#25 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1049] Unknown database 'apc-cpo-commsweb_database'' in D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\db\Command.php(208): yii\db\Connection->getSlavePdo()
+#3 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\db\Command.php(815): yii\db\Command->prepare(true)
+#4 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#6 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\db\Schema.php(139): yii\db\mysql\Schema->loadTableSchema('industry_partne...')
+#8 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\db\ActiveRecord.php(297): yii\db\Schema->getTableSchema('industry_partne...')
+#9 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\db\ActiveRecord.php(330): yii\db\ActiveRecord::getTableSchema()
+#10 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\db\BaseActiveRecord.php(422): yii\db\ActiveRecord->attributes()
+#11 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\db\BaseActiveRecord.php(241): yii\db\BaseActiveRecord->hasAttribute('id')
+#12 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\validators\Validator.php(235): yii\db\BaseActiveRecord->__get('id')
+#13 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(frontend\models\PartnersSearch), Array)
+#14 D:\My Files\apc-softdev-it112-09\application\frontend\models\PartnersSearch.php(52): yii\base\Model->validate()
+#15 D:\My Files\apc-softdev-it112-09\application\frontend\controllers\PartnersController.php(48): frontend\models\PartnersSearch->search(Array)
+#16 [internal function]: frontend\controllers\PartnersController->actionIndex()
+#17 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#18 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#19 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#20 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('partners/index', Array)
+#21 D:\My Files\apc-softdev-it112-09\application\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 D:\My Files\apc-softdev-it112-09\application\frontend\web\index.php(18): yii\base\Application->run()
+#23 {main}
+Additional Information:
+
+2015-03-06 14:44:42 [::1][-][-][info][application] $_GET = [
+    'r' => 'partners/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '8fq9577il6feuo1oi9tuhlkta2'
+    '_csrf' => '74c7bd5561979292f235a11918f2151e2f6461899c2cf6067668426eddb17961s:32:\"zKuhI22KERVY9hk8518RDOQohATpP7UW\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/APC-CPO_Microsite/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=8fq9577il6feuo1oi9tuhlkta2; _csrf=74c7bd5561979292f235a11918f2151e2f6461899c2cf6067668426eddb17961s%3A32%3A%22zKuhI22KERVY9hk8518RDOQohATpP7UW%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\TortoiseGit\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/APC-CPO_Microsite/frontend/web/index.php'
+    'REMOTE_PORT' => '64571'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=partners%2Findex'
+    'REQUEST_URI' => '/APC-CPO_Microsite/frontend/web/index.php?r=partners%2Findex'
+    'SCRIPT_NAME' => '/APC-CPO_Microsite/frontend/web/index.php'
+    'PHP_SELF' => '/APC-CPO_Microsite/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425649482.986
+    'REQUEST_TIME' => 1425649482
+]
