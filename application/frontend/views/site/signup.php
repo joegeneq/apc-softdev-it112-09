@@ -1,6 +1,11 @@
 <?php
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
+    use frontend\models\Partners;
+    $partnerss=Partners::find()->all();
+
+    use yii\helpers\ArrayHelper;
+    $listData=ArrayHelper::map($partnerss, 'id','company_name');
 
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap\ActiveForm */
@@ -24,7 +29,9 @@ $this->params['breadcrumbs'][] = $this->title;
 				<?= $form->field($model, 'firstname')->label('Given name:') ?>
 				<?= $form->field($model, 'lastname') ?>
 				<?= $form->field($model, 'roles')->dropDownList(['Student','Industry Partner'], ['prompt'=>'Select...'])->label('Account Type') ?>
-                
+                <?= $form->field($model, 'company_id')->dropDownList(
+                                $listData, 
+                                ['prompt'=>'Select...'])->label('Company')->hint('For students, please select Asia Pacific College.') ?>
 				<?= $form->field($model, 'password')->passwordInput() ?>
                 <div class="form-group">
                     <?= Html::submitButton('Signup', ['class' => 'btn btn-primary', 'name' => 'signup-button']) ?>

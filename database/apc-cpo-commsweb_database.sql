@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 23, 2015 at 10:07 AM
+-- Generation Time: Mar 08, 2015 at 12:50 PM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -17,8 +17,31 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `kensbyn-advanced`
+-- Database: `apc-cpo-commsweb_database`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cpofficer`
+--
+
+CREATE TABLE IF NOT EXISTS `cpofficer` (
+`id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `firstname` varchar(100) NOT NULL,
+  `lastname` varchar(100) NOT NULL,
+  `email` varchar(255) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `cpofficer`
+--
+
+INSERT INTO `cpofficer` (`id`, `user_id`, `username`, `firstname`, `lastname`, `email`) VALUES
+(1, 1, 'apccpowebadmin', 'CPO', 'Admin', 'cpo@apc.edu.ph'),
+(2, 7, 'kosibayan', 'Kenneth', 'Sibayan', 'kosibayan@student.apc.edu.ph');
 
 -- --------------------------------------------------------
 
@@ -39,7 +62,7 @@ CREATE TABLE IF NOT EXISTS `industry_partners` (
 --
 
 INSERT INTO `industry_partners` (`id`, `company_name`, `company_address`, `company_contactnum`, `company_description`) VALUES
-(1, 'Asia Pacific College', '3 Humabon Place, Magallanes, Makati City', '852-9235', 'Real Projects, Real Learning.');
+(0, 'Asia Pacific College', '3 Humabon Place, Magallanes, Makati City', '852-9235', 'Real Projects, Real Learning.');
 
 -- --------------------------------------------------------
 
@@ -88,12 +111,44 @@ CREATE TABLE IF NOT EXISTS `user` (
 
 INSERT INTO `user` (`id`, `username`, `firstname`, `lastname`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `roles`, `company_id`, `status`, `created_at`, `updated_at`) VALUES
 (1, 'apccpowebadmin', 'CPO', 'Admin', 'RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5', '$2y$13$Hkw5VzXsJVxP2nJA7RFp9.mG5cnZIh6uYF6vdRWkOCB5bfdXZUAIS', NULL, 'cpo@apc.edu.ph', 20, 0, 10, 1424616849, 1424616849),
-(7, 'kosibayan', 'Kenneth', 'Sibayan', 'ub32EOfN5mwImO_KhgkIKJrG2yl1iKyQ', '$2y$13$HFfEB/CDV5UvYappUC7lEOYLrI0Hifsk.w9i6E8MNeZstQTGy.cYK', NULL, 'kosibayan@student.apc.edu.ph', 10, 0, 10, 1424617778, 1424617778),
+(7, 'kosibayan', 'Kenneth', 'Sibayan', 'ub32EOfN5mwImO_KhgkIKJrG2yl1iKyQ', '$2y$13$HFfEB/CDV5UvYappUC7lEOYLrI0Hifsk.w9i6E8MNeZstQTGy.cYK', NULL, 'kosibayan@student.apc.edu.ph', 20, 0, 10, 1424617778, 1424617778),
 (8, 'acacle', 'Alyssa Mae', 'Acle', 'gqL-AVQT30QEWz83aeo3PJeW03vh3G7P', '$2y$13$ENcnW8KBe/OAawudFbDi2Og5Bj2K7yDkt0ZuRXYqDW.Lrhj12UK7G', NULL, 'acacle@student.apc.edu.ph', 10, 0, 10, 1424660697, 1424660697);
+
+--
+-- Triggers `user`
+--
+DELIMITER //
+CREATE TRIGGER `cpo_on_delete` AFTER DELETE ON `user`
+ FOR EACH ROW DELETE FROM cpofficer
+        WHERE roles != 20
+//
+DELIMITER ;
+DELIMITER //
+CREATE TRIGGER `insert_cpo insert` AFTER INSERT ON `user`
+ FOR EACH ROW INSERT INTO cpofficer (user_id, username, firstname, lastname, email)
+    SELECT id, username, firstname, lastname, email
+            FROM user
+            WHERE roles = 20
+//
+DELIMITER ;
+DELIMITER //
+CREATE TRIGGER `insert_cpo2` AFTER UPDATE ON `user`
+ FOR EACH ROW INSERT INTO cpofficer (user_id, username, firstname, lastname, email)
+    SELECT id, username, firstname, lastname, email
+            FROM user
+            WHERE roles = 20
+//
+DELIMITER ;
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `cpofficer`
+--
+ALTER TABLE `cpofficer`
+ ADD PRIMARY KEY (`id`), ADD KEY `user_id` (`user_id`);
 
 --
 -- Indexes for table `industry_partners`
@@ -118,6 +173,11 @@ ALTER TABLE `user`
 --
 
 --
+-- AUTO_INCREMENT for table `cpofficer`
+--
+ALTER TABLE `cpofficer`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+--
 -- AUTO_INCREMENT for table `industry_partners`
 --
 ALTER TABLE `industry_partners`
@@ -127,6 +187,22 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 ALTER TABLE `user`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `cpofficer`
+--
+ALTER TABLE `cpofficer`
+ADD CONSTRAINT `cpofficer_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`);
+
+--
+-- Constraints for table `user`
+--
+ALTER TABLE `user`
+ADD CONSTRAINT `user_ibfk_1` FOREIGN KEY (`company_id`) REFERENCES `industry_partners` (`id`);
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
