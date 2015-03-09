@@ -3985,3 +3985,706 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1425812294.999
     'REQUEST_TIME' => 1425812294
 ]
+2015-03-09 09:42:31 [127.0.0.1][-][3d0nrcu9ts0eeg3jaipm7j96f6][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '(', expecting variable (T_VARIABLE) or '$'' in /home/kensbyn/apc-softdev-it112-09/application/frontend/views/site/signup.php:43
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-09 09:42:31 [127.0.0.1][-][3d0nrcu9ts0eeg3jaipm7j96f6][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    '_csrf' => '3458c3dad4733b96836cd7098a459c70a3688c0c50e8952232fcbb3e77b31ca0s:32:\"UUTVzt2u1F8-62sctsNjPLwIzoG1UzSl\";'
+    'PHPSESSID' => '3d0nrcu9ts0eeg3jaipm7j96f6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Flogout'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VP1c938AAQEAABUNQIgAAAAF'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=3458c3dad4733b96836cd7098a459c70a3688c0c50e8952232fcbb3e77b31ca0s%3A32%3A%22UUTVzt2u1F8-62sctsNjPLwIzoG1UzSl%22%3B; PHPSESSID=3d0nrcu9ts0eeg3jaipm7j96f6'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/frontend/web/index.php'
+    'REMOTE_PORT' => '46077'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/APCCPO-Comms/frontend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425890551.007
+    'REQUEST_TIME' => 1425890551
+]
+2015-03-09 09:44:48 [127.0.0.1][-][3d0nrcu9ts0eeg3jaipm7j96f6][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '(', expecting variable (T_VARIABLE) or '$'' in /home/kensbyn/apc-softdev-it112-09/application/frontend/views/site/signup.php:43
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-09 09:44:48 [127.0.0.1][-][3d0nrcu9ts0eeg3jaipm7j96f6][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    '_csrf' => '3458c3dad4733b96836cd7098a459c70a3688c0c50e8952232fcbb3e77b31ca0s:32:\"UUTVzt2u1F8-62sctsNjPLwIzoG1UzSl\";'
+    'PHPSESSID' => '3d0nrcu9ts0eeg3jaipm7j96f6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Flogout'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VP1dgH8AAQEAABGLAJIAAAAA'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=3458c3dad4733b96836cd7098a459c70a3688c0c50e8952232fcbb3e77b31ca0s%3A32%3A%22UUTVzt2u1F8-62sctsNjPLwIzoG1UzSl%22%3B; PHPSESSID=3d0nrcu9ts0eeg3jaipm7j96f6'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/frontend/web/index.php'
+    'REMOTE_PORT' => '46081'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/APCCPO-Comms/frontend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425890688.767
+    'REQUEST_TIME' => 1425890688
+]
+2015-03-09 09:45:06 [127.0.0.1][-][3d0nrcu9ts0eeg3jaipm7j96f6][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '(', expecting variable (T_VARIABLE) or '$'' in /home/kensbyn/apc-softdev-it112-09/application/frontend/views/site/signup.php:43
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-09 09:45:06 [127.0.0.1][-][3d0nrcu9ts0eeg3jaipm7j96f6][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    '_csrf' => '3458c3dad4733b96836cd7098a459c70a3688c0c50e8952232fcbb3e77b31ca0s:32:\"UUTVzt2u1F8-62sctsNjPLwIzoG1UzSl\";'
+    'PHPSESSID' => '3d0nrcu9ts0eeg3jaipm7j96f6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Flogout'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VP1dkn8AAQEAABHWgQEAAAAL'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=3458c3dad4733b96836cd7098a459c70a3688c0c50e8952232fcbb3e77b31ca0s%3A32%3A%22UUTVzt2u1F8-62sctsNjPLwIzoG1UzSl%22%3B; PHPSESSID=3d0nrcu9ts0eeg3jaipm7j96f6'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/frontend/web/index.php'
+    'REMOTE_PORT' => '46085'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/APCCPO-Comms/frontend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425890706.825
+    'REQUEST_TIME' => 1425890706
+]
+2015-03-09 09:45:46 [127.0.0.1][-][3d0nrcu9ts0eeg3jaipm7j96f6][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '(', expecting variable (T_VARIABLE) or '$'' in /home/kensbyn/apc-softdev-it112-09/application/frontend/views/site/signup.php:43
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-09 09:45:46 [127.0.0.1][-][3d0nrcu9ts0eeg3jaipm7j96f6][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    '_csrf' => '3458c3dad4733b96836cd7098a459c70a3688c0c50e8952232fcbb3e77b31ca0s:32:\"UUTVzt2u1F8-62sctsNjPLwIzoG1UzSl\";'
+    'PHPSESSID' => '3d0nrcu9ts0eeg3jaipm7j96f6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Flogout'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VP1dun8AAQEAABUNQIkAAAAF'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=3458c3dad4733b96836cd7098a459c70a3688c0c50e8952232fcbb3e77b31ca0s%3A32%3A%22UUTVzt2u1F8-62sctsNjPLwIzoG1UzSl%22%3B; PHPSESSID=3d0nrcu9ts0eeg3jaipm7j96f6'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/frontend/web/index.php'
+    'REMOTE_PORT' => '46101'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/APCCPO-Comms/frontend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425890746.56
+    'REQUEST_TIME' => 1425890746
+]
+2015-03-09 09:46:32 [127.0.0.1][-][3d0nrcu9ts0eeg3jaipm7j96f6][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '{'' in /home/kensbyn/apc-softdev-it112-09/application/frontend/views/site/signup.php:43
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-09 09:46:32 [127.0.0.1][-][3d0nrcu9ts0eeg3jaipm7j96f6][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    '_csrf' => '3458c3dad4733b96836cd7098a459c70a3688c0c50e8952232fcbb3e77b31ca0s:32:\"UUTVzt2u1F8-62sctsNjPLwIzoG1UzSl\";'
+    'PHPSESSID' => '3d0nrcu9ts0eeg3jaipm7j96f6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Flogout'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VP1d6H8AAQEAABGOdpMAAAAD'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=3458c3dad4733b96836cd7098a459c70a3688c0c50e8952232fcbb3e77b31ca0s%3A32%3A%22UUTVzt2u1F8-62sctsNjPLwIzoG1UzSl%22%3B; PHPSESSID=3d0nrcu9ts0eeg3jaipm7j96f6'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/frontend/web/index.php'
+    'REMOTE_PORT' => '46105'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/APCCPO-Comms/frontend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425890792.209
+    'REQUEST_TIME' => 1425890792
+]
+2015-03-09 09:47:27 [127.0.0.1][-][3d0nrcu9ts0eeg3jaipm7j96f6][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '(', expecting variable (T_VARIABLE) or '$'' in /home/kensbyn/apc-softdev-it112-09/application/frontend/views/site/signup.php:43
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-09 09:47:27 [127.0.0.1][-][3d0nrcu9ts0eeg3jaipm7j96f6][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    '_csrf' => '3458c3dad4733b96836cd7098a459c70a3688c0c50e8952232fcbb3e77b31ca0s:32:\"UUTVzt2u1F8-62sctsNjPLwIzoG1UzSl\";'
+    'PHPSESSID' => '3d0nrcu9ts0eeg3jaipm7j96f6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Flogout'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VP1eH38AAQEAABGLAJMAAAAA'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=3458c3dad4733b96836cd7098a459c70a3688c0c50e8952232fcbb3e77b31ca0s%3A32%3A%22UUTVzt2u1F8-62sctsNjPLwIzoG1UzSl%22%3B; PHPSESSID=3d0nrcu9ts0eeg3jaipm7j96f6'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/frontend/web/index.php'
+    'REMOTE_PORT' => '46108'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/APCCPO-Comms/frontend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425890847.889
+    'REQUEST_TIME' => 1425890847
+]
+2015-03-09 09:52:33 [127.0.0.1][-][3d0nrcu9ts0eeg3jaipm7j96f6][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '(', expecting variable (T_VARIABLE) or '$'' in /home/kensbyn/apc-softdev-it112-09/application/frontend/views/site/signup.php:43
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-09 09:52:33 [127.0.0.1][-][3d0nrcu9ts0eeg3jaipm7j96f6][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    '_csrf' => '3458c3dad4733b96836cd7098a459c70a3688c0c50e8952232fcbb3e77b31ca0s:32:\"UUTVzt2u1F8-62sctsNjPLwIzoG1UzSl\";'
+    'PHPSESSID' => '3d0nrcu9ts0eeg3jaipm7j96f6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Flogout'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VP1fUX8AAQEAABHWgQIAAAAL'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=3458c3dad4733b96836cd7098a459c70a3688c0c50e8952232fcbb3e77b31ca0s%3A32%3A%22UUTVzt2u1F8-62sctsNjPLwIzoG1UzSl%22%3B; PHPSESSID=3d0nrcu9ts0eeg3jaipm7j96f6'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/frontend/web/index.php'
+    'REMOTE_PORT' => '46343'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/APCCPO-Comms/frontend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425891153.276
+    'REQUEST_TIME' => 1425891153
+]
+2015-03-09 09:53:15 [127.0.0.1][-][3d0nrcu9ts0eeg3jaipm7j96f6][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'if' (T_IF)' in /home/kensbyn/apc-softdev-it112-09/application/frontend/views/site/signup.php:45
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-09 09:53:15 [127.0.0.1][-][3d0nrcu9ts0eeg3jaipm7j96f6][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    '_csrf' => '3458c3dad4733b96836cd7098a459c70a3688c0c50e8952232fcbb3e77b31ca0s:32:\"UUTVzt2u1F8-62sctsNjPLwIzoG1UzSl\";'
+    'PHPSESSID' => '3d0nrcu9ts0eeg3jaipm7j96f6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Flogout'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VP1fe38AAQEAABHVrdQAAAAK'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=3458c3dad4733b96836cd7098a459c70a3688c0c50e8952232fcbb3e77b31ca0s%3A32%3A%22UUTVzt2u1F8-62sctsNjPLwIzoG1UzSl%22%3B; PHPSESSID=3d0nrcu9ts0eeg3jaipm7j96f6'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/frontend/web/index.php'
+    'REMOTE_PORT' => '46347'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/APCCPO-Comms/frontend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425891195.42
+    'REQUEST_TIME' => 1425891195
+]
+2015-03-09 09:55:45 [127.0.0.1][-][3d0nrcu9ts0eeg3jaipm7j96f6][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'if' (T_IF)' in /home/kensbyn/apc-softdev-it112-09/application/frontend/views/site/signup.php:45
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-09 09:55:45 [127.0.0.1][-][3d0nrcu9ts0eeg3jaipm7j96f6][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    '_csrf' => '3458c3dad4733b96836cd7098a459c70a3688c0c50e8952232fcbb3e77b31ca0s:32:\"UUTVzt2u1F8-62sctsNjPLwIzoG1UzSl\";'
+    'PHPSESSID' => '3d0nrcu9ts0eeg3jaipm7j96f6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Flogout'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VP1gEX8AAQEAABGNLEgAAAAC'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=3458c3dad4733b96836cd7098a459c70a3688c0c50e8952232fcbb3e77b31ca0s%3A32%3A%22UUTVzt2u1F8-62sctsNjPLwIzoG1UzSl%22%3B; PHPSESSID=3d0nrcu9ts0eeg3jaipm7j96f6'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/frontend/web/index.php'
+    'REMOTE_PORT' => '46359'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/APCCPO-Comms/frontend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425891345.319
+    'REQUEST_TIME' => 1425891345
+]
+2015-03-09 09:56:43 [127.0.0.1][-][3d0nrcu9ts0eeg3jaipm7j96f6][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'function' (T_FUNCTION)' in /home/kensbyn/apc-softdev-it112-09/application/frontend/views/site/signup.php:45
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-09 09:56:43 [127.0.0.1][-][3d0nrcu9ts0eeg3jaipm7j96f6][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    '_csrf' => '3458c3dad4733b96836cd7098a459c70a3688c0c50e8952232fcbb3e77b31ca0s:32:\"UUTVzt2u1F8-62sctsNjPLwIzoG1UzSl\";'
+    'PHPSESSID' => '3d0nrcu9ts0eeg3jaipm7j96f6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Flogout'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VP1gS38AAQEAABUNQIoAAAAF'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=3458c3dad4733b96836cd7098a459c70a3688c0c50e8952232fcbb3e77b31ca0s%3A32%3A%22UUTVzt2u1F8-62sctsNjPLwIzoG1UzSl%22%3B; PHPSESSID=3d0nrcu9ts0eeg3jaipm7j96f6'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/frontend/web/index.php'
+    'REMOTE_PORT' => '46361'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/APCCPO-Comms/frontend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425891403.471
+    'REQUEST_TIME' => 1425891403
+]
+2015-03-09 09:57:20 [127.0.0.1][-][3d0nrcu9ts0eeg3jaipm7j96f6][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'if' (T_IF)' in /home/kensbyn/apc-softdev-it112-09/application/frontend/views/site/signup.php:45
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-09 09:57:20 [127.0.0.1][-][3d0nrcu9ts0eeg3jaipm7j96f6][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    '_csrf' => '3458c3dad4733b96836cd7098a459c70a3688c0c50e8952232fcbb3e77b31ca0s:32:\"UUTVzt2u1F8-62sctsNjPLwIzoG1UzSl\";'
+    'PHPSESSID' => '3d0nrcu9ts0eeg3jaipm7j96f6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Flogout'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VP1gcH8AAQEAABGLAJQAAAAA'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=3458c3dad4733b96836cd7098a459c70a3688c0c50e8952232fcbb3e77b31ca0s%3A32%3A%22UUTVzt2u1F8-62sctsNjPLwIzoG1UzSl%22%3B; PHPSESSID=3d0nrcu9ts0eeg3jaipm7j96f6'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/frontend/web/index.php'
+    'REMOTE_PORT' => '46363'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/APCCPO-Comms/frontend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425891440.161
+    'REQUEST_TIME' => 1425891440
+]
+2015-03-09 13:04:00 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'apc-cpo-commsweb_database.iproffessor' doesn't exist' in /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/Command.php:768
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/Command.php(768): PDOStatement->execute()
+#1 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/ActiveRecord.php(462): yii\db\Command->execute()
+#2 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/ActiveRecord.php(425): yii\db\ActiveRecord->insertInternal(NULL)
+#3 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/BaseActiveRecord.php(583): yii\db\ActiveRecord->insert(true, NULL)
+#4 /home/kensbyn/apc-softdev-it112-09/application/frontend/models/SignupForm.php(68): yii\db\BaseActiveRecord->save()
+#5 /home/kensbyn/apc-softdev-it112-09/application/frontend/controllers/SiteController.php(123): frontend\models\SignupForm->signup()
+#6 [internal function]: frontend\controllers\SiteController->actionSignup()
+#7 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('signup', Array)
+#10 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/signup', Array)
+#11 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/kensbyn/apc-softdev-it112-09/application/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'apc-cpo-commsweb_database.iproffessor' doesn't exist
+The SQL being executed was: INSERT INTO `user` (`username`, `firstname`, `lastname`, `email`, `roles`, `company_id`, `password_hash`, `auth_key`, `status`, `created_at`, `updated_at`) VALUES ('studentdemo', 'Student', 'Demo', 'student@student.apc.edu.ph', 10, 0, '$2y$13$gKc9/AOZ4UOylqU926FDweBaHh.J7iMkZZDJt9AbrwaSuhYggZsuq', 'nYXeeHboLazRK3wowaQX0MIl5bzEPLHn', 10, 1425902639, 1425902639)' in /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/Schema.php:532
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/Command.php(776): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/ActiveRecord.php(462): yii\db\Command->execute()
+#2 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/ActiveRecord.php(425): yii\db\ActiveRecord->insertInternal(NULL)
+#3 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/BaseActiveRecord.php(583): yii\db\ActiveRecord->insert(true, NULL)
+#4 /home/kensbyn/apc-softdev-it112-09/application/frontend/models/SignupForm.php(68): yii\db\BaseActiveRecord->save()
+#5 /home/kensbyn/apc-softdev-it112-09/application/frontend/controllers/SiteController.php(123): frontend\models\SignupForm->signup()
+#6 [internal function]: frontend\controllers\SiteController->actionSignup()
+#7 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('signup', Array)
+#10 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/signup', Array)
+#11 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/kensbyn/apc-softdev-it112-09/application/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'apc-cpo-commsweb_database.iproffessor' doesn't exist
+)
+
+2015-03-09 13:03:58 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf' => 'blA0elp3ZUw7BWAsIANXOV8WDFdsRRYvGiN6EAo7EgUUP3NLDw02IA=='
+    'SignupForm' => [
+        'email' => 'student@student.apc.edu.ph'
+        'username' => 'studentdemo'
+        'firstname' => 'Student'
+        'lastname' => 'Demo'
+        'roles' => '0'
+        'company_id' => '0'
+        'password' => 'AsiaPacificCollege'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '3458c3dad4733b96836cd7098a459c70a3688c0c50e8952232fcbb3e77b31ca0s:32:\"UUTVzt2u1F8-62sctsNjPLwIzoG1UzSl\";'
+    'PHPSESSID' => '3d0nrcu9ts0eeg3jaipm7j96f6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Flogout'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VP2MLn8AAQEAACKLRKAAAAAH'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '330'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://samurai'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=3458c3dad4733b96836cd7098a459c70a3688c0c50e8952232fcbb3e77b31ca0s%3A32%3A%22UUTVzt2u1F8-62sctsNjPLwIzoG1UzSl%22%3B; PHPSESSID=3d0nrcu9ts0eeg3jaipm7j96f6'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/frontend/web/index.php'
+    'REMOTE_PORT' => '46680'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/APCCPO-Comms/frontend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1425902638.466
+    'REQUEST_TIME' => 1425902638
+]

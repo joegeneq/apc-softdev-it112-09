@@ -31,7 +31,7 @@ $this->params['breadcrumbs'][] = $this->title;
 				<?= $form->field($model, 'roles')->dropDownList(['Student','Industry Partner'], ['prompt'=>'Select...'])->label('Account Type') ?>
                 <?= $form->field($model, 'company_id')->dropDownList(
                                 $listData, 
-                                ['prompt'=>'Select...'])->label('Company')->hint('For students, please select Asia Pacific College.') ?>
+                                ['prompt'=>'Select...'])->label('Company')->hint('Select Industry Partner to specify your company.') ?>
 				<?= $form->field($model, 'password')->passwordInput() ?>
                 <div class="form-group">
                     <?= Html::submitButton('Signup', ['class' => 'btn btn-primary', 'name' => 'signup-button']) ?>
@@ -39,4 +39,24 @@ $this->params['breadcrumbs'][] = $this->title;
             <?php ActiveForm::end(); ?>
         </div>
     </div>
+<?php
+    $this->registerJs("
+                $('#signupform-company_id').hide();
+                $('div.form-group field-signupform-company_id require').hide();
+                $('#signupform-company_id').val('0');
+            $('#signupform-roles').change(function () {
+            if($(this).val() == '1') {
+                $('#signupform-company_id').show();                
+                $('div.form-group field-signupform-company_id require').show();
+            }else {
+                $('#signupform-company_id').hide();                
+                $('div.form-group field-signupform-company_id require').hide();
+                $('#signupform-company_id').val() = 0;
+            }
+            });
+    ");
+?>
+
 </div>
+
+
