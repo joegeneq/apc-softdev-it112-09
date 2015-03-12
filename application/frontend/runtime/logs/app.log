@@ -4688,3 +4688,834 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1425902638.466
     'REQUEST_TIME' => 1425902638
 ]
+2015-03-12 02:49:06 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\SignupForm::company_id' in /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/frontend/models/SignupForm.php(63): yii\base\Component->__get('company_id')
+#1 /home/kensbyn/apc-softdev-it112-09/application/frontend/controllers/SiteController.php(123): frontend\models\SignupForm->signup()
+#2 [internal function]: frontend\controllers\SiteController->actionSignup()
+#3 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('signup', Array)
+#6 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/signup', Array)
+#7 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /home/kensbyn/apc-softdev-it112-09/application/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-03-12 02:49:05 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf' => 'cjRBbVU0N3MgUnMVM0xwQwRmOAQUTA4FRQQTLDZCYhIicA9VBkZhNw=='
+    'SignupForm' => [
+        'email' => 'dummy@account.test'
+        'username' => 'dummyaccnt'
+        'firstname' => 'dummy'
+        'lastname' => 'account'
+        'roles' => '0'
+        'password' => 'asiapacificcollege'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '018a5eb3bba3e34ef03591f770bd092f096fd2714f259739de2d06259b9f0b59s:32:\"Rf2xfxG0vRyiAx9v70RAcvUaPDN8SrVD\";'
+    'PHPSESSID' => '2dnsu7a7jk8j0s2effplnmmu51'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VQDwkX8AAQEAAA3GNkwAAAAC'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '293'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://samurai'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=018a5eb3bba3e34ef03591f770bd092f096fd2714f259739de2d06259b9f0b59s%3A32%3A%22Rf2xfxG0vRyiAx9v70RAcvUaPDN8SrVD%22%3B; PHPSESSID=2dnsu7a7jk8j0s2effplnmmu51'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/frontend/web/index.php'
+    'REMOTE_PORT' => '60927'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/APCCPO-Comms/frontend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426124945.801
+    'REQUEST_TIME' => 1426124945
+]
+2015-03-12 02:50:12 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'apc-cpo-commsweb_database.iproffessor' doesn't exist' in /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/Command.php:768
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/Command.php(768): PDOStatement->execute()
+#1 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/ActiveRecord.php(462): yii\db\Command->execute()
+#2 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/ActiveRecord.php(425): yii\db\ActiveRecord->insertInternal(NULL)
+#3 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/BaseActiveRecord.php(583): yii\db\ActiveRecord->insert(true, NULL)
+#4 /home/kensbyn/apc-softdev-it112-09/application/frontend/models/SignupForm.php(65): yii\db\BaseActiveRecord->save()
+#5 /home/kensbyn/apc-softdev-it112-09/application/frontend/controllers/SiteController.php(123): frontend\models\SignupForm->signup()
+#6 [internal function]: frontend\controllers\SiteController->actionSignup()
+#7 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('signup', Array)
+#10 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/signup', Array)
+#11 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/kensbyn/apc-softdev-it112-09/application/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'apc-cpo-commsweb_database.iproffessor' doesn't exist
+The SQL being executed was: INSERT INTO `user` (`username`, `firstname`, `lastname`, `email`, `roles`, `password_hash`, `auth_key`, `status`, `created_at`, `updated_at`) VALUES ('dummyaccnt', 'dummy', 'account', 'dummy@account.test', 10, '$2y$13$6Zax5FfMzlRe4JX8nXUXsuhGxO5sb5HKHRbQjwn57ymcxQ54HusEu', 'KY-D7ChAKI4mbBiQF2tqu_nqIUgbTDG9', 10, 1426125012, 1426125012)' in /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/Schema.php:532
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/Command.php(776): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/ActiveRecord.php(462): yii\db\Command->execute()
+#2 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/ActiveRecord.php(425): yii\db\ActiveRecord->insertInternal(NULL)
+#3 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/BaseActiveRecord.php(583): yii\db\ActiveRecord->insert(true, NULL)
+#4 /home/kensbyn/apc-softdev-it112-09/application/frontend/models/SignupForm.php(65): yii\db\BaseActiveRecord->save()
+#5 /home/kensbyn/apc-softdev-it112-09/application/frontend/controllers/SiteController.php(123): frontend\models\SignupForm->signup()
+#6 [internal function]: frontend\controllers\SiteController->actionSignup()
+#7 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('signup', Array)
+#10 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/signup', Array)
+#11 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/kensbyn/apc-softdev-it112-09/application/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'apc-cpo-commsweb_database.iproffessor' doesn't exist
+)
+
+2015-03-12 02:50:11 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf' => 'SFU0MGdJc1QaMwZIATE0ZD4HTVkmMUoif2VmcQQ/JjUYEXoINDslEA=='
+    'SignupForm' => [
+        'email' => 'dummy@account.test'
+        'username' => 'dummyaccnt'
+        'firstname' => 'dummy'
+        'lastname' => 'account'
+        'roles' => '0'
+        'password' => 'asiapcificcollege'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '018a5eb3bba3e34ef03591f770bd092f096fd2714f259739de2d06259b9f0b59s:32:\"Rf2xfxG0vRyiAx9v70RAcvUaPDN8SrVD\";'
+    'PHPSESSID' => '2dnsu7a7jk8j0s2effplnmmu51'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VQDw038AAQEAAA3iisUAAAAF'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '294'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://samurai'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=018a5eb3bba3e34ef03591f770bd092f096fd2714f259739de2d06259b9f0b59s%3A32%3A%22Rf2xfxG0vRyiAx9v70RAcvUaPDN8SrVD%22%3B; PHPSESSID=2dnsu7a7jk8j0s2effplnmmu51'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/frontend/web/index.php'
+    'REMOTE_PORT' => '60937'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/APCCPO-Comms/frontend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426125011.406
+    'REQUEST_TIME' => 1426125011
+]
+2015-03-12 02:52:11 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'apc-cpo-commsweb_database.iproffessor' doesn't exist' in /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/Command.php:768
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/Command.php(768): PDOStatement->execute()
+#1 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/ActiveRecord.php(462): yii\db\Command->execute()
+#2 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/ActiveRecord.php(425): yii\db\ActiveRecord->insertInternal(NULL)
+#3 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/BaseActiveRecord.php(583): yii\db\ActiveRecord->insert(true, NULL)
+#4 /home/kensbyn/apc-softdev-it112-09/application/frontend/models/SignupForm.php(65): yii\db\BaseActiveRecord->save()
+#5 /home/kensbyn/apc-softdev-it112-09/application/frontend/controllers/SiteController.php(123): frontend\models\SignupForm->signup()
+#6 [internal function]: frontend\controllers\SiteController->actionSignup()
+#7 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('signup', Array)
+#10 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/signup', Array)
+#11 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/kensbyn/apc-softdev-it112-09/application/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'apc-cpo-commsweb_database.iproffessor' doesn't exist
+The SQL being executed was: INSERT INTO `user` (`username`, `firstname`, `lastname`, `email`, `roles`, `password_hash`, `auth_key`, `status`, `created_at`, `updated_at`) VALUES ('dummyaccnt', 'dummy', 'account', 'dummy@account.test', 10, '$2y$13$H8R/aRQ/OrBBKtzN9CXx1ujXOELU3FzWzcwzQCmhruKJVYJJ.xQ9q', 'tEanJKNf4WspGsUIydJT89EUcWG9rT0t', 10, 1426125131, 1426125131)' in /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/Schema.php:532
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/Command.php(776): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/ActiveRecord.php(462): yii\db\Command->execute()
+#2 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/ActiveRecord.php(425): yii\db\ActiveRecord->insertInternal(NULL)
+#3 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/BaseActiveRecord.php(583): yii\db\ActiveRecord->insert(true, NULL)
+#4 /home/kensbyn/apc-softdev-it112-09/application/frontend/models/SignupForm.php(65): yii\db\BaseActiveRecord->save()
+#5 /home/kensbyn/apc-softdev-it112-09/application/frontend/controllers/SiteController.php(123): frontend\models\SignupForm->signup()
+#6 [internal function]: frontend\controllers\SiteController->actionSignup()
+#7 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('signup', Array)
+#10 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/signup', Array)
+#11 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/kensbyn/apc-softdev-it112-09/application/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'apc-cpo-commsweb_database.iproffessor' doesn't exist
+)
+
+2015-03-12 02:52:11 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf' => 'M04uSzMteXZhKBwzVVU.RkUcVyJyVUAABH58ClBbLBdjCmBzYF8vMg=='
+    'SignupForm' => [
+        'email' => 'dummy@account.test'
+        'username' => 'dummyaccnt'
+        'firstname' => 'dummy'
+        'lastname' => 'account'
+        'roles' => '0'
+        'password' => 'asiapacificcollege'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '018a5eb3bba3e34ef03591f770bd092f096fd2714f259739de2d06259b9f0b59s:32:\"Rf2xfxG0vRyiAx9v70RAcvUaPDN8SrVD\";'
+    'PHPSESSID' => '2dnsu7a7jk8j0s2effplnmmu51'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VQDxS38AAQEAAA3FbmsAAAAB'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '293'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://samurai'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=018a5eb3bba3e34ef03591f770bd092f096fd2714f259739de2d06259b9f0b59s%3A32%3A%22Rf2xfxG0vRyiAx9v70RAcvUaPDN8SrVD%22%3B; PHPSESSID=2dnsu7a7jk8j0s2effplnmmu51'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/frontend/web/index.php'
+    'REMOTE_PORT' => '60947'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/APCCPO-Comms/frontend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426125131.08
+    'REQUEST_TIME' => 1426125131
+]
+2015-03-12 02:52:51 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'apc-cpo-commsweb_database.iproffessor' doesn't exist' in /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/Command.php:768
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/Command.php(768): PDOStatement->execute()
+#1 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/ActiveRecord.php(462): yii\db\Command->execute()
+#2 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/ActiveRecord.php(425): yii\db\ActiveRecord->insertInternal(NULL)
+#3 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/BaseActiveRecord.php(583): yii\db\ActiveRecord->insert(true, NULL)
+#4 /home/kensbyn/apc-softdev-it112-09/application/frontend/models/SignupForm.php(65): yii\db\BaseActiveRecord->save()
+#5 /home/kensbyn/apc-softdev-it112-09/application/frontend/controllers/SiteController.php(123): frontend\models\SignupForm->signup()
+#6 [internal function]: frontend\controllers\SiteController->actionSignup()
+#7 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('signup', Array)
+#10 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/signup', Array)
+#11 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/kensbyn/apc-softdev-it112-09/application/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'apc-cpo-commsweb_database.iproffessor' doesn't exist
+The SQL being executed was: INSERT INTO `user` (`username`, `firstname`, `lastname`, `email`, `roles`, `password_hash`, `auth_key`, `status`, `created_at`, `updated_at`) VALUES ('dummyaccnt', 'dummy', 'account', 'dummy@account.test', 10, '$2y$13$yYraOIYnuE5DikKPIlqSlez2QMdJree.KL.oMy6D33kNi3rQwpoJm', 'W8Bm5elsMM5EjXb66LNn2Gi4VGyPkXgF', 10, 1426125171, 1426125171)' in /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/Schema.php:532
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/Command.php(776): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/ActiveRecord.php(462): yii\db\Command->execute()
+#2 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/ActiveRecord.php(425): yii\db\ActiveRecord->insertInternal(NULL)
+#3 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/BaseActiveRecord.php(583): yii\db\ActiveRecord->insert(true, NULL)
+#4 /home/kensbyn/apc-softdev-it112-09/application/frontend/models/SignupForm.php(65): yii\db\BaseActiveRecord->save()
+#5 /home/kensbyn/apc-softdev-it112-09/application/frontend/controllers/SiteController.php(123): frontend\models\SignupForm->signup()
+#6 [internal function]: frontend\controllers\SiteController->actionSignup()
+#7 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('signup', Array)
+#10 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/signup', Array)
+#11 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/kensbyn/apc-softdev-it112-09/application/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'apc-cpo-commsweb_database.iproffessor' doesn't exist
+)
+
+2015-03-12 02:52:50 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf' => 'REc0SzYtTHYWIQYzUFULRjIVTSJ3VXUAc3dmClVbGRcUA3pzZV8aMg=='
+    'SignupForm' => [
+        'email' => 'dummy@account.test'
+        'username' => 'dummyaccnt'
+        'firstname' => 'dummy'
+        'lastname' => 'account'
+        'roles' => '0'
+        'password' => 'asiapacificcollege'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '018a5eb3bba3e34ef03591f770bd092f096fd2714f259739de2d06259b9f0b59s:32:\"Rf2xfxG0vRyiAx9v70RAcvUaPDN8SrVD\";'
+    'PHPSESSID' => '2dnsu7a7jk8j0s2effplnmmu51'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VQDxcn8AAQEAAA3ybQUAAAAJ'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '293'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://samurai'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=018a5eb3bba3e34ef03591f770bd092f096fd2714f259739de2d06259b9f0b59s%3A32%3A%22Rf2xfxG0vRyiAx9v70RAcvUaPDN8SrVD%22%3B; PHPSESSID=2dnsu7a7jk8j0s2effplnmmu51'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/frontend/web/index.php'
+    'REMOTE_PORT' => '60959'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/APCCPO-Comms/frontend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426125170.72
+    'REQUEST_TIME' => 1426125170
+]
+2015-03-12 02:59:15 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'apc-cpo-commsweb_database.iproffessor' doesn't exist' in /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/Command.php:768
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/Command.php(768): PDOStatement->execute()
+#1 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/ActiveRecord.php(462): yii\db\Command->execute()
+#2 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/ActiveRecord.php(425): yii\db\ActiveRecord->insertInternal(NULL)
+#3 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/BaseActiveRecord.php(583): yii\db\ActiveRecord->insert(true, NULL)
+#4 /home/kensbyn/apc-softdev-it112-09/application/frontend/models/SignupForm.php(65): yii\db\BaseActiveRecord->save()
+#5 /home/kensbyn/apc-softdev-it112-09/application/frontend/controllers/SiteController.php(123): frontend\models\SignupForm->signup()
+#6 [internal function]: frontend\controllers\SiteController->actionSignup()
+#7 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('signup', Array)
+#10 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/signup', Array)
+#11 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/kensbyn/apc-softdev-it112-09/application/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'apc-cpo-commsweb_database.iproffessor' doesn't exist
+The SQL being executed was: INSERT INTO `user` (`username`, `firstname`, `lastname`, `email`, `roles`, `password_hash`, `auth_key`, `status`, `created_at`, `updated_at`) VALUES ('dummyaccnt', 'dummy', 'account', 'dummy@account.test', 10, '$2y$13$ENmtPwNl6.JxNDcsI.BTQuXcK2D6xB8.KgeLVjzjGQoY34tDu4Qoe', 'X3hN_veoofXbL984YVwoXzPJBQiyUHZr', 10, 1426125555, 1426125555)' in /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/Schema.php:532
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/Command.php(776): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/ActiveRecord.php(462): yii\db\Command->execute()
+#2 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/ActiveRecord.php(425): yii\db\ActiveRecord->insertInternal(NULL)
+#3 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/BaseActiveRecord.php(583): yii\db\ActiveRecord->insert(true, NULL)
+#4 /home/kensbyn/apc-softdev-it112-09/application/frontend/models/SignupForm.php(65): yii\db\BaseActiveRecord->save()
+#5 /home/kensbyn/apc-softdev-it112-09/application/frontend/controllers/SiteController.php(123): frontend\models\SignupForm->signup()
+#6 [internal function]: frontend\controllers\SiteController->actionSignup()
+#7 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('signup', Array)
+#10 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/signup', Array)
+#11 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/kensbyn/apc-softdev-it112-09/application/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'apc-cpo-commsweb_database.iproffessor' doesn't exist
+)
+
+2015-03-12 02:59:14 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf' => 'eXR1c1NVdngrEkcLNS0xSA8mDBoSLU8OTkQnMjAjIxkpMDtLACcgPA=='
+    'SignupForm' => [
+        'email' => 'dummy@account.test'
+        'username' => 'dummyaccnt'
+        'firstname' => 'dummy'
+        'lastname' => 'account'
+        'roles' => '0'
+        'password' => 'ASIAPACIFICCOLLEGE'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '018a5eb3bba3e34ef03591f770bd092f096fd2714f259739de2d06259b9f0b59s:32:\"Rf2xfxG0vRyiAx9v70RAcvUaPDN8SrVD\";'
+    'PHPSESSID' => '2dnsu7a7jk8j0s2effplnmmu51'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VQDy8n8AAQEAAA3GNlMAAAAC'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '293'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://samurai'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=018a5eb3bba3e34ef03591f770bd092f096fd2714f259739de2d06259b9f0b59s%3A32%3A%22Rf2xfxG0vRyiAx9v70RAcvUaPDN8SrVD%22%3B; PHPSESSID=2dnsu7a7jk8j0s2effplnmmu51'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/frontend/web/index.php'
+    'REMOTE_PORT' => '32778'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/APCCPO-Comms/frontend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426125554.746
+    'REQUEST_TIME' => 1426125554
+]
+2015-03-12 03:05:09 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'lastname' in 'field list'' in /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/Command.php:768
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/Command.php(768): PDOStatement->execute()
+#1 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/ActiveRecord.php(462): yii\db\Command->execute()
+#2 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/ActiveRecord.php(425): yii\db\ActiveRecord->insertInternal(NULL)
+#3 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/BaseActiveRecord.php(583): yii\db\ActiveRecord->insert(true, NULL)
+#4 /home/kensbyn/apc-softdev-it112-09/application/frontend/models/SignupForm.php(65): yii\db\BaseActiveRecord->save()
+#5 /home/kensbyn/apc-softdev-it112-09/application/frontend/controllers/SiteController.php(123): frontend\models\SignupForm->signup()
+#6 [internal function]: frontend\controllers\SiteController->actionSignup()
+#7 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('signup', Array)
+#10 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/signup', Array)
+#11 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/kensbyn/apc-softdev-it112-09/application/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'lastname' in 'field list'
+The SQL being executed was: INSERT INTO `user` (`username`, `firstname`, `lastname`, `email`, `roles`, `password_hash`, `auth_key`, `status`, `created_at`, `updated_at`) VALUES ('dummyaccnt2', 'dummy', 'account', 'dummy2@account.test', 10, '$2y$13$T8iyd.uvO6D.eC.lqSmbHORDoeik7Zt3NKuPWvGYMcLTOFtVDt2zu', '5OhnFdmrYQU9sq7LsKlOfPgOr5bbgDex', 10, 1426125908, 1426125908)' in /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/Schema.php:532
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/Command.php(776): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/ActiveRecord.php(462): yii\db\Command->execute()
+#2 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/ActiveRecord.php(425): yii\db\ActiveRecord->insertInternal(NULL)
+#3 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/db/BaseActiveRecord.php(583): yii\db\ActiveRecord->insert(true, NULL)
+#4 /home/kensbyn/apc-softdev-it112-09/application/frontend/models/SignupForm.php(65): yii\db\BaseActiveRecord->save()
+#5 /home/kensbyn/apc-softdev-it112-09/application/frontend/controllers/SiteController.php(123): frontend\models\SignupForm->signup()
+#6 [internal function]: frontend\controllers\SiteController->actionSignup()
+#7 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('signup', Array)
+#10 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/signup', Array)
+#11 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/kensbyn/apc-softdev-it112-09/application/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'lastname' in 'field list'
+)
+
+2015-03-12 03:05:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf' => 'YXhvVy56TkczHl0vSAIJdxcqFj5vAncxVkg9Fk0MGyYxPCFvfQgYAw=='
+    'SignupForm' => [
+        'email' => 'dummy2@account.test'
+        'username' => 'dummyaccnt2'
+        'firstname' => 'dummy'
+        'lastname' => 'account'
+        'roles' => '0'
+        'password' => 'asiapacificcollege'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '018a5eb3bba3e34ef03591f770bd092f096fd2714f259739de2d06259b9f0b59s:32:\"Rf2xfxG0vRyiAx9v70RAcvUaPDN8SrVD\";'
+    'PHPSESSID' => 'l3lhf0hn5ld27c320am80jdgl1'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VQD0VH8AAQEAAA3iissAAAAF'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '295'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://samurai'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=018a5eb3bba3e34ef03591f770bd092f096fd2714f259739de2d06259b9f0b59s%3A32%3A%22Rf2xfxG0vRyiAx9v70RAcvUaPDN8SrVD%22%3B; PHPSESSID=l3lhf0hn5ld27c320am80jdgl1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/frontend/web/index.php'
+    'REMOTE_PORT' => '32824'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/APCCPO-Comms/frontend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426125908.222
+    'REQUEST_TIME' => 1426125908
+]
+2015-03-12 03:16:47 [127.0.0.1][16][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('signup', Array)
+#8 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/signup', Array)
+#9 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/kensbyn/apc-softdev-it112-09/application/frontend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2015-03-12 03:16:47 [127.0.0.1][16][-][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    '_csrf' => '018a5eb3bba3e34ef03591f770bd092f096fd2714f259739de2d06259b9f0b59s:32:\"Rf2xfxG0vRyiAx9v70RAcvUaPDN8SrVD\";'
+    'PHPSESSID' => '7rg8b8ia1ssetlsodmb8i8ip13'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 16
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VQD3D38AAQEAAA31L3EAAAAM'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => '_csrf=018a5eb3bba3e34ef03591f770bd092f096fd2714f259739de2d06259b9f0b59s%3A32%3A%22Rf2xfxG0vRyiAx9v70RAcvUaPDN8SrVD%22%3B; PHPSESSID=7rg8b8ia1ssetlsodmb8i8ip13'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/frontend/web/index.php'
+    'REMOTE_PORT' => '32888'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/APCCPO-Comms/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/APCCPO-Comms/frontend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426126607.321
+    'REQUEST_TIME' => 1426126607
+]
+2015-03-12 03:55:23 [127.0.0.1][16][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Controller.php:110
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#2 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('gii/default/vie...', Array)
+#3 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /home/kensbyn/apc-softdev-it112-09/application/frontend/web/index.php(18): yii\base\Application->run()
+#5 {main}
+2015-03-12 03:55:23 [127.0.0.1][16][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf' => 'Y0M0ektrZ0UxJQYCLRMgdRURTRMKE14zVHNmOygdMiQzB3pCGBkxAQ=='
+    'Generator' => [
+        'modelClass' => 'frontend\\models\\Student'
+        'searchModelClass' => 'frontend\\models\\StudentSearch'
+        'controllerClass' => 'frontend\\controllers\\StudentController'
+        'viewPath' => '@app/views/student'
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7rg8b8ia1ssetlsodmb8i8ip13'
+    '_csrf' => '5a1a102f3a7524d0472fe2a649e4db371e172c36445f655630f928e520fccfdcs:32:\"o_pteKj3sdfvRx5m-fGfENqASp6Lkk2t\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 16
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VQEAG38AAQEAAA3iitcAAAAF'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '507'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://samurai'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=7rg8b8ia1ssetlsodmb8i8ip13; _csrf=5a1a102f3a7524d0472fe2a649e4db371e172c36445f655630f928e520fccfdcs%3A32%3A%22o_pteKj3sdfvRx5m-fGfENqASp6Lkk2t%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/frontend/web/index.php'
+    'REMOTE_PORT' => '33084'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/APCCPO-Comms/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/APCCPO-Comms/frontend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426128923.734
+    'REQUEST_TIME' => 1426128923
+]
+2015-03-12 03:55:33 [127.0.0.1][16][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Controller.php:110
+Stack trace:
+#0 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#2 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('gii/default/vie...', Array)
+#3 /home/kensbyn/apc-softdev-it112-09/application/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /home/kensbyn/apc-softdev-it112-09/application/frontend/web/index.php(18): yii\base\Application->run()
+#5 {main}
+2015-03-12 03:55:33 [127.0.0.1][16][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf' => 'Y0M0ektrZ0UxJQYCLRMgdRURTRMKE14zVHNmOygdMiQzB3pCGBkxAQ=='
+    'Generator' => [
+        'modelClass' => 'frontend\\models\\Student'
+        'searchModelClass' => 'frontend\\models\\StudentSearch'
+        'controllerClass' => 'frontend\\controllers\\StudentController'
+        'viewPath' => '@app/views/student'
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7rg8b8ia1ssetlsodmb8i8ip13'
+    '_csrf' => 'b9a98207c243eb8131be57a6e44cb387f6298f6f88153c0e34b0df1ad1941cb2s:32:\"H5o4I0VHrKEePd8L9P0FK6GlTFpqUl_Q\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 16
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'VQEAJX8AAQEAAA3IRF0AAAAE'
+    'HTTP_HOST' => 'samurai'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '507'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://samurai'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://samurai/APCCPO-Comms/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fil;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=7rg8b8ia1ssetlsodmb8i8ip13; _csrf=b9a98207c243eb8131be57a6e44cb387f6298f6f88153c0e34b0df1ad1941cb2s%3A32%3A%22H5o4I0VHrKEePd8L9P0FK6GlTFpqUl_Q%22%3B'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Unix) OpenSSL/1.0.1j PHP/5.6.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'samurai'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/APCCPO-Comms/frontend/web/index.php'
+    'REMOTE_PORT' => '33089'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/APCCPO-Comms/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/APCCPO-Comms/frontend/web/index.php'
+    'PHP_SELF' => '/APCCPO-Comms/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426128933.3
+    'REQUEST_TIME' => 1426128933
+]
