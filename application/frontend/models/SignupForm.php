@@ -15,7 +15,6 @@ class SignupForm extends Model
 	public $username;
     public $email;
 	public $roles;
-    public $company_id;
     public $password;
 
     /**
@@ -28,7 +27,6 @@ class SignupForm extends Model
             ['username', 'required'],
 			['firstname', 'required'],
 			['lastname', 'required'],
-            ['company_id', 'required'],
             ['username', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This username has already been taken.'],
             ['username', 'string', 'min' => 2, 'max' => 255],
 
@@ -62,7 +60,6 @@ class SignupForm extends Model
 			}else{
 				$user->roles = User::ROLE_IP;
 			}
-            $user->company_id = $this->company_id;
             $user->setPassword($this->password);
             $user->generateAuthKey();
             if ($user->save()) {

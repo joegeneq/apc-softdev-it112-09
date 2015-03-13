@@ -122,7 +122,10 @@ class SiteController extends Controller
         if ($model->load(Yii::$app->request->post())) {
             if ($user = $model->signup()) {
                 if (Yii::$app->getUser()->login($user)) {
-                    return $this->goHome();
+                    if($user->roles = 11){
+                        Yii::$app->getSession()->setFlash('error', 'Please complete your account details.');
+                        return $this->redirect('/user/index',302);
+                    }
                 }
             }
         }
