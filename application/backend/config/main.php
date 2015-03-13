@@ -18,6 +18,12 @@ return [
                 'siteusrs' => [
                     'class' => 'backend\modules\management\Users',
                 ],
+                'careeroff' => [
+                    'class' => 'backend\modules\management\Careerofficer',
+                ],
+				'stud' => [
+					'class' => 'backend\modules\management\Student',
+				]
     ],
     'components' => [
         'user' => [
