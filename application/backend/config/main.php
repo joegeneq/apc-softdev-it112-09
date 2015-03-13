@@ -21,6 +21,9 @@ return [
                 'careeroff' => [
                     'class' => 'backend\modules\management\Careerofficer',
                 ],
+				'stud' => [
+					'class' => 'backend\modules\management\Student',
+				]
     ],
     'components' => [
         'user' => [
