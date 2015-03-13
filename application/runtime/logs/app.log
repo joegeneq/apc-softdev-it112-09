@@ -1,0 +1,1022 @@
+2015-02-09 07:34:53 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '<'' in C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\views\layouts\main.php:28
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-02-09 07:34:53 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s:32:\"LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh\";'
+    'PHPSESSID' => 'vchjhuhsn5h1c0vhmjrgkouf31'
+    '_identity' => 'a8153dfa78842163bfc3bbd3871b7ea8c199e03010582bd0d45742cb01a45ea6s:28:\"[\"100\",\"test100key\",2592000]\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s%3A32%3A%22LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh%22%3B; PHPSESSID=vchjhuhsn5h1c0vhmjrgkouf31; _identity=a8153dfa78842163bfc3bbd3871b7ea8c199e03010582bd0d45742cb01a45ea6s%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Acer\\Remote Files\\;C:\\Program Files\\TortoiseGit\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REMOTE_PORT' => '55901'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'SCRIPT_NAME' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'PHP_SELF' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1423463693.225
+    'REQUEST_TIME' => 1423463693
+]
+2015-02-09 07:35:06 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '<', expecting ']'' in C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\views\layouts\main.php:30
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-02-09 07:35:06 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s:32:\"LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh\";'
+    'PHPSESSID' => 'vchjhuhsn5h1c0vhmjrgkouf31'
+    '_identity' => 'a8153dfa78842163bfc3bbd3871b7ea8c199e03010582bd0d45742cb01a45ea6s:28:\"[\"100\",\"test100key\",2592000]\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s%3A32%3A%22LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh%22%3B; PHPSESSID=vchjhuhsn5h1c0vhmjrgkouf31; _identity=a8153dfa78842163bfc3bbd3871b7ea8c199e03010582bd0d45742cb01a45ea6s%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Acer\\Remote Files\\;C:\\Program Files\\TortoiseGit\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REMOTE_PORT' => '55902'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'SCRIPT_NAME' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'PHP_SELF' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1423463706.811
+    'REQUEST_TIME' => 1423463706
+]
+2015-02-09 07:39:33 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ';', expecting ']'' in C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\views\layouts\main.php:30
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-02-09 07:39:33 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s:32:\"LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh\";'
+    'PHPSESSID' => 'vchjhuhsn5h1c0vhmjrgkouf31'
+    '_identity' => 'a8153dfa78842163bfc3bbd3871b7ea8c199e03010582bd0d45742cb01a45ea6s:28:\"[\"100\",\"test100key\",2592000]\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s%3A32%3A%22LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh%22%3B; PHPSESSID=vchjhuhsn5h1c0vhmjrgkouf31; _identity=a8153dfa78842163bfc3bbd3871b7ea8c199e03010582bd0d45742cb01a45ea6s%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Acer\\Remote Files\\;C:\\Program Files\\TortoiseGit\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REMOTE_PORT' => '56018'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'SCRIPT_NAME' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'PHP_SELF' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1423463973.518
+    'REQUEST_TIME' => 1423463973
+]
+2015-02-09 07:40:07 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'NavBar' (T_STRING), expecting ',' or ';'' in C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\views\layouts\main.php:32
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-02-09 07:40:07 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s:32:\"LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh\";'
+    'PHPSESSID' => 'vchjhuhsn5h1c0vhmjrgkouf31'
+    '_identity' => 'a8153dfa78842163bfc3bbd3871b7ea8c199e03010582bd0d45742cb01a45ea6s:28:\"[\"100\",\"test100key\",2592000]\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s%3A32%3A%22LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh%22%3B; PHPSESSID=vchjhuhsn5h1c0vhmjrgkouf31; _identity=a8153dfa78842163bfc3bbd3871b7ea8c199e03010582bd0d45742cb01a45ea6s%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Acer\\Remote Files\\;C:\\Program Files\\TortoiseGit\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REMOTE_PORT' => '56023'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'SCRIPT_NAME' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'PHP_SELF' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1423464007.354
+    'REQUEST_TIME' => 1423464007
+]
+2015-02-09 07:46:33 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\bootstrap\NavBar::	brandLabel' in C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\BaseYii.php(518): yii\base\Component->__set('?brandLabel', '<img src="..\as...')
+#1 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\bootstrap\NavBar), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\di\Container.php(368): ReflectionClass->newInstanceArgs(Array)
+#4 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('yii\bootstrap\N...', Array, Array)
+#5 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\bootstrap\N...', Array, Array)
+#6 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\Widget.php(56): yii\BaseYii::createObject(Array)
+#7 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\views\layouts\main.php(35): yii\base\Widget::begin(Array)
+#8 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\View.php(325): require('C:\xampp\htdocs...')
+#9 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\xampp\htdocs...', Array)
+#10 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile('C:\xampp\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent('<div class="sit...')
+#12 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\controllers\SiteController.php(52): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\web\index.php(12): yii\base\Application->run()
+#20 {main}
+2015-02-09 07:46:33 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s:32:\"LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh\";'
+    'PHPSESSID' => 'vchjhuhsn5h1c0vhmjrgkouf31'
+    '_identity' => 'a8153dfa78842163bfc3bbd3871b7ea8c199e03010582bd0d45742cb01a45ea6s:28:\"[\"100\",\"test100key\",2592000]\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s%3A32%3A%22LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh%22%3B; PHPSESSID=vchjhuhsn5h1c0vhmjrgkouf31; _identity=a8153dfa78842163bfc3bbd3871b7ea8c199e03010582bd0d45742cb01a45ea6s%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Acer\\Remote Files\\;C:\\Program Files\\TortoiseGit\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REMOTE_PORT' => '56185'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'SCRIPT_NAME' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'PHP_SELF' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1423464393.657
+    'REQUEST_TIME' => 1423464393
+]
+2015-02-09 07:46:43 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\bootstrap\NavBar::	brandLabel' in C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\BaseYii.php(518): yii\base\Component->__set('?brandLabel', '<img src="..\as...')
+#1 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\bootstrap\NavBar), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\di\Container.php(368): ReflectionClass->newInstanceArgs(Array)
+#4 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('yii\bootstrap\N...', Array, Array)
+#5 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\bootstrap\N...', Array, Array)
+#6 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\Widget.php(56): yii\BaseYii::createObject(Array)
+#7 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\views\layouts\main.php(35): yii\base\Widget::begin(Array)
+#8 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\View.php(325): require('C:\xampp\htdocs...')
+#9 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\xampp\htdocs...', Array)
+#10 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile('C:\xampp\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent('<div class="sit...')
+#12 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\controllers\SiteController.php(52): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\web\index.php(12): yii\base\Application->run()
+#20 {main}
+2015-02-09 07:46:43 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s:32:\"LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh\";'
+    'PHPSESSID' => 'vchjhuhsn5h1c0vhmjrgkouf31'
+    '_identity' => 'a8153dfa78842163bfc3bbd3871b7ea8c199e03010582bd0d45742cb01a45ea6s:28:\"[\"100\",\"test100key\",2592000]\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s%3A32%3A%22LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh%22%3B; PHPSESSID=vchjhuhsn5h1c0vhmjrgkouf31; _identity=a8153dfa78842163bfc3bbd3871b7ea8c199e03010582bd0d45742cb01a45ea6s%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Acer\\Remote Files\\;C:\\Program Files\\TortoiseGit\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REMOTE_PORT' => '56189'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'SCRIPT_NAME' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'PHP_SELF' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1423464403.324
+    'REQUEST_TIME' => 1423464403
+]
+2015-02-09 09:54:44 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '=>' (T_DOUBLE_ARROW)' in C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\views\site\index.php:27
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-02-09 09:54:44 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s:32:\"LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh\";'
+    'PHPSESSID' => 'vchjhuhsn5h1c0vhmjrgkouf31'
+    '_identity' => 'a8153dfa78842163bfc3bbd3871b7ea8c199e03010582bd0d45742cb01a45ea6s:28:\"[\"100\",\"test100key\",2592000]\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s%3A32%3A%22LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh%22%3B; PHPSESSID=vchjhuhsn5h1c0vhmjrgkouf31; _identity=a8153dfa78842163bfc3bbd3871b7ea8c199e03010582bd0d45742cb01a45ea6s%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Acer\\Remote Files\\;C:\\Program Files\\TortoiseGit\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REMOTE_PORT' => '58047'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'SCRIPT_NAME' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'PHP_SELF' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1423472084.326
+    'REQUEST_TIME' => 1423472084
+]
+2015-02-09 09:56:06 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '=>' (T_DOUBLE_ARROW)' in C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\views\site\index.php:27
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-02-09 09:56:06 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s:32:\"LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh\";'
+    'PHPSESSID' => 'vchjhuhsn5h1c0vhmjrgkouf31'
+    '_identity' => 'a8153dfa78842163bfc3bbd3871b7ea8c199e03010582bd0d45742cb01a45ea6s:28:\"[\"100\",\"test100key\",2592000]\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s%3A32%3A%22LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh%22%3B; PHPSESSID=vchjhuhsn5h1c0vhmjrgkouf31; _identity=a8153dfa78842163bfc3bbd3871b7ea8c199e03010582bd0d45742cb01a45ea6s%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Acer\\Remote Files\\;C:\\Program Files\\TortoiseGit\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REMOTE_PORT' => '58084'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'SCRIPT_NAME' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'PHP_SELF' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1423472166.325
+    'REQUEST_TIME' => 1423472166
+]
+2015-02-09 10:11:32 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '=>' (T_DOUBLE_ARROW)' in C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\views\layouts\main.php:51
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-02-09 10:11:31 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s:32:\"LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh\";'
+    'PHPSESSID' => 'h0v2bvqf5trj70lj6uo5ajmf24'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s%3A32%3A%22LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh%22%3B; PHPSESSID=h0v2bvqf5trj70lj6uo5ajmf24'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Acer\\Remote Files\\;C:\\Program Files\\TortoiseGit\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REMOTE_PORT' => '58526'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'SCRIPT_NAME' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'PHP_SELF' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1423473091.971
+    'REQUEST_TIME' => 1423473091
+]
+2015-02-09 10:12:03 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '<'' in C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\views\layouts\main.php:28
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-02-09 10:12:03 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s:32:\"LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh\";'
+    'PHPSESSID' => 'h0v2bvqf5trj70lj6uo5ajmf24'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s%3A32%3A%22LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh%22%3B; PHPSESSID=h0v2bvqf5trj70lj6uo5ajmf24'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Acer\\Remote Files\\;C:\\Program Files\\TortoiseGit\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REMOTE_PORT' => '58542'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'SCRIPT_NAME' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'PHP_SELF' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1423473123.551
+    'REQUEST_TIME' => 1423473123
+]
+2015-02-09 10:12:03 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '<'' in C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\views\layouts\main.php:28
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-02-09 10:12:03 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s:32:\"LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh\";'
+    'PHPSESSID' => 'h0v2bvqf5trj70lj6uo5ajmf24'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s%3A32%3A%22LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh%22%3B; PHPSESSID=h0v2bvqf5trj70lj6uo5ajmf24'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Acer\\Remote Files\\;C:\\Program Files\\TortoiseGit\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REMOTE_PORT' => '58543'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'SCRIPT_NAME' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'PHP_SELF' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1423473123.593
+    'REQUEST_TIME' => 1423473123
+]
+2015-02-09 10:12:27 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '=>' (T_DOUBLE_ARROW)' in C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\views\layouts\main.php:28
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-02-09 10:12:27 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s:32:\"LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh\";'
+    'PHPSESSID' => 'h0v2bvqf5trj70lj6uo5ajmf24'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s%3A32%3A%22LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh%22%3B; PHPSESSID=h0v2bvqf5trj70lj6uo5ajmf24'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Acer\\Remote Files\\;C:\\Program Files\\TortoiseGit\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REMOTE_PORT' => '58546'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'SCRIPT_NAME' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'PHP_SELF' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1423473147.513
+    'REQUEST_TIME' => 1423473147
+]
+2015-02-09 10:13:16 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '=>' (T_DOUBLE_ARROW)' in C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\views\layouts\main.php:37
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-02-09 10:13:16 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s:32:\"LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh\";'
+    'PHPSESSID' => 'h0v2bvqf5trj70lj6uo5ajmf24'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s%3A32%3A%22LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh%22%3B; PHPSESSID=h0v2bvqf5trj70lj6uo5ajmf24'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Acer\\Remote Files\\;C:\\Program Files\\TortoiseGit\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REMOTE_PORT' => '58548'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'SCRIPT_NAME' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'PHP_SELF' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1423473196.34
+    'REQUEST_TIME' => 1423473196
+]
+2015-02-09 10:13:42 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ')', expecting ']'' in C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\views\layouts\main.php:73
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-02-09 10:13:42 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s:32:\"LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh\";'
+    'PHPSESSID' => 'h0v2bvqf5trj70lj6uo5ajmf24'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s%3A32%3A%22LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh%22%3B; PHPSESSID=h0v2bvqf5trj70lj6uo5ajmf24'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Acer\\Remote Files\\;C:\\Program Files\\TortoiseGit\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REMOTE_PORT' => '58549'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'SCRIPT_NAME' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'PHP_SELF' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1423473222.216
+    'REQUEST_TIME' => 1423473222
+]
+2015-02-09 10:13:49 [::1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Invalid argument supplied for foreach()' in C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\helpers\BaseHtml.php:1617
+Stack trace:
+#0 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\helpers\BaseHtml.php(1617): yii\base\ErrorHandler->handleError(2, 'Invalid argumen...', 'C:\xampp\htdocs...', 1617, Array)
+#1 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\helpers\BaseHtml.php(132): yii\helpers\BaseHtml::renderTagAttributes('Main Site')
+#2 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\arturoliveira\yii2-tileslidemenu\TileSlideMenu.php(190): yii\helpers\BaseHtml::tag('span', Array, 'Main Site')
+#3 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\arturoliveira\yii2-tileslidemenu\TileSlideMenu.php(127): arturoliveira\TileSlideMenu->renderItems()
+#4 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\Widget.php(96): arturoliveira\TileSlideMenu->run()
+#5 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\views\layouts\main.php(73): yii\base\Widget::widget(Array)
+#6 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\View.php(325): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\xampp\htdocs...', Array)
+#8 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile('C:\xampp\htdocs...', Array, Object(app\controllers\SiteController))
+#9 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent('<div class="sit...')
+#10 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\controllers\SiteController.php(52): yii\base\Controller->render('index')
+#11 [internal function]: app\controllers\SiteController->actionIndex()
+#12 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#15 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('', Array)
+#16 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\web\index.php(12): yii\base\Application->run()
+#18 {main}
+2015-02-09 10:13:49 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s:32:\"LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh\";'
+    'PHPSESSID' => 'h0v2bvqf5trj70lj6uo5ajmf24'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s%3A32%3A%22LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh%22%3B; PHPSESSID=h0v2bvqf5trj70lj6uo5ajmf24'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Acer\\Remote Files\\;C:\\Program Files\\TortoiseGit\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REMOTE_PORT' => '58550'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'SCRIPT_NAME' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'PHP_SELF' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1423473229.197
+    'REQUEST_TIME' => 1423473229
+]
+2015-02-09 10:15:07 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '?'' in C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\views\layouts\main.php:35
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-02-09 10:15:07 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s:32:\"LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh\";'
+    'PHPSESSID' => 'h0v2bvqf5trj70lj6uo5ajmf24'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s%3A32%3A%22LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh%22%3B; PHPSESSID=h0v2bvqf5trj70lj6uo5ajmf24'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Acer\\Remote Files\\;C:\\Program Files\\TortoiseGit\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REMOTE_PORT' => '58577'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'SCRIPT_NAME' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'PHP_SELF' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1423473307.192
+    'REQUEST_TIME' => 1423473307
+]
+2015-02-09 10:16:03 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '=>' (T_DOUBLE_ARROW)' in C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\views\layouts\main.php:28
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-02-09 10:16:03 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s:32:\"LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh\";'
+    'PHPSESSID' => 'h0v2bvqf5trj70lj6uo5ajmf24'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s%3A32%3A%22LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh%22%3B; PHPSESSID=h0v2bvqf5trj70lj6uo5ajmf24'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Acer\\Remote Files\\;C:\\Program Files\\TortoiseGit\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REMOTE_PORT' => '58596'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'SCRIPT_NAME' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'PHP_SELF' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1423473363.839
+    'REQUEST_TIME' => 1423473363
+]
+2015-02-09 10:16:26 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '=>' (T_DOUBLE_ARROW)' in C:\xampp\htdocs\apc-softdev-it112-09\APC-CPO_Microsite\views\layouts\main.php:28
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-02-09 10:16:26 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s:32:\"LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh\";'
+    'PHPSESSID' => 'h0v2bvqf5trj70lj6uo5ajmf24'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c31d7d250a95517dc7ab11cd4ff21d360a38a331d4bde8c805522c9cf13a73b6s%3A32%3A%22LEh5UFcl8TyOjL1nM5Q_LHH85YsHRnBh%22%3B; PHPSESSID=h0v2bvqf5trj70lj6uo5ajmf24'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Acer\\Remote Files\\;C:\\Program Files\\TortoiseGit\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REMOTE_PORT' => '58601'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'SCRIPT_NAME' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'PHP_SELF' => '/apc-softdev-it112-09/APC-CPO_Microsite/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1423473386.652
+    'REQUEST_TIME' => 1423473386
+]
