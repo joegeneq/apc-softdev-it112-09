@@ -19,22 +19,21 @@ $this->title = 'APC Career Placement Office';
                 <p><a class="btn btn-default" href="http://www.apc.edu.ph/">Asia Pacific College website</a></p>
             </div>
             <div class="col-lg-4">
-                <h2>Industry Partnerships</h2>
+                <h2>Industry-Academe Cooperative Education Program</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
+                <p>The Industry-Academe Cooperative Education Program, also known as the I-ACE Program, is an internship program of the Asia Pacific College, where students on their senior year are assigned to work full time for a company for a period of two consecutive terms.</p>
 
                 <p><a class="btn btn-default" href="index.php?r=partners">View IPs &raquo;</a></p>
             </div>
             <div class="col-lg-4">
-                <h2>Heading</h2>
+                <h2>Objective</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
+                <p>The objective of the program is to link industry and academe. This program is envisioned to be a good venue to expose the school to the relevant and changing needs of the industry. The industry sector, on the other hand, absorbs the intern and is encouraged to be involved in the education and development of future Information Technology and Business professionals from their respective courses and specializations.
+On their senior year, APC students enter the Industry-Academe Cooperative Education Program. They are assigned to work for a pre-identified company (assigned during the internship placement period), for a duration of two (2) consecutive terms of APC’s tri-mestral school calendar.
+
+During the Internship Program, the Interns are not expected to enroll in any academic courses in school for they will be working full-time (eight hours a day, Mondays to Fridays) at their respective companies. Interns are invited to attend once a month Saturday sessions with the Career & Placement Office to discuss updates, issues or problems encountered.
+
+As interns, they are expected to strictly follow office policies of the company they work for and abide by the principle of confidentiality with regard to any information / restricted materials on their assigned projects.</p>
 
                 <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
             </div>
