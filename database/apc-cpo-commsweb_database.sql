@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 12, 2015 at 09:14 AM
+-- Generation Time: Mar 14, 2015 at 04:19 PM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -78,7 +78,14 @@ CREATE TABLE IF NOT EXISTS `iprofessor` (
   `contact_num` varchar(15) NOT NULL,
   `company_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `iprofessor`
+--
+
+INSERT INTO `iprofessor` (`id`, `username`, `firstname`, `lastname`, `email`, `contact_num`, `company_id`, `user_id`) VALUES
+(9, 'acacle', 'Alyssa Mae', 'Acle', 'acacle@student.apc.edu.ph', '', 0, 8);
 
 -- --------------------------------------------------------
 
@@ -106,7 +113,7 @@ INSERT INTO `migration` (`version`, `apply_time`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `student` (
-  `id` int(11) NOT NULL,
+`id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
   `username` varchar(255) NOT NULL,
   `firstname` varchar(100) NOT NULL,
@@ -116,14 +123,18 @@ CREATE TABLE IF NOT EXISTS `student` (
   `course` varchar(100) NOT NULL,
   `email` varchar(255) NOT NULL,
   `address` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `student`
 --
 
 INSERT INTO `student` (`id`, `user_id`, `username`, `firstname`, `lastname`, `student_id`, `contact_num`, `course`, `email`, `address`) VALUES
-(0, 30, 'dummyaccount', 'dummy', 'account', '', '', '', 'dummyaccount2@account.test', '');
+(1, 7, 'kosibayan', 'Kenneth', 'Sibayan', '', '', '', 'kosibayan@student.apc.edu.ph', ''),
+(2, 9, 'joshrramos', 'Josh', 'Ramos', '', '', '', 'jrramos@student.apc.edu.ph', ''),
+(29, 57, 'dummyaccnt', 'dummy', 'account', '', '', '', 'dummy@account.test', ''),
+(30, 58, 'dummyaccnt2', 'dummy', 'account', '', '', '', 'dummy2@account.test', ''),
+(31, 59, 'dummyaccnt3', 'dummy', 'account', '', '', '', 'dummy3@account.test', '');
 
 -- --------------------------------------------------------
 
@@ -144,7 +155,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `status` smallint(6) NOT NULL DEFAULT '10',
   `created_at` int(11) NOT NULL,
   `updated_at` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=60 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `user`
@@ -153,13 +164,35 @@ CREATE TABLE IF NOT EXISTS `user` (
 INSERT INTO `user` (`id`, `username`, `firstname`, `lastname`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `roles`, `status`, `created_at`, `updated_at`) VALUES
 (1, 'apccpowebadmin', 'CPO', 'Admin', 'RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5', '$2y$13$Hkw5VzXsJVxP2nJA7RFp9.mG5cnZIh6uYF6vdRWkOCB5bfdXZUAIS', NULL, 'cpo@apc.edu.ph', 20, 10, 1424616849, 1424616849),
 (7, 'kosibayan', 'Kenneth', 'Sibayan', 'ub32EOfN5mwImO_KhgkIKJrG2yl1iKyQ', '$2y$13$HFfEB/CDV5UvYappUC7lEOYLrI0Hifsk.w9i6E8MNeZstQTGy.cYK', NULL, 'kosibayan@student.apc.edu.ph', 10, 10, 1424617778, 1424617778),
-(8, 'acacle', 'Alyssa Mae', 'Acle', 'gqL-AVQT30QEWz83aeo3PJeW03vh3G7P', '$2y$13$ENcnW8KBe/OAawudFbDi2Og5Bj2K7yDkt0ZuRXYqDW.Lrhj12UK7G', NULL, 'acacle@student.apc.edu.ph', 10, 10, 1424660697, 1424660697),
+(8, 'acacle', 'Alyssa Mae', 'Acle', 'gqL-AVQT30QEWz83aeo3PJeW03vh3G7P', '$2y$13$ENcnW8KBe/OAawudFbDi2Og5Bj2K7yDkt0ZuRXYqDW.Lrhj12UK7G', NULL, 'acacle@student.apc.edu.ph', 15, 10, 1424660697, 1424660697),
 (9, 'joshrramos', 'Josh', 'Ramos', '954kHhtkPlKz45KxIlSWodr1DWY-bIRu', '$2y$13$jtimqQghNQk/ge3oslXPz.KhBnn9LLdp1UJhCpdCBAl1AcfBur46y', NULL, 'jrramos@student.apc.edu.ph', 10, 10, 1425884101, 1425884101),
-(30, 'dummyaccnt', 'dummy', 'student', '6K-ubTLwaEnVrDU2cq1lKpBt1tQbNNwy', '$2y$13$JaX4jTZk1EAXxVsdSwshbOuvg2nZH0e2xXriGq5fcoTxtai9fRwTe', NULL, 'dummy@account.test', 10, 10, 1426145678, 1426145678);
+(57, 'dummyaccnt', 'dummy', 'account', 'aBtDp19W2Tf4lf5nj8ZKynZfbQ8880_A', '$2y$13$ZhUCZziA1izt4lokoHMz8.rqOW9DqCnJtaFk8OhJ4ae.KJOtdFW/m', NULL, 'dummy@account.test', 10, 10, 1426152243, 1426152243),
+(58, 'dummyaccnt2', 'dummy', 'account', 'W_wL9ijUdpzXqQU4oZWgA0fuLvEFGBAG', '$2y$13$H9PaJ5sX30vLjnlmyOtbQefG39xLRY3RrcmqPxCkyxBk/ujP45zD.', NULL, 'dummy2@account.test', 10, 10, 1426152318, 1426152318),
+(59, 'dummyaccnt3', 'dummy', 'account', '0My4dLMiA01Af8QTV-D6fBnE4sNbuwYA', '$2y$13$JPu8tlFot0G9MccqsvlWBeMI3dl0T17YThJMoHbBTNXsvvqiECUPO', NULL, 'dummy3@account.test', 10, 10, 1426152372, 1426152372);
 
 --
 -- Triggers `user`
 --
+DELIMITER //
+CREATE TRIGGER `insert_student_or_iprofessor` AFTER INSERT ON `user`
+ FOR EACH ROW begin
+
+       
+INSERT INTO iprofessor (user_id, username, firstname, lastname, email)
+    SELECT user.id, user.username, user.firstname, user.lastname, user.email
+		from user where user.id not in (select iprofessor.user_id from iprofessor) && roles = 15;
+
+INSERT INTO student (user_id, username, firstname, lastname, email)
+	SELECT user.id, user.username, user.firstname, user.lastname, user.email
+    	from user where user.id not in (select student.user_id from student) && roles = 10;
+        
+delete from student where user_id in (select user.id from user where user.roles != 10);
+
+delete from iprofessor where user_id in (select user.id from user where user.roles != 15);
+
+end
+//
+DELIMITER ;
 DELIMITER //
 CREATE TRIGGER `update_childtables` AFTER UPDATE ON `user`
  FOR EACH ROW begin
@@ -172,8 +205,8 @@ INSERT INTO iprofessor (user_id, username, firstname, lastname, email)
 		from user where user.id not in (select iprofessor.user_id from iprofessor) && roles = 15;
 
 INSERT INTO student (user_id, username, firstname, lastname, email)
-    SELECT user.id, user.username, user.firstname, user.lastname, user.email
-		from user where user.id not in (select student.user_id from student) && roles = 10;
+	SELECT user.id, user.username, user.firstname, user.lastname, user.email
+    	from user where user.id not in (select student.user_id from student) && roles = 10;
         
 delete from cpofficer where user_id in (select user.id from user where user.roles != 20);
 
@@ -243,12 +276,17 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `iprofessor`
 --
 ALTER TABLE `iprofessor`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
+--
+-- AUTO_INCREMENT for table `student`
+--
+ALTER TABLE `student`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=32;
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=33;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=60;
 --
 -- Constraints for dumped tables
 --
