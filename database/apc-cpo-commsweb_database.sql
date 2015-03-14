@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 12, 2015 at 04:07 AM
+-- Generation Time: Mar 12, 2015 at 09:14 AM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -78,7 +78,7 @@ CREATE TABLE IF NOT EXISTS `iprofessor` (
   `contact_num` varchar(15) NOT NULL,
   `company_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -107,16 +107,23 @@ INSERT INTO `migration` (`version`, `apply_time`) VALUES
 
 CREATE TABLE IF NOT EXISTS `student` (
   `id` int(11) NOT NULL,
-  `firstname` varchar(255) NOT NULL,
-  `lastname` varchar(255) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `firstname` varchar(100) NOT NULL,
+  `lastname` varchar(100) NOT NULL,
   `student_id` varchar(15) NOT NULL,
-  `contactnum` varchar(15) NOT NULL,
-  `course` varchar(50) NOT NULL,
+  `contact_num` varchar(15) NOT NULL,
+  `course` varchar(100) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `address` text NOT NULL,
-  `section` varchar(15) NOT NULL,
-  `user_id` int(11) NOT NULL
+  `address` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `student`
+--
+
+INSERT INTO `student` (`id`, `user_id`, `username`, `firstname`, `lastname`, `student_id`, `contact_num`, `course`, `email`, `address`) VALUES
+(0, 30, 'dummyaccount', 'dummy', 'account', '', '', '', 'dummyaccount2@account.test', '');
 
 -- --------------------------------------------------------
 
@@ -137,7 +144,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `status` smallint(6) NOT NULL DEFAULT '10',
   `created_at` int(11) NOT NULL,
   `updated_at` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `user`
@@ -148,30 +155,11 @@ INSERT INTO `user` (`id`, `username`, `firstname`, `lastname`, `auth_key`, `pass
 (7, 'kosibayan', 'Kenneth', 'Sibayan', 'ub32EOfN5mwImO_KhgkIKJrG2yl1iKyQ', '$2y$13$HFfEB/CDV5UvYappUC7lEOYLrI0Hifsk.w9i6E8MNeZstQTGy.cYK', NULL, 'kosibayan@student.apc.edu.ph', 10, 10, 1424617778, 1424617778),
 (8, 'acacle', 'Alyssa Mae', 'Acle', 'gqL-AVQT30QEWz83aeo3PJeW03vh3G7P', '$2y$13$ENcnW8KBe/OAawudFbDi2Og5Bj2K7yDkt0ZuRXYqDW.Lrhj12UK7G', NULL, 'acacle@student.apc.edu.ph', 10, 10, 1424660697, 1424660697),
 (9, 'joshrramos', 'Josh', 'Ramos', '954kHhtkPlKz45KxIlSWodr1DWY-bIRu', '$2y$13$jtimqQghNQk/ge3oslXPz.KhBnn9LLdp1UJhCpdCBAl1AcfBur46y', NULL, 'jrramos@student.apc.edu.ph', 10, 10, 1425884101, 1425884101),
-(14, 'dummyaccnt', 'dummy', 'account', 'lN6CkuT0NXEyTtwM4DCPUt0CfLHPNnl-', '$2y$13$deh8ezArZAVKSotTPJDVwu9qbAMekk8AM5/K4mZr2z8XQnHyxvfPS', NULL, 'dummy@account.test', 10, 10, 1426125808, 1426125808),
-(16, 'dummyaccnt2', 'dummy', 'account', 'OFNye1UDLbbTnp48KcWK1rUbv9axu7vA', '$2y$13$/41iyxJWcQerGrs71esN2.udwxN2lNUc5K6fiGruXo5E2MUVtwiUu', NULL, 'dummy2@account.test', 10, 10, 1426126014, 1426126014);
+(30, 'dummyaccnt', 'dummy', 'student', '6K-ubTLwaEnVrDU2cq1lKpBt1tQbNNwy', '$2y$13$JaX4jTZk1EAXxVsdSwshbOuvg2nZH0e2xXriGq5fcoTxtai9fRwTe', NULL, 'dummy@account.test', 10, 10, 1426145678, 1426145678);
 
 --
 -- Triggers `user`
 --
-DELIMITER //
-CREATE TRIGGER `insert_student_and_iprofessors` AFTER INSERT ON `user`
- FOR EACH ROW begin
-     
-INSERT INTO iprofessor (user_id, username, firstname, lastname, email)
-    SELECT user.id, user.username, user.firstname, user.lastname, user.email
-		from user where user.id not in (select iprofessor.user_id from iprofessor) && roles = 15;
-
-INSERT INTO student (user_id, username, firstname, lastname, email)
-    SELECT user.id, user.username, user.firstname, user.lastname, user.email
-		from user where user.id not in (select student.user_id from student) && roles = 10;
-
-delete from student where user_id in (select user.id from user where user.roles != 10);
-
-delete from iprofessor where user_id in (select user.id from user where user.roles != 15);
-end
-//
-DELIMITER ;
 DELIMITER //
 CREATE TRIGGER `update_childtables` AFTER UPDATE ON `user`
  FOR EACH ROW begin
@@ -255,12 +243,12 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `iprofessor`
 --
 ALTER TABLE `iprofessor`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=33;
 --
 -- Constraints for dumped tables
 --
@@ -276,13 +264,13 @@ ADD CONSTRAINT `cpofficer_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id
 --
 ALTER TABLE `iprofessor`
 ADD CONSTRAINT `iprofessor_ibfk_2` FOREIGN KEY (`company_id`) REFERENCES `industry_partners` (`id`),
-ADD CONSTRAINT `iprofessor_ibfk_3` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+ADD CONSTRAINT `iprofessor_ibfk_3` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `student`
 --
 ALTER TABLE `student`
-ADD CONSTRAINT `student_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+ADD CONSTRAINT `student_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

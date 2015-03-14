@@ -12,6 +12,8 @@ use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use frontend\models\Student;
+use frontend\models\Professors;
 
 /**
  * Site controller
@@ -122,9 +124,17 @@ class SiteController extends Controller
         if ($model->load(Yii::$app->request->post())) {
             if ($user = $model->signup()) {
                 if (Yii::$app->getUser()->login($user)) {
-                    if($user->roles = 11){
+                    if($user->roles = 10){
                         Yii::$app->getSession()->setFlash('error', 'Please complete your account details.');
-                        return $this->redirect('/user/index',302);
+                        $sel = (new \yii\db\Query())
+                            ->select(['id'])
+                            ->from('student')
+                            ->where(['user_id' => $user->id]);
+                        return $this->redirect('index.php?r=student%2Fupdate&id='.$sel, 302);
+                    }
+                    if ($user->roles = 15){
+                        Yii::$app->getSession()->setFlash('error', 'Please complete your account details.');
+                        return $this->redirect('index.php?r=professors%2Fupdate&id='.$user->user_id, 302);
                     }
                 }
             }

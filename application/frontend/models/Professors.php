@@ -3,31 +3,30 @@
 namespace frontend\models;
 
 use Yii;
-use common\models\User;
+
 /**
- * This is the model class for table "student".
+ * This is the model class for table "iprofessor".
  *
  * @property integer $id
- * @property integer $user_id
  * @property string $username
  * @property string $firstname
  * @property string $lastname
- * @property string $student_id
- * @property string $contact_num
- * @property string $course
  * @property string $email
- * @property string $address
+ * @property string $contact_num
+ * @property integer $company_id
+ * @property integer $user_id
  *
+ * @property IndustryPartners $company
  * @property User $user
  */
-class Student extends \yii\db\ActiveRecord
+class Professors extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc
      */
     public static function tableName()
     {
-        return 'student';
+        return 'iprofessor';
     }
 
     /**
@@ -36,12 +35,11 @@ class Student extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id', 'user_id', 'username', 'firstname', 'lastname', 'student_id', 'contact_num', 'course', 'email', 'address'], 'required'],
-            [['id', 'user_id'], 'integer'],
-            [['address'], 'string'],
+            [['username', 'firstname', 'lastname', 'email', 'contact_num', 'company_id', 'user_id'], 'required'],
+            [['company_id', 'user_id'], 'integer'],
             [['username', 'email'], 'string', 'max' => 255],
-            [['firstname', 'lastname', 'course'], 'string', 'max' => 100],
-            [['student_id', 'contact_num'], 'string', 'max' => 15]
+            [['firstname', 'lastname'], 'string', 'max' => 100],
+            [['contact_num'], 'string', 'max' => 15]
         ];
     }
 
@@ -52,16 +50,22 @@ class Student extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'user_id' => 'User ID',
             'username' => 'Username',
             'firstname' => 'Firstname',
             'lastname' => 'Lastname',
-            'student_id' => 'Student ID',
-            'contact_num' => 'Contact Num',
-            'course' => 'Course',
             'email' => 'Email',
-            'address' => 'Address',
+            'contact_num' => 'Contact Num',
+            'company_id' => 'Company ID',
+            'user_id' => 'User ID',
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getCompany()
+    {
+        return $this->hasOne(IndustryPartners::className(), ['id' => 'company_id']);
     }
 
     /**
