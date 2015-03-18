@@ -6,8 +6,8 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Professors */
 
-$this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Professors', 'url' => ['index']];
+$this->title = $model->lastname.', '.$model->firstname;
+$this->params['breadcrumbs'][] = ['label' => 'Professors'];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="professors-view">
@@ -16,26 +16,19 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <p>
         <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->id], [
-            'class' => 'btn btn-danger',
-            'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
-                'method' => 'post',
-            ],
-        ]) ?>
     </p>
 
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id',
-            'username',
-            'firstname',
-            'lastname',
+            //'id',
+            //['label' => 'User Name', 'value' => $model->username],
+            ['label' => 'First Name', 'value' => $model->firstname],
+            ['label' => 'Last Name', 'value' => $model->lastname],
             'email:email',
-            'contact_num',
+            ['label' => 'Contact No.', 'value' => $model->contact_num],
             'company_id',
-            'user_id',
+            //'user_id',
         ],
     ]) ?>
 

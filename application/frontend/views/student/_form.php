@@ -12,16 +12,6 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'id')->textInput() ?>
-
-    <?= $form->field($model, 'user_id')->textInput() ?>
-
-    <?= $form->field($model, 'username')->textInput(['maxlength' => 255]) ?>
-
-    <?= $form->field($model, 'firstname')->textInput(['maxlength' => 100]) ?>
-
-    <?= $form->field($model, 'lastname')->textInput(['maxlength' => 100]) ?>
-
     <?= $form->field($model, 'student_id')->textInput(['maxlength' => 15]) ?>
 
     <?= $form->field($model, 'contact_num')->textInput(['maxlength' => 15]) ?>

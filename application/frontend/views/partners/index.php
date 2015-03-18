@@ -16,10 +16,6 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?php
-        if (Yii::$app->user->isGuest == false) {
-            echo Html::a('Create Partners', ['create'], ['class' => 'btn btn-success']);
-        } ?>
     </p>
 
     <?php if (Yii::$app->user->isGuest == false) {
@@ -28,13 +24,13 @@ $this->params['breadcrumbs'][] = $this->title;
             'filterModel' => $searchModel,
             'columns' => [
 //                ['class' => 'yii\grid\SerialColumn'],
-
+				['class' => 'yii\grid\ActionColumn','template'=>'{view}'],		
 //                'id',
                 'company_name',
                 [ 'label' => 'Address', 'value' =>'company_address'],
                 [ 'label' => 'Contact No.', 'value' =>'company_contactnum'],
                 [ 'label' => 'Company Profile', 'value' =>'company_description'],
-                ['class' => 'yii\grid\ActionColumn'],
+						
             ],
         ]);
     }else{
@@ -43,31 +39,14 @@ $this->params['breadcrumbs'][] = $this->title;
             'filterModel' => $searchModel,
             'columns' => [
 //                ['class' => 'yii\grid\SerialColumn'],
-
+				['class' => 'yii\grid\ActionColumn','template'=>'{view}'],
 //                'id',
                 'company_name',
                 [ 'label' => 'Address', 'value' =>'company_address'],
                 [ 'label' => 'Contact No.', 'value' =>'company_contactnum'],
                 [ 'label' => 'Company Profile', 'value' =>'company_description'],
             ],
-            'rowOptions'   => function ($model, $key, $index, $grid) {
-                return ['data-id' => $model->id];
-            },
         ]);
     } 
-    ?>
-
-    <?php
-    if (Yii::$app->user->isGuest) {
-        $this->registerJs("
-
-        $('td').click(function (e) {
-        var id = $(this).closest('tr').data('id');
-        if(e.target == this)
-            location.href = '" . Yii::$app->homeUrl . "?r=partners/view&id=' + id;
-        });
-
-        ");
-    }
     ?>
 </div>

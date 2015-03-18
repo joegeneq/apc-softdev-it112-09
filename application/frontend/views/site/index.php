@@ -5,7 +5,7 @@ $this->title = 'APC Career Placement Office';
 <div class="site-index">
 
     <div class="jumbotron">
-        <img src="../web/images/banner1.png"/>
+        <img src="images/banner1.png"/>
     </div>
 
     <div class="body-content">
