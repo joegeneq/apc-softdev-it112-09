@@ -124,18 +124,19 @@ class SiteController extends Controller
         if ($model->load(Yii::$app->request->post())) {
             if ($user = $model->signup()) {
                 if (Yii::$app->getUser()->login($user)) {
-                    if($user->roles = 10){
+					$sel = Student::find()
+						->where(['user_id' => Yii::$app->user->id])
+						->one();
+					if($sel != null){
+						Yii::$app->getSession()->setFlash('error', 'Please complete your account details.');
+                        return $this->redirect('../student'.$sel->id, 302);
+					}else{
+					$sel1 = Professors::find()
+						->where(['user_id' => Yii::$app->user->id])
+						->one();
                         Yii::$app->getSession()->setFlash('error', 'Please complete your account details.');
-                        $sel = (new \yii\db\Query())
-                            ->select(['id'])
-                            ->from('student')
-                            ->where(['user_id' => $user->id]);
-                        return $this->redirect('index.php?r=student%2Fupdate&id='.$sel, 302);
-                    }
-                    if ($user->roles = 15){
-                        Yii::$app->getSession()->setFlash('error', 'Please complete your account details.');
-                        return $this->redirect('index.php?r=professors%2Fupdate&id='.$user->user_id, 302);
-                    }
+					    return $this->redirect('../professors/='.$sel1->id, 302);						
+					}
                 }
             }
         }

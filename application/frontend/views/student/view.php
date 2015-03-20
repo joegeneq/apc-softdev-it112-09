@@ -6,9 +6,9 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Student */
 
-$this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Students', 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = $model->lastname . ', ' . $model->firstname;
+$this->params['breadcrumbs'][] = ['label' => 'Students'];
+$this->params['breadcrumbs'][] = $model->username;
 ?>
 <div class="student-view">
 
@@ -16,26 +16,19 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <p>
         <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->id], [
-            'class' => 'btn btn-danger',
-            'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
-                'method' => 'post',
-            ],
-        ]) ?>
     </p>
 
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id',
-            'user_id',
+ //           'id',
+ //           'user_id',
+			'student_id',
             'username',
-            'firstname',
-            'lastname',
-            'student_id',
-            'contact_num',
-            'course',
+            ['label' => 'First Name', 'value' => $model->firstname],
+            ['label' => 'Last Name', 'value' => $model->lastname],
+			'course',
+            ['label' => 'Contact Number', 'value' => $model->contact_num],
             'email:email',
             'address:ntext',
         ],
