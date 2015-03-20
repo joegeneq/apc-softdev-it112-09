@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 15, 2015 at 01:25 PM
+-- Generation Time: Mar 20, 2015 at 01:24 PM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `apc-cpo-commsweb_database`
+-- Database: `apc-cpo-db`
 --
 
 -- --------------------------------------------------------
@@ -53,16 +53,17 @@ CREATE TABLE IF NOT EXISTS `industry_partners` (
   `company_name` varchar(50) NOT NULL,
   `company_address` varchar(255) NOT NULL,
   `company_contactnum` varchar(25) NOT NULL,
-  `company_description` text NOT NULL
+  `company_description` text NOT NULL,
+  `company_logo` varchar(255) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `industry_partners`
 --
 
-INSERT INTO `industry_partners` (`id`, `company_name`, `company_address`, `company_contactnum`, `company_description`) VALUES
-(0, 'Asia Pacific College', '3 Humabon Place, Magallanes, Makati City', '852-9235', 'Real Projects, Real Learning.'),
-(1, 'Garena', 'Taguig, Philippines', '092312334123', 'Connecting the dots.');
+INSERT INTO `industry_partners` (`id`, `company_name`, `company_address`, `company_contactnum`, `company_description`, `company_logo`) VALUES
+(0, 'Asia Pacific College', '3 Humabon Place, Magallanes, Makati City', '852-9235', 'Real Projects, Real Learning.', ''),
+(1, 'Garena', 'Taguig, Philippines', '092312334123', 'Connecting the dots.', '');
 
 -- --------------------------------------------------------
 
@@ -125,7 +126,7 @@ CREATE TABLE IF NOT EXISTS `student` (
   `course` varchar(100) NOT NULL,
   `email` varchar(255) NOT NULL,
   `address` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `student`
@@ -278,7 +279,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;
 -- AUTO_INCREMENT for table `student`
 --
 ALTER TABLE `student`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=38;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `user`
 --
