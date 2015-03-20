@@ -25,7 +25,7 @@ AppAsset::register($this);
     <div class="wrap">
         <?php
             NavBar::begin([
-                'brandLabel' => 'My Company',
+                'brandLabel' => 'CPO Management',
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
                     'class' => 'navbar-inverse navbar-fixed-top',
@@ -37,8 +37,14 @@ AppAsset::register($this);
             if (Yii::$app->user->isGuest) {
                 $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
             } else {
-                $menuItems[] = ['label' => 'Partners', 'url' => ['/partman/partners']];
-                $menuItems[] = ['label' => 'Site Users', 'url' => ['/siteusrs/userman']];
+                $menuItems[] = ['label' => 'Partners', 'url' => ['/industrypartners/partners']];
+                $menuItems[] = ['label' => 'Site Users', 'url' => ['/siteusers/usermanagement']];
+				$menuItems[] = ['label' => 'Internship',
+								'items' => [
+									['label' => 'Students', 'url' => ['/internship/student']],
+									['label' => 'Industry Professors', 'url' => ['/internship/industryprofessors']]
+								]
+								];
                 $menuItems[] = [
                     'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
                     'url' => ['/site/logout'],

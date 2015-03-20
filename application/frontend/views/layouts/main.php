@@ -29,16 +29,23 @@ AppAsset::register($this);
     <div class="wrap">
         <?php			
 				if (Yii::$app->user->isGuest == false){
-				$sel1 = Professors::find()->where(['username' => Yii::$app->user->identity->username])->one();				
-				$sel = Student::find()->where(['username' => Yii::$app->user->identity->username])->one();
-				if($sel != null){
-					$strings = '/student/'.$sel->id;
-				}
-				if($sel == null){
-					$strings = '/professors/'.$sel1->id;
-				}
+					$sel1 = Professors::find()->where(['username' => Yii::$app->user->identity->username])->one();				
+					$sel = Student::find()->where(['username' => Yii::$app->user->identity->username])->one();
+						if($sel != null){
+							$strings = '/student/'.$sel->id;
+						}
+						if($sel == null){
+							$cpo = User::find()->where(['username' => Yii::$app->user->identity->username])->one();
+							if($cpo->roles == 20){
+								$strings = ' ';
+							}else{
+								$strings = '/professors/'.$sel1->id;
+							}
+						}
+					$siteusr = User::find()->where(['username' => Yii::$app->user->identity->username])->one();
 				}
 
+						
             NavBar::begin([
                 'brandLabel' => 'APC Career Placement Office',
                 'brandUrl' => Yii::$app->homeUrl,
@@ -60,12 +67,22 @@ AppAsset::register($this);
 								]
 								];
             } else {
-                $menuItems[] = ['label' => '',
-								'items' => [
-											['label' => 'My account', 'url' => [$strings]],
-											['label' => 'Logout (' . Yii::$app->user->identity->username . ')', 'url' => ['/site/logout'],'linkOptions' => ['data-method' => 'post']]
-								]
-				];
+				if($siteusr->roles == 20){
+					$menuItems[] = ['label' => '',
+						'items' => [
+							['label' => 'Manage website', 'url' => ['../../backend/web']],
+							['label' => 'Logout (' . Yii::$app->user->identity->username . ')', 'url' => ['/site/logout'],'linkOptions' => ['data-method' => 'post']]
+						]
+					];
+
+				}else{
+					$menuItems[] = ['label' => '',
+						'items' => [
+							['label' => 'My account', 'url' => [$strings]],
+							['label' => 'Logout (' . Yii::$app->user->identity->username . ')', 'url' => ['/site/logout'],'linkOptions' => ['data-method' => 'post']]
+						]
+					];
+				}
             }
             echo Nav::widget([
                 'options' => ['class' => 'navbar-nav navbar-right'],
