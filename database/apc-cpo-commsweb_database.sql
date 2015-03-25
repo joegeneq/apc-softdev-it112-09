@@ -2,8 +2,8 @@
 -- version 4.2.11
 -- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Generation Time: Mar 20, 2015 at 01:24 PM
+-- Host: localhost
+-- Generation Time: Mar 25, 2015 at 08:42 AM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -45,6 +45,19 @@ INSERT INTO `cpofficer` (`id`, `user_id`, `username`, `firstname`, `lastname`, `
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `file_uploads`
+--
+
+CREATE TABLE IF NOT EXISTS `file_uploads` (
+`id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `file_type` varchar(255) NOT NULL,
+  `file_path` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `industry_partners`
 --
 
@@ -64,6 +77,20 @@ CREATE TABLE IF NOT EXISTS `industry_partners` (
 INSERT INTO `industry_partners` (`id`, `company_name`, `company_address`, `company_contactnum`, `company_description`, `company_logo`) VALUES
 (0, 'Asia Pacific College', '3 Humabon Place, Magallanes, Makati City', '852-9235', 'Real Projects, Real Learning.', ''),
 (1, 'Garena', 'Taguig, Philippines', '092312334123', 'Connecting the dots.', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `internship`
+--
+
+CREATE TABLE IF NOT EXISTS `internship` (
+`id` int(11) NOT NULL,
+  `student_id` int(11) NOT NULL,
+  `start_date` date NOT NULL,
+  `end_date` date NOT NULL,
+  `iprofessor_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -112,6 +139,39 @@ INSERT INTO `migration` (`version`, `apply_time`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `Partner_HR`
+--
+
+CREATE TABLE IF NOT EXISTS `Partner_HR` (
+`id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `firstname` varchar(100) NOT NULL,
+  `lastname` varchar(100) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `contact_num` varchar(15) NOT NULL,
+  `company_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `posts`
+--
+
+CREATE TABLE IF NOT EXISTS `posts` (
+`id` int(11) NOT NULL,
+  `posts_title` varchar(255) NOT NULL,
+  `posts_body` text NOT NULL,
+  `author` int(11) NOT NULL,
+  `author_role` int(11) NOT NULL,
+  `created_at` int(11) NOT NULL,
+  `post_type` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `student`
 --
 
@@ -123,7 +183,7 @@ CREATE TABLE IF NOT EXISTS `student` (
   `lastname` varchar(100) NOT NULL,
   `student_id` varchar(15) NOT NULL,
   `contact_num` varchar(15) NOT NULL,
-  `course` varchar(100) NOT NULL,
+  `course` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `address` text NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
@@ -133,8 +193,30 @@ CREATE TABLE IF NOT EXISTS `student` (
 --
 
 INSERT INTO `student` (`id`, `user_id`, `username`, `firstname`, `lastname`, `student_id`, `contact_num`, `course`, `email`, `address`) VALUES
-(1, 7, 'kosibayan', 'Kenneth', 'Sibayan', '2011-100121', '09054005890', 'BSIT', 'kosibayan@student.apc.edu.ph', '90 Z1 Don Sergio Ext. Brgy Holy Spirit, Diliman, Quezon City 1127'),
-(2, 9, 'joshrramos', 'Josh', 'Ramos', '', '', '', 'jrramos@student.apc.edu.ph', '');
+(1, 7, 'kosibayan', 'Kenneth', 'Sibayan', '2011-100121', '09054005890', '0', 'kosibayan@student.apc.edu.ph', '90 Z1 Don Sergio Ext. Brgy Holy Spirit, Diliman, Quezon City 1127'),
+(2, 9, 'joshrramos', 'Josh', 'Ramos', '', '', '0', 'jrramos@student.apc.edu.ph', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `student_journal`
+--
+
+CREATE TABLE IF NOT EXISTS `student_journal` (
+`id` int(11) NOT NULL,
+  `intership_id` int(11) NOT NULL,
+  `weekly_learning` text NOT NULL,
+  `weekly_exprating` int(11) NOT NULL,
+  `tasks` text NOT NULL,
+  `issues` text NOT NULL,
+  `steps_did` text NOT NULL,
+  `task_relevance` text NOT NULL,
+  `collegue_difficulty` text NOT NULL,
+  `differ_opinions` text NOT NULL,
+  `moral_ethical_questions` text NOT NULL,
+  `company_contentment` int(11) NOT NULL,
+  `remarks` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -227,10 +309,22 @@ ALTER TABLE `cpofficer`
  ADD PRIMARY KEY (`id`), ADD KEY `user_id` (`user_id`);
 
 --
+-- Indexes for table `file_uploads`
+--
+ALTER TABLE `file_uploads`
+ ADD PRIMARY KEY (`id`), ADD KEY `user_id` (`user_id`);
+
+--
 -- Indexes for table `industry_partners`
 --
 ALTER TABLE `industry_partners`
  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `internship`
+--
+ALTER TABLE `internship`
+ ADD PRIMARY KEY (`id`), ADD KEY `student_id` (`student_id`,`iprofessor_id`), ADD KEY `iprofessor_id` (`iprofessor_id`);
 
 --
 -- Indexes for table `iprofessor`
@@ -245,10 +339,28 @@ ALTER TABLE `migration`
  ADD PRIMARY KEY (`version`);
 
 --
+-- Indexes for table `Partner_HR`
+--
+ALTER TABLE `Partner_HR`
+ ADD PRIMARY KEY (`id`), ADD KEY `user_id` (`user_id`,`company_id`), ADD KEY `company_id` (`company_id`);
+
+--
+-- Indexes for table `posts`
+--
+ALTER TABLE `posts`
+ ADD PRIMARY KEY (`id`), ADD KEY `author` (`author`,`author_role`);
+
+--
 -- Indexes for table `student`
 --
 ALTER TABLE `student`
- ADD PRIMARY KEY (`id`), ADD KEY `user_id` (`user_id`);
+ ADD PRIMARY KEY (`id`), ADD KEY `user_id` (`user_id`), ADD KEY `course` (`course`), ADD KEY `course_2` (`course`);
+
+--
+-- Indexes for table `student_journal`
+--
+ALTER TABLE `student_journal`
+ ADD PRIMARY KEY (`id`), ADD KEY `intership_id` (`intership_id`);
 
 --
 -- Indexes for table `user`
@@ -266,20 +378,45 @@ ALTER TABLE `user`
 ALTER TABLE `cpofficer`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
+-- AUTO_INCREMENT for table `file_uploads`
+--
+ALTER TABLE `file_uploads`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT for table `industry_partners`
 --
 ALTER TABLE `industry_partners`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `internship`
+--
+ALTER TABLE `internship`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `iprofessor`
 --
 ALTER TABLE `iprofessor`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;
 --
+-- AUTO_INCREMENT for table `Partner_HR`
+--
+ALTER TABLE `Partner_HR`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `posts`
+--
+ALTER TABLE `posts`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT for table `student`
 --
 ALTER TABLE `student`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT for table `student_journal`
+--
+ALTER TABLE `student_journal`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `user`
 --
@@ -296,6 +433,19 @@ ALTER TABLE `cpofficer`
 ADD CONSTRAINT `cpofficer_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
+-- Constraints for table `file_uploads`
+--
+ALTER TABLE `file_uploads`
+ADD CONSTRAINT `file_uploads_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `internship`
+--
+ALTER TABLE `internship`
+ADD CONSTRAINT `internship_ibfk_1` FOREIGN KEY (`student_id`) REFERENCES `student` (`id`) ON DELETE CASCADE,
+ADD CONSTRAINT `internship_ibfk_2` FOREIGN KEY (`iprofessor_id`) REFERENCES `iprofessor` (`id`) ON DELETE CASCADE;
+
+--
 -- Constraints for table `iprofessor`
 --
 ALTER TABLE `iprofessor`
@@ -303,10 +453,29 @@ ADD CONSTRAINT `iprofessor_ibfk_2` FOREIGN KEY (`company_id`) REFERENCES `indust
 ADD CONSTRAINT `iprofessor_ibfk_3` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE;
 
 --
+-- Constraints for table `Partner_HR`
+--
+ALTER TABLE `Partner_HR`
+ADD CONSTRAINT `Partner_HR_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE,
+ADD CONSTRAINT `Partner_HR_ibfk_2` FOREIGN KEY (`company_id`) REFERENCES `industry_partners` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `posts`
+--
+ALTER TABLE `posts`
+ADD CONSTRAINT `posts_ibfk_1` FOREIGN KEY (`author`) REFERENCES `user` (`id`) ON DELETE NO ACTION;
+
+--
 -- Constraints for table `student`
 --
 ALTER TABLE `student`
 ADD CONSTRAINT `student_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `student_journal`
+--
+ALTER TABLE `student_journal`
+ADD CONSTRAINT `student_journal_ibfk_1` FOREIGN KEY (`intership_id`) REFERENCES `internship` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
