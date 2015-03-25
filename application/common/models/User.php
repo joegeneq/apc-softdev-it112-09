@@ -55,8 +55,8 @@ class User extends ActiveRecord implements IdentityInterface
     public function rules()
     {
         return [
-            ['status', 'default', 'value' => self::STATUS_ACTIVE],
-            ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_DELETED]],
+            ['roles', 'default', 'value' => 10],
+            ['roles', 'in', 'range' => [self::ROLE_USER, self::ROLE_ADMIN]],
         ];
     }
 
@@ -190,4 +190,13 @@ class User extends ActiveRecord implements IdentityInterface
     {
         $this->password_reset_token = null;
     }
+	
+	public static function isUserAdmin($username)
+	{
+		if (static::findOne(['username' => $username, 'roles' => self::ROLE_ADMIN]})){
+			return true;
+		}else {
+			return false;
+		}
+	}
 }
