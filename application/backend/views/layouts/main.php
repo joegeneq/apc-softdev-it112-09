@@ -37,14 +37,19 @@ AppAsset::register($this);
             if (Yii::$app->user->isGuest) {
                 $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
             } else {
-                $menuItems[] = ['label' => 'Partners', 'url' => ['/industrypartners/partners']];
-                $menuItems[] = ['label' => 'Site Users', 'url' => ['/siteusers/usermanagement']];
+                $menuItems[] = ['label' => 'Industry Partners',
+                                'items'=> [
+                                    ['label' => 'Companies', 'url' => ['/industrypartners/partners']],
+                                    ['label' => 'Contacts', 'url' => ['/industrypartners/hr']]
+                                ]
+                                ];
 				$menuItems[] = ['label' => 'Internship',
 								'items' => [
 									['label' => 'Students', 'url' => ['/internship/student']],
 									['label' => 'Industry Professors', 'url' => ['/internship/industryprofessors']]
 								]
 								];
+                $menuItems[] = ['label' => 'Site Users', 'url' => ['/siteusers/usermanagement']];
                 $menuItems[] = [
                     'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
                     'url' => ['/site/logout'],
