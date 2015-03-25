@@ -67,7 +67,7 @@ CREATE TABLE IF NOT EXISTS `industry_partners` (
   `company_address` varchar(255) NOT NULL,
   `company_contactnum` varchar(25) NOT NULL,
   `company_description` text NOT NULL,
-  `company_logo` varchar(255) NOT NULL
+  `company_logo` varchar(255) NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 --
