@@ -30,6 +30,7 @@ class User extends ActiveRecord implements IdentityInterface
 	const ROLE_USER = 10;
 	const ROLE_IP = 15;
 	const ROLE_ADMIN = 20;
+    const ROLE_HR = 25;
 
     /**
      * @inheritdoc
@@ -56,7 +57,7 @@ class User extends ActiveRecord implements IdentityInterface
     {
         return [
             ['roles', 'default', 'value' => 10],
-            ['roles', 'in', 'range' => [self::ROLE_USER, self::ROLE_ADMIN]],
+  //          ['roles', 'in', 'range' => [self::ROLE_USER, self::ROLE_ADMIN, self::ROLE_HR]],
         ];
     }
 

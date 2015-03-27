@@ -1,16 +1,16 @@
 <?php
 
-namespace backend\modules\internship\models;
+namespace frontend\models;
 
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use backend\modules\internship\models\Industryprofessors;
+use frontend\models\Partnerhr;
 
 /**
- * IndustryprofessorsSearch represents the model behind the search form about `backend\modules\internship\models\Industryprofessors`.
+ * PartnerhrSearch represents the model behind the search form about `frontend\models\Partnerhr`.
  */
-class IndustryprofessorsSearch extends Industryprofessors
+class PartnerhrSearch extends Partnerhr
 {
     /**
      * @inheritdoc
@@ -18,8 +18,8 @@ class IndustryprofessorsSearch extends Industryprofessors
     public function rules()
     {
         return [
-            [['id', 'user_id'], 'integer'],
-            [['username', 'firstname', 'lastname', 'company_id', 'email', 'contact_num'], 'safe'],
+            [['id', 'user_id', 'company_id'], 'integer'],
+            [['username', 'firstname', 'lastname', 'email', 'contact_num'], 'safe'],
         ];
     }
 
@@ -41,12 +41,12 @@ class IndustryprofessorsSearch extends Industryprofessors
      */
     public function search($params)
     {
-        $query = Industryprofessors::find();
+        $query = Partnerhr::find();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);
-		
+
         $this->load($params);
 
         if (!$this->validate()) {
@@ -54,20 +54,18 @@ class IndustryprofessorsSearch extends Industryprofessors
             // $query->where('0=1');
             return $dataProvider;
         }
-		
-		$query->joinWith('company');
-		
+
         $query->andFilterWhere([
             'id' => $this->id,
             'user_id' => $this->user_id,
+            'company_id' => $this->company_id,
         ]);
 
         $query->andFilterWhere(['like', 'username', $this->username])
             ->andFilterWhere(['like', 'firstname', $this->firstname])
             ->andFilterWhere(['like', 'lastname', $this->lastname])
             ->andFilterWhere(['like', 'email', $this->email])
-            ->andFilterWhere(['like', 'contact_num', $this->contact_num])
-            ->andFilterWhere(['like', 'industry_partners.company_name', $this->company_id]);			
+            ->andFilterWhere(['like', 'contact_num', $this->contact_num]);
 
         return $dataProvider;
     }

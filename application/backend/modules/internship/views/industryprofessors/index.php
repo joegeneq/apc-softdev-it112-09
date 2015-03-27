@@ -2,12 +2,13 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use backend\modules\Industrypartners\models\IndustryPartners;
 
 /* @var $this yii\web\View */
 /* @var $searchModel backend\modules\internship\models\IndustryprofessorsSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Industryprofessors';
+$this->title = 'Industry Professors';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="industryprofessors-index">
@@ -15,26 +16,25 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <p>
-        <?= Html::a('Create Industryprofessors', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
-
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
-
-            'id',
-            'username',
-            'firstname',
+            //['class' => 'yii\grid\SerialColumn'],
+            ['class' => 'yii\grid\ActionColumn'],
+            //'id',
+			[
+				'attribute'=>'company_id',
+				'value'=>'company.company_name',
+				'label'=>'Company'
+			],
+            //'username',
+            //'firstname',
             'lastname',
             'email:email',
-            // 'contact_num',
-            // 'company_id',
-            // 'user_id',
+            ['attribute' => 'contact_num', 'label' => 'Contact Number'],
 
-            ['class' => 'yii\grid\ActionColumn'],
+            //'user_id',
         ],
     ]); ?>
 

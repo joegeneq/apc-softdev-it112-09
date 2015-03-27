@@ -5,12 +5,12 @@ namespace backend\modules\internship\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use backend\modules\internship\models\Industryprofessors;
+use backend\modules\internship\models\Internship;
 
 /**
- * IndustryprofessorsSearch represents the model behind the search form about `backend\modules\internship\models\Industryprofessors`.
+ * InternshipSearch represents the model behind the search form about `backend\modules\internship\models\Internship`.
  */
-class IndustryprofessorsSearch extends Industryprofessors
+class InternshipSearch extends Internship
 {
     /**
      * @inheritdoc
@@ -18,8 +18,8 @@ class IndustryprofessorsSearch extends Industryprofessors
     public function rules()
     {
         return [
-            [['id', 'user_id'], 'integer'],
-            [['username', 'firstname', 'lastname', 'company_id', 'email', 'contact_num'], 'safe'],
+            [['id', 'student_id', 'iprofessor_id', 'company_id'], 'integer'],
+            [['start_date', 'end_date'], 'safe'],
         ];
     }
 
@@ -41,12 +41,12 @@ class IndustryprofessorsSearch extends Industryprofessors
      */
     public function search($params)
     {
-        $query = Industryprofessors::find();
+        $query = Internship::find();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);
-		
+
         $this->load($params);
 
         if (!$this->validate()) {
@@ -54,20 +54,15 @@ class IndustryprofessorsSearch extends Industryprofessors
             // $query->where('0=1');
             return $dataProvider;
         }
-		
-		$query->joinWith('company');
-		
+
         $query->andFilterWhere([
             'id' => $this->id,
-            'user_id' => $this->user_id,
+            'student_id' => $this->student_id,
+            'start_date' => $this->start_date,
+            'end_date' => $this->end_date,
+            'iprofessor_id' => $this->iprofessor_id,
+            'company_id' => $this->company_id,
         ]);
-
-        $query->andFilterWhere(['like', 'username', $this->username])
-            ->andFilterWhere(['like', 'firstname', $this->firstname])
-            ->andFilterWhere(['like', 'lastname', $this->lastname])
-            ->andFilterWhere(['like', 'email', $this->email])
-            ->andFilterWhere(['like', 'contact_num', $this->contact_num])
-            ->andFilterWhere(['like', 'industry_partners.company_name', $this->company_id]);			
 
         return $dataProvider;
     }

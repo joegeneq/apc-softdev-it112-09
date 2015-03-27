@@ -57,9 +57,11 @@ class SignupForm extends Model
             $user->email = $this->email;
 			if($this->roles == 0){
 				$user->roles = User::ROLE_USER;
-			}else{
+			}else if($this->roles == 1){
 				$user->roles = User::ROLE_IP;
-			}
+			}else{
+                $user->roles = User::ROLE_HR;
+            }
             $user->setPassword($this->password);
             $user->generateAuthKey();
             if ($user->save()) {

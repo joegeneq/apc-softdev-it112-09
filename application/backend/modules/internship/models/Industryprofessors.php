@@ -3,6 +3,7 @@
 namespace backend\modules\internship\models;
 
 use Yii;
+use backend\modules\Industrypartners\models\IndustryPartners;
 
 /**
  * This is the model class for table "iprofessor".

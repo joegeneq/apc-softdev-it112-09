@@ -5,28 +5,28 @@ namespace frontend\models;
 use Yii;
 
 /**
- * This is the model class for table "iprofessor".
+ * This is the model class for table "partner_hr".
  *
  * @property integer $id
+ * @property integer $user_id
  * @property string $username
  * @property string $firstname
  * @property string $lastname
  * @property string $email
  * @property string $contact_num
  * @property integer $company_id
- * @property integer $user_id
  *
- * @property IndustryPartners $company
  * @property User $user
+ * @property IndustryPartners $company
  */
-class Professors extends \yii\db\ActiveRecord
+class Partnerhr extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc
      */
     public static function tableName()
     {
-        return 'iprofessor';
+        return 'partner_hr';
     }
 
     /**
@@ -35,8 +35,8 @@ class Professors extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['username', 'firstname', 'lastname', 'email', 'contact_num', 'company_id', 'user_id'], 'required'],
-            [['company_id', 'user_id'], 'integer'],
+            [['user_id', 'username', 'firstname', 'lastname', 'email', 'contact_num', 'company_id'], 'required'],
+            [['user_id', 'company_id'], 'integer'],
             [['username', 'email'], 'string', 'max' => 255],
             [['firstname', 'lastname'], 'string', 'max' => 100],
             [['contact_num'], 'string', 'max' => 15]
@@ -50,22 +50,14 @@ class Professors extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
+            'user_id' => 'User ID',
             'username' => 'Username',
             'firstname' => 'Firstname',
             'lastname' => 'Lastname',
             'email' => 'Email',
             'contact_num' => 'Contact Num',
             'company_id' => 'Company ID',
-            'user_id' => 'User ID',
         ];
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getCompany()
-    {
-        return $this->hasOne(Partners::className(), ['id' => 'company_id']);
     }
 
     /**
@@ -74,5 +66,13 @@ class Professors extends \yii\db\ActiveRecord
     public function getUser()
     {
         return $this->hasOne(User::className(), ['id' => 'user_id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getCompany()
+    {
+        return $this->hasOne(Partners::className(), ['id' => 'company_id']);
     }
 }

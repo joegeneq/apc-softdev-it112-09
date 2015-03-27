@@ -43,10 +43,11 @@ AppAsset::register($this);
                                     ['label' => 'Contacts', 'url' => ['/industrypartners/hr']]
                                 ]
                                 ];
-				$menuItems[] = ['label' => 'Internship',
+				$menuItems[] = ['label' => 'Internship Program',
 								'items' => [
-									['label' => 'Students', 'url' => ['/internship/student']],
-									['label' => 'Industry Professors', 'url' => ['/internship/industryprofessors']]
+                                    ['label' => 'Internships', 'url' => ['/internship/internship']],
+									['label' => 'Student List', 'url' => ['/internship/student']],
+									['label' => 'IP List', 'url' => ['/internship/industryprofessors']]
 								]
 								];
                 $menuItems[] = ['label' => 'Site Users', 'url' => ['/siteusers/usermanagement']];

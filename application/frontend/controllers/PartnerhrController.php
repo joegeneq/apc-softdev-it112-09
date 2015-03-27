@@ -3,16 +3,16 @@
 namespace frontend\controllers;
 
 use Yii;
-use frontend\models\Professors;
-use frontend\models\ProfessorsSearch;
+use frontend\models\Partnerhr;
+use frontend\models\PartnerhrSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * ProfessorsController implements the CRUD actions for Professors model.
+ * PartnerhrController implements the CRUD actions for Partnerhr model.
  */
-class ProfessorsController extends Controller
+class PartnerhrController extends Controller
 {
     public function behaviors()
     {
@@ -27,7 +27,7 @@ class ProfessorsController extends Controller
     }
 
     /**
-     * Displays a single Professors model.
+     * Displays a single Partnerhr model.
      * @param integer $id
      * @return mixed
      */
@@ -39,7 +39,7 @@ class ProfessorsController extends Controller
     }
 
     /**
-     * Updates an existing Professors model.
+     * Updates an existing Partnerhr model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -58,15 +58,15 @@ class ProfessorsController extends Controller
     }
 
     /**
-     * Finds the Professors model based on its primary key value.
+     * Finds the Partnerhr model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Professors the loaded model
+     * @return Partnerhr the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Professors::findOne($id)) !== null) {
+        if (($model = Partnerhr::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

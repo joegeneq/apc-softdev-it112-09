@@ -14,6 +14,7 @@ use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use frontend\models\Student;
 use frontend\models\Professors;
+use frontend\models\Partnerhr;
 
 /**
  * Site controller
@@ -127,15 +128,23 @@ class SiteController extends Controller
 					$sel = Student::find()
 						->where(['user_id' => Yii::$app->user->id])
 						->one();
+
+                    $sel2 = Partnerhr::find()
+                        ->where(['user_id' => Yii::$app->user->id])
+                        ->one();      
+
 					if($sel != null){
-						Yii::$app->getSession()->setFlash('error', 'Please complete your account details.');
-                        return $this->redirect('../student'.$sel->id, 302);
-					}else{
+						Yii::$app->getSession()->setFlash('info', 'Please complete your account details.');
+                        return $this->redirect('../student/'.$sel->id, 302);
+					}else if($sel2 != null){
+                        Yii::$app->getSession()->setFlash('info', 'Please complete your account details.');
+                        return $this->redirect('../partnerhr/'.$sel2->id, 302);
+                    }else{
 					$sel1 = Professors::find()
 						->where(['user_id' => Yii::$app->user->id])
 						->one();
-                        Yii::$app->getSession()->setFlash('error', 'Please complete your account details.');
-					    return $this->redirect('../professors/='.$sel1->id, 302);						
+                        Yii::$app->getSession()->setFlash('info', 'Please complete your account details.');
+					    return $this->redirect('../professors/'.$sel1->id, 302);						
 					}
                 }
             }

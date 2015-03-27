@@ -2,8 +2,8 @@
 -- version 4.2.11
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: Mar 25, 2015 at 08:42 AM
+-- Host: 127.0.0.1
+-- Generation Time: Mar 27, 2015 at 07:30 AM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -67,7 +67,7 @@ CREATE TABLE IF NOT EXISTS `industry_partners` (
   `company_address` varchar(255) NOT NULL,
   `company_contactnum` varchar(25) NOT NULL,
   `company_description` text NOT NULL,
-  `company_logo` varchar(255) NULL
+  `company_logo` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 --
@@ -89,7 +89,8 @@ CREATE TABLE IF NOT EXISTS `internship` (
   `student_id` int(11) NOT NULL,
   `start_date` date NOT NULL,
   `end_date` date NOT NULL,
-  `iprofessor_id` int(11) NOT NULL
+  `iprofessor_id` int(11) NOT NULL,
+  `company_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -107,7 +108,7 @@ CREATE TABLE IF NOT EXISTS `iprofessor` (
   `contact_num` varchar(15) NOT NULL,
   `company_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `iprofessor`
@@ -115,7 +116,8 @@ CREATE TABLE IF NOT EXISTS `iprofessor` (
 
 INSERT INTO `iprofessor` (`id`, `username`, `firstname`, `lastname`, `email`, `contact_num`, `company_id`, `user_id`) VALUES
 (9, 'acacle', 'Alyssa Mae', 'Acle', 'acacle@student.apc.edu.ph', '', 0, 8),
-(13, 'liforrest', 'Forrest', 'Li', 'forrestli@garena.com', '0932324242423', 1, 69);
+(13, 'liforrest', 'Forrest', 'Li', 'forrestli@garena.com', '0932324242423', 1, 69),
+(15, 'iprofessor1', 'One', 'Professor', 'iprofessor1@sample.com', '213123123123', 0, 73);
 
 -- --------------------------------------------------------
 
@@ -139,10 +141,10 @@ INSERT INTO `migration` (`version`, `apply_time`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Partner_HR`
+-- Table structure for table `partner_hr`
 --
 
-CREATE TABLE IF NOT EXISTS `Partner_HR` (
+CREATE TABLE IF NOT EXISTS `partner_hr` (
 `id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
   `username` varchar(255) NOT NULL,
@@ -151,7 +153,17 @@ CREATE TABLE IF NOT EXISTS `Partner_HR` (
   `email` varchar(255) NOT NULL,
   `contact_num` varchar(15) NOT NULL,
   `company_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `partner_hr`
+--
+
+INSERT INTO `partner_hr` (`id`, `user_id`, `username`, `firstname`, `lastname`, `email`, `contact_num`, `company_id`) VALUES
+(1, 70, 'partnerhr1', 'HR', 'PartnerOne', 'parterhr1@sample.com', '332412123123', 0),
+(2, 70, 'partnerhr1', 'HR', 'PartnerOne', 'parterhr1@sample.com', '', 0),
+(3, 70, 'partnerhr1', 'HR', 'PartnerOne', 'parterhr1@sample.com', '', 0),
+(4, 70, 'partnerhr1', 'HR', 'PartnerOne', 'parterhr1@sample.com', '', 0);
 
 -- --------------------------------------------------------
 
@@ -186,7 +198,7 @@ CREATE TABLE IF NOT EXISTS `student` (
   `course` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `address` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `student`
@@ -237,7 +249,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `status` smallint(6) NOT NULL DEFAULT '10',
   `created_at` int(11) NOT NULL,
   `updated_at` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=70 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=74 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `user`
@@ -248,7 +260,9 @@ INSERT INTO `user` (`id`, `username`, `firstname`, `lastname`, `auth_key`, `pass
 (7, 'kosibayan', 'Kenneth', 'Sibayan', 'ub32EOfN5mwImO_KhgkIKJrG2yl1iKyQ', '$2y$13$HFfEB/CDV5UvYappUC7lEOYLrI0Hifsk.w9i6E8MNeZstQTGy.cYK', NULL, 'kosibayan@student.apc.edu.ph', 10, 10, 1424617778, 1424617778),
 (8, 'acacle', 'Alyssa Mae', 'Acle', 'gqL-AVQT30QEWz83aeo3PJeW03vh3G7P', '$2y$13$ENcnW8KBe/OAawudFbDi2Og5Bj2K7yDkt0ZuRXYqDW.Lrhj12UK7G', NULL, 'acacle@student.apc.edu.ph', 15, 10, 1424660697, 1424660697),
 (9, 'joshrramos', 'Josh', 'Ramos', '954kHhtkPlKz45KxIlSWodr1DWY-bIRu', '$2y$13$jtimqQghNQk/ge3oslXPz.KhBnn9LLdp1UJhCpdCBAl1AcfBur46y', NULL, 'jrramos@student.apc.edu.ph', 10, 10, 1425884101, 1425884101),
-(69, 'liforrest', 'Forrest', 'Li', '55LVicboonig52tsggtZDAa2Le0GxowI', '$2y$13$yndfLKx/csavBAOLYqFvVu1qq4lk9ElxVBdi2Sosycq4m.Hm6dOr.', NULL, 'forrestli@garena.com', 15, 10, 1426420906, 1426420906);
+(69, 'liforrest', 'Forrest', 'Li', '55LVicboonig52tsggtZDAa2Le0GxowI', '$2y$13$yndfLKx/csavBAOLYqFvVu1qq4lk9ElxVBdi2Sosycq4m.Hm6dOr.', NULL, 'forrestli@garena.com', 15, 10, 1426420906, 1426420906),
+(70, 'partnerhr1', 'HR', 'PartnerOne', 'ox_svH4q4jq1DtcYXKDGkkyj1Vu1ohMv', '$2y$13$cOvNpmsBgj/EbfxFTUF3JuvYqi0tIX7WzEL/LUEH9X32P0cqtd1.2', NULL, 'parterhr1@sample.com', 25, 10, 1427436322, 1427436322),
+(73, 'iprofessor1', 'One', 'Professor', 'A0_6QqttLFhUSMxaufEFzQ7U-7yr8GHW', '$2y$13$YhzKmYoU1a/X37I7bmZs7eHJes8z5YzjrkGUUEPXj/TyPtuQy3mB2', NULL, 'iprofessor1@sample.com', 15, 10, 1427437447, 1427437447);
 
 --
 -- Triggers `user`
@@ -266,9 +280,16 @@ INSERT INTO student (user_id, username, firstname, lastname, email)
 	SELECT user.id, user.username, user.firstname, user.lastname, user.email
     	from user where user.id not in (select student.user_id from student) && roles = 10;
         
+INSERT INTO partner_hr (user_id, username, firstname, lastname, email)
+    SELECT user.id, user.username, user.firstname, user.lastname, user.email
+		from user where user.id not in (select iprofessor.user_id from iprofessor) && roles = 25;
+        
 delete from student where user_id in (select user.id from user where user.roles != 10);
 
 delete from iprofessor where user_id in (select user.id from user where user.roles != 15);
+
+delete from partner_hr where user_id in (select user.id from user where user.roles != 25);
+
 
 end
 //
@@ -284,6 +305,10 @@ INSERT INTO iprofessor (user_id, username, firstname, lastname, email)
     SELECT user.id, user.username, user.firstname, user.lastname, user.email
 		from user where user.id not in (select iprofessor.user_id from iprofessor) && roles = 15;
 
+INSERT INTO partner_hr (user_id, username, firstname, lastname, email)
+    SELECT user.id, user.username, user.firstname, user.lastname, user.email
+		from user where user.id not in (select iprofessor.user_id from iprofessor) && roles = 25;
+        
 INSERT INTO student (user_id, username, firstname, lastname, email)
 	SELECT user.id, user.username, user.firstname, user.lastname, user.email
     	from user where user.id not in (select student.user_id from student) && roles = 10;
@@ -293,6 +318,9 @@ delete from cpofficer where user_id in (select user.id from user where user.role
 delete from student where user_id in (select user.id from user where user.roles != 10);
 
 delete from iprofessor where user_id in (select user.id from user where user.roles != 15);
+
+delete from partner_hr where user_id in (select user.id from user where user.roles != 25);
+
 
 end
 //
@@ -324,7 +352,7 @@ ALTER TABLE `industry_partners`
 -- Indexes for table `internship`
 --
 ALTER TABLE `internship`
- ADD PRIMARY KEY (`id`), ADD KEY `student_id` (`student_id`,`iprofessor_id`), ADD KEY `iprofessor_id` (`iprofessor_id`);
+ ADD PRIMARY KEY (`id`), ADD KEY `student_id` (`student_id`,`iprofessor_id`), ADD KEY `iprofessor_id` (`iprofessor_id`), ADD KEY `company_id` (`company_id`);
 
 --
 -- Indexes for table `iprofessor`
@@ -339,9 +367,9 @@ ALTER TABLE `migration`
  ADD PRIMARY KEY (`version`);
 
 --
--- Indexes for table `Partner_HR`
+-- Indexes for table `partner_hr`
 --
-ALTER TABLE `Partner_HR`
+ALTER TABLE `partner_hr`
  ADD PRIMARY KEY (`id`), ADD KEY `user_id` (`user_id`,`company_id`), ADD KEY `company_id` (`company_id`);
 
 --
@@ -396,12 +424,12 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `iprofessor`
 --
 ALTER TABLE `iprofessor`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=16;
 --
--- AUTO_INCREMENT for table `Partner_HR`
+-- AUTO_INCREMENT for table `partner_hr`
 --
-ALTER TABLE `Partner_HR`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `partner_hr`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `posts`
 --
@@ -411,7 +439,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `student`
 --
 ALTER TABLE `student`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `student_journal`
 --
@@ -421,7 +449,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=70;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=74;
 --
 -- Constraints for dumped tables
 --
@@ -443,7 +471,8 @@ ADD CONSTRAINT `file_uploads_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (
 --
 ALTER TABLE `internship`
 ADD CONSTRAINT `internship_ibfk_1` FOREIGN KEY (`student_id`) REFERENCES `student` (`id`) ON DELETE CASCADE,
-ADD CONSTRAINT `internship_ibfk_2` FOREIGN KEY (`iprofessor_id`) REFERENCES `iprofessor` (`id`) ON DELETE CASCADE;
+ADD CONSTRAINT `internship_ibfk_2` FOREIGN KEY (`iprofessor_id`) REFERENCES `iprofessor` (`id`) ON DELETE CASCADE,
+ADD CONSTRAINT `internship_ibfk_3` FOREIGN KEY (`company_id`) REFERENCES `industry_partners` (`id`);
 
 --
 -- Constraints for table `iprofessor`
@@ -453,9 +482,9 @@ ADD CONSTRAINT `iprofessor_ibfk_2` FOREIGN KEY (`company_id`) REFERENCES `indust
 ADD CONSTRAINT `iprofessor_ibfk_3` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `Partner_HR`
+-- Constraints for table `partner_hr`
 --
-ALTER TABLE `Partner_HR`
+ALTER TABLE `partner_hr`
 ADD CONSTRAINT `Partner_HR_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE,
 ADD CONSTRAINT `Partner_HR_ibfk_2` FOREIGN KEY (`company_id`) REFERENCES `industry_partners` (`id`) ON DELETE CASCADE;
 

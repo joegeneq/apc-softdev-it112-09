@@ -6,9 +6,10 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model backend\modules\internship\models\Industryprofessors */
 
-$this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Industryprofessors', 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
+/* @var $students backend\modules\internship\models\Internship */
+$this->title = 'Industry Professor: ' . $model->lastname . ', ' . $model->firstname;
+$this->params['breadcrumbs'][] = ['label' => 'Industry Professors', 'url' => ['index']];
+$this->params['breadcrumbs'][] = $model->lastname . ', ' . $model->firstname;
 ?>
 <div class="industryprofessors-view">
 
@@ -28,15 +29,37 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id',
+            //'id',
             'username',
             'firstname',
             'lastname',
             'email:email',
             'contact_num',
-            'company_id',
-            'user_id',
+            ['label' => 'Company', 'value' => $model->company->company_name],
+            //'user_id',
         ],
     ]) ?>
+	
+    <h1>Students</h1>
+    <?= GridView::widget([
+        'dataProvider' => $dataProvider,
+        'filterModel' => $searchModel,
+        'columns' => [
+            //['class' => 'yii\grid\SerialColumn'],
+            ['class' => 'yii\grid\ActionColumn'],
+            //'id',
+			[
+				'attribute'=>'company_id',
+				'value'=>'company.company_name',
+				'label'=>'Company'
+			],
+            //'username',
+            //'firstname',
+            'lastname',
+            'email:email',
+            ['attribute' => 'contact_num', 'label' => 'Contact Number'],
 
+            //'user_id',
+        ],
+    ]); ?>
 </div>

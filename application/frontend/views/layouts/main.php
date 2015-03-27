@@ -7,6 +7,7 @@ use frontend\assets\AppAsset;
 use frontend\widgets\Alert;
 use frontend\models\Student;
 use frontend\models\Professors;
+use frontend\models\Partnerhr;
 use common\models\User;
 
 /* @var $this \yii\web\View */
@@ -29,18 +30,21 @@ AppAsset::register($this);
     <div class="wrap">
         <?php			
 				if (Yii::$app->user->isGuest == false){
+                    $sel = Student::find()->where(['username' => Yii::$app->user->identity->username])->one();
 					$sel1 = Professors::find()->where(['username' => Yii::$app->user->identity->username])->one();				
-					$sel = Student::find()->where(['username' => Yii::$app->user->identity->username])->one();
-						if($sel != null){
+					$sel2 = Partnerhr::find()->where(['username' => Yii::$app->user->identity->username])->one();
+                    	if($sel != null){
 							$strings = '/student/'.$sel->id;
 						}
 						if($sel == null){
-							$cpo = User::find()->where(['username' => Yii::$app->user->identity->username])->one();
-							if($cpo->roles == 20){
+							$ifcpo = User::find()->where(['username' => Yii::$app->user->identity->username])->one();
+							if($ifcpo->roles == 20){
 								$strings = ' ';
-							}else{
+							}else if($ifcpo->roles == 25){
+                                $strings = '/partnerhr/'.$sel2->id;                                
+                            }else{
 								$strings = '/professors/'.$sel1->id;
-							}
+                            }
 						}
 					$siteusr = User::find()->where(['username' => Yii::$app->user->identity->username])->one();
 				}
