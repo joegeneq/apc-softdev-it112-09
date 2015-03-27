@@ -81,6 +81,15 @@ class SiteController extends Controller
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
+            Yii::$app->getSession()->setFlash('success', [
+                            'type' => 'success',
+                            'duration' => 12000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'Welcome ' . Yii::$app->user->identity->username . '!',
+                            'title' => 'APC Career Placement Office',
+                            'positonY' => 'top',
+                            'positonX' => 'right'
+            ]);
             return $this->goBack();
         } else {
             return $this->render('login', [
@@ -92,7 +101,15 @@ class SiteController extends Controller
     public function actionLogout()
     {
         Yii::$app->user->logout();
-
+            Yii::$app->getSession()->setFlash('warning', [
+                            'type' => 'warning',
+                            'duration' => 12000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You have been logged out. Thank you!',
+                            'title' => 'Logout',
+                            'positonY' => 'top',
+                            'positonX' => 'right'
+            ]);        
         return $this->goHome();
     }
 
@@ -134,16 +151,40 @@ class SiteController extends Controller
                         ->one();      
 
 					if($sel != null){
-						Yii::$app->getSession()->setFlash('info', 'Please complete your account details.');
+						Yii::$app->getSession()->setFlash('info', [
+                            'type' => 'info',
+                            'duration' => 12000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'Please complete your account details.',
+                            'title' => 'Registration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+                        ]);
                         return $this->redirect('../student/'.$sel->id, 302);
 					}else if($sel2 != null){
-                        Yii::$app->getSession()->setFlash('info', 'Please complete your account details.');
+                        Yii::$app->getSession()->setFlash('info', [
+                            'type' => 'info',
+                            'duration' => 12000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'Please complete your account details.',
+                            'title' => 'Registration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+                        ]);
                         return $this->redirect('../partnerhr/'.$sel2->id, 302);
                     }else{
 					$sel1 = Professors::find()
 						->where(['user_id' => Yii::$app->user->id])
 						->one();
-                        Yii::$app->getSession()->setFlash('info', 'Please complete your account details.');
+                        Yii::$app->getSession()->setFlash('info', [
+                            'type' => 'info',
+                            'duration' => 12000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'Please complete your account details.',
+                            'title' => 'Registration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+                        ]);
 					    return $this->redirect('../professors/'.$sel1->id, 302);						
 					}
                 }

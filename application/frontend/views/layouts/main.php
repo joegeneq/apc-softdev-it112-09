@@ -28,6 +28,26 @@ AppAsset::register($this);
 <body>
     <?php $this->beginBody() ?>
     <div class="wrap">
+    <?php foreach (Yii::$app->session->getAllFlashes() as $message):; ?>
+<?php
+echo \kartik\widgets\Growl::widget([
+    'type' => ($message['type']) ? $message['type'] : 'danger',
+    'title' => ($message['title']) ? $message['title'] : 'Title Not Set!',
+    'icon' => ($message['icon']) ? $message['icon'] : 'fa fa-info',
+    'body' => ($message['message']) ? $message['message'] : 'Message Not Set!',
+    'showSeparator' => true,
+    'delay' => 1,//This delay is how long before the message shows
+    'pluginOptions' => [
+        'delay' => ($message['duration']) ? $message['duration'] : 3000,//This delay is how long the message shows for
+        'placement' => [
+            'from' => ($message['positonY']) ? $message['positonY'] : 'top',
+            'align' => ($message['positonX']) ? $message['positonX'] : 'center',
+        ]
+    ]
+]);
+?>
+<?php endforeach; ?>
+
         <?php			
 				if (Yii::$app->user->isGuest == false){
                     $sel = Student::find()->where(['username' => Yii::$app->user->identity->username])->one();
@@ -99,7 +119,6 @@ AppAsset::register($this);
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
-        <?= Alert::widget() ?>
         <?= $content ?>
         </div>
     </div>
