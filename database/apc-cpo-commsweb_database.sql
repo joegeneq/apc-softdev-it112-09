@@ -2,8 +2,8 @@
 -- version 4.2.11
 -- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Generation Time: Mar 27, 2015 at 07:30 AM
+-- Host: localhost
+-- Generation Time: Mar 28, 2015 at 05:08 AM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -155,16 +155,6 @@ CREATE TABLE IF NOT EXISTS `partner_hr` (
   `company_id` int(11) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `partner_hr`
---
-
-INSERT INTO `partner_hr` (`id`, `user_id`, `username`, `firstname`, `lastname`, `email`, `contact_num`, `company_id`) VALUES
-(1, 70, 'partnerhr1', 'HR', 'PartnerOne', 'parterhr1@sample.com', '332412123123', 0),
-(2, 70, 'partnerhr1', 'HR', 'PartnerOne', 'parterhr1@sample.com', '', 0),
-(3, 70, 'partnerhr1', 'HR', 'PartnerOne', 'parterhr1@sample.com', '', 0),
-(4, 70, 'partnerhr1', 'HR', 'PartnerOne', 'parterhr1@sample.com', '', 0);
-
 -- --------------------------------------------------------
 
 --
@@ -261,7 +251,6 @@ INSERT INTO `user` (`id`, `username`, `firstname`, `lastname`, `auth_key`, `pass
 (8, 'acacle', 'Alyssa Mae', 'Acle', 'gqL-AVQT30QEWz83aeo3PJeW03vh3G7P', '$2y$13$ENcnW8KBe/OAawudFbDi2Og5Bj2K7yDkt0ZuRXYqDW.Lrhj12UK7G', NULL, 'acacle@student.apc.edu.ph', 15, 10, 1424660697, 1424660697),
 (9, 'joshrramos', 'Josh', 'Ramos', '954kHhtkPlKz45KxIlSWodr1DWY-bIRu', '$2y$13$jtimqQghNQk/ge3oslXPz.KhBnn9LLdp1UJhCpdCBAl1AcfBur46y', NULL, 'jrramos@student.apc.edu.ph', 10, 10, 1425884101, 1425884101),
 (69, 'liforrest', 'Forrest', 'Li', '55LVicboonig52tsggtZDAa2Le0GxowI', '$2y$13$yndfLKx/csavBAOLYqFvVu1qq4lk9ElxVBdi2Sosycq4m.Hm6dOr.', NULL, 'forrestli@garena.com', 15, 10, 1426420906, 1426420906),
-(70, 'partnerhr1', 'HR', 'PartnerOne', 'ox_svH4q4jq1DtcYXKDGkkyj1Vu1ohMv', '$2y$13$cOvNpmsBgj/EbfxFTUF3JuvYqi0tIX7WzEL/LUEH9X32P0cqtd1.2', NULL, 'parterhr1@sample.com', 25, 10, 1427436322, 1427436322),
 (73, 'iprofessor1', 'One', 'Professor', 'A0_6QqttLFhUSMxaufEFzQ7U-7yr8GHW', '$2y$13$YhzKmYoU1a/X37I7bmZs7eHJes8z5YzjrkGUUEPXj/TyPtuQy3mB2', NULL, 'iprofessor1@sample.com', 15, 10, 1427437447, 1427437447);
 
 --
@@ -282,7 +271,7 @@ INSERT INTO student (user_id, username, firstname, lastname, email)
         
 INSERT INTO partner_hr (user_id, username, firstname, lastname, email)
     SELECT user.id, user.username, user.firstname, user.lastname, user.email
-		from user where user.id not in (select iprofessor.user_id from iprofessor) && roles = 25;
+		from user where user.id not in (select partner_hr.user_id from partner_hr) && roles = 25;
         
 delete from student where user_id in (select user.id from user where user.roles != 10);
 
@@ -307,7 +296,7 @@ INSERT INTO iprofessor (user_id, username, firstname, lastname, email)
 
 INSERT INTO partner_hr (user_id, username, firstname, lastname, email)
     SELECT user.id, user.username, user.firstname, user.lastname, user.email
-		from user where user.id not in (select iprofessor.user_id from iprofessor) && roles = 25;
+		from user where user.id not in (select partner_hr.user_id from partner_hr) && roles = 25;
         
 INSERT INTO student (user_id, username, firstname, lastname, email)
 	SELECT user.id, user.username, user.firstname, user.lastname, user.email
