@@ -8,6 +8,7 @@ use backend\modules\Industrypartners\models\PartnersSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * PartnersController implements the CRUD actions for IndustryPartners model.
@@ -63,6 +64,14 @@ class PartnersController extends Controller
         $model = new IndustryPartners();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            $imageName = $model->id;
+            $model->file = UploadedFile::getInstance($model,'file');
+            if($model->file != null){
+                $model->file->saveAs('image/company_images/'. $imageName .'.'.$model->file->extension);
+                $model->company_logo = 'image/company_images/'. $imageName .'.'.$model->file->extension;
+            }
+            $model->save();
+            
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
@@ -82,6 +91,13 @@ class PartnersController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            $imageName = $id;
+            $model->file = UploadedFile::getInstance($model,'file');
+            $model->file->saveAs('image/company_images/'. $imageName .'.'.$model->file->extension);
+
+            $model->company_logo = 'image/company_images/'. $imageName .'.'.$model->file->extension;
+            $model->save();
+
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [

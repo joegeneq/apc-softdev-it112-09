@@ -21,7 +21,7 @@ class SiteController extends Controller
         return [
        'access' => [
            'class' => AccessControl::className(),
-           'only' => ['logout', 'signup', 'partners', 'login'],
+           'only' => ['logout', 'signup', 'partners'],
            'rules' => [
                [
                    'actions' => ['signup'],
@@ -76,6 +76,15 @@ class SiteController extends Controller
 	 
 	   $model = new LoginForm();
 	   if ($model->load(Yii::$app->request->post()) && $model->loginAdmin()) {
+            Yii::$app->getSession()->setFlash('success', [
+                            'type' => 'growl',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'Welcome ' . Yii::$app->user->identity->username . '!',
+                            'title' => 'APC Career Placement Office',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
 		  return $this->goBack();
 	   } else {
 		   return $this->render('login', [
@@ -87,6 +96,15 @@ class SiteController extends Controller
     public function actionLogout()
     {
         Yii::$app->user->logout();
+            Yii::$app->getSession()->setFlash('warning', [
+                            'type' => 'growl',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You have been logged out. Thank you!',
+                            'title' => 'Logout',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);        
 
         return $this->goHome();
     }
