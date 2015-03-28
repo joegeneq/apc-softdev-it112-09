@@ -2,8 +2,8 @@
 -- version 4.2.11
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: Mar 28, 2015 at 06:45 AM
+-- Host: 127.0.0.1
+-- Generation Time: Mar 28, 2015 at 09:37 AM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -134,15 +134,16 @@ CREATE TABLE IF NOT EXISTS `industry_partners` (
   `company_contactnum` varchar(25) NOT NULL,
   `company_description` text NOT NULL,
   `company_logo` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `industry_partners`
 --
 
 INSERT INTO `industry_partners` (`id`, `company_name`, `company_address`, `company_contactnum`, `company_description`, `company_logo`) VALUES
-(0, 'Asia Pacific College', '3 Humabon Place, Magallanes, Makati City', '852-9235', 'Real Projects, Real Learning.', ''),
-(1, 'Garena', 'Taguig, Philippines', '092312334123', 'Connecting the dots.', '');
+(0, 'Asia Pacific College', '3 Humabon Place, Magallanes, Makati City', '852-9235', 'Real Projects, Real Learning.', 'image/company_images/0.png'),
+(1, 'Garena', 'Taguig, Philippines', '092312334123', 'Connecting the dots.', 'image/company_images/1.gif'),
+(7, 'MarkTroiBags', 'Muntinlupa City', '1232142152141', 'dsgdsdsfk\r\n', NULL);
 
 -- --------------------------------------------------------
 
@@ -493,7 +494,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `industry_partners`
 --
 ALTER TABLE `industry_partners`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `internship`
 --
