@@ -62,7 +62,7 @@ class PartnersController extends Controller
      */
     public function actionCreate()
     {
-		if(Yii::app->user->can('create-partner'))
+		if(Yii::$app->user->can('create-partner'))
 		{
 			$model = new IndustryPartners();
 
