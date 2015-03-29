@@ -10,10 +10,12 @@ use yii\widgets\ActiveForm;
 
 <div class="student-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
 
     <?= $form->field($model, 'student_id')->textInput(['maxlength' => 15]) ?>
 
+    <?= $form->field($model, 'image')->fileInput() ?>   
+    
     <?= $form->field($model, 'contact_num')->textInput(['maxlength' => 15]) ?>
 
     <?= $form->field($model, 'course')->textInput(['maxlength' => 100]) ?>

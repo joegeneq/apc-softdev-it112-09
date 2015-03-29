@@ -82,13 +82,13 @@ class SiteController extends Controller
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
             Yii::$app->getSession()->setFlash('success', [
-                            'type' => 'success',
-                            'duration' => 12000,
+                            'type' => 'growl',
+                            'duration' => 3000,
                             'icon' => 'fa fa-users',
                             'message' => 'Welcome ' . Yii::$app->user->identity->username . '!',
                             'title' => 'APC Career Placement Office',
                             'positonY' => 'top',
-                            'positonX' => 'right'
+                            'positonX' => 'center'
             ]);
             return $this->goBack();
         } else {
@@ -102,13 +102,13 @@ class SiteController extends Controller
     {
         Yii::$app->user->logout();
             Yii::$app->getSession()->setFlash('warning', [
-                            'type' => 'warning',
-                            'duration' => 12000,
+                            'type' => 'growl',
+                            'duration' => 3000,
                             'icon' => 'fa fa-users',
                             'message' => 'You have been logged out. Thank you!',
                             'title' => 'Logout',
                             'positonY' => 'top',
-                            'positonX' => 'right'
+                            'positonX' => 'center'
             ]);        
         return $this->goHome();
     }
@@ -118,9 +118,26 @@ class SiteController extends Controller
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
-                Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
+                Yii::$app->getSession()->setFlash('success', [
+                            'type' => 'growl',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'Thank you for contacting us. We will respond to you as soon as possible.',
+                            'title' => 'APC Career Placement Office',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
             } else {
-                Yii::$app->session->setFlash('error', 'There was an error sending email.');
+                                Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'There was an error sending email.',
+                            'title' => 'APC Career Placement Office',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+
             }
 
             return $this->refresh();
@@ -152,8 +169,8 @@ class SiteController extends Controller
 
 					if($sel != null){
 						Yii::$app->getSession()->setFlash('info', [
-                            'type' => 'info',
-                            'duration' => 12000,
+                            'type' => 'growl',
+                            'duration' => 3000,
                             'icon' => 'fa fa-users',
                             'message' => 'Please complete your account details.',
                             'title' => 'Registration',
@@ -163,8 +180,8 @@ class SiteController extends Controller
                         return $this->redirect('../student/'.$sel->id, 302);
 					}else if($sel2 != null){
                         Yii::$app->getSession()->setFlash('info', [
-                            'type' => 'info',
-                            'duration' => 12000,
+                            'type' => 'growl',
+                            'duration' => 3000,
                             'icon' => 'fa fa-users',
                             'message' => 'Please complete your account details.',
                             'title' => 'Registration',
@@ -177,8 +194,8 @@ class SiteController extends Controller
 						->where(['user_id' => Yii::$app->user->id])
 						->one();
                         Yii::$app->getSession()->setFlash('info', [
-                            'type' => 'info',
-                            'duration' => 12000,
+                            'type' => 'growl',
+                            'duration' => 3000,
                             'icon' => 'fa fa-users',
                             'message' => 'Please complete your account details.',
                             'title' => 'Registration',
@@ -191,9 +208,7 @@ class SiteController extends Controller
             }
         }
 
-        return $this->render('signup', [
-            'model' => $model,
-        ]);
+        return $this->render('signup', ['model' => $model,]);
     }
 
     public function actionRequestPasswordReset()

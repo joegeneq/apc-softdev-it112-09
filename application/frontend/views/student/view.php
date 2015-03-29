@@ -12,12 +12,15 @@ $this->params['breadcrumbs'][] = $model->username;
 ?>
 <div class="student-view">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-
-    <p>
-        <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
-    </p>
-
+    <?php
+        if ($model->student_pic == null) {
+            echo '<img src=\'../images/profile_images/student_image.png\' width=\'150px\' height=\'150px\' style=\'width:10%;height:10%;float:right;\' border="1" alt="Null">';
+            echo '<h1>'. $this->title .'</h1>';
+        }else{
+            echo '<img src=\'../'. $model->student_pic . '\' width=\'150px\' height=\'150px\' style=\'width:10%;height:10%;float:right;\' border="0" alt="Null">';
+            echo '<h1>'. $this->title .'</h1>';
+        }
+    ?>
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
@@ -33,5 +36,8 @@ $this->params['breadcrumbs'][] = $model->username;
             'address:ntext',
         ],
     ]) ?>
+        <p>
+        <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
+    </p>
 
 </div>

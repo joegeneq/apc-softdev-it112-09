@@ -27,7 +27,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <?= $form->field($model, 'email')->label('Email:') ?>
 				<?= $form->field($model, 'username')->label('Username:') ?>
 				<?= $form->field($model, 'firstname')->label('Given name:') ?>
-				<?= $form->field($model, 'lastname') ?>
+				<?= $form->field($model, 'lastname') ?>               
 				<?= $form->field($model, 'roles')->dropDownList(['Student','Industry Professor','Partner HR'], ['prompt'=>'Select...'])->label('Account Type') ?>
 				<?= $form->field($model, 'password')->passwordInput() ?>
                 <div class="form-group">

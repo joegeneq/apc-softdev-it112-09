@@ -17,6 +17,7 @@ use common\models\User;
  * @property string $course
  * @property string $email
  * @property string $address
+ * @property string $student_pic
  *
  * @property User $user
  */
@@ -25,6 +26,8 @@ class Student extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
+    public $image;
+
     public static function tableName()
     {
         return 'student';
@@ -39,7 +42,8 @@ class Student extends \yii\db\ActiveRecord
             [['id', 'user_id', 'username', 'firstname', 'lastname', 'student_id', 'contact_num', 'course', 'email', 'address'], 'required'],
             [['id', 'user_id'], 'integer'],
             [['address'], 'string'],
-            [['username', 'email'], 'string', 'max' => 255],
+            [['image'], 'file'],
+            [['username', 'email','student_pic'], 'string', 'max' => 255],
             [['firstname', 'lastname', 'course'], 'string', 'max' => 100],
             [['student_id', 'contact_num'], 'string', 'max' => 15]
         ];
@@ -61,6 +65,7 @@ class Student extends \yii\db\ActiveRecord
             'course' => 'Course',
             'email' => 'Email',
             'address' => 'Address',
+            'image' => 'Profile Picture',
         ];
     }
 
