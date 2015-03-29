@@ -9,12 +9,20 @@ return [
             'charset' => 'utf8',
         ],
         'mailer' => [
-            'class' => 'yii\swiftmailer\Mailer',
-            'viewPath' => '@common/mail',
-            // send all mails to a file by default. You have to set
-            // 'useFileTransport' to false and configure a transport
-            // for the mailer to send real emails.
-            'useFileTransport' => true,
+        'class' => 'yii\swiftmailer\Mailer',
+        'viewPath' => '@common/mail',
+        'useFileTransport' => false,//set this property to false to send mails to real email addresses
+        //comment the following array to send mail using php's mail function
+        'transport' => [
+            'class' => 'Swift_SmtpTransport',
+            'host' => 'mx1.hostinger.ph',
+            'username' => 'cpo@it112apc09.ml',
+            'password' => 'AsiaPacificCollege',
+            'port' => '2525',
+ //           'encryption' => 'tls',
+                        ],
         ],
-    ],
+        ],
 ];
+
+
