@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 28, 2015 at 09:37 AM
+-- Generation Time: Mar 29, 2015 at 02:56 PM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -19,72 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `apc-cpo-db`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `auth_assignment`
---
-
-CREATE TABLE IF NOT EXISTS `auth_assignment` (
-  `item_name` varchar(64) NOT NULL,
-  `user_id` varchar(64) NOT NULL,
-  `created_at` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `auth_assignment`
---
-
-INSERT INTO `auth_assignment` (`item_name`, `user_id`, `created_at`) VALUES
-('create-partner', '1', NULL);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `auth_item`
---
-
-CREATE TABLE IF NOT EXISTS `auth_item` (
-  `name` varchar(64) NOT NULL,
-  `type` int(11) NOT NULL,
-  `description` text,
-  `rule_name` varchar(64) DEFAULT NULL,
-  `data` text,
-  `created_at` int(11) DEFAULT NULL,
-  `updated_at` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `auth_item`
---
-
-INSERT INTO `auth_item` (`name`, `type`, `description`, `rule_name`, `data`, `created_at`, `updated_at`) VALUES
-('create-partner', 1, 'allow admin to create a partner item', NULL, NULL, NULL, NULL);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `auth_item_child`
---
-
-CREATE TABLE IF NOT EXISTS `auth_item_child` (
-  `parent` varchar(64) NOT NULL,
-  `child` varchar(64) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `auth_rule`
---
-
-CREATE TABLE IF NOT EXISTS `auth_rule` (
-  `name` varchar(64) NOT NULL,
-  `data` text,
-  `created_at` int(11) DEFAULT NULL,
-  `updated_at` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -134,16 +68,15 @@ CREATE TABLE IF NOT EXISTS `industry_partners` (
   `company_contactnum` varchar(25) NOT NULL,
   `company_description` text NOT NULL,
   `company_logo` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `industry_partners`
 --
 
 INSERT INTO `industry_partners` (`id`, `company_name`, `company_address`, `company_contactnum`, `company_description`, `company_logo`) VALUES
-(0, 'Asia Pacific College', '3 Humabon Place, Magallanes, Makati City', '852-9235', 'Real Projects, Real Learning.', 'image/company_images/0.png'),
-(1, 'Garena', 'Taguig, Philippines', '092312334123', 'Connecting the dots.', 'image/company_images/1.gif'),
-(7, 'MarkTroiBags', 'Muntinlupa City', '1232142152141', 'dsgdsdsfk\r\n', NULL);
+(0, 'Asia Pacific College', '3 Humabon Place, Magallanes, Makati City', '852-9235', 'Real Projects, Real Learning.', ''),
+(1, 'Garena', 'Taguig, Philippines', '092312334123', 'Connecting the dots.', '');
 
 -- --------------------------------------------------------
 
@@ -175,16 +108,14 @@ CREATE TABLE IF NOT EXISTS `iprofessor` (
   `contact_num` varchar(15) NOT NULL,
   `company_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `iprofessor`
 --
 
 INSERT INTO `iprofessor` (`id`, `username`, `firstname`, `lastname`, `email`, `contact_num`, `company_id`, `user_id`) VALUES
-(9, 'acacle', 'Alyssa Mae', 'Acle', 'acacle@student.apc.edu.ph', '', 0, 8),
-(13, 'liforrest', 'Forrest', 'Li', 'forrestli@garena.com', '0932324242423', 1, 69),
-(15, 'iprofessor1', 'One', 'Professor', 'iprofessor1@sample.com', '213123123123', 0, 73);
+(9, 'acacle', 'Alyssa Mae', 'Acle', 'acacle@student.apc.edu.ph', '', 0, 8);
 
 -- --------------------------------------------------------
 
@@ -220,7 +151,14 @@ CREATE TABLE IF NOT EXISTS `partner_hr` (
   `email` varchar(255) NOT NULL,
   `contact_num` varchar(15) NOT NULL,
   `company_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `partner_hr`
+--
+
+INSERT INTO `partner_hr` (`id`, `user_id`, `username`, `firstname`, `lastname`, `email`, `contact_num`, `company_id`) VALUES
+(10, 77, 'partnerhr1', 'HR', 'PartnerOne', 'parterhr1@sample.com', '', 0);
 
 -- --------------------------------------------------------
 
@@ -247,6 +185,7 @@ CREATE TABLE IF NOT EXISTS `posts` (
 CREATE TABLE IF NOT EXISTS `student` (
 `id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
+  `student_pic` varchar(255) NOT NULL,
   `username` varchar(255) NOT NULL,
   `firstname` varchar(100) NOT NULL,
   `lastname` varchar(100) NOT NULL,
@@ -255,15 +194,17 @@ CREATE TABLE IF NOT EXISTS `student` (
   `course` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `address` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `student`
 --
 
-INSERT INTO `student` (`id`, `user_id`, `username`, `firstname`, `lastname`, `student_id`, `contact_num`, `course`, `email`, `address`) VALUES
-(1, 7, 'kosibayan', 'Kenneth', 'Sibayan', '2011-100121', '09054005890', '0', 'kosibayan@student.apc.edu.ph', '90 Z1 Don Sergio Ext. Brgy Holy Spirit, Diliman, Quezon City 1127'),
-(2, 9, 'joshrramos', 'Josh', 'Ramos', '', '', '0', 'jrramos@student.apc.edu.ph', '');
+INSERT INTO `student` (`id`, `user_id`, `student_pic`, `username`, `firstname`, `lastname`, `student_id`, `contact_num`, `course`, `email`, `address`) VALUES
+(1, 7, 'images/profile_images/kosibayan.jpg', 'kosibayan', 'Kenneth', 'Sibayan', '2011-100121', '09054005890', '123123', 'kosibayan@student.apc.edu.ph', '90 Z1 Don Sergio Ext. Brgy Holy Spirit, Diliman, Quezon City 1127'),
+(2, 9, '', 'joshrramos', 'Josh', 'Ramos', '', '', '0', 'jrramos@student.apc.edu.ph', ''),
+(8, 83, 'images/profile_images/dummyaccnt.jpg', 'dummyaccnt', 'dummy', 'adasdasdasd', '124521212', '231232323', 'asasdasasd', 'dummy@account.test', '123232332'),
+(9, 84, 'images/profile_images/demo.jpg', 'demo', 'demo', 'demo', '2135234123', '2332', 'sewtgsddsdfd', 'demo@demonstration.com', 'fghjyhfdf');
 
 -- --------------------------------------------------------
 
@@ -306,7 +247,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `status` smallint(6) NOT NULL DEFAULT '10',
   `created_at` int(11) NOT NULL,
   `updated_at` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=74 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=85 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `user`
@@ -317,8 +258,9 @@ INSERT INTO `user` (`id`, `username`, `firstname`, `lastname`, `auth_key`, `pass
 (7, 'kosibayan', 'Kenneth', 'Sibayan', 'ub32EOfN5mwImO_KhgkIKJrG2yl1iKyQ', '$2y$13$HFfEB/CDV5UvYappUC7lEOYLrI0Hifsk.w9i6E8MNeZstQTGy.cYK', NULL, 'kosibayan@student.apc.edu.ph', 10, 10, 1424617778, 1424617778),
 (8, 'acacle', 'Alyssa Mae', 'Acle', 'gqL-AVQT30QEWz83aeo3PJeW03vh3G7P', '$2y$13$ENcnW8KBe/OAawudFbDi2Og5Bj2K7yDkt0ZuRXYqDW.Lrhj12UK7G', NULL, 'acacle@student.apc.edu.ph', 15, 10, 1424660697, 1424660697),
 (9, 'joshrramos', 'Josh', 'Ramos', '954kHhtkPlKz45KxIlSWodr1DWY-bIRu', '$2y$13$jtimqQghNQk/ge3oslXPz.KhBnn9LLdp1UJhCpdCBAl1AcfBur46y', NULL, 'jrramos@student.apc.edu.ph', 10, 10, 1425884101, 1425884101),
-(69, 'liforrest', 'Forrest', 'Li', '55LVicboonig52tsggtZDAa2Le0GxowI', '$2y$13$yndfLKx/csavBAOLYqFvVu1qq4lk9ElxVBdi2Sosycq4m.Hm6dOr.', NULL, 'forrestli@garena.com', 15, 10, 1426420906, 1426420906),
-(73, 'iprofessor1', 'One', 'Professor', 'A0_6QqttLFhUSMxaufEFzQ7U-7yr8GHW', '$2y$13$YhzKmYoU1a/X37I7bmZs7eHJes8z5YzjrkGUUEPXj/TyPtuQy3mB2', NULL, 'iprofessor1@sample.com', 15, 10, 1427437447, 1427437447);
+(77, 'partnerhr1', 'HR', 'PartnerOne', 'E_yg68arEyl4_wBUjIBmbTQlIJCP5TKr', '$2y$13$YJXTpUxRqKzVMdbGTms/tO1kTAQBYsvEkIx8gvq1r1VTP84OCPwl2', NULL, 'parterhr1@sample.com', 25, 10, 1427439184, 1427439184),
+(83, 'dummyaccnt', 'dummy', 'adasdasdasd', 'Li1a_BB-m2SibJFAeso7VSqDtMZCpC1o', '$2y$13$mA7iJ0Wa/nZ.4Jb5ZbyQYuoP7AUpcoW8K5M6oHrVYelAtMR/mWwHO', NULL, 'dummy@account.test', 10, 10, 1427620561, 1427620561),
+(84, 'demo', 'demo', 'demo', 'FVSG0BDXHBHpIC_fWG_UASaNpsZf5atA', '$2y$13$tJEVxT9qbZsUi9IPz8kqxeAtQnKtKUgoQs1HsihzHSAAiLtAHlCga', NULL, 'demo@demonstration.com', 10, 10, 1427628224, 1427628224);
 
 --
 -- Triggers `user`
@@ -385,30 +327,6 @@ DELIMITER ;
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `auth_assignment`
---
-ALTER TABLE `auth_assignment`
- ADD PRIMARY KEY (`item_name`,`user_id`);
-
---
--- Indexes for table `auth_item`
---
-ALTER TABLE `auth_item`
- ADD PRIMARY KEY (`name`), ADD KEY `rule_name` (`rule_name`), ADD KEY `type` (`type`);
-
---
--- Indexes for table `auth_item_child`
---
-ALTER TABLE `auth_item_child`
- ADD PRIMARY KEY (`parent`,`child`), ADD KEY `child` (`child`);
-
---
--- Indexes for table `auth_rule`
---
-ALTER TABLE `auth_rule`
- ADD PRIMARY KEY (`name`);
 
 --
 -- Indexes for table `cpofficer`
@@ -494,7 +412,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `industry_partners`
 --
 ALTER TABLE `industry_partners`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `internship`
 --
@@ -504,12 +422,12 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `iprofessor`
 --
 ALTER TABLE `iprofessor`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=16;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;
 --
 -- AUTO_INCREMENT for table `partner_hr`
 --
 ALTER TABLE `partner_hr`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT for table `posts`
 --
@@ -519,7 +437,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `student`
 --
 ALTER TABLE `student`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT for table `student_journal`
 --
@@ -529,29 +447,10 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=74;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=85;
 --
 -- Constraints for dumped tables
 --
-
---
--- Constraints for table `auth_assignment`
---
-ALTER TABLE `auth_assignment`
-ADD CONSTRAINT `auth_assignment_ibfk_1` FOREIGN KEY (`item_name`) REFERENCES `auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `auth_item`
---
-ALTER TABLE `auth_item`
-ADD CONSTRAINT `auth_item_ibfk_1` FOREIGN KEY (`rule_name`) REFERENCES `auth_rule` (`name`) ON DELETE SET NULL ON UPDATE CASCADE;
-
---
--- Constraints for table `auth_item_child`
---
-ALTER TABLE `auth_item_child`
-ADD CONSTRAINT `auth_item_child_ibfk_1` FOREIGN KEY (`parent`) REFERENCES `auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE,
-ADD CONSTRAINT `auth_item_child_ibfk_2` FOREIGN KEY (`child`) REFERENCES `auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `cpofficer`
