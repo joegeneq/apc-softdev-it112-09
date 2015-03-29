@@ -68,7 +68,7 @@ class Nav extends Widget
     /**
      * @var boolean whether the nav items labels should be HTML-encoded.
      */
-    public $encodeLabels = true;
+    public $encodeLabels = false;
     /**
      * @var boolean whether to automatically activate items according to whether their route setting
      * matches the currently requested route.

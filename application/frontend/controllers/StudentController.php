@@ -8,6 +8,7 @@ use frontend\models\StudentSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * StudentController implements the CRUD actions for Student model.
@@ -49,6 +50,15 @@ class StudentController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            $imageName = $model->username;
+            $model->image = UploadedFile::getInstance($model,'image');
+            if($model->image != null){
+                $model->image->saveAs('images/profile_images/'. $imageName .'.'.$model->image->extension);
+                $model->student_pic = 'images/profile_images/'. $imageName .'.'.$model->image->extension;
+            }
+            $model->save();
+ 
+
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [

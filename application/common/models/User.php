@@ -31,7 +31,7 @@ class User extends ActiveRecord implements IdentityInterface
 	const ROLE_IP = 15;
 	const ROLE_ADMIN = 20;
     const ROLE_HR = 25;
-
+    
     /**
      * @inheritdoc
      */

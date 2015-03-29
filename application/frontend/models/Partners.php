@@ -9,6 +9,7 @@ use Yii;
  *
  * @property integer $id
  * @property string $company_name
+  * @property string $company_logo
  * @property string $company_address
  * @property string $company_contactnum
  * @property string $company_description
@@ -32,7 +33,7 @@ class Partners extends \yii\db\ActiveRecord
             [['company_name', 'company_address', 'company_contactnum', 'company_description'], 'required'],
             [['company_description'], 'string'],
             [['company_name'], 'string', 'max' => 50],
-            [['company_address'], 'string', 'max' => 255],
+            [['company_address', 'company_logo'], 'string', 'max' => 255],
             [['company_contactnum'], 'string', 'max' => 25]
         ];
     }
@@ -48,6 +49,7 @@ class Partners extends \yii\db\ActiveRecord
             'company_address' => 'Company Address',
             'company_contactnum' => 'Company Contactnum',
             'company_description' => 'Company Description',
+            'compnay_logo' => 'Company Logo',
         ];
     }
 }
