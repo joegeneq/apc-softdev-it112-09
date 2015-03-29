@@ -80,10 +80,10 @@ class PartnersController extends Controller
 				return $this->render('create', [
 					'model' => $model,
 				]);
-			}else
-			{
-				throw new ForbiddenHttpException;
 			}
+		}else
+		{
+			throw new ForbiddenHttpException;
 		}
 
     }
