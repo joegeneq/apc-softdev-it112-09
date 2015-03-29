@@ -84,7 +84,7 @@ class SiteController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
                 Yii::$app->mailer->compose()
                     ->setFrom('cpo@it112apc09.ml')
-                    ->setTo('kensbyn@outlook.ph')
+                    ->setTo('amcacle101@gmail.com')
                     ->setSubject('Test Mail')
                     ->setTextBody('This is the mail')
                     ->send();
