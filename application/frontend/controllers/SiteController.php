@@ -15,6 +15,7 @@ use yii\filters\AccessControl;
 use frontend\models\Student;
 use frontend\models\Professors;
 use frontend\models\Partnerhr;
+use yii\swiftmailer\Mailer;
 
 /**
  * Site controller
@@ -81,6 +82,13 @@ class SiteController extends Controller
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
+                Yii::$app->mailer->compose()
+                    ->setFrom('cpo@it112apc09.ml')
+                    ->setTo('kensbyn@outlook.ph')
+                    ->setSubject('Test Mail')
+                    ->setTextBody('This is the mail')
+                    ->send();
+
             Yii::$app->getSession()->setFlash('success', [
                             'type' => 'growl',
                             'duration' => 3000,
