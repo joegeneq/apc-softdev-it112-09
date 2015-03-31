@@ -3,7 +3,7 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=apc-softdev-it112-09',
+            'dsn' => 'mysql:host=localhost;dbname=apc-cpo-db',
             'username' => 'root',
             'password' => '',
             'charset' => 'utf8',
