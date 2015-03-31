@@ -71,14 +71,14 @@ echo \kartik\widgets\Growl::widget([
 
 						
             NavBar::begin([
-                'brandLabel' => 'APC Career Placement Office',
+                'brandLabel' => Yii::$app->name,
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
                     'class' => 'navbar-inverse navbar-fixed-top',
                 ],
             ]);
             $menuItems = [
-                ['label' => 'Home', 'url' => ['/site/index']],
+                ['label' => 'Home', 'url' => [Yii::$app->homeUrl.'..']],
                 ['label' => 'Partners', 'url' => ['/partners/index']],
                 ['label' => 'Contact Us', 'url' => ['/site/contact']],
                 ['label' => 'About', 'url' => ['/site/about']],
@@ -92,9 +92,9 @@ echo \kartik\widgets\Growl::widget([
 								];
             } else {
 				if($siteusr->roles == 20){
-					$menuItems[] = ['label' => '<img src=\''. Yii::$app->homeUrl .'/images/profile_images/student_image.png\'width=\'25px\' height=\'25px\' border="0" alt="Null">',
+					$menuItems[] = ['label' => '<img src=\''. Yii::$app->homeUrl .'/images/profile_images/student_image.png\'width=\'25px\' height=\'25px\' draggable="false" border="0" alt="Null">',
 						'items' => [
-							['label' => 'Manage website', 'url' => ['../../backend/web']],
+							['label' => 'Manage website', 'url' => [Yii::$app->homeUrl.'../backend']],
 							['label' => 'Logout (' . Yii::$app->user->identity->username . ')', 'url' => ['/site/logout'],'linkOptions' => ['data-method' => 'post']]
 						]
 					];

@@ -45,17 +45,18 @@ echo \kartik\widgets\Growl::widget([
         <?php
             NavBar::begin([
                 'brandLabel' => 'APC CPO Management',
-                'brandUrl' => Yii::$app->homeUrl,
+                'brandUrl' => Yii::$app->homeUrl.'/../../',
                 'options' => [
                     'class' => 'navbar-inverse navbar-fixed-top',
                 ],
             ]);
-            $menuItems = [
-                ['label' => 'Home', 'url' => ['/site/index']],
-            ];
-            if (Yii::$app->user->isGuest) {
+
+            if (Yii::$app->user->isGuest || Yii::$app->user->roles != 20) {
                 $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
             } else {
+                $menuItems = [
+                                    ['label' => 'Dashboard', 'url' => ['/site']],
+                ];            
                 $menuItems[] = ['label' => 'Industry Partners',
                                 'items'=> [
                                     ['label' => 'Companies', 'url' => ['/industrypartners/partners']],
@@ -90,7 +91,6 @@ echo \kartik\widgets\Growl::widget([
         <?= $content ?>
         </div>
     </div>
-
     <footer class="footer">
         <div class="container">
         <p class="pull-left">&copy; APC CPO Communication Site <?= date('Y') ?></p>
