@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 29, 2015 at 11:57 PM
+-- Generation Time: Mar 31, 2015 at 10:13 AM
 -- Server version: 5.6.14
 -- PHP Version: 5.5.6
 
@@ -34,6 +34,14 @@ CREATE TABLE IF NOT EXISTS `auth_assignment` (
   KEY `auth_assignment_ibfk_2` (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `auth_assignment`
+--
+
+INSERT INTO `auth_assignment` (`item_name`, `user_id`, `created_at`) VALUES
+('admin', 1, NULL),
+('create-partner', 1, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -58,6 +66,7 @@ CREATE TABLE IF NOT EXISTS `auth_item` (
 --
 
 INSERT INTO `auth_item` (`name`, `type`, `description`, `rule_name`, `data`, `created_at`, `updated_at`) VALUES
+('admin', 2, 'can view and manage back end site', NULL, NULL, NULL, NULL),
 ('create-partner', 1, 'can create partner table', NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
@@ -140,7 +149,7 @@ CREATE TABLE IF NOT EXISTS `industry_partners` (
   `company_description` text NOT NULL,
   `company_logo` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `industry_partners`
@@ -148,7 +157,9 @@ CREATE TABLE IF NOT EXISTS `industry_partners` (
 
 INSERT INTO `industry_partners` (`id`, `company_name`, `company_address`, `company_contactnum`, `company_description`, `company_logo`) VALUES
 (0, 'Asia Pacific College', '3 Humabon Place, Magallanes, Makati City', '852-9235', 'Real Projects, Real Learning.', ''),
-(1, 'Garena', 'Taguig, Philippines', '092312334123', 'Connecting the dots.', '');
+(1, 'Garena', 'Taguig, Philippines', '092312334123', 'Connecting the dots.', ''),
+(2, 'Emerson Network Company', 'Ortigas Ave, Pasig City', '8765541', 'Consider it solve. ', 'image/company_images/2.jpg'),
+(3, 'Emerson Network Company', 'Pasig', '876896', 'Consider it solve', 'image/company_images/3.png');
 
 -- --------------------------------------------------------
 
@@ -188,14 +199,15 @@ CREATE TABLE IF NOT EXISTS `iprofessor` (
   KEY `user_id` (`company_id`),
   KEY `company_id` (`company_id`),
   KEY `user_id_2` (`user_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=14 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=15 ;
 
 --
 -- Dumping data for table `iprofessor`
 --
 
 INSERT INTO `iprofessor` (`id`, `username`, `firstname`, `lastname`, `email`, `contact_num`, `company_id`, `user_id`) VALUES
-(9, 'acacle', 'Alyssa Mae', 'Acle', 'acacle@student.apc.edu.ph', '', 0, 8);
+(9, 'acacle', 'Alyssa Mae', 'Acle', 'acacle@student.apc.edu.ph', '', 0, 8),
+(14, 'okayna', 'Okay', 'Na', 'amcacle@gmail.com', '', 0, 86);
 
 -- --------------------------------------------------------
 
@@ -284,7 +296,7 @@ CREATE TABLE IF NOT EXISTS `student` (
   KEY `user_id` (`user_id`),
   KEY `course` (`course`),
   KEY `course_2` (`course`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
 
 --
 -- Dumping data for table `student`
@@ -295,7 +307,9 @@ INSERT INTO `student` (`id`, `user_id`, `student_pic`, `username`, `firstname`, 
 (2, 9, '', 'joshrramos', 'Josh', 'Ramos', '', '', '0', 'jrramos@student.apc.edu.ph', ''),
 (8, 83, 'images/profile_images/dummyaccnt.jpg', 'dummyaccnt', 'dummy', 'adasdasdasd', '124521212', '231232323', 'asasdasasd', 'dummy@account.test', '123232332'),
 (9, 84, 'images/profile_images/demo.jpg', 'demo', 'demo', 'demo', '2135234123', '2332', 'sewtgsddsdfd', 'demo@demonstration.com', 'fghjyhfdf'),
-(10, 85, '', 'alyftw', 'Alyssa', 'Acle', '', '', '', 'amcacle101@gmail.com', '');
+(10, 85, '', 'alyftw', 'Alyssa', 'Acle', '', '', '', 'amcacle101@gmail.com', ''),
+(11, 87, 'images/profile_images/SanaGumanaNanana.png', 'SanaGumanaNanana', 'alyssa', 'jdkbd', '2011-100504', '6578922', 'IT', 'acacle@gmail.com', '5678 Barangay Madilim, Di Makita si Troi, Makati'),
+(12, 88, 'images/profile_images/dummyacount2.png', 'dummyacount2', 'dummy', 'account', '2011-100504', '8789056', 'IT', 'dummyaccount2@test.com', '6025 Kalayaan Ave., Brgy. Olympia, Makati');
 
 -- --------------------------------------------------------
 
@@ -341,7 +355,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `created_at` int(11) NOT NULL,
   `updated_at` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=86 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=89 ;
 
 --
 -- Dumping data for table `user`
@@ -355,7 +369,10 @@ INSERT INTO `user` (`id`, `username`, `firstname`, `lastname`, `auth_key`, `pass
 (77, 'partnerhr1', 'HR', 'PartnerOne', 'E_yg68arEyl4_wBUjIBmbTQlIJCP5TKr', '$2y$13$YJXTpUxRqKzVMdbGTms/tO1kTAQBYsvEkIx8gvq1r1VTP84OCPwl2', NULL, 'parterhr1@sample.com', 25, 10, 1427439184, 1427439184),
 (83, 'dummyaccnt', 'dummy', 'adasdasdasd', 'Li1a_BB-m2SibJFAeso7VSqDtMZCpC1o', '$2y$13$mA7iJ0Wa/nZ.4Jb5ZbyQYuoP7AUpcoW8K5M6oHrVYelAtMR/mWwHO', NULL, 'dummy@account.test', 10, 10, 1427620561, 1427620561),
 (84, 'demo', 'demo', 'demo', 'FVSG0BDXHBHpIC_fWG_UASaNpsZf5atA', '$2y$13$tJEVxT9qbZsUi9IPz8kqxeAtQnKtKUgoQs1HsihzHSAAiLtAHlCga', NULL, 'demo@demonstration.com', 10, 10, 1427628224, 1427628224),
-(85, 'alyftw', 'Alyssa', 'Acle', 'D_bKhxfVY0xOgy26jQ7tI_bic-ed3q2m', '$2y$13$LT9duVOy71d.MoG8b07UJODQpvjpAAumvuLsrKvTmNIAVfP./F.yO', NULL, 'amcacle101@gmail.com', 10, 10, 1427665137, 1427665137);
+(85, 'alyftw', 'Alyssa', 'Acle', 'D_bKhxfVY0xOgy26jQ7tI_bic-ed3q2m', '$2y$13$LT9duVOy71d.MoG8b07UJODQpvjpAAumvuLsrKvTmNIAVfP./F.yO', NULL, 'amcacle101@gmail.com', 10, 10, 1427665137, 1427665137),
+(86, 'okayna', 'Okay', 'Na', '_ZeL09quzMx8fnyFZX45b4NIGPbG7dYo', '$2y$13$bHlXjTe5kquBbxrkmcwtXOXjwChErGYo9cCmK/sY1rhojHIrcSM5u', NULL, 'amcacle@gmail.com', 15, 10, 1427668974, 1427668974),
+(87, 'SanaGumanaNanana', 'alyssa', 'jdkbd', '_on-QC-2OIwwwpHsSzzWYOfYjf9pkdgt', '$2y$13$kTJTAv7dB6Jj8rkTkiKUSukX0tjcSxxSl38aCtTkQBFcFPcYfi3DG', NULL, 'acacle@gmail.com', 10, 10, 1427683296, 1427683296),
+(88, 'dummyacount2', 'dummy', 'account', 'XEsU1F7zP8tGmXD6nWkzVHMYbfwakLwI', '$2y$13$Wgjx2mYCdbLfs9i3eO48MuCvEX0Adhambz/DgAl94TgD6Nh2cXiry', NULL, 'dummyaccount2@test.com', 10, 10, 1427780553, 1427780553);
 
 --
 -- Triggers `user`
@@ -429,8 +446,8 @@ DELIMITER ;
 -- Constraints for table `auth_assignment`
 --
 ALTER TABLE `auth_assignment`
-  ADD CONSTRAINT `auth_assignment_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `auth_assignment_ibfk_1` FOREIGN KEY (`item_name`) REFERENCES `auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `auth_assignment_ibfk_1` FOREIGN KEY (`item_name`) REFERENCES `auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `auth_assignment_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `auth_item`

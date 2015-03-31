@@ -34,6 +34,9 @@ class PartnersController extends Controller
      */
     public function actionIndex()
     {
+		
+		if(Yii::$app->user->can('admin'))
+		{
         $searchModel = new PartnersSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
@@ -41,6 +44,20 @@ class PartnersController extends Controller
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
+				}else
+		{
+			Yii::$app->getSession()->setFlash('success', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed to access this page!',
+                            'title' => 'APC Career Placement Office',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+			
+			throw new ForbiddenHttpException;
+		}
     }
 
     /**

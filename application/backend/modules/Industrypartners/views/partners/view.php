@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
         }else{
             echo '<h1>'. $this->title .'</h1>';
-            echo '<img src=\'../../'. $model->company_logo . '\' width=\'125px\' height=\'125px\' style=\'width:10%;height:10%;\' border="0" alt="Null">';
+            echo '<img src=\'../../'. $model->company_logo . '\' width=\'125px\' height=\'125px\' style=\'width:100%;\' border="0" alt="Null">';
         }
     ?>
     <?= DetailView::widget([
@@ -28,7 +28,7 @@ $this->params['breadcrumbs'][] = $this->title;
             //'id',
             'company_name',
             'company_address',
-            ['label' => 'Contact Number','value' => $model->company_contactnum],
+            ['label' => 'Contact Number','value' => 'company_contactnum'],
             'company_description:ntext',
         ],
     ]) ?>

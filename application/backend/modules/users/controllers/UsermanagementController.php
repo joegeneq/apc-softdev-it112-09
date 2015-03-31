@@ -8,6 +8,7 @@ use backend\modules\users\models\UsermanagementSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\ForbiddenHttpException;
 
 /**
  * UsermanagementController implements the CRUD actions for Usermanagement model.
@@ -32,13 +33,29 @@ class UsermanagementController extends Controller
      */
     public function actionIndex()
     {
-        $searchModel = new UsermanagementSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+		if(Yii::$app->user->can('admin'))
+		{
+			$searchModel = new UsermanagementSearch();
+			$dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
-        return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
-        ]);
+			return $this->render('index', [
+				'searchModel' => $searchModel,
+				'dataProvider' => $dataProvider,
+			]);
+		}else 
+		{
+			Yii::$app->getSession()->setFlash('success', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed to access this page!',
+                            'title' => 'APC Career Placement Office',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+			
+			throw new ForbiddenHttpException;
+		}
     }
 
     /**

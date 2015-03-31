@@ -52,7 +52,7 @@ class IndustryPartners extends \yii\db\ActiveRecord
             'id' => 'ID',
             'company_name' => 'Company Name',
             'company_address' => 'Company Address',
-            'company_contactnum' => 'Primary Contact Number',
+            'company_contactnum' => 'Company Contactnum',
             'company_description' => 'Company Description',
             'file' => 'Company Logo',
         ];

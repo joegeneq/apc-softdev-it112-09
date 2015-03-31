@@ -7,6 +7,7 @@ use yii\web\Controller;
 use common\models\LoginForm;
 use yii\filters\VerbFilter;
 use common\models\User;
+use yii\web\ForbiddenHttpException;
 
 /**
  * Site controller
@@ -65,7 +66,23 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        return $this->render('index');
+		if(Yii::$app->user->can('admin'))
+		{
+			return $this->render('index');
+		}else
+		{
+			Yii::$app->getSession()->setFlash('success', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed to access this page!',
+                            'title' => 'APC Career Placement Office',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+			
+			throw new ForbiddenHttpException;
+		}
     }
 
     public function actionLogin()
