@@ -20,13 +20,13 @@ $this->title = $name;
         Please contact us if you think this is a server error. Thank you.
     </p>
 	<p>You will be redirected in <span id="counter">5</span> second(s).
-	   <?='Click <a href="'.$_SERVER['HTTP_REFERER'].'../">here</a> if the browser won\'t redirect you.'?>
+	   <?='Click <a href="'.Yii::$app->homeUrl.'../">here</a> if the browser won\'t redirect you.'?>
 	</p>
 	<script type="text/javascript">
 	function countdown() {
 	    var i = document.getElementById('counter');
 	    if (parseInt(i.innerHTML)==0) {
-	        <?= 'location.href = \''.$_SERVER['HTTP_REFERER'].'../\';' ?>
+	        <?= 'location.href = \''.Yii::$app->homeUrl.'../\';' ?>
 	    }
 	    if(parseInt(i.innerHTML)>0){
 	    	i.innerHTML = parseInt(i.innerHTML)-1;
