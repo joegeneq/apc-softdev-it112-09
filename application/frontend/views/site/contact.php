@@ -18,6 +18,7 @@ $model->email = Yii::$app->user->identity->email;
 
 ?>
 <div class="site-contact">
+
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
