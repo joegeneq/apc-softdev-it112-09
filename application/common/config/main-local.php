@@ -16,8 +16,8 @@ return [
         'transport' => [
             'class' => 'Swift_SmtpTransport',
             'host' => 'mx1.hostinger.ph',
-            'username' => 'cpo@it112apc09.ml',
-            'password' => 'apccpo',
+            'username' => 'cpoadmin@it112apc09.ml',
+            'password' => 'AsiaPacCollege',
             'port' => '2525',
  //           'encryption' => 'tls',
                         ],
