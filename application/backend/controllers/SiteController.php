@@ -123,6 +123,6 @@ class SiteController extends Controller
                             'positonX' => 'center'
             ]);        
 
-        return $this->goHome();
+        return $this->redirect(Yii::$app->homeUrl.'../',302);
     }
 }

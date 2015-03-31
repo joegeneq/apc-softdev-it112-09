@@ -5,6 +5,7 @@ use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use common\models\User;
+use backend\models\Cpofficer;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
@@ -62,7 +63,7 @@ echo \kartik\widgets\Growl::widget([
 
             } else {
                 $menuItems = [
-                                    ['label' => 'Dashboard', 'url' => ['/site']],
+                                    ['label' => 'Dashboard', 'url' => ['/site/index']],
                 ];            
                 $menuItems[] = ['label' => 'Industry Partners',
                                 'items'=> [
@@ -78,11 +79,13 @@ echo \kartik\widgets\Growl::widget([
 								]
 								];
                 $menuItems[] = ['label' => 'Site Users', 'url' => ['/siteusers/usermanagement']];
-                $menuItems[] = [
-                    'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
-                    'url' => ['/site/logout'],
-                    'linkOptions' => ['data-method' => 'post']
-                ];
+                $sel = Cpofficer::find()->where(['username' => Yii::$app->user->identity->username])->one();
+                $menuItems[] = ['label' => '<img src=\''. Yii::$app->homeUrl .'../frontend/web/images/profile_images/student_image.png\'width=\'25px\' height=\'25px\' draggable="false" border="0" alt="Null"> '. Yii::$app->user->identity->firstname,
+                        'items' => [
+                            ['label' => 'My account', 'url' => ['/cpofficer/update/'.$sel->id]],
+                            ['label' => 'Logout (' . Yii::$app->user->identity->username . ')', 'url' => ['/site/logout'],'linkOptions' => ['data-method' => 'post']]
+                        ]
+                    ];
             }
             echo Nav::widget([
                 'options' => ['class' => 'navbar-nav navbar-right'],

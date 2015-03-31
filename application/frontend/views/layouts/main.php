@@ -92,7 +92,7 @@ echo \kartik\widgets\Growl::widget([
 								];
             } else {
 				if($siteusr->roles == 20){
-					$menuItems[] = ['label' => '<img src=\''. Yii::$app->homeUrl .'/images/profile_images/student_image.png\'width=\'25px\' height=\'25px\' draggable="false" border="0" alt="Null">',
+					$menuItems[] = ['label' => '<img src=\''. Yii::$app->homeUrl .'/images/profile_images/student_image.png\'width=\'25px\' height=\'25px\' draggable="false" border="0" alt="Null">&nbsp'. Yii::$app->user->identity->firstname,
 						'items' => [
 							['label' => 'Manage website', 'url' => [Yii::$app->homeUrl.'../backend']],
 							['label' => 'Logout (' . Yii::$app->user->identity->username . ')', 'url' => ['/site/logout'],'linkOptions' => ['data-method' => 'post']]
@@ -101,14 +101,14 @@ echo \kartik\widgets\Growl::widget([
 
 				}else if($siteusr->roles == 10){
 
-					$menuItems[] = ['label' => '<img src=\''. Yii::$app->homeUrl . $sel->student_pic .'\' width=\'25px\' height=\'25px\' border="0" alt="Null">',
+					$menuItems[] = ['label' => '<img src=\''. Yii::$app->homeUrl . $sel->student_pic .'\' width=\'25px\' height=\'25px\' border="0" alt="Null">&nbsp'. Yii::$app->user->identity->firstname,
 						'items' => [
 							['label' => 'My account', 'url' => [$strings]],
 							['label' => 'Logout (' . Yii::$app->user->identity->username . ')', 'url' => ['/site/logout'],'linkOptions' => ['data-method' => 'post']]
 						]
 					];
 				}else if($siteusr->roles == 15){
-                    $menuItems[] = ['label' => '<img src=\''. Yii::$app->homeUrl . '/images/profile_images/student_image.png\' width=\'25px\' height=\'25px\' border="0" alt="Null">',
+                    $menuItems[] = ['label' => '<img src=\''. Yii::$app->homeUrl . '/images/profile_images/student_image.png\' width=\'25px\' height=\'25px\' border="0" alt="Null">&nbsp'. Yii::$app->user->identity->firstname,
                         'items' => [
                             ['label' => 'Manage website', 'url' => ['../../backend/web']],
                             ['label' => 'Logout (' . Yii::$app->user->identity->username . ')', 'url' => ['/site/logout'],'linkOptions' => ['data-method' => 'post']]
@@ -116,7 +116,7 @@ echo \kartik\widgets\Growl::widget([
                     ];
 
                 }else if($siteusr->roles == 25){
-                    $menuItems[] = ['label' => '<img src=\''. Yii::$app->homeUrl . 'images/profile_images/student_image.png\' width=\'25px\' height=\'25px\' border="0" alt="Null">',
+                    $menuItems[] = ['label' => '<img src=\''. Yii::$app->homeUrl . 'images/profile_images/student_image.png\' width=\'25px\' height=\'25px\' border="0" alt="Null">&nbsp'. Yii::$app->user->identity->firstname,
                         'items' => [
                             ['label' => 'Manage website', 'url' => [Yii::$app->homeUrl . '/../backend/web']],
                             ['label' => 'Logout (' . Yii::$app->user->identity->username . ')', 'url' => ['/site/logout'],'linkOptions' => ['data-method' => 'post']]

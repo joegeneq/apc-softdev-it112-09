@@ -82,12 +82,6 @@ class SiteController extends Controller
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-                Yii::$app->mailer->compose()
-                    ->setFrom('cpo@it112apc09.ml')
-                    ->setTo('amcacle101@gmail.com')
-                    ->setSubject('Test Mail')
-                    ->setTextBody('This is the mail')
-                    ->send();
 
             Yii::$app->getSession()->setFlash('success', [
                             'type' => 'growl',
