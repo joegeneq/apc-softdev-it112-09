@@ -4,6 +4,7 @@ use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
+use common\models\User;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
@@ -43,6 +44,10 @@ echo \kartik\widgets\Growl::widget([
 ?>
 <?php endforeach; ?>
         <?php
+                    $sel = User::find()
+                        ->where(['id' => Yii::$app->user->id])
+                        ->one();
+
             NavBar::begin([
                 'brandLabel' => 'APC CPO Management',
                 'brandUrl' => Yii::$app->homeUrl.'/../../',
@@ -51,8 +56,10 @@ echo \kartik\widgets\Growl::widget([
                 ],
             ]);
 
-            if (Yii::$app->user->isGuest || Yii::$app->user->roles != 20) {
-                $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
+            if (Yii::$app->user->isGuest || $sel->roles != 20) {
+                $menuItems[] = ['label' => 'Back to Home', 'url' => [Yii::$app->homeUrl.'/../../../../']];
+                $menuItems[] = ['label' => 'Login', 'url' => ['/login']];               
+
             } else {
                 $menuItems = [
                                     ['label' => 'Dashboard', 'url' => ['/site']],
