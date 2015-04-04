@@ -123,7 +123,7 @@ class SiteController extends Controller
                             'type' => 'growl',
                             'duration' => 3000,
                             'icon' => 'fa fa-users',
-                            'message' => 'Thank you for contacting us. We will respond to you as soon as possible.',
+                            'message' => 'An email has been sent to '. Yii::$app->params['adminEmail'] . '. Thank you for contacting us. We will respond to you as soon as possible.',
                             'title' => 'APC Career Placement Office',
                             'positonY' => 'top',
                             'positonX' => 'center'
