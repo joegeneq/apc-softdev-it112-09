@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 04, 2015 at 02:55 PM
+-- Generation Time: Apr 04, 2015 at 05:38 PM
 -- Server version: 5.6.14
 -- PHP Version: 5.5.6
 
@@ -316,28 +316,29 @@ CREATE TABLE IF NOT EXISTS `student` (
   `firstname` varchar(100) NOT NULL,
   `lastname` varchar(100) NOT NULL,
   `student_id` varchar(15) NOT NULL,
+  `course` int(11) NOT NULL,
+  `intern_year` varchar(25) NOT NULL,
+  `term` int(11) NOT NULL,
   `contact_num` varchar(15) NOT NULL,
-  `course` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `address` text NOT NULL,
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`),
-  KEY `course` (`course`),
-  KEY `course_2` (`course`)
+  KEY `course` (`course`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
 
 --
 -- Dumping data for table `student`
 --
 
-INSERT INTO `student` (`id`, `user_id`, `student_pic`, `username`, `firstname`, `lastname`, `student_id`, `contact_num`, `course`, `email`, `address`) VALUES
-(1, 7, 'images/profile_images/kosibayan.jpg', 'kosibayan', 'Kenneth', 'Sibayan', '2011-100121', '09054005890', '123123', 'kosibayan@student.apc.edu.ph', '90 Z1 Don Sergio Ext. Brgy Holy Spirit, Diliman, Quezon City 1127'),
-(2, 9, '', 'joshrramos', 'Josh', 'Ramos', '', '', '0', 'jrramos@student.apc.edu.ph', ''),
-(8, 83, 'images/profile_images/dummyaccnt.jpg', 'dummyaccnt', 'dummy', 'adasdasdasd', '124521212', '231232323', 'asasdasasd', 'dummy@account.test', '123232332'),
-(9, 84, 'images/profile_images/demo.jpg', 'demo', 'demo', 'demo', '2135234123', '2332', 'sewtgsddsdfd', 'demo@demonstration.com', 'fghjyhfdf'),
-(10, 85, '', 'alyftw', 'Alyssa', 'Acle', '', '', '', 'amcacle101@gmail.com', ''),
-(11, 87, 'images/profile_images/SanaGumanaNanana.png', 'SanaGumanaNanana', 'alyssa', 'jdkbd', '2011-100504', '6578922', 'IT', 'acacle@gmail.com', '5678 Barangay Madilim, Di Makita si Troi, Makati'),
-(12, 88, 'images/profile_images/dummyacount2.png', 'dummyacount2', 'dummy', 'account', '2011-100504', '8789056', 'IT', 'dummyaccount2@test.com', '6025 Kalayaan Ave., Brgy. Olympia, Makati');
+INSERT INTO `student` (`id`, `user_id`, `student_pic`, `username`, `firstname`, `lastname`, `student_id`, `course`, `intern_year`, `term`, `contact_num`, `email`, `address`) VALUES
+(1, 7, 'images/profile_images/kosibayan.jpg', 'kosibayan', 'Kenneth', 'Sibayan', '2011-100121', 0, '', 0, '09054005890', 'kosibayan@student.apc.edu.ph', '90 Z1 Don Sergio Ext. Brgy Holy Spirit, Diliman, Quezon City 1127'),
+(2, 9, '', 'joshrramos', 'Josh', 'Ramos', '', 0, '', 0, '', 'jrramos@student.apc.edu.ph', ''),
+(8, 83, 'images/profile_images/dummyaccnt.jpg', 'dummyaccnt', 'dummy', 'adasdasdasd', '124521212', 0, '', 0, '231232323', 'dummy@account.test', '123232332'),
+(9, 84, 'images/profile_images/demo.jpg', 'demo', 'demo', 'demo', '2135234123', 0, '', 0, '2332', 'demo@demonstration.com', 'fghjyhfdf'),
+(10, 85, '', 'alyftw', 'Alyssa', 'Acle', '', 0, '', 0, '', 'amcacle101@gmail.com', ''),
+(11, 87, 'images/profile_images/SanaGumanaNanana.png', 'SanaGumanaNanana', 'alyssa', 'jdkbd', '2011-100504', 0, '', 0, '6578922', 'acacle@gmail.com', '5678 Barangay Madilim, Di Makita si Troi, Makati'),
+(12, 88, 'images/profile_images/dummyacount2.png', 'dummyacount2', 'dummy', 'account', '2011-100504', 0, '', 0, '8789056', 'dummyaccount2@test.com', '6025 Kalayaan Ave., Brgy. Olympia, Makati');
 
 -- --------------------------------------------------------
 
