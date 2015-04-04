@@ -15,11 +15,11 @@ return [
         //comment the following array to send mail using php's mail function
         'transport' => [
             'class' => 'Swift_SmtpTransport',
-            'host' => 'mx1.hostinger.ph',
-            'username' => 'cpoadmin@it112apc09.ml',
-            'password' => 'AsiaPacCollege',
-            'port' => '2525',
- //           'encryption' => 'tls',
+            'host' => 'smtp-relay.gmail.com',
+            'username' => 'kensbyn@gmail.com',
+            'password' => 'Kldlazness23',
+            'port' => '25',
+            'encryption' => 'ssl/tls',
                         ],
         ],
         ],
