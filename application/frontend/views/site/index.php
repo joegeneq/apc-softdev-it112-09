@@ -2,43 +2,117 @@
 /* @var $this yii\web\View */
 $this->title = 'APC Career Placement Office';
 ?>
+
 <div class="site-index">
 
 <body background="images/bg.jpg">
-    <div class="jumbotron">
-        <img src="images/banner1.png" style='width:100%;' border="0" alt="Null"/>
+ 
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  
+  <div class="carousel-inner">
+    
+    <div class="item active">
+      <a href="http://estiloasertivo.blogspot.com.es/"> 
+      <img src="images/banner1.jpg" style="width:100%" class="img-responsive">
     </div>
-
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Vision</h2>
-
-                <p>Asia Pacific College envisions itself to be the preferred Higher Education Institution bridging academe and industry with its programs founded on the concepts and applications of IT, guided by the core values of integrity, industry and innovation that works.</p>
-
-                <p><a class="btn btn-default" href="http://www.apc.edu.ph/">Asia Pacific College website</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Industry-Academe Cooperative Education Program</h2>
-
-                <p>The Industry-Academe Cooperative Education Program, also known as the I-ACE Program, is an internship program of the Asia Pacific College, where students on their senior year are assigned to work full time for a company for a period of two consecutive terms.</p>
-
-                <p><a class="btn btn-default" href="index.php?r=partners">View IPs &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Objective</h2>
-
-                <p>The objective of the program is to link industry and academe. This program is envisioned to be a good venue to expose the school to the relevant and changing needs of the industry. The industry sector, on the other hand, absorbs the intern and is encouraged to be involved in the education and development of future Information Technology and Business professionals from their respective courses and specializations.
-On their senior year, APC students enter the Industry-Academe Cooperative Education Program. They are assigned to work for a pre-identified company (assigned during the internship placement period), for a duration of two (2) consecutive terms of APC’s tri-mestral school calendar.
-
-During the Internship Program, the Interns are not expected to enroll in any academic courses in school for they will be working full-time (eight hours a day, Mondays to Fridays) at their respective companies. Interns are invited to attend once a month Saturday sessions with the Career & Placement Office to discuss updates, issues or problems encountered.
-
-As interns, they are expected to strictly follow office policies of the company they work for and abide by the principle of confidentiality with regard to any information / restricted materials on their assigned projects.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-            </div>
-        </div>
-
+    
+    <div class="item">
+      <a href="http://apc.edu.ph"> 
+      <img src="images/theinternship.png" class="img-responsive">
     </div>
+    
+    <div class="item">
+      <a href="http://estiloasertivo.blogspot.com.es/"> 
+      <img src="images/intern101.jpg" class="img-responsive">  
+    </div>
+  </div>
+  
+  <!-- Controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="icon-next"></span>
+  </a>  
+</div>
+<!-- /.carousel -->
+
+<div>
+  <p></p>
+</div>
+
+<!-- Marketing messaging and featurettes
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="container marketing">
+
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+    <div class="col-md-4 text-center">
+      <img class="img-circle" src="images/beupdated.png">
+      <h2>Be Updated!</h2>
+      <p>Get the latest news on what's happening inside your school and the industry partners</p>
+      <p><a class="btn btn-default" href="#">View details »</a></p>
+    </div>
+    <div class="col-md-4 text-center">
+      <img class="img-circle" src="images/uploadreq.png">
+      <h2>Upload Requirements</h2>
+      <p>You can now upload requirements here at the CPO Communication Site!</p>
+      <p><a class="btn btn-default" href="#">View details »</a></p>
+    </div>
+    <div class="col-md-4 text-center">
+      <img class="img-circle" src="images/contact.png">
+      <h2>Contact Us</h2>
+      <p>Do you have any problems or inquiries? You can ask the CPO through this site.</p>
+      <p><a class="btn btn-default" href="#">View details »</a></p>
+    </div>
+  </div><!-- /.row -->
+
+
+  <!-- START THE FEATURETTES -->
+
+  <hr class="featurette-divider">
+
+  <div class="featurette">
+    <img class="featurette-image img-circle pull-right" src="http://placehold.it/512">
+    <h2 class="featurette-heading">Responsive Design. <span class="text-muted">It'll blow your mind.</span></h2>
+    <p class="lead">In simple terms, a responsive web design figures out what resolution of device it's being served on. Flexible grids then size correctly to fit the screen.</p>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="featurette">
+    <img class="featurette-image img-circle pull-left" src="http://placehold.it/512">
+    <h2 class="featurette-heading">Smaller Footprint. <span class="text-muted">Lightweight.</span></h2>
+    <p class="lead">The new Bootstrap 3 promises to be a smaller build. The separate Bootstrap base and responsive.css files have now been merged into one. There is no more fixed grid, only fluid.</p>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="featurette">
+    <img class="featurette-image img-circle pull-right" src="http://placehold.it/512">
+    <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Flatness.</span></h2>
+    <p class="lead">A big design trend for 2013 is "flat" design. Gone are the days of excessive gradients and shadows. Designers are producing cleaner flat designs, and Bootstrap 3 takes advantage of this minimalist trend.</p>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <!-- /END THE FEATURETTES -->
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="pull-right"><a href="#">Back to top</a></p>
+    <p>This Bootstrap layout is compliments of Bootply. · <a href="http://www.bootply.com/62603">Edit on Bootply.com</a></p>
+  </footer>
+</div><!-- /.container -->
 </div>
