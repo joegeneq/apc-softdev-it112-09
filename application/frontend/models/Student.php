@@ -40,12 +40,13 @@ class Student extends \yii\db\ActiveRecord
     {
         return [
             [['id', 'user_id', 'username', 'firstname', 'lastname', 'student_id', 'contact_num', 'course', 'email', 'address'], 'required'],
-            [['id', 'user_id'], 'integer'],
+            [['id', 'user_id', 'term'], 'integer'],
             [['address'], 'string'],
-            [['image'], 'file'],
+            ['image', 'file'],
             [['username', 'email','student_pic'], 'string', 'max' => 255],
             [['firstname', 'lastname', 'course'], 'string', 'max' => 100],
-            [['student_id', 'contact_num'], 'string', 'max' => 15]
+            [['student_id', 'contact_num'], 'string', 'max' => 15],
+            [['intern_year'], 'string', 'max' => 25],
         ];
     }
 
@@ -65,6 +66,9 @@ class Student extends \yii\db\ActiveRecord
             'course' => 'Course',
             'email' => 'Email',
             'address' => 'Address',
+            'internship' => 'Internship',
+            'intern_year' => 'School Year',
+            'term' => 'Term',
             'image' => 'Profile Picture',
         ];
     }

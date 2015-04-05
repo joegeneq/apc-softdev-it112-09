@@ -10,7 +10,8 @@ use yii\widgets\ActiveForm;
 
 <div class="student-form">
 
-    <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
+    <?php $form = ActiveForm::begin([
+        'options' => ['enctype' => 'multipart/form-data']]); ?>
 
     <?= $form->field($model, 'student_id')->textInput(['maxlength' => 15]) ?>
 
