@@ -3,6 +3,54 @@ body {
     height: 100%;
 }
 
+/* Adjust Menu (red) text color, (Garamond) font-family, (1.5em) font-size  */
+.navbar .nav > li > a, .navbar .nav > li > a:first-letter,
+.navbar .nav > li.current-menu-item > a, 
+.navbar .nav > li.current-menu-ancestor > a {
+display:        inline;
+color:          white;                        
+font-family:    Tahoma;
+font-size:      1.25em;
+padding:        5px 20px; 
+top: 15px;
+}
+ 
+/* Adjust Menu colors - Normal */
+.navbar .nav > li > a, .navbar .nav > li > a:first-letter {
+color:          white;
+text-shadow:    none;
+}
+/* Adjust Menu colors - Hover */
+.navbar .nav > li > a:hover, .navbar .nav > li > a:hover:first-letter { 
+color:          gray;                      
+text-shadow:    none;
+}
+/* Adjust Menu colors - Active */
+.navbar .nav > li > a:active, .navbar .nav > li > a:active:first-letter,
+.navbar .nav > li.current-menu-item > a, 
+.navbar .nav > li.current-menu-ancestor > a,
+.navbar .nav > li.current-menu-item > a:first-letter, 
+.navbar .nav > li.current-menu-ancestor > a:first-letter {
+color:          black
+text-shadow:    lightgray;
+}
+ 
+/* Adjust dropdown Menu items (blue) text color & (yellow) shading */
+.dropdown-menu > li > a {
+color:          black;
+background:     white;
+}
+ 
+/* Remove the Hover/Focus Colors  */
+.navbar .nav > li.current-menu-item > a, .navbar .nav > li.current-menu-ancestor > a, 
+.navbar .nav > li > a:hover, .navbar .nav > li > a:focus {
+color:          b9b9b9;
+}
+
+/* =============================================================================================================  */
+
+
+
 .navbar-inverse{
     background-color: #043c53;
     border-color: #043c53;

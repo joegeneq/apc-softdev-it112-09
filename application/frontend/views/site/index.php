@@ -9,7 +9,7 @@ $this->title = 'APC Career Placement Office';
  
 <!-- Carousel
 ================================================== -->
-<div id="myCarousel" class="carousel slide">
+<div id="myCarousel" class="carousel slide"  data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -80,28 +80,29 @@ $this->title = 'APC Career Placement Office';
 
   <!-- START THE FEATURETTES -->
 
-  <hr class="featurette-divider">
+ <hr class="featurette-divider">
 
   <div class="featurette">
-    <img class="featurette-image img-circle pull-right" src="http://placehold.it/512">
-    <h2 class="featurette-heading">Responsive Design. <span class="text-muted">It'll blow your mind.</span></h2>
-    <p class="lead">In simple terms, a responsive web design figures out what resolution of device it's being served on. Flexible grids then size correctly to fit the screen.</p>
+    <img class="featurette-image img-circle pull-right" src="images/featurette1.png">
+    <h2 class="featurette-heading">Asia Pacific College. <span class="text-muted">Real Projects. Real Learning.</span></h2>
+    <p class="lead">This communication site is a microsite that bridges the gap between the school, the interns and the industry partners alike.</p>
   </div>
 
   <hr class="featurette-divider">
 
   <div class="featurette">
-    <img class="featurette-image img-circle pull-left" src="http://placehold.it/512">
-    <h2 class="featurette-heading">Smaller Footprint. <span class="text-muted">Lightweight.</span></h2>
-    <p class="lead">The new Bootstrap 3 promises to be a smaller build. The separate Bootstrap base and responsive.css files have now been merged into one. There is no more fixed grid, only fluid.</p>
+    <img class="featurette-image img-circle pull-left" src="images/featurette2.png">
+    <h2 class="featurette-heading">Real Immersion. <span class="text-muted">Six months of training.</span></h2>
+    <p class="lead">During the Internship Program, the Interns are not expected to enroll in any academic courses in school for they will be working full-time (eight hours a day, Mondays to Fridays) at their respective companies. Interns are invited to attend once a month Saturday 
+                  sessions with the Career and Placement Office to discuss updates, issues or problems encountered.</p>
   </div>
 
   <hr class="featurette-divider">
 
   <div class="featurette">
-    <img class="featurette-image img-circle pull-right" src="http://placehold.it/512">
-    <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Flatness.</span></h2>
-    <p class="lead">A big design trend for 2013 is "flat" design. Gone are the days of excessive gradients and shadows. Designers are producing cleaner flat designs, and Bootstrap 3 takes advantage of this minimalist trend.</p>
+    <img class="featurette-image img-circle pull-right" src="images/featurette3.png">
+    <h2 class="featurette-heading">The Intern Know-How. <span class="text-muted">Strive in Excellence.</span></h2>
+    <p class="lead">What do your Industry Professors expect of you? What are the do's and don'ts in Internship. How to excel in your area?</p>
   </div>
 
   <hr class="featurette-divider">
@@ -112,7 +113,6 @@ $this->title = 'APC Career Placement Office';
   <!-- FOOTER -->
   <footer>
     <p class="pull-right"><a href="#">Back to top</a></p>
-    <p>This Bootstrap layout is compliments of Bootply. · <a href="http://www.bootply.com/62603">Edit on Bootply.com</a></p>
   </footer>
 </div><!-- /.container -->
 </div>
