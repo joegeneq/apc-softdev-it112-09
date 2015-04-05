@@ -18,7 +18,7 @@ class PostsSearch extends Posts
     public function rules()
     {
         return [
-            [['id', 'author', 'created_at', 'post_type'], 'integer'],
+            [['id', 'author', 'author_role', 'created_at', 'updated_at', 'post_type'], 'integer'],
             [['posts_title', 'posts_body'], 'safe'],
         ];
     }
@@ -58,7 +58,9 @@ class PostsSearch extends Posts
         $query->andFilterWhere([
             'id' => $this->id,
             'author' => $this->author,
+            'author_role' => $this->author_role,
             'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at,
             'post_type' => $this->post_type,
         ]);
 

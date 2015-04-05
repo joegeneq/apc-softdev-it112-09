@@ -6,7 +6,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model backend\modules\Industrypartners\models\IndustryPartners */
 
-$this->title = 'Create Industry Partners';
+$model->author = Yii::$app->user->identity->id;
+$this->title = 'Add Industry Partners';
 $this->params['breadcrumbs'][] = ['label' => 'Industry Partners', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>

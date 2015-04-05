@@ -1,4 +1,7 @@
 <?php
+
+use yii\helpers\Html;
+use yii\grid\GridView;
 /* @var $this yii\web\View */
 
 $this->title = 'APC Career Placement Office';
@@ -11,33 +14,40 @@ $this->title = 'APC Career Placement Office';
     </div>
 
     <div class="body-content">
-
+        <div class="jumbotron">
+        <?= '<img'
+        </div>
         <div class="row">
             <div class="col-lg-4">
-                <h2>Post Updates/Announcements</h2>
-
-                <p>Here you can easily share updates directly from the CPO. Interns and IPs alike can 
+                <h1>Dashboard</h1>                
+                <p><?= '<a class="btn btn-default" href="'.Yii::$app->homeUrl.'posts/posts/create">New post &raquo;</a>' ?></p>
+            </div>
+            <div class="col-lg-4">
+                <p>Here you can easily share updates to site visitors. Interns and IPs alike can 
                     see what your announcements that may have relevance to them.</p>
 
-                <p><a class="btn btn-default" href="">Post Something... &raquo;</a></p>
             </div>
-            <div class="col-lg-4">
-                <h2>File Management</h2>
+            <div>
+    <?= GridView::widget([
+        'dataProvider' => $dataProvider,
+        'filterModel' => $searchModel,
+        'columns' => [
+//            ['class' => 'yii\grid\SerialColumn'],
+            ['class' => 'yii\grid\ActionColumn'],
 
-                <p>The communication site gives you the ability to upload files that are necessary for reports and evaluations both
-                    students and the industry professors need to accomplish their responsibilities. You also have the capability to 
-                    view and open documents they have uploaded to the website.</p>
+//            'id',
+            'posts_title',
+//            'posts_body:ntext',
+            'author',
+            'created_at',
+            // 'post_type',
 
-                <p><a class="btn btn-default" href="">File Management &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>ASIA PACIFIC COLLEGE Website</h2>
-
-                <p>This site is linked to the ASIA PACIFIC COLLEGE website to ensure synergy with all of its processes.</p>
-
+        ],
+    ]); ?>            </div>
+            <div>
+                <h2>Asia Pacific College Website</h2>
                 <p><a class="btn btn-default" href="http://www.apc.edu.ph">APC Website &raquo;</a></p>
             </div>
         </div>
-
     </div>
 </div>

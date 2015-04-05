@@ -15,11 +15,11 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php
         if ($model->company_logo == null) {
             echo '<h1>'. $this->title .'</h1>';
-            echo '<img src=\'../../image/company_images/company-logo.png\' width=\'125px\' height=\'125px\' style=\'width:10%;height:10%\' border="0" alt="Null">';
+            echo '<img src=\''.Yii::$app->homeUrl.'web/image/company_images/company-logo.png\' width=\'125px\' height=\'125px\' style=\'width:10%;height:10%;float:right;\' border="0" alt="Null">';
 
         }else{
             echo '<h1>'. $this->title .'</h1>';
-            echo '<img src=\'../../'. $model->company_logo . '\' width=\'125px\' height=\'125px\' style=\'width:100%;\' border="0" alt="Null">';
+            echo '<img src=\''.Yii::$app->homeUrl.'web/'.$model->company_logo . '\' width=\'125px\' height=\'125px\' style=\'width:100%;height:10%;float:right;\' border="0" alt="Null">';
         }
     ?>
     <?= DetailView::widget([

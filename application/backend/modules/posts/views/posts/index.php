@@ -29,7 +29,9 @@ $this->params['breadcrumbs'][] = $this->title;
             'posts_title',
             'posts_body:ntext',
             'author',
-            'created_at',
+            'author_role',
+            // 'created_at',
+            // 'updated_at',
             // 'post_type',
 
             ['class' => 'yii\grid\ActionColumn'],

@@ -61,7 +61,9 @@ class PostsController extends Controller
     public function actionCreate()
     {
         $model = new Posts();
-
+        $model->author = Yii::$app->user->identity->id;
+        $model->author_role = Yii::$app->user->identity->roles;
+        
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
