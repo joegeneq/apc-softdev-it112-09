@@ -7,6 +7,7 @@ use yii\widgets\ActiveForm;
 /* @var $model frontend\models\PartnersSearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
+<body background="../images/bg.jpg">
 
 <div class="partners-search">
 

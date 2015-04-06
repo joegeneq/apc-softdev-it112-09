@@ -5,7 +5,6 @@ $this->title = 'APC Career Placement Office';
 
 <div class="site-index">
 
-<body background="images/bg.jpg">
  
 <!-- Carousel
 ================================================== -->
@@ -61,7 +60,7 @@ $this->title = 'APC Career Placement Office';
       <img class="img-circle" src="images/beupdated.png">
       <h2>Be Updated!</h2>
       <p>Get the latest news on what's happening inside your school and the industry partners</p>
-      <p><a class="btn btn-default" href="#">View details »</a></p>
+      <p><?='<a class="btn btn-default" href="'.Yii::$app->homeUrl.'post/index">'?>View details »</a></p>
     </div>
     <div class="col-md-4 text-center">
       <img class="img-circle" src="images/uploadreq.png">

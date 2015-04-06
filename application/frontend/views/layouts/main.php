@@ -25,7 +25,7 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body>
+<?= '<body style="background-image:url('.Yii::$app->homeUrl.'frontend/web/images/bg.jpg)">' ?>
     <?php $this->beginBody() ?>
     <div class="wrap">
     <?php foreach (Yii::$app->session->getAllFlashes() as $message):; ?>
