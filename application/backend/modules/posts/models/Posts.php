@@ -4,6 +4,7 @@ namespace backend\modules\posts\models;
 
 use Yii;
 use yii\behaviors\TimestampBehavior;
+use yii\db\Expression;
 
 /**
  * This is the model class for table "posts".
@@ -11,6 +12,7 @@ use yii\behaviors\TimestampBehavior;
  * @property integer $id
  * @property string $posts_title
  * @property string $posts_body
+ * @property string $post_attachment
  * @property integer $author
  * @property integer $author_role
  * @property integer $created_at
@@ -19,8 +21,10 @@ use yii\behaviors\TimestampBehavior;
  *
  * @property User $author0
  */
-class posts extends \yii\db\ActiveRecord
+class Posts extends \yii\db\ActiveRecord
 {
+
+    public $file;
     /**
      * @inheritdoc
      */
@@ -35,20 +39,20 @@ class posts extends \yii\db\ActiveRecord
     public function behaviors()
     {
         return [
-            TimestampBehavior::className(),
+            'class' => TimestampBehavior::className()
         ];
     }
-
     /**
      * @inheritdoc
      */
     public function rules()
     {
         return [
-            [['posts_title', 'posts_body', 'author', 'author_role', 'created_at', 'updated_at', 'post_type'], 'required'],
+            [['posts_title', 'posts_body', 'author', 'author_role', 'post_type'], 'required'],
             [['posts_body'], 'string'],
+            [['file'],'file'],
             [['author', 'author_role', 'created_at', 'updated_at', 'post_type'], 'integer'],
-            [['posts_title'], 'string', 'max' => 255]
+            [['posts_title', 'post_attachment'], 'string', 'max' => 255]
         ];
     }
 
@@ -59,8 +63,9 @@ class posts extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'posts_title' => 'Title',
-            'posts_body' => 'Content',
+            'posts_title' => 'Posts Title',
+            'posts_body' => 'Posts Body',
+            'file' => 'Post Attachment',
             'author' => 'Author',
             'author_role' => 'Author Role',
             'created_at' => 'Created At',

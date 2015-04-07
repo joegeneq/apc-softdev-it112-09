@@ -31,6 +31,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'posts_title',
             'posts_body:ntext',
+            'post_attachment',
             'author',
             'author_role',
             'created_at',

@@ -10,7 +10,7 @@ use backend\modules\posts\models\Posts;
 /**
  * PostsSearch represents the model behind the search form about `backend\modules\posts\models\Posts`.
  */
-class PostsSearch extends Posts
+class HrpostsSearch extends Posts
 {
     /**
      * @inheritdoc
@@ -19,7 +19,7 @@ class PostsSearch extends Posts
     {
         return [
             [['id', 'author', 'author_role', 'created_at', 'updated_at', 'post_type'], 'integer'],
-            [['posts_title', 'posts_body', 'post_attachment'], 'safe'],
+            [['posts_title', 'posts_body'], 'safe'],
         ];
     }
 
@@ -41,7 +41,8 @@ class PostsSearch extends Posts
      */
     public function search($params)
     {
-        $query = Posts::find();
+        $query = Posts::find()
+            ->where('author_role' == 25);
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
@@ -65,8 +66,7 @@ class PostsSearch extends Posts
         ]);
 
         $query->andFilterWhere(['like', 'posts_title', $this->posts_title])
-            ->andFilterWhere(['like', 'posts_body', $this->posts_body])
-            ->andFilterWhere(['like', 'post_attachment', $this->post_attachment]);
+            ->andFilterWhere(['like', 'posts_body', $this->posts_body]);
 
         return $dataProvider;
     }

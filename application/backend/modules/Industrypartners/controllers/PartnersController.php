@@ -87,7 +87,7 @@ class PartnersController extends Controller
 				$imageName = $model->id;
 				$model->file = UploadedFile::getInstance($model,'file');
 				if($model->file != null){
-					$model->file->saveAs('image/company_images/'. $imageName .'.'.$model->file->extension);
+					$model->file->saveAs('web/image/company_images/'. $imageName .'.'.$model->file->extension);
 					$model->company_logo = 'image/company_images/'. $imageName .'.'.$model->file->extension;
 				}
 				$model->save();
@@ -118,7 +118,7 @@ class PartnersController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             $imageName = $id;
             $model->file = UploadedFile::getInstance($model,'file');
-            $model->file->saveAs('image/company_images/'. $imageName .'.'.$model->file->extension);
+            $model->file->saveAs('web/image/company_images/'. $imageName .'.'.$model->file->extension);
 
             $model->company_logo = 'image/company_images/'. $imageName .'.'.$model->file->extension;
             $model->save();

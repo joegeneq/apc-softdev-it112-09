@@ -21,9 +21,11 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'posts_body') ?>
 
+    <?= $form->field($model, 'post_attachment') ?>
+
     <?= $form->field($model, 'author') ?>
 
-    <?= $form->field($model, 'author_role') ?>
+    <?php // echo $form->field($model, 'author_role') ?>
 
     <?php // echo $form->field($model, 'created_at') ?>
 

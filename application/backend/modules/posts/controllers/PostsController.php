@@ -8,6 +8,7 @@ use backend\modules\posts\models\PostsSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * PostsController implements the CRUD actions for Posts model.
@@ -63,8 +64,17 @@ class PostsController extends Controller
         $model = new Posts();
         $model->author = Yii::$app->user->identity->id;
         $model->author_role = Yii::$app->user->identity->roles;
-        
+
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+                
+                $model->file = UploadedFile::getInstance($model,'file');
+                if($model->file != null){
+                    $fileName = $model->file->name;
+                    $model->file->saveAs('web/attachments/'. $fileName);
+                    $model->post_attachment = 'attachments/'. $fileName;
+                }
+                    $model->save();            
+
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
@@ -84,6 +94,14 @@ class PostsController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+                $model->file = UploadedFile::getInstance($model,'file');
+                if($model->file != null){
+                    $fileName = $model->posts_title;
+                    $model->file->saveAs('web/attachments/'. $fileName . '.'. $model->file->extension );
+                    $model->post_attachment = 'attachments/'. $fileName . '.'. $model->file->extension;
+                }
+                $model->save();            
+
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
