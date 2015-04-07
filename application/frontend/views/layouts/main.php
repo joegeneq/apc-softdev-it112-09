@@ -142,8 +142,9 @@ echo \kartik\widgets\Growl::widget([
 
     <footer class="footer">
         <div class="container">
-        <p class="pull-left">&copy; APC Career Placement Office <?= date('Y') ?></p>
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        <p class="pull-left">&copy; <a href="http://www.apc.edu.ph/">Asia Pacific College </a>Career Placement Office <?= date('Y') ?></p>
+        <p class="pull-right"><?= '<a href="'.Yii::$app->homeUrl.'site/devs">'?> <?= Yii::powered() ?></a></p>
+    
         </div>
     </footer>
 

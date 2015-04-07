@@ -1,14 +1,14 @@
 <?php
 
-namespace backend\modules\posts\models;
+namespace frontend\models;
 
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use backend\modules\posts\models\Posts;
+use frontend\models\Posts;
 
 /**
- * PostsSearch represents the model behind the search form about `backend\modules\posts\models\Posts`.
+ * PostsSearch represents the model behind the search form about `frontend\models\Posts`.
  */
 class PostslatestSearch extends Posts
 {
@@ -18,8 +18,8 @@ class PostslatestSearch extends Posts
     public function rules()
     {
         return [
-            [['id', 'author', 'author_role', 'created_at', 'updated_at', 'post_type'], 'integer'],
-            [['posts_title', 'posts_body'], 'safe'],
+            [['id', 'author', 'author_role', 'created_at', 'updated_at'], 'integer'],
+            [['posts_title', 'posts_body', 'post_attachment', 'post_type'], 'safe'],
         ];
     }
 
@@ -42,8 +42,8 @@ class PostslatestSearch extends Posts
     public function search($params)
     {
         $query = Posts::find()
-            ->orderBy('id')
-            ->limit(5);
+                ->orderBy('id')
+                ->limit(5);
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
@@ -64,11 +64,12 @@ class PostslatestSearch extends Posts
             'author_role' => $this->author_role,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
-            'post_type' => $this->post_type,
         ]);
 
         $query->andFilterWhere(['like', 'posts_title', $this->posts_title])
-            ->andFilterWhere(['like', 'posts_body', $this->posts_body]);
+            ->andFilterWhere(['like', 'posts_body', $this->posts_body])
+            ->andFilterWhere(['like', 'post_attachment', $this->post_attachment])
+            ->andFilterWhere(['like', 'post_type', $this->post_type]);
 
         return $dataProvider;
     }

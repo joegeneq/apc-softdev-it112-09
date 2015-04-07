@@ -107,7 +107,7 @@ echo \kartik\widgets\Growl::widget([
     <footer class="footer">
         <div class="container">
         <p class="pull-left">&copy; APC CPO Communication Site <?= date('Y') ?></p>
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        <p class="pull-right">Ken Sibayan | Josh Ramos | Aly Acle</p>
         </div>
     </footer>
 

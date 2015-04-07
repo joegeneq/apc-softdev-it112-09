@@ -30,5 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
 	Career Counseling Sessions<br/>
 	CPO Events and Activities<br/>
 	</p>
-
 </div>
+	<div>
+	<p class="pull-right">This website is <?= Yii::powered() ?></p>
+	   </div>

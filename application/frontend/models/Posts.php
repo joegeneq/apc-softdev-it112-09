@@ -3,7 +3,7 @@
 namespace frontend\models;
 
 use Yii;
-
+use common\models\User;
 /**
  * This is the model class for table "posts".
  *
