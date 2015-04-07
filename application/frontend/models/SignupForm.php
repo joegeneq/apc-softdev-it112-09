@@ -51,6 +51,12 @@ class SignupForm extends Model
     public function signup()
     {
         if ($this->validate()) {
+            Yii::$app->mailer->compose()
+            ->setFrom([Yii::$app->params['adminEmail'] => 'APC CPO Robot'])
+            ->setTo($this->email)
+            ->setSubject('CPO Website Registration')
+            ->setTextBody('Welcome '.$this->username.'! You have successfully signed up to APC CPO Wesite!')
+            ->send();
             $user = new User();
             $user->username = $this->username;
 			$user->firstname = $this->firstname;

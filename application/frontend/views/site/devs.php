@@ -49,9 +49,10 @@ $this->params['breadcrumbs'][] = $this->title;
 </div>
 
 <div class="col-lg-4">
+<?= '<img src="'.Yii::$app->homeUrl.'frontend/web/images/devs/joegene.jpg" width="200px" style=\'width:65%;height:65%;\'border="0" alt="Null">' ?>
 <h4>Joe Gene Quesada</h4>
 <p>Instructor<br/>
-<a href="https://www.linkedin.com/pub/joe-gene-quesada/6/5a2/b0b">LinkedIn</a>
+<?= Icon::show('linkedin-square') . '<a href="https://www.linkedin.com/pub/joe-gene-quesada/6/5a2/b0b">LinkedIn</a>'?>
 </div>
 
 

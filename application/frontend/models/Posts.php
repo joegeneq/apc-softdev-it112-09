@@ -3,6 +3,8 @@
 namespace frontend\models;
 
 use Yii;
+use yii\behaviors\TimestampBehavior;
+use yii\db\Expression;
 use common\models\User;
 /**
  * This is the model class for table "posts".
@@ -21,6 +23,7 @@ use common\models\User;
  */
 class Posts extends \yii\db\ActiveRecord
 {
+    public $file;
     /**
      * @inheritdoc
      */
@@ -35,8 +38,9 @@ class Posts extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['posts_title', 'posts_body', 'author', 'author_role', 'created_at', 'updated_at', 'post_type'], 'required'],
+            [['posts_title', 'posts_body', 'author', 'author_role', 'post_type'], 'required'],
             [['posts_body'], 'string'],
+            [['file'],'file'],
             [['author', 'author_role', 'created_at', 'updated_at'], 'integer'],
             [['posts_title', 'post_attachment'], 'string', 'max' => 255],
             [['post_type'], 'string', 'max' => 25]
@@ -52,7 +56,7 @@ class Posts extends \yii\db\ActiveRecord
             'id' => 'ID',
             'posts_title' => 'Posts Title',
             'posts_body' => 'Posts Body',
-            'post_attachment' => 'Post Attachment',
+            'file' => 'Post Attachment',
             'author' => 'Author',
             'author_role' => 'Author Role',
             'created_at' => 'Created At',

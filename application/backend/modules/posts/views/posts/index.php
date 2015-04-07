@@ -3,9 +3,25 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
+use kartik\export\ExportMenu;
 /* @var $this yii\web\View */
 /* @var $searchModel backend\modules\posts\models\PostsSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
+
+$gridColumns = [
+    ['class' => 'yii\grid\ActionColumn'],
+            //['class' => 'yii\grid\SerialColumn'],   
+
+            // 'id',
+            ['label'=>'Type','value'=>'post_type', 'attribute' => 'post_type'],
+            ['label'=>'Title','value'=>'posts_title', 'attribute' => 'posts_title'],
+            // 'posts_body:ntext',
+            // 'post_attachment:url',
+            ['label' => 'Author','value' => 'author0.username', 'attribute' => 'author'],
+            // 'author_role',
+            // 'created_at',
+            // 'updated_at',
+];
 
 $this->title = 'Posts';
 $this->params['breadcrumbs'][] = $this->title;
@@ -18,7 +34,11 @@ $this->params['breadcrumbs'][] = $this->title;
     <p>
         <?= Html::a('Create Posts', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
-
+<?= ExportMenu::widget([
+    'dataProvider' => $dataProvider,
+    'columns' => $gridColumns,
+    'fontAwesome' => true,
+]). "<hr>\n"; ?>
 <?php Pjax::begin(); ?>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -38,6 +58,7 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'updated_at',
 
         ],
+            
     ]); ?>
 <?php Pjax::end(); ?>
 </div>

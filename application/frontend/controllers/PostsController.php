@@ -7,7 +7,9 @@ use frontend\models\Posts;
 use frontend\models\PostsSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
+use yii\web\ForbiddenHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * PostsController implements the CRUD actions for Posts model.
@@ -60,14 +62,51 @@ class PostsController extends Controller
      */
     public function actionCreate()
     {
-        $model = new Posts();
+        if(Yii::$app->user->isGuest==false){
+            if(Yii::$app->user->identity->roles == 25){
+                $model = new Posts();
+                $model->author = Yii::$app->user->identity->id;
+                $model->author_role = Yii::$app->user->identity->roles;
+                $model->post_type = 'HR Request';
+                if ($model->load(Yii::$app->request->post()) && $model->save()) {
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        } else {
-            return $this->render('create', [
-                'model' => $model,
+                $model->file = UploadedFile::getInstance($model,'file');
+                if($model->file != null){
+                    $fileName = $model->file->name;
+                    $model->file->saveAs('backend/web/attachments/'. $fileName);
+                    $model->post_attachment = 'attachments/'. $fileName;
+                }
+                    $model->save();
+
+                    return $this->redirect(['view', 'id' => $model->id]);
+                } else {
+                    return $this->render('create', [
+                        'model' => $model,
+                    ]);
+                }
+            } else{
+                Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed to create a post.',
+                            'title' => 'Create Post',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
             ]);
+                throw new ForbiddenHttpException;
+            }   
+        }else{
+                            Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed to create a post.',
+                            'title' => 'Create Post',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+            throw new ForbiddenHttpException;
         }
     }
 
@@ -79,14 +118,61 @@ class PostsController extends Controller
      */
     public function actionUpdate($id)
     {
+        if(Yii::$app->user->isGuest==false){
+            if(Yii::$app->user->identity->roles == 25){
         $model = $this->findModel($id);
+        if($model->author == Yii::$app->user->identity->id){
+            if ($model->load(Yii::$app->request->post()) && $model->save()) {
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        } else {
-            return $this->render('update', [
-                'model' => $model,
+                $model->file = UploadedFile::getInstance($model,'file');
+                if($model->file != null){
+                    $fileName = $model->file->name;
+                    $model->file->saveAs('backend/web/attachments/'. $fileName);
+                    $model->post_attachment = 'attachments/'. $fileName;
+                }
+                $model->save();
+
+                return $this->redirect(['view', 'id' => $model->id]);
+            } else {
+                return $this->render('update', [
+                    'model' => $model,
+                ]);
+            }
+        }else{
+                            Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed to update this post',
+                            'title' => 'Update Post',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
             ]);
+                throw new ForbiddenHttpException;            
+        }
+                    } else{
+                                        Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed to update this post',
+                            'title' => 'Update Post',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+                throw new ForbiddenHttpException;
+            }   
+        }else{
+                                        Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed to update this post',
+                            'title' => 'Update Post',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+            throw new ForbiddenHttpException;
         }
     }
 
@@ -98,9 +184,48 @@ class PostsController extends Controller
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
+        if(Yii::$app->user->isGuest==false){
+            if(Yii::$app->user->identity->roles == 25){
+                if($this->findModel($id)->author == Yii::$app->user->identity->id){
+                    $this->findModel($id)->delete();
 
-        return $this->redirect(['index']);
+                    return $this->redirect(['index']);
+                }else{
+                                                Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed to delete this post',
+                            'title' => 'Delete Post',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+                throw new ForbiddenHttpException;            
+        }
+            } else{
+                                                Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed to delete this post',
+                            'title' => 'Delete Post',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+                            throw new ForbiddenHttpException;
+            }   
+        }else{
+                                                Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed to delete this post',
+                            'title' => 'Delete Post',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+                        throw new ForbiddenHttpException;
+        }
     }
 
     /**

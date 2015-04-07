@@ -22,7 +22,8 @@
         "kartik-v/yii2-widgets": "*",
         "kartik-v/yii2-icons": "dev-master",
         "2amigos/yii2-file-upload-widget": "*",
-        "fortawesome/font-awesome": "4.0.*@dev"
+        "fortawesome/font-awesome": "4.0.*@dev",
+        "kartik-v/yii2-grid": "*"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",

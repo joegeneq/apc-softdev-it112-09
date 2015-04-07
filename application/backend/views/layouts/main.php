@@ -59,9 +59,6 @@ echo \kartik\widgets\Growl::widget([
             ]);
 
             if (Yii::$app->user->isGuest || $sel->roles != 20) {
-                $menuItems[] = ['label' => 'Back to Home', 'url' => [Yii::$app->homeUrl.'/../../../../']];
-                $menuItems[] = ['label' => 'Login', 'url' => ['/login']];               
-
             } else {
                 $menuItems[] = ['label' => 'Dashboard',
                                 'items' => [

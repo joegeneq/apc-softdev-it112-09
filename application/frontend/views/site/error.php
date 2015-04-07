@@ -10,17 +10,18 @@ use yii\helpers\Html;
 $this->title = $name;
 ?>
 
-<div class="site-error">
+<div class="jumbotron" align="center">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
+    <?= '<img src="'.Yii::$app->homeUrl.'images/error.png" style=\'width:65%;height:65%;align:center;\'border="0" alt="Null">' ?>
 
     <p>
-        The above error occurred while the Web server was processing your request. <br/>
-        Please contact us if you think this is a server error. Thank you.
+        Looks like you're lost! <br/>
+        Please <?= '<a href="'.Yii::$app->homeUrl.'site/contact">contact us</a>' ?> if you think this is a server error. Thank you.
     </p>
-    <p>You will be redirected in <span id="counter">5</span> second(s).
-       <?='Click <a href="'.Yii::$app->homeUrl.'../">here</a> if the browser won\'t redirect you.'?>
+    <p>You will be redirected to our homepage in a few<span id="counter" style="display:none;">2</span> seconds.<br/>
+       <?='Click <a href="'.Yii::$app->homeUrl.'">here</a> if the browser won\'t redirect you.'?>
     </p>
     <script type="text/javascript">
     function countdown() {
@@ -32,7 +33,8 @@ $this->title = $name;
             i.innerHTML = parseInt(i.innerHTML)-1;
         }
     }
-    setInterval(function(){ countdown(); },1000);
+           
+    setInterval(function(){ countdown(); },1500);
     </script>
 
 </div>
