@@ -23,6 +23,7 @@ AppAsset::register($this);
     <?php $this->head() ?>
 </head>
 <body>
+    <?= '<body style="background-image:url('.Yii::$app->homeUrl.'web/image/bg.jpg)">' ?>
     <?php $this->beginBody() ?>
     <div class="wrap">
 <?php foreach (Yii::$app->session->getAllFlashes() as $message):; ?>
@@ -62,9 +63,12 @@ echo \kartik\widgets\Growl::widget([
                 $menuItems[] = ['label' => 'Login', 'url' => ['/login']];               
 
             } else {
-                $menuItems = [
-                                    ['label' => 'Dashboard', 'url' => ['/site/index']],
-                ];            
+                $menuItems[] = ['label' => 'Dashboard',
+                                'items' => [
+                                    ['label' => 'Go to dashboard', 'url' => ['/site/index']],
+                                    ['label' => 'Site posts', 'url' => ['/posts/posts']],
+                                ]
+                ];
                 $menuItems[] = ['label' => 'Industry Partners',
                                 'items'=> [
                                     ['label' => 'Companies', 'url' => ['/industrypartners/partners']],
@@ -79,10 +83,9 @@ echo \kartik\widgets\Growl::widget([
 								]
 								];
                 $menuItems[] = ['label' => 'Site Users', 'url' => ['/siteusers/usermanagement']];
-                $sel = Cpofficer::find()->where(['username' => Yii::$app->user->identity->username])->one();
                 $menuItems[] = ['label' => '<img src=\''. Yii::$app->homeUrl .'../frontend/web/images/profile_images/student_image.png\'width=\'25px\' height=\'25px\' draggable="false" border="0" alt="Null"> '. Yii::$app->user->identity->firstname,
                         'items' => [
-                            ['label' => 'My account', 'url' => ['/cpofficer/update/'.$sel->id]],
+                            ['label' => 'My account', 'url' => ['/siteusers/usermanagement/update?id='.Yii::$app->user->identity->id]],
                             ['label' => 'Logout (' . Yii::$app->user->identity->username . ')', 'url' => ['/site/logout'],'linkOptions' => ['data-method' => 'post']]
                         ]
                     ];
@@ -104,7 +107,7 @@ echo \kartik\widgets\Growl::widget([
     <footer class="footer">
         <div class="container">
         <p class="pull-left">&copy; APC CPO Communication Site <?= date('Y') ?></p>
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        <p class="pull-right">Ken Sibayan | Josh Ramos | Aly Acle</p>
         </div>
     </footer>
 

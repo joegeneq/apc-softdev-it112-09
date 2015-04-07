@@ -1,13 +1,19 @@
 yii2-grid
 =========
 
+[![Latest Stable Version](https://poser.pugx.org/kartik-v/yii2-grid/v/stable.svg)](https://packagist.org/packages/kartik-v/yii2-grid) 
+[![License](https://poser.pugx.org/kartik-v/yii2-grid/license.svg)](https://packagist.org/packages/kartik-v/yii2-grid)
+[![Total Downloads](https://poser.pugx.org/kartik-v/yii2-grid/downloads.svg)](https://packagist.org/packages/kartik-v/yii2-grid) 
+[![Monthly Downloads](https://poser.pugx.org/kartik-v/yii2-grid/d/monthly.png)](https://packagist.org/packages/kartik-v/yii2-grid)
+[![Daily Downloads](https://poser.pugx.org/kartik-v/yii2-grid/d/daily.png)](https://packagist.org/packages/kartik-v/yii2-grid)
+
 Yii2 GridView on steroids. A module with various modifications and enhancements to one of the most used widgets by Yii developers. The widget contains new additional Grid Columns with enhanced settings for Yii Framework 2.0. The widget also incorporates various Bootstrap 3.x styling options.
 Refer [detailed documentation](http://demos.krajee.com/grid) and/or a [complete demo](http://demos.krajee.com/grid-demo).
 
 ![GridView Screenshot](https://lh4.googleusercontent.com/-4x-CdyyZAsY/VNxLPmaaAXI/AAAAAAAAAQ8/XYYxTiQZvJk/w868-h516-no/krajee-yii2-grid.jpg)
 
 ## Latest Release
-The latest version of the module is v3.0.0. Refer the [CHANGE LOG](https://github.com/kartik-v/yii2-grid/blob/master/CHANGE.md) for details. 
+The latest version of the module is v3.0.1. Refer the [CHANGE LOG](https://github.com/kartik-v/yii2-grid/blob/master/CHANGE.md) for details. 
 
 New features with release 2.7.0.
 
@@ -122,7 +128,7 @@ An enhanced data column that allows one to expand a grid row and display additio
 
 ## Editable Column (New)
 ### \kartik\grid\EditableColumn
-An enhanced data column that allows you to edit the cell content using [kartik\editable\Editable](http://demos.krajee.com/editable) widget. Refer [documentation](http://demos.krajee.com/grid#editable-column) for details.
+An enhanced data column that allows you to edit the cell content using [kartik\editable\Editable](http://demos.krajee.com/editable) widget. You can selectively choose to disable editable for certain rows or all rows. Refer [documentation](http://demos.krajee.com/grid#editable-column) for details.
 
 ## Formula Column (New)
 ### \kartik\grid\FormulaColumn

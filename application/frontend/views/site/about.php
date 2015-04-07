@@ -1,10 +1,13 @@
 <?php
 use yii\helpers\Html;
+use kartik\icons\Icon;
 
+Icon::map($this);
 /* @var $this yii\web\View */
 $this->title = 'About';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+<body background="images/bg.jpg">
 <div class="site-about">
     <h1><?= Html::encode($this->title) ?></h1>
 
@@ -19,15 +22,17 @@ $this->params['breadcrumbs'][] = $this->title;
 
 	As interns, they are expected to strictly follow office policies of the company they work for and abide by the principle of confidentiality with regard to any information / restricted materials on their assigned projects.<br/><br/>
 
-	<h4>Services</h4>
-	Job Placement<br/>
-	Training<br/>
-	Resume Database<br/>
-	Graduates/Alumni Directory<br/>
-	Job Invitation File<br/>
-	Company Profile Bank<br/>
-	Career Counseling Sessions<br/>
-	CPO Events and Activities<br/>
+	<h4><?= Icon::show('users') ?>Services</h4>
+	<?= Icon::show('chevron-circle-right') ?> Job Placement<br/>
+	<?= Icon::show('chevron-circle-right') ?> Training<br/>
+	<?= Icon::show('chevron-circle-right') ?> Resume Database<br/>
+	<?= Icon::show('chevron-circle-right') ?> Graduates/Alumni Directory<br/>
+	<?= Icon::show('chevron-circle-right') ?> Job Invitation File<br/>
+	<?= Icon::show('chevron-circle-right') ?> Company Profile Bank<br/>
+	<?= Icon::show('chevron-circle-right') ?> Career Counseling Sessions<br/>
+	<?= Icon::show('chevron-circle-right') ?> CPO Events and Activities<br/>
 	</p>
-
 </div>
+	<div class="pull-right">
+	<p><h4><?= Icon::show('codepen') ?><a href="devs"> The developers</a></h4></p>
+	   </div>

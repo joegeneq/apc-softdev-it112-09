@@ -8,7 +8,7 @@ use frontend\models\ProfessorsSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-
+use yii\web\ForbiddenHttpException;
 /**
  * ProfessorsController implements the CRUD actions for Professors model.
  */
@@ -33,9 +33,18 @@ class ProfessorsController extends Controller
      */
     public function actionView($id)
     {
-        return $this->render('view', [
-            'model' => $this->findModel($id),
-        ]);
+        $sel = Professors::find()
+                        ->where(['id' => $id])
+                        ->one();
+        
+        if (Yii::$app->user->identity->id == $sel->user_id) {
+            return $this->render('view', [
+                'model' => $this->findModel($id),
+            ]);
+
+        }else {
+            throw new ForbiddenHttpException;
+        }
     }
 
     /**

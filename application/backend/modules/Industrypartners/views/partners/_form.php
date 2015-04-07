@@ -18,7 +18,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'company_contactnum')->textInput(['maxlength' => 25]) ?>
 
-    <?= $form->field($model, 'file')->fileInput() ?>
+    <?= $form->field($model, 'file')->fileInput()->hint('image resolution should not be greater than 800x600') ?>
 
     <?= $form->field($model, 'company_description')->textarea(['rows' => 6]) ?>
 

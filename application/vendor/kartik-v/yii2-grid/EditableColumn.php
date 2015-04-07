@@ -3,8 +3,8 @@
 /**
  * @package   yii2-grid
  * @author    Kartik Visweswaran <kartikv2@gmail.com>
- * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2015
- * @version   3.0.0
+ * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2015
+ * @version   3.0.1
  */
 
 namespace kartik\grid;
@@ -33,6 +33,7 @@ class EditableColumn extends DataColumn
      * - $key mixed is the key associated with the data model
      * - $index integer is the zero-based index of the data model among the models array returned by
      *     [[GridView::dataProvider]].
+     * - $widget EditableColumn is the editable column widget instance
      */
     public $editableOptions = [];
 
@@ -42,10 +43,28 @@ class EditableColumn extends DataColumn
     public $refreshGrid = false;
 
     /**
+     * @var boolean|Closure whether to prevent rendering the editable behavior
+     * and display a readonly data. You can also set this up as an anonymous function
+     * of the form `function($model, $key, $index, $widget)` that will return a boolean
+     * value, where:
+     * - $model mixed is the data model
+     * - $key mixed is the key associated with the data model
+     * - $index integer is the zero-based index of the data model among the models array
+     *   returned by [[GridView::dataProvider]].
+     * - $widget EditableColumn is the editable column widget instance
+     */
+    public $readonly = false;
+    
+    /**
      * @var array the computed editable options
      */
     protected $_editableOptions = [];
 
+    /**
+     * @var string the css class to be appended for the editable inputs in this column
+     */
+    protected $_css;
+    
     /**
      * @inheritdoc
      * @throws InvalidConfigException
@@ -54,6 +73,7 @@ class EditableColumn extends DataColumn
     {
         parent::init();
         \kartik\base\Config::checkDependency('editable\Editable', 'yii2-editable', 'for GridView EditableColumn');
+        $this->_css = 'kv-edcol-' . hash('crc32', uniqid(rand(1,100), true)); 
     }
 
     /**
@@ -69,13 +89,23 @@ class EditableColumn extends DataColumn
      */
     public function renderDataCellContent($model, $key, $index)
     {
+        $readonly = $this->readonly;
+        if ($readonly instanceof Closure) {
+            $readonly = call_user_func($readonly, $model, $key, $index, $this);
+        }
+        if ($readonly === true) {
+            return parent::renderDataCellContent($model, $key, $index);
+        }
         $this->_editableOptions = $this->editableOptions;
         if (!empty($this->editableOptions) && $this->editableOptions instanceof Closure) {
-            $this->_editableOptions = call_user_func($this->editableOptions, $model, $key, $index);
+            $this->_editableOptions = call_user_func($this->editableOptions, $model, $key, $index, $this);
         }
         if (!is_array($this->_editableOptions)) {
             $this->_editableOptions = [];
         }
+        $options = ArrayHelper::getValue($this->_editableOptions, 'containerOptions', []);
+        Html::addCssClass($options, $this->_css);
+        $this->_editableOptions['containerOptions'] = $options;
         if ($this->grid->pjax && empty($this->_editableOptions['pjaxContainerId'])) {
             $this->_editableOptions['pjaxContainerId'] = $this->grid->pjaxSettings['options']['id'];
         }
@@ -96,7 +126,10 @@ class EditableColumn extends DataColumn
                 "You must setup the 'attribute' for your EditableColumn OR set one of 'name' OR 'model' & 'attribute' in 'editableOptions' (Exception at index: '{$index}', key: '{$strKey}')."
             );
         }
-        $this->_editableOptions['displayValue'] = parent::renderDataCellContent($model, $key, $index);
+        $val = $this->getDataCellValue($model, $key, $index);
+        if (!isset($this->_editableOptions['displayValue']) && $val !== null && $val !== '') {
+            $this->_editableOptions['displayValue'] = parent::renderDataCellContent($model, $key, $index);
+        }
         $params = Html::hiddenInput('editableIndex', $index) . Html::hiddenInput('editableKey', $strKey);
         if (empty($this->_editableOptions['beforeInput'])) {
             $this->_editableOptions['beforeInput'] = $params;
@@ -114,9 +147,9 @@ class EditableColumn extends DataColumn
             $view = $this->grid->getView();
             $grid = 'jQuery("#' . $this->grid->options['id'] . '")';
             $script = <<< JS
-{$grid}.find('.kv-editable-input').each(function() {
-    var \$input = $(this);
-    \$input.on('editableSuccess', function(){
+{$grid}.find('.{$this->_css}').each(function() {
+    var \$el = $(this);
+    \$el.on('editableSuccess', function(){
         {$grid}.yiiGridView("applyFilter");
     });
 });

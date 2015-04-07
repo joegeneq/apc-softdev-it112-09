@@ -9,6 +9,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\web\UploadedFile;
+use yii\web\ForbiddenHttpException;
 
 /**
  * StudentController implements the CRUD actions for Student model.
@@ -34,9 +35,18 @@ class StudentController extends Controller
      */
     public function actionView($id)
     {
-        return $this->render('view', [
-            'model' => $this->findModel($id),
-        ]);
+        $sel = Student::find()
+                        ->where(['id' => $id])
+                        ->one();
+        
+        if (Yii::$app->user->identity->id == $sel->user_id) {
+            return $this->render('view', [
+                'model' => $this->findModel($id),
+            ]);
+
+        }else {
+            throw new ForbiddenHttpException;
+        }
     }
 
     /**

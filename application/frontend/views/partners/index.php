@@ -10,6 +10,7 @@ use yii\grid\GridView;
 $this->title = 'Partners';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+
 <div class="partners-index">
 
     <h1>Industry Partners</h1>

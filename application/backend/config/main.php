@@ -20,7 +20,10 @@ return [
         ],
 		'internship' => [
             'class' => 'backend\modules\internship\management',
-		]
+		],
+        'posts' => [
+            'class' => 'backend\modules\posts\Posts',
+        ]
 	],
     'components' => [
         'user' => [

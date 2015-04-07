@@ -62,14 +62,8 @@ class ContactForm extends Model
         return Yii::$app->mailer->compose()
             ->setFrom([$this->email => $this->name])
             ->setTo($email)
-            ->setSubject('[Test Mail]' . $this->subject)
+            ->setSubject('[CPO Website Inquiry] ' . $this->subject)
             ->setTextBody($this->body)
             ->send();
-                        Yii::$app->mailer->compose()
-                    ->setFrom('cpo@it112apc09.ml')
-                    ->setTo('kensbyn@outlook.ph')
-                    ->setSubject('Test Mail')
-                    ->setTextBody('This is the mail')
-                    ->send();            
-    }
+   }
 }

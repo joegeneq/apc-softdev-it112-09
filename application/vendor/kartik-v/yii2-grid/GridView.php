@@ -3,8 +3,8 @@
 /**
  * @package   yii2-grid
  * @author    Kartik Visweswaran <kartikv2@gmail.com>
- * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2015
- * @version   3.0.0
+ * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2015
+ * @version   3.0.1
  */
 
 namespace kartik\grid;
@@ -291,39 +291,6 @@ HTML;
     ];
 
     /**
-     * @var boolean whether to enable toggling of grid data. Defaults to `true`.
-     */
-    public $toggleData = true;
-
-    /**
-     * @var array the settings for the toggle data button for the toggle data type. This will be setup as
-     * an associative array of $type => $options, where $type can be:
-     * - 'all': for showing all grid data
-     * - 'page': for showing first page data
-     * and $options is the HTML attributes for the button. The following special options are recognized:
-     * - icon: string the glyphicon suffix name. If not set or empty will not be displayed.
-     * - label: string the label for the button.
-     *
-     * This defaults to the following setting:
-     *      [
-     *          'all' => [
-     *              'icon' => 'resize-full',
-     *              'label' => 'All',
-     *              'class' => 'btn btn-default',
-     *              'title' => 'Show all data'
-     *          ],
-     *          'page' => [
-     *              'icon' => 'resize-small',
-     *              'label' => 'Page',
-     *              'class' => 'btn btn-default',
-     *              'title' => 'Show first page data'
-     *          ],
-     *      ]
-     */
-
-    public $toggleDataOptions = [];
-
-    /**
      * Tags to replace in the rendered layout. Enter this as `$key => $value` pairs, where:
      * - $key: string, defines the flag.
      * - $value: string|Closure, the value that will be replaced. You can set it as a callback
@@ -485,6 +452,50 @@ HTML;
     public $pageSummaryRowOptions = ['class' => 'kv-page-summary warning'];
 
     /**
+     * @var boolean whether to enable toggling of grid data. Defaults to `true`.
+     */
+    public $toggleData = true;
+
+    /**
+     * @var array the settings for the toggle data button for the toggle data type. This will be setup as
+     * an associative array of $type => $options, where $type can be:
+     * - 'all': for showing all grid data
+     * - 'page': for showing first page data
+     * and $options is the HTML attributes for the button. The following special options are recognized:
+     * - icon: string the glyphicon suffix name. If not set or empty will not be displayed.
+     * - label: string the label for the button.
+     *
+     * This defaults to the following setting:
+     *      [
+     *          'all' => [
+     *              'icon' => 'resize-full',
+     *              'label' => 'All',
+     *              'class' => 'btn btn-default',
+     *              'title' => 'Show all data'
+     *          ],
+     *          'page' => [
+     *              'icon' => 'resize-small',
+     *              'label' => 'Page',
+     *              'class' => 'btn btn-default',
+     *              'title' => 'Show first page data'
+     *          ],
+     *      ]
+     */
+    public $toggleDataOptions = [];
+
+    /**
+     * @var array the HTML attributes for the toggle data button group container. By default 
+     * this will always have the `class = btn-group` automatically added.
+     */
+    public $toggleDataContainer = [];
+    
+    /**
+     * @var array the HTML attributes for the export button group container. By default 
+     * this will always have the `class = btn-group` automatically added.
+     */
+    public $exportContainer = [];
+
+    /**
      * @array|boolean the grid export menu settings. Displays a Bootstrap dropdown menu that allows you to export the
      *     grid as either html, csv, or excel. If set to false, will not be displayed. The following options can be
      *     set:
@@ -607,11 +618,6 @@ HTML;
     protected $_gridClientFunc = '';
 
     /**
-     * @var string the generated javascript for toggling grid data
-     */
-    protected $_jsToggleScript = '';
-
-    /**
      * @var Module the grid module.
      */
     protected $_module;
@@ -644,9 +650,6 @@ HTML;
         } else {
             $config = $defaultExportConfig;
         }
-        foreach ($config as $format => $setting) {
-            $config[$format]['options']['data-pjax'] = false;
-        }
         return $config;
     }
     
@@ -663,16 +666,11 @@ HTML;
             parent::init();
             return;
         }
-        $this->_toggleDataKey = $this->options['id'] . '-toggle-data';
-        if (isset($_POST[$this->_toggleDataKey])) {
-            $this->_isShowAll = $_POST[$this->_toggleDataKey];
-        } else {
-            $this->_isShowAll = false;
-        }
-        if ($this->_isShowAll == true) {
+        $this->_toggleDataKey = '_tog' . hash('crc32', $this->options['id']);
+        $this->_isShowAll = ArrayHelper::getValue($_GET, $this->_toggleDataKey, 'page') === 'all';
+        if ($this->_isShowAll) {
             $this->dataProvider->pagination = false;
         }
-        $this->_jsToggleScript = "kvToggleGridData('{$this->_toggleDataKey}');";
         parent::init();
     }
 
@@ -734,7 +732,7 @@ HTML;
         }
         return $content;
     }
-
+    
     /**
      * Renders the toggle data button
      *
@@ -745,15 +743,12 @@ HTML;
         if (!$this->toggleData) {
             return '';
         }
+        
         $tag = $this->_isShowAll ? 'page' : 'all';
-        $id = $this->_toggleDataKey;
         $label = ArrayHelper::remove($this->toggleDataOptions[$tag], 'label', '');
-        $input = Html::checkbox($id, $this->_isShowAll, ['id' => $id, 'style' => 'display:none']);
-        return '<div class="btn-group">' . Html::beginForm('', 'post', []) . Html::label(
-            $label,
-            $id,
-            $this->toggleDataOptions[$tag]
-        ) . $input . '</form></div>';
+        $url = Url::current([$this->_toggleDataKey => $tag]);
+        Html::addCssClass($this->toggleDataContainer, 'btn-group');
+        return Html::tag('div', Html::a($label, $url, $this->toggleDataOptions[$tag]), $this->toggleDataContainer);
     }
 
     /**
@@ -785,8 +780,7 @@ HTML;
                 [
                     'class' => 'kv-export-form',
                     'style' => 'display:none',
-                    'target' => ($target == self::TARGET_POPUP) ? 'kvDownloadDialog' : $target,
-                    'data-pjax' => false
+                    'target' => ($target == self::TARGET_POPUP) ? 'kvDownloadDialog' : $target
                 ]
             ) . "\n" .
             Html::hiddenInput('export_filetype') . "\n" .
@@ -823,6 +817,7 @@ HTML;
                 'label' => $title,
                 'dropdown' => ['items' => $items, 'encodeLabels' => false, 'options' => $menuOptions],
                 'options' => $options,
+                'containerOptions' => $this->exportContainer,
                 'encodeLabel' => false
             ]
         ) . $form;
@@ -1132,9 +1127,10 @@ HTML;
             $label = "<i class='glyphicon glyphicon-{$icon}'></i> " . $label;
         }
         $this->toggleDataOptions[$tag]['label'] = $label;
-        if (!isset($this->toggleDataOptions['title'])) {
-            $this->toggleDataOptions['title'] = $defaultOptions[$tag]['title'];
+        if (!isset($this->toggleDataOptions[$tag]['title'])) {
+            $this->toggleDataOptions[$tag]['title'] = $defaultOptions[$tag]['title'];
         }
+        $this->toggleDataOptions[$tag]['data-pjax'] = $this->pjax ? "true" : false;
     }
 
     /**
@@ -1233,7 +1229,7 @@ HTML;
             $js .= ".on('pjax:timeout', function(e){e.preventDefault()})";
         }
         $loadingCss = ArrayHelper::getvalue($this->pjaxSettings, 'loadingCssClass', 'kv-grid-loading');
-        $postPjaxJs = "{$this->_gridClientFunc}();";
+        $postPjaxJs = "setTimeout({$this->_gridClientFunc}(), 2500);";
         if ($loadingCss !== false) {
             $grid = 'jQuery("#' . $this->containerOptions['id'] . '")';
             if ($loadingCss === true) {
@@ -1392,10 +1388,6 @@ HTML;
             GridViewAsset::register($view);
         }
         $gridId = $this->options['id'];
-        if ($this->toggleData) {
-            GridToggleDataAsset::register($view);
-            $script .= $this->_jsToggleScript;
-        }
         if ($this->export !== false && is_array($this->export) && !empty($this->export)) {
             GridExportAsset::register($view);
             $target = ArrayHelper::getValue($this->export, 'target', self::TARGET_POPUP);

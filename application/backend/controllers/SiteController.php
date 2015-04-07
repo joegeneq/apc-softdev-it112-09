@@ -8,6 +8,8 @@ use common\models\LoginForm;
 use yii\filters\VerbFilter;
 use common\models\User;
 use yii\web\ForbiddenHttpException;
+use backend\modules\posts\models\Posts;
+use backend\modules\posts\models\PostsSearch;
 
 /**
  * Site controller
@@ -68,7 +70,13 @@ class SiteController extends Controller
     {
 		if(Yii::$app->user->can('admin'))
 		{
-			return $this->render('index');
+     $searchModel = new PostsSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
+        return $this->render('index', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+        ]);
 		}else
 		{
 			Yii::$app->getSession()->setFlash('success', [

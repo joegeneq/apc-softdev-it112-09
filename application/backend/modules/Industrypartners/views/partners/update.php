@@ -5,10 +5,10 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model backend\modules\Industrypartners\models\IndustryPartners */
 
-$this->title = 'Update Industry Partners: ' . ' ' . $model->id;
+$this->title = 'Update' . ' ' . $model->company_name;
 $this->params['breadcrumbs'][] = ['label' => 'Industry Partners', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->params['breadcrumbs'][] = ['label' => $model->company_name, 'url' => ['view', 'id' => $model->id]];
+$this->params['breadcrumbs'][] = 'update';
 ?>
 <div class="industry-partners-update">
 

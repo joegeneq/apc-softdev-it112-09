@@ -1,9 +1,9 @@
 <?php
 
 /**
- * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2015
+ * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2015
  * @package yii2-grid
- * @version 3.0.0
+ * @version 3.0.1
  */
 
 namespace kartik\grid;
@@ -47,6 +47,12 @@ class ActionColumn extends \yii\grid\ActionColumn
      * @var bool whether the action buttons are to be displayed as a dropdown
      */
     public $dropdown = false;
+
+    /**
+     * @var array the HTML attributes for the Dropdown container. The class `dropdown` will be added.
+     * To align a dropdown at the right edge of the page container, you set the class to `pull-right`.
+     */
+    public $dropdownOptions = [];
 
     /**
      * @var array the HTML attributes for the Dropdown menu. Applicable if `dropdown` is `true`.
@@ -253,7 +259,8 @@ class ActionColumn extends \yii\grid\ActionColumn
             $button = Html::button($label . $caret, $options);
             Html::addCssClass($this->dropdownMenu, 'dropdown-menu');
             $dropdown = $button . PHP_EOL . Html::tag('ul', $content, $this->dropdownMenu);
-            return Html::tag('div', $dropdown, ['class' => 'dropdown']);
+            Html::addCssClass($this->dropdownOptions, 'dropdown');
+            return Html::tag('div', $dropdown, $this->dropdownOptions);
         }
         return $content;
     }

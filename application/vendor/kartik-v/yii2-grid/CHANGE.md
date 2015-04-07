@@ -1,3 +1,23 @@
+Version 3.0.1
+=============
+**Date:** 14-Mar-2015
+
+1. (enh #176): Allow displayValue to be overridden for editable column.
+2. (enh kartik-v/yii2-dynagrid#47): Set a timeout for plugin reinitialization on pjax complete.
+3. (enh #229): Ability to set readonly rows in EditableColumn.
+4. (enh #237): Parse valueIfNull correctly within EditableColumn editableOptions.
+5. (enh #239): Updated Russian translations.
+6. (enh #245): Various enhancements to grid pagination toggle.
+7. (enh #247): Add ability to set `dropdownOptions` for `ActionColumn` dropdown.
+8. (enh #249): Add new properties `toggleDataContainer` and `exportDataContainer` for controlling button group options.
+9. (enh #250): Parse pjax setting in `toggleData` button to enable toggling pagination via pjax.
+10. (bug #251): Fix ExpandRowColumn bug with disabled closure and unnecessary check for title.
+11. (bug #252): Fix undefined `$filterInputOptions` in DataColumn.
+12. (enh #253): Enhance EditableColumn `refreshGrid` behavior for multiple editable columns on the grid.
+13. (enh #255): Enhance ExpandRowColumn to allow expand/collapse on row click.
+14. (enh #256): New property `extraData` for sending extra data to ExpandRowColumn via ajax load call.
+15. (enh #257): Fix for `detailOptions` to be set as Closure in ExpandRowColumn.
+
 Version 3.0.0
 =============
 **Date:** 13-Feb-2015
