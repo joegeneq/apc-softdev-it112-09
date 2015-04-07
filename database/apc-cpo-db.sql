@@ -3,11 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
-<<<<<<< HEAD
--- Generation Time: Apr 07, 2015 at 04:55 PM
-=======
--- Generation Time: Apr 07, 2015 at 03:35 AM
->>>>>>> origin/master
+-- Generation Time: Apr 07, 2015 at 08:53 PM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -31,18 +27,19 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `auth_assignment` (
-  `item_name` varchar(64) NOT NULL,
   `user_id` int(11) NOT NULL,
+  `item_name` varchar(64) NOT NULL,
   `created_at` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `auth_assignment`
 --
 
-INSERT INTO `auth_assignment` (`item_name`, `user_id`, `created_at`) VALUES
-('admin', 1, NULL),
-('create-partner', 1, NULL);
+INSERT INTO `auth_assignment` (`user_id`, `item_name`, `created_at`) VALUES
+(0, 'admin', NULL),
+(1, 'admin', NULL),
+(7, 'admin', NULL);
 
 -- --------------------------------------------------------
 
@@ -118,14 +115,15 @@ CREATE TABLE IF NOT EXISTS `cpofficer` (
   `firstname` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `lastname` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `cpofficer`
 --
 
 INSERT INTO `cpofficer` (`id`, `user_id`, `username`, `firstname`, `lastname`, `email`) VALUES
-(1, 1, 'apccpowebadmin', 'CPO', 'Admin', 'cpo@apc.edu.ph');
+(1, 1, 'apccpowebadmin', 'CPO', 'Admin', 'cpo@apc.edu.ph'),
+(17, 7, 'kosibayan', 'Kenneth', 'Sibayan', 'kosibayan@student.apc.edu.ph');
 
 -- --------------------------------------------------------
 
@@ -195,14 +193,13 @@ CREATE TABLE IF NOT EXISTS `iprofessor` (
   `contact_num` varchar(15) NOT NULL,
   `company_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `iprofessor`
 --
 
 INSERT INTO `iprofessor` (`id`, `username`, `firstname`, `lastname`, `email`, `contact_num`, `company_id`, `user_id`) VALUES
-(9, 'acacle', 'Alyssa Mae', 'Acle', 'acacle@student.apc.edu.ph', '', 0, 8),
 (14, 'okayna', 'Okay', 'Na', 'amcacle@gmail.com', '', 0, 86);
 
 -- --------------------------------------------------------
@@ -239,14 +236,15 @@ CREATE TABLE IF NOT EXISTS `partner_hr` (
   `email` varchar(255) NOT NULL,
   `contact_num` varchar(15) NOT NULL,
   `company_id` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `partner_hr`
 --
 
 INSERT INTO `partner_hr` (`id`, `user_id`, `username`, `firstname`, `lastname`, `email`, `contact_num`, `company_id`) VALUES
-(10, 77, 'partnerhr1', 'HR', 'PartnerOne', 'parterhr1@sample.com', '', 0);
+(10, 77, 'partnerhr1', 'HR', 'PartnerOne', 'parterhr1@sample.com', '', 0),
+(11, 8, 'acacle', 'Alyssa Mae', 'Acle', 'acacle@student.apc.edu.ph', '', 0);
 
 -- --------------------------------------------------------
 
@@ -263,30 +261,17 @@ CREATE TABLE IF NOT EXISTS `posts` (
   `author_role` int(11) NOT NULL,
   `created_at` int(11) NOT NULL,
   `updated_at` int(11) NOT NULL,
-<<<<<<< HEAD
   `post_type` varchar(25) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
-=======
-  `post_type` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
->>>>>>> origin/master
 
 --
 -- Dumping data for table `posts`
 --
 
 INSERT INTO `posts` (`id`, `posts_title`, `posts_body`, `post_attachment`, `author`, `author_role`, `created_at`, `updated_at`, `post_type`) VALUES
-<<<<<<< HEAD
 (6, 'Hello, World!', 'This is the body of the post', 'attachments/Sample Syllabus for Living Online.doc', 1, 20, 1428377321, 1428377321, 'Announcements'),
 (7, 'Hello, World2!', 'This is the boydy asasfdskajbsalk hnglskdj hxlzjhfdskf,zjmnv kj', NULL, 1, 20, 1428377374, 1428377374, 'HR Requests'),
 (8, 'Hello, World2!2', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus justo enim, ac pulvinar ipsum porttitor vitae. Nulla ullamcorper massa sapien, eget porta massa porttitor quis. Donec non tincidunt odio. Mauris nec auctor metus. Nullam posuere, lacus at euismod suscipit, felis mi rhoncus quam, non ultrices sapien orci ut nisi. Nunc quis porta lacus. Integer nec augue mi. Aliquam blandit non dolor ut tristique. Vivamus venenatis egestas lacinia. Praesent posuere lacus quis nisi pretium, a ultricies neque blandit. Suspendisse in nisl in risus euismod rhoncus. Pellentesque porttitor in lectus vitae aliquam.\r\n\r\nDonec facilisis interdum turpis sit amet viverra. Etiam a convallis purus. Nullam rutrum justo sed venenatis feugiat. Nunc laoreet neque non lectus dignissim pulvinar. Nulla quis pulvinar metus. Sed nec massa malesuada, mattis elit quis, porta tortor. Praesent sed sollicitudin lorem, tincidunt rhoncus odio. Phasellus arcu neque, sodales quis eros id, eleifend congue neque.\r\n\r\nNulla eu dui at nibh hendrerit viverra ut sed eros. Nulla id nulla ut justo facilisis venenatis. Mauris felis tortor, condimentum nec lacus in, ornare pulvinar est. Aliquam eu felis ligula. Vivamus id elit massa. Etiam ac enim sodales, ornare neque at, dignissim est. Maecenas efficitur lectus tortor. Morbi vel iaculis orci. Sed rhoncus eros ante, sed tristique lectus viverra eget. Vestibulum quis mi vitae lectus sagittis cursus ac sit amet dolor. Nullam placerat turpis a odio porta interdum et sed augue. Cras erat ligula, malesuada in finibus quis, dictum vel dolor. Suspendisse accumsan sit amet ex at fermentum.', NULL, 1, 20, 1428377740, 1428378573, 'Internship Openings');
-=======
-(1, 'Hello, World!', 'Hi!', NULL, 1, 20, 1428282035, 1428311965, 0),
-(2, 'Hello, World!', 'Hi!', NULL, 1, 20, 1428282100, 1428282100, 0),
-(3, 'Hello, World!', 'Hi!', NULL, 1, 20, 1428282113, 1428282113, 0),
-(4, 'Hello, World!', 'Hi!', NULL, 1, 20, 1428282171, 1428282171, 0),
-(5, 'Hello, World!', 'Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet ', 'attachments/Hello, World!.doc', 1, 20, 1428368873, 1428368972, 1);
->>>>>>> origin/master
 
 -- --------------------------------------------------------
 
@@ -320,22 +305,17 @@ CREATE TABLE IF NOT EXISTS `student` (
   `contact_num` varchar(15) NOT NULL,
   `email` varchar(255) NOT NULL,
   `address` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `student`
 --
 
 INSERT INTO `student` (`id`, `user_id`, `student_pic`, `username`, `firstname`, `lastname`, `student_id`, `course`, `intern_year`, `term`, `contact_num`, `email`, `address`) VALUES
-(1, 7, 'images/profile_images/kosibayan.jpg', 'kosibayan', 'Kenneth', 'Sibayan', '2011-100121', 0, '', 0, '09054005890', 'kosibayan@student.apc.edu.ph', '90 Z1 Don Sergio Ext. Brgy Holy Spirit, Diliman, Quezon City 1127'),
 (2, 9, '', 'joshrramos', 'Josh', 'Ramos', '', 0, '', 0, '', 'jrramos@student.apc.edu.ph', ''),
 (8, 83, 'images/profile_images/dummyaccnt.jpg', 'dummyaccnt', 'dummy', 'adasdasdasd', '124521212', 0, '', 0, '231232323', 'dummy@account.test', '123232332'),
 (9, 84, 'images/profile_images/demo.jpeg', 'demo', 'demo', 'demo', '2135234123', 0, '', 0, '2332', 'demo@demonstration.com', 'fghjyhfdf'),
 (10, 85, '', 'alyftw', 'Alyssa', 'Acle', '', 0, '', 0, '', 'amcacle101@gmail.com', ''),
-<<<<<<< HEAD
-=======
-(11, 87, 'images/profile_images/SanaGumanaNanana.png', 'SanaGumanaNanana', 'alyssa', 'jdkbd', '2011-100504', 0, '', 0, '6578922', 'acacle@gmail.com', '5678 Barangay Madilim, Di Makita si Troi, Makati'),
->>>>>>> origin/master
 (12, 88, 'images/profile_images/dummyacount2.png', 'dummyacount2', 'dummy', 'account', '2011-100504', 0, '', 0, '8789056', 'dummyaccount2@test.com', '6025 Kalayaan Ave., Brgy. Olympia, Makati');
 
 -- --------------------------------------------------------
@@ -387,18 +367,14 @@ CREATE TABLE IF NOT EXISTS `user` (
 
 INSERT INTO `user` (`id`, `username`, `firstname`, `lastname`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `roles`, `status`, `created_at`, `updated_at`) VALUES
 (1, 'apccpowebadmin', 'CPO', 'Admin', 'RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5', '$2y$13$Hkw5VzXsJVxP2nJA7RFp9.mG5cnZIh6uYF6vdRWkOCB5bfdXZUAIS', NULL, 'cpo@apc.edu.ph', 20, 10, 1424616849, 1424616849),
-(7, 'kosibayan', 'Kenneth', 'Sibayan', 'ub32EOfN5mwImO_KhgkIKJrG2yl1iKyQ', '$2y$13$HFfEB/CDV5UvYappUC7lEOYLrI0Hifsk.w9i6E8MNeZstQTGy.cYK', NULL, 'kosibayan@student.apc.edu.ph', 10, 10, 1424617778, 1424617778),
-(8, 'acacle', 'Alyssa Mae', 'Acle', 'gqL-AVQT30QEWz83aeo3PJeW03vh3G7P', '$2y$13$ENcnW8KBe/OAawudFbDi2Og5Bj2K7yDkt0ZuRXYqDW.Lrhj12UK7G', NULL, 'acacle@student.apc.edu.ph', 15, 10, 1424660697, 1424660697),
+(7, 'kosibayan', 'Kenneth', 'Sibayan', 'ub32EOfN5mwImO_KhgkIKJrG2yl1iKyQ', '$2y$13$HFfEB/CDV5UvYappUC7lEOYLrI0Hifsk.w9i6E8MNeZstQTGy.cYK', NULL, 'kosibayan@student.apc.edu.ph', 20, 10, 1424617778, 1424617778),
+(8, 'acacle', 'Alyssa Mae', 'Acle', 'gqL-AVQT30QEWz83aeo3PJeW03vh3G7P', '$2y$13$ENcnW8KBe/OAawudFbDi2Og5Bj2K7yDkt0ZuRXYqDW.Lrhj12UK7G', NULL, 'acacle@student.apc.edu.ph', 25, 10, 1424660697, 1424660697),
 (9, 'joshrramos', 'Josh', 'Ramos', '954kHhtkPlKz45KxIlSWodr1DWY-bIRu', '$2y$13$jtimqQghNQk/ge3oslXPz.KhBnn9LLdp1UJhCpdCBAl1AcfBur46y', NULL, 'jrramos@student.apc.edu.ph', 10, 10, 1425884101, 1425884101),
 (77, 'partnerhr1', 'HR', 'PartnerOne', 'E_yg68arEyl4_wBUjIBmbTQlIJCP5TKr', '$2y$13$YJXTpUxRqKzVMdbGTms/tO1kTAQBYsvEkIx8gvq1r1VTP84OCPwl2', NULL, 'parterhr1@sample.com', 25, 10, 1427439184, 1427439184),
 (83, 'dummyaccnt', 'dummy', 'adasdasdasd', 'Li1a_BB-m2SibJFAeso7VSqDtMZCpC1o', '$2y$13$mA7iJ0Wa/nZ.4Jb5ZbyQYuoP7AUpcoW8K5M6oHrVYelAtMR/mWwHO', NULL, 'dummy@account.test', 10, 10, 1427620561, 1427620561),
 (84, 'demo', 'demo', 'demo', 'FVSG0BDXHBHpIC_fWG_UASaNpsZf5atA', '$2y$13$tJEVxT9qbZsUi9IPz8kqxeAtQnKtKUgoQs1HsihzHSAAiLtAHlCga', NULL, 'demo@demonstration.com', 10, 10, 1427628224, 1427628224),
 (85, 'alyftw', 'Alyssa', 'Acle', 'D_bKhxfVY0xOgy26jQ7tI_bic-ed3q2m', '$2y$13$LT9duVOy71d.MoG8b07UJODQpvjpAAumvuLsrKvTmNIAVfP./F.yO', NULL, 'amcacle101@gmail.com', 10, 10, 1427665137, 1427665137),
 (86, 'okayna', 'Okay', 'Na', '_ZeL09quzMx8fnyFZX45b4NIGPbG7dYo', '$2y$13$bHlXjTe5kquBbxrkmcwtXOXjwChErGYo9cCmK/sY1rhojHIrcSM5u', NULL, 'amcacle@gmail.com', 15, 10, 1427668974, 1427668974),
-<<<<<<< HEAD
-=======
-(87, 'SanaGumanaNanana', 'alyssa', 'jdkbd', '_on-QC-2OIwwwpHsSzzWYOfYjf9pkdgt', '$2y$13$kTJTAv7dB6Jj8rkTkiKUSukX0tjcSxxSl38aCtTkQBFcFPcYfi3DG', NULL, 'acacle@gmail.com', 10, 10, 1427683296, 1427683296),
->>>>>>> origin/master
 (88, 'dummyacount2', 'dummy', 'account', 'XEsU1F7zP8tGmXD6nWkzVHMYbfwakLwI', '$2y$13$Wgjx2mYCdbLfs9i3eO48MuCvEX0Adhambz/DgAl94TgD6Nh2cXiry', NULL, 'dummyaccount2@test.com', 10, 10, 1427780553, 1427780553);
 
 --
@@ -427,6 +403,15 @@ delete from iprofessor where user_id in (select user.id from user where user.rol
 
 delete from partner_hr where user_id in (select user.id from user where user.roles != 25);
 
+        INSERT IGNORE INTO auth_assignment (item_name, user_id) 
+    values('admin',(SELECT user.id from user where user.id not in (
+            Select * from(
+                SELECT user.id FROM user JOIN auth_assignment ON user.id = auth_assignment.user_id) tempTbl
+            ) && roles = 20
+        )
+	);
+       
+delete from auth_assignment where user_id in (select user.id from user where user.roles != 20); 
 
 end
 //
@@ -458,7 +443,16 @@ delete from iprofessor where user_id in (select user.id from user where user.rol
 
 delete from partner_hr where user_id in (select user.id from user where user.roles != 25);
 
-
+        INSERT IGNORE INTO auth_assignment (item_name, user_id) 
+    values('admin',(SELECT user.id from user where user.id not in (
+            Select * from(
+                SELECT user.id FROM user JOIN auth_assignment ON user.id = auth_assignment.user_id) tempTbl
+            ) && roles = 20
+        )
+	);
+        
+delete from auth_assignment where user_id in (select user.id from user where user.roles != 20); 
+        
 end
 //
 DELIMITER ;
@@ -471,7 +465,7 @@ DELIMITER ;
 -- Indexes for table `auth_assignment`
 --
 ALTER TABLE `auth_assignment`
- ADD PRIMARY KEY (`item_name`,`user_id`), ADD KEY `auth_assignment_ibfk_2` (`user_id`);
+ ADD PRIMARY KEY (`user_id`), ADD KEY `item_name` (`item_name`), ADD KEY `item_name_2` (`item_name`);
 
 --
 -- Indexes for table `auth_item`
@@ -582,7 +576,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `cpofficer`
 --
 ALTER TABLE `cpofficer`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=19;
 --
 -- AUTO_INCREMENT for table `file_uploads`
 --
@@ -602,21 +596,17 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `iprofessor`
 --
 ALTER TABLE `iprofessor`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT for table `partner_hr`
 --
 ALTER TABLE `partner_hr`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-<<<<<<< HEAD
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
-=======
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
->>>>>>> origin/master
 --
 -- AUTO_INCREMENT for table `school`
 --
@@ -626,7 +616,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `student`
 --
 ALTER TABLE `student`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=13;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;
 --
 -- AUTO_INCREMENT for table `student_journal`
 --
@@ -640,13 +630,6 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=89;
 --
 -- Constraints for dumped tables
 --
-
---
--- Constraints for table `auth_assignment`
---
-ALTER TABLE `auth_assignment`
-ADD CONSTRAINT `auth_assignment_ibfk_1` FOREIGN KEY (`item_name`) REFERENCES `auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE,
-ADD CONSTRAINT `auth_assignment_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `auth_item`
