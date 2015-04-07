@@ -3,7 +3,11 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
+<<<<<<< HEAD
 -- Generation Time: Apr 07, 2015 at 04:55 PM
+=======
+-- Generation Time: Apr 07, 2015 at 03:35 AM
+>>>>>>> origin/master
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -259,17 +263,30 @@ CREATE TABLE IF NOT EXISTS `posts` (
   `author_role` int(11) NOT NULL,
   `created_at` int(11) NOT NULL,
   `updated_at` int(11) NOT NULL,
+<<<<<<< HEAD
   `post_type` varchar(25) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+=======
+  `post_type` int(11) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+>>>>>>> origin/master
 
 --
 -- Dumping data for table `posts`
 --
 
 INSERT INTO `posts` (`id`, `posts_title`, `posts_body`, `post_attachment`, `author`, `author_role`, `created_at`, `updated_at`, `post_type`) VALUES
+<<<<<<< HEAD
 (6, 'Hello, World!', 'This is the body of the post', 'attachments/Sample Syllabus for Living Online.doc', 1, 20, 1428377321, 1428377321, 'Announcements'),
 (7, 'Hello, World2!', 'This is the boydy asasfdskajbsalk hnglskdj hxlzjhfdskf,zjmnv kj', NULL, 1, 20, 1428377374, 1428377374, 'HR Requests'),
 (8, 'Hello, World2!2', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus justo enim, ac pulvinar ipsum porttitor vitae. Nulla ullamcorper massa sapien, eget porta massa porttitor quis. Donec non tincidunt odio. Mauris nec auctor metus. Nullam posuere, lacus at euismod suscipit, felis mi rhoncus quam, non ultrices sapien orci ut nisi. Nunc quis porta lacus. Integer nec augue mi. Aliquam blandit non dolor ut tristique. Vivamus venenatis egestas lacinia. Praesent posuere lacus quis nisi pretium, a ultricies neque blandit. Suspendisse in nisl in risus euismod rhoncus. Pellentesque porttitor in lectus vitae aliquam.\r\n\r\nDonec facilisis interdum turpis sit amet viverra. Etiam a convallis purus. Nullam rutrum justo sed venenatis feugiat. Nunc laoreet neque non lectus dignissim pulvinar. Nulla quis pulvinar metus. Sed nec massa malesuada, mattis elit quis, porta tortor. Praesent sed sollicitudin lorem, tincidunt rhoncus odio. Phasellus arcu neque, sodales quis eros id, eleifend congue neque.\r\n\r\nNulla eu dui at nibh hendrerit viverra ut sed eros. Nulla id nulla ut justo facilisis venenatis. Mauris felis tortor, condimentum nec lacus in, ornare pulvinar est. Aliquam eu felis ligula. Vivamus id elit massa. Etiam ac enim sodales, ornare neque at, dignissim est. Maecenas efficitur lectus tortor. Morbi vel iaculis orci. Sed rhoncus eros ante, sed tristique lectus viverra eget. Vestibulum quis mi vitae lectus sagittis cursus ac sit amet dolor. Nullam placerat turpis a odio porta interdum et sed augue. Cras erat ligula, malesuada in finibus quis, dictum vel dolor. Suspendisse accumsan sit amet ex at fermentum.', NULL, 1, 20, 1428377740, 1428378573, 'Internship Openings');
+=======
+(1, 'Hello, World!', 'Hi!', NULL, 1, 20, 1428282035, 1428311965, 0),
+(2, 'Hello, World!', 'Hi!', NULL, 1, 20, 1428282100, 1428282100, 0),
+(3, 'Hello, World!', 'Hi!', NULL, 1, 20, 1428282113, 1428282113, 0),
+(4, 'Hello, World!', 'Hi!', NULL, 1, 20, 1428282171, 1428282171, 0),
+(5, 'Hello, World!', 'Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet ', 'attachments/Hello, World!.doc', 1, 20, 1428368873, 1428368972, 1);
+>>>>>>> origin/master
 
 -- --------------------------------------------------------
 
@@ -315,6 +332,10 @@ INSERT INTO `student` (`id`, `user_id`, `student_pic`, `username`, `firstname`, 
 (8, 83, 'images/profile_images/dummyaccnt.jpg', 'dummyaccnt', 'dummy', 'adasdasdasd', '124521212', 0, '', 0, '231232323', 'dummy@account.test', '123232332'),
 (9, 84, 'images/profile_images/demo.jpeg', 'demo', 'demo', 'demo', '2135234123', 0, '', 0, '2332', 'demo@demonstration.com', 'fghjyhfdf'),
 (10, 85, '', 'alyftw', 'Alyssa', 'Acle', '', 0, '', 0, '', 'amcacle101@gmail.com', ''),
+<<<<<<< HEAD
+=======
+(11, 87, 'images/profile_images/SanaGumanaNanana.png', 'SanaGumanaNanana', 'alyssa', 'jdkbd', '2011-100504', 0, '', 0, '6578922', 'acacle@gmail.com', '5678 Barangay Madilim, Di Makita si Troi, Makati'),
+>>>>>>> origin/master
 (12, 88, 'images/profile_images/dummyacount2.png', 'dummyacount2', 'dummy', 'account', '2011-100504', 0, '', 0, '8789056', 'dummyaccount2@test.com', '6025 Kalayaan Ave., Brgy. Olympia, Makati');
 
 -- --------------------------------------------------------
@@ -374,6 +395,10 @@ INSERT INTO `user` (`id`, `username`, `firstname`, `lastname`, `auth_key`, `pass
 (84, 'demo', 'demo', 'demo', 'FVSG0BDXHBHpIC_fWG_UASaNpsZf5atA', '$2y$13$tJEVxT9qbZsUi9IPz8kqxeAtQnKtKUgoQs1HsihzHSAAiLtAHlCga', NULL, 'demo@demonstration.com', 10, 10, 1427628224, 1427628224),
 (85, 'alyftw', 'Alyssa', 'Acle', 'D_bKhxfVY0xOgy26jQ7tI_bic-ed3q2m', '$2y$13$LT9duVOy71d.MoG8b07UJODQpvjpAAumvuLsrKvTmNIAVfP./F.yO', NULL, 'amcacle101@gmail.com', 10, 10, 1427665137, 1427665137),
 (86, 'okayna', 'Okay', 'Na', '_ZeL09quzMx8fnyFZX45b4NIGPbG7dYo', '$2y$13$bHlXjTe5kquBbxrkmcwtXOXjwChErGYo9cCmK/sY1rhojHIrcSM5u', NULL, 'amcacle@gmail.com', 15, 10, 1427668974, 1427668974),
+<<<<<<< HEAD
+=======
+(87, 'SanaGumanaNanana', 'alyssa', 'jdkbd', '_on-QC-2OIwwwpHsSzzWYOfYjf9pkdgt', '$2y$13$kTJTAv7dB6Jj8rkTkiKUSukX0tjcSxxSl38aCtTkQBFcFPcYfi3DG', NULL, 'acacle@gmail.com', 10, 10, 1427683296, 1427683296),
+>>>>>>> origin/master
 (88, 'dummyacount2', 'dummy', 'account', 'XEsU1F7zP8tGmXD6nWkzVHMYbfwakLwI', '$2y$13$Wgjx2mYCdbLfs9i3eO48MuCvEX0Adhambz/DgAl94TgD6Nh2cXiry', NULL, 'dummyaccount2@test.com', 10, 10, 1427780553, 1427780553);
 
 --
@@ -587,7 +612,11 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
+<<<<<<< HEAD
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
+=======
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+>>>>>>> origin/master
 --
 -- AUTO_INCREMENT for table `school`
 --
