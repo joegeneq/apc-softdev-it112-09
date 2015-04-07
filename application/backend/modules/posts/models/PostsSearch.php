@@ -18,8 +18,8 @@ class PostsSearch extends Posts
     public function rules()
     {
         return [
-            [['id', 'author', 'author_role', 'created_at', 'updated_at', 'post_type'], 'integer'],
-            [['posts_title', 'posts_body', 'post_attachment'], 'safe'],
+            [['id', 'author', 'author_role', 'created_at', 'updated_at'], 'integer'],
+            [['posts_title', 'posts_body', 'post_attachment', 'post_type'], 'safe'],
         ];
     }
 
@@ -61,12 +61,13 @@ class PostsSearch extends Posts
             'author_role' => $this->author_role,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
-            'post_type' => $this->post_type,
         ]);
 
         $query->andFilterWhere(['like', 'posts_title', $this->posts_title])
             ->andFilterWhere(['like', 'posts_body', $this->posts_body])
-            ->andFilterWhere(['like', 'post_attachment', $this->post_attachment]);
+            ->andFilterWhere(['like', 'post_attachment', $this->post_attachment])
+            ->andFilterWhere(['like', 'post_type', $this->post_type]);
+
 
         return $dataProvider;
     }

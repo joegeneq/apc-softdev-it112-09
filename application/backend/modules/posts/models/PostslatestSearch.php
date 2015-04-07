@@ -10,7 +10,7 @@ use backend\modules\posts\models\Posts;
 /**
  * PostsSearch represents the model behind the search form about `backend\modules\posts\models\Posts`.
  */
-class HrpostsSearch extends Posts
+class PostslatestSearch extends Posts
 {
     /**
      * @inheritdoc
@@ -42,10 +42,11 @@ class HrpostsSearch extends Posts
     public function search($params)
     {
         $query = Posts::find()
-            ->where('author_role' == 25);
+            ->orderBy('id');
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'sort'=> ['defaultOrder' => ['id'=>SORT_DESC]]
         ]);
 
         $this->load($params);
