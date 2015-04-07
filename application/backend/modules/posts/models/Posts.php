@@ -5,6 +5,7 @@ namespace backend\modules\posts\models;
 use Yii;
 use yii\behaviors\TimestampBehavior;
 use yii\db\Expression;
+use common\models\User;
 
 /**
  * This is the model class for table "posts".
@@ -51,8 +52,9 @@ class Posts extends \yii\db\ActiveRecord
             [['posts_title', 'posts_body', 'author', 'author_role', 'post_type'], 'required'],
             [['posts_body'], 'string'],
             [['file'],'file'],
-            [['author', 'author_role', 'created_at', 'updated_at', 'post_type'], 'integer'],
-            [['posts_title', 'post_attachment'], 'string', 'max' => 255]
+            [['author', 'author_role', 'created_at', 'updated_at'], 'integer'],
+            [['posts_title', 'post_attachment'], 'string', 'max' => 255],
+            [['post_type'], 'string', 'max' => 25]
         ];
     }
 
