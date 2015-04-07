@@ -63,9 +63,12 @@ echo \kartik\widgets\Growl::widget([
                 $menuItems[] = ['label' => 'Login', 'url' => ['/login']];               
 
             } else {
-                $menuItems = [
-                                    ['label' => 'Dashboard', 'url' => ['/site/index']],
-                ];            
+                $menuItems[] = ['label' => 'Dashboard',
+                                'items' => [
+                                    ['label' => 'Go to dashboard', 'url' => ['/site/index']],
+                                    ['label' => 'Site posts', 'url' => ['/posts/posts']],
+                                ]
+                ];
                 $menuItems[] = ['label' => 'Industry Partners',
                                 'items'=> [
                                     ['label' => 'Companies', 'url' => ['/industrypartners/partners']],
