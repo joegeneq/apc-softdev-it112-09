@@ -49,12 +49,21 @@ color:          b9b9b9;
 
 /* =============================================================================================================  */
 
+.navbar-inverse {
+  background-color:  #043c53; /* background color will be black for all browsers */
+  background-image: url('../images/navbar.png');
+  background-repeat: repeat;
+  filter: none;
+  border-color: #043c53;
+}
 
-
+/*
 .navbar-inverse{
     background-color: #043c53;
     border-color: #043c53;
 }
+*/
+
 
 .navbar-inverse .navbar-brand{
     color: white;
@@ -74,7 +83,7 @@ color:          b9b9b9;
 
 .footer {
     height: 60px;
-    background-color: #b7b7b7;
+    background-color: #043c53;
     border-top: 10px solid #043c53;
     padding-top: 20px;
 }
