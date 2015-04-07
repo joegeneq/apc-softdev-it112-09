@@ -83,10 +83,9 @@ echo \kartik\widgets\Growl::widget([
 								]
 								];
                 $menuItems[] = ['label' => 'Site Users', 'url' => ['/siteusers/usermanagement']];
-                $sel = Cpofficer::find()->where(['username' => Yii::$app->user->identity->username])->one();
                 $menuItems[] = ['label' => '<img src=\''. Yii::$app->homeUrl .'../frontend/web/images/profile_images/student_image.png\'width=\'25px\' height=\'25px\' draggable="false" border="0" alt="Null"> '. Yii::$app->user->identity->firstname,
                         'items' => [
-                            ['label' => 'My account', 'url' => ['/cpofficer/update/'.$sel->id]],
+                            ['label' => 'My account', 'url' => ['/siteusers/usermanagement/update?id='.Yii::$app->user->identity->id]],
                             ['label' => 'Logout (' . Yii::$app->user->identity->username . ')', 'url' => ['/site/logout'],'linkOptions' => ['data-method' => 'post']]
                         ]
                     ];

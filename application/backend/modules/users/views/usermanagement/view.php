@@ -5,10 +5,14 @@ use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
 /* @var $model backend\modules\users\models\Usermanagement */
-
-$this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Usermanagements', 'url' => ['index']];
+if($model->id == Yii::$app->user->identity->id){
+$this->title = 'My Account';
+$this->params['breadcrumbs'][] = 'My Account';
+}else{
+$this->title = $model->lastname.', '.$model->firstname;
+$this->params['breadcrumbs'][] = ['label' => 'Site Users', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
+}
 ?>
 <div class="usermanagement-view">
 
@@ -19,7 +23,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::a('Delete', ['delete', 'id' => $model->id], [
             'class' => 'btn btn-danger',
             'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
+                'confirm' => 'Are you sure you want to delete this user?',
                 'method' => 'post',
             ],
         ]) ?>
@@ -28,18 +32,21 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id',
-            'username',
+//            'id',
             'firstname',
             'lastname',
-            'auth_key',
-            'password_hash',
-            'password_reset_token',
+            'username',
+//            'auth_key',
+            //'password_hash',
+            //'password_reset_token',
             'email:email',
-            'roles',
-            'status',
-            'created_at',
-            'updated_at',
+            ['label'=> 'User role',
+             'attribute' =>'roles',
+              'value' =>$model->roles == 10 ? 'Student' : 'Site User'],
+//            ['label'=> 'Status',
+//             'value' =>$model->status == 10 ? 'Active' : 'Inactive'],
+            'created_at:datetime',
+            'updated_at:datetime',
         ],
     ]) ?>
 
