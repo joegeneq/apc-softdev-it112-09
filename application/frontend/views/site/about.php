@@ -33,11 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
 	<?= Icon::show('chevron-circle-right') ?> CPO Events and Activities<br/>
 	</p>
 </div>
-<<<<<<< HEAD
+
 	<div class="pull-right">
 	<p><h4><?= Icon::show('codepen') ?><a href="devs"> The developers</a></h4></p>
-=======
-	<div>
-	<p class="pull-right">This website is <?= Yii::powered() ?></p>
->>>>>>> origin/master
 	   </div>
