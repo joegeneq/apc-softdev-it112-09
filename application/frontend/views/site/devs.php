@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="col-lg-4">
 <?= '<img src="'.Yii::$app->homeUrl.'frontend/web/images/devs/kensibayan.jpg" width="200px" style=\'width:65%;height:65%;\'border="0" alt="Null">' ?>
 <h4>Kenneth O. Sibayan</h4>
-<p>Structure and Database<br/>
+<p>Team Lead<br/>
 <a href="http://kensibayan.url.ph">http://kensibayan.url.ph</a>
 </p>
 </div>
@@ -31,11 +31,16 @@ $this->params['breadcrumbs'][] = $this->title;
 </p>
 </div>
 <div class="col-lg-4">
+<?= '<img src="'.Yii::$app->homeUrl.'frontend/web/images/devs/alyacle.jpg" width="200px" style=\'width:65%;height:65%;\'border="0" alt="Null">' ?>
 <h4>Alyssa Mae C. Acle</h4>
 <p>Structure and Database<br/>
 <a href="http://www.facebook.com/amae.acle">amae.acle</a>
 </div>
+
+<div class="col-lg-4">
+<h4>J</h4>
+<p>Structure and Database<br/>
+<a href="http://www.facebook.com/amae.acle">amae.acle</a>
 </div>
-<div class="col-lg-7">
-        <p class="pull-right">This website is <?= Yii::powered() ?></p>
+
 </div>
