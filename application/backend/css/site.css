@@ -70,6 +70,11 @@ color:          b9b9b9;
     color: white;
 }
 
+.navbar-inverse .navbar-{
+    color: white;
+}
+
+
 .wrap {
     min-height: 100%;
     height: auto;
