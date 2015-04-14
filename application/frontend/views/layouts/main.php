@@ -28,7 +28,7 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<?= '<body style="background-image:url('.Yii::$app->homeUrl.'frontend/web/images/bg.jpg)">' ?>
+<?= '<body style="background-image:url('.Yii::$app->homeUrl.'frontend/web/images/bg.jpg);background-repeat: no-repeat;background-attachment:fixed;background-position: center center;background-size:cover;">' ?>
     <?php $this->beginBody() ?>
     <div class="wrap">
     <?php foreach (Yii::$app->session->getAllFlashes() as $message):; ?>
@@ -147,7 +147,7 @@ echo \kartik\widgets\Growl::widget([
     <footer class="footer">
         <div class="container">
         <p class="pull-left">&copy; <a href="http://www.apc.edu.ph/">Asia Pacific College </a>Career Placement Office <?= date('Y') ?></p>
-        <p class="pull-right"><?= '<a href="'.Yii::$app->homeUrl.'site/devs">'?> <?= Yii::powered() ?></a></p>
+        <p class="pull-right"> <?= Yii::powered() ?></p>
     
         </div>
     </footer>

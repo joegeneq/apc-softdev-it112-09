@@ -23,7 +23,7 @@ AppAsset::register($this);
     <?php $this->head() ?>
 </head>
 <body>
-    <?= '<body style="background-image:url('.Yii::$app->homeUrl.'web/image/bg.jpg)">' ?>
+<?= '<body style="background-image:url('.Yii::$app->homeUrl.'web/image/bg.jpg);background-repeat: no-repeat;background-attachment:fixed;background-position: center center;background-size:cover;">' ?>
     <?php $this->beginBody() ?>
     <div class="wrap">
 <?php foreach (Yii::$app->session->getAllFlashes() as $message):; ?>
@@ -104,7 +104,7 @@ echo \kartik\widgets\Growl::widget([
     <footer class="footer">
         <div class="container">
         <p class="pull-left">&copy; APC CPO Communication Site <?= date('Y') ?></p>
-        <p class="pull-right">Ken Sibayan | Josh Ramos | Aly Acle</p>
+        <p class="pull-right"><?= Yii::powered() ?></p>
         </div>
     </footer>
 

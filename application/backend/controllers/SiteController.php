@@ -77,13 +77,13 @@ class SiteController extends Controller
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
-		            } else{
+} else{
                 Yii::$app->getSession()->setFlash('error', [
                             'type' => 'danger',
                             'duration' => 3000,
                             'icon' => 'fa fa-users',
-                            'message' => 'You are not allowed to create a post.',
-                            'title' => 'Create Post',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
                             'positonY' => 'top',
                             'positonX' => 'center'
             ]);
@@ -94,8 +94,8 @@ class SiteController extends Controller
                             'type' => 'danger',
                             'duration' => 3000,
                             'icon' => 'fa fa-users',
-                            'message' => 'You are not allowed to create a post.',
-                            'title' => 'Create Post',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
                             'positonY' => 'top',
                             'positonX' => 'center'
             ]);

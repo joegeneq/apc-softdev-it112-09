@@ -32,8 +32,8 @@ class StudentController extends Controller
      */
     public function actionIndex()
     {
-		if(Yii::$app->user->can('admin'))
-		{
+if(Yii::$app->user->isGuest==false){
+            if(Yii::$app->user->identity->roles == 20){
 			$searchModel = new StudentSearch();
 			$dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
@@ -41,20 +41,30 @@ class StudentController extends Controller
 				'searchModel' => $searchModel,
 				'dataProvider' => $dataProvider,
 			]);
-		}else 
-		{
-			Yii::$app->getSession()->setFlash('success', [
+} else{
+                Yii::$app->getSession()->setFlash('error', [
                             'type' => 'danger',
                             'duration' => 3000,
                             'icon' => 'fa fa-users',
-                            'message' => 'You are not allowed to access this page!',
-                            'title' => 'APC Career Placement Office',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
                             'positonY' => 'top',
                             'positonX' => 'center'
             ]);
-			
-			throw new ForbiddenHttpException;
-		}
+                throw new ForbiddenHttpException;
+            }   
+        }else{
+                            Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+            throw new ForbiddenHttpException;
+        }
     }
 
     /**
@@ -64,9 +74,35 @@ class StudentController extends Controller
      */
     public function actionView($id)
     {
-        return $this->render('view', [
+        if(Yii::$app->user->isGuest==false){
+            if(Yii::$app->user->identity->roles == 20){
+                return $this->render('view', [
             'model' => $this->findModel($id),
         ]);
+                } else{
+                Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+                throw new ForbiddenHttpException;
+            }   
+        }else{
+                            Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+            throw new ForbiddenHttpException;
+        }
     }
 
     /**
@@ -77,6 +113,8 @@ class StudentController extends Controller
     public function actionCreate()
     {
         $model = new Student();
+if(Yii::$app->user->isGuest==false){
+            if(Yii::$app->user->identity->roles == 20){
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -84,6 +122,31 @@ class StudentController extends Controller
             return $this->render('create', [
                 'model' => $model,
             ]);
+        }
+
+        } else{
+                Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+                throw new ForbiddenHttpException;
+            }   
+        }else{
+                            Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+            throw new ForbiddenHttpException;
         }
     }
 
@@ -96,6 +159,8 @@ class StudentController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+if(Yii::$app->user->isGuest==false){
+            if(Yii::$app->user->identity->roles == 20){
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -103,6 +168,30 @@ class StudentController extends Controller
             return $this->render('update', [
                 'model' => $model,
             ]);
+        }
+        } else{
+                Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+                throw new ForbiddenHttpException;
+            }   
+        }else{
+                            Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+            throw new ForbiddenHttpException;
         }
     }
 
@@ -114,9 +203,36 @@ class StudentController extends Controller
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
+        if(Yii::$app->user->isGuest==false){
+            if(Yii::$app->user->identity->roles == 20){
+                $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
+
+        } else{
+                Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+                throw new ForbiddenHttpException;
+            }   
+        }else{
+                            Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+            throw new ForbiddenHttpException;
+        }
     }
 
     /**

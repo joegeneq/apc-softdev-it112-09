@@ -35,8 +35,8 @@ class PartnersController extends Controller
     public function actionIndex()
     {
 		
-		if(Yii::$app->user->can('admin'))
-		{
+if(Yii::$app->user->isGuest==false){
+            if(Yii::$app->user->identity->roles == 20){
         $searchModel = new PartnersSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
@@ -44,20 +44,30 @@ class PartnersController extends Controller
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
-				}else
-		{
-			Yii::$app->getSession()->setFlash('success', [
+} else{
+                Yii::$app->getSession()->setFlash('error', [
                             'type' => 'danger',
                             'duration' => 3000,
                             'icon' => 'fa fa-users',
-                            'message' => 'You are not allowed to access this page!',
-                            'title' => 'APC Career Placement Office',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
                             'positonY' => 'top',
                             'positonX' => 'center'
             ]);
-			
-			throw new ForbiddenHttpException;
-		}
+                throw new ForbiddenHttpException;
+            }   
+        }else{
+                            Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+            throw new ForbiddenHttpException;
+        }
     }
 
     /**
@@ -67,9 +77,35 @@ class PartnersController extends Controller
      */
     public function actionView($id)
     {
-        return $this->render('view', [
+        if(Yii::$app->user->isGuest==false){
+            if(Yii::$app->user->identity->roles == 20){
+                return $this->render('view', [
             'model' => $this->findModel($id),
         ]);
+                } else{
+                Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+                throw new ForbiddenHttpException;
+            }   
+        }else{
+                            Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+            throw new ForbiddenHttpException;
+        }
     }
 
     /**
@@ -79,14 +115,14 @@ class PartnersController extends Controller
      */
     public function actionCreate()
     {
-		if(Yii::$app->user->can('create-partner'))
-		{
+        if(Yii::$app->user->isGuest==false){
+            if(Yii::$app->user->identity->roles == 20){
 			$model = new IndustryPartners();
 
 			if ($model->load(Yii::$app->request->post()) && $model->save()) {
 				$imageName = $model->id;
+                                if($model->file != null){
 				$model->file = UploadedFile::getInstance($model,'file');
-				if($model->file != null){
 					$model->file->saveAs('web/image/company_images/'. $imageName .'.'.$model->file->extension);
 					$model->company_logo = 'image/company_images/'. $imageName .'.'.$model->file->extension;
 				}
@@ -98,10 +134,30 @@ class PartnersController extends Controller
 					'model' => $model,
 				]);
 			}
-		}else
-		{
-			throw new ForbiddenHttpException;
-		}
+                } else{
+                Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+                throw new ForbiddenHttpException;
+            }   
+        }else{
+                            Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+            throw new ForbiddenHttpException;
+        }
 
     }
 
@@ -113,14 +169,18 @@ class PartnersController extends Controller
      */
     public function actionUpdate($id)
     {
-        $model = $this->findModel($id);
+               if(Yii::$app->user->isGuest==false){
+            if(Yii::$app->user->identity->roles == 20){
+             $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             $imageName = $id;
+                                            if($model->file != null){
             $model->file = UploadedFile::getInstance($model,'file');
             $model->file->saveAs('web/image/company_images/'. $imageName .'.'.$model->file->extension);
 
             $model->company_logo = 'image/company_images/'. $imageName .'.'.$model->file->extension;
+            }
             $model->save();
 
             return $this->redirect(['view', 'id' => $model->id]);
@@ -128,6 +188,30 @@ class PartnersController extends Controller
             return $this->render('update', [
                 'model' => $model,
             ]);
+        }
+                        } else{
+                Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+                throw new ForbiddenHttpException;
+            }   
+        }else{
+                            Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+            throw new ForbiddenHttpException;
         }
     }
 
@@ -139,9 +223,35 @@ class PartnersController extends Controller
      */
     public function actionDelete($id)
     {
+    if(Yii::$app->user->isGuest==false){
+            if(Yii::$app->user->identity->roles == 20){
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
+                                } else{
+                Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+                throw new ForbiddenHttpException;
+            }   
+        }else{
+                            Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+            throw new ForbiddenHttpException;
+        }
     }
 
     /**

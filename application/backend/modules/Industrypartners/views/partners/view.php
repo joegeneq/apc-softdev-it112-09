@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
         }else{
             echo '<h1>'. $this->title .'</h1>';
-            echo '<img src=\''.Yii::$app->homeUrl.'web/'.$model->company_logo . '\' width=\'125px\' height=\'125px\' style=\'width:100%;height:10%;float:right;\' border="0" alt="Null">';
+            echo '<img src=\''.Yii::$app->homeUrl.'web/'.$model->company_logo . '\' width=\'125px\' height=\'125px\' style=\'width:10%;height:10%;float:right;\' border="0" alt="Null">';
         }
     ?>
     <?= DetailView::widget([
