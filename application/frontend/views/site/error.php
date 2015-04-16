@@ -20,21 +20,27 @@ $this->title = $name;
         Looks like you're lost! <br/>
         Please <?= '<a href="'.Yii::$app->homeUrl.'site/contact">contact us</a>' ?> if you think this is a server error. Thank you.
     </p>
-    <p>You will be redirected to our homepage in a few<span id="counter" style="display:none;">2</span> seconds.<br/>
+    <p>You will be redirected to our homepage in a few<span id="countdown">5</span> seconds.<br/>
        <?='Click <a href="'.Yii::$app->homeUrl.'">here</a> if the browser won\'t redirect you.'?>
     </p>
-    <script type="text/javascript">
-    function countdown() {
-        var i = document.getElementById('counter');
-        if (parseInt(i.innerHTML)==0) {
-            <?= 'location.href = \''.Yii::$app->homeUrl.'\';' ?>
+<script type="text/javascript">
+
+(function () {
+    var timeLeft = 5,
+        cinterval;
+
+    var timeDec = function (){
+        timeLeft--;
+        document.getElementById('countdown').innerHTML = timeLeft;
+        if(timeLeft === 0){
+            clearInterval(cinterval);
+            <?= 'location.href = \''.Yii::$app->homeUrl.'../\';' ?>
         }
-        if(parseInt(i.innerHTML)>0){
-            i.innerHTML = parseInt(i.innerHTML)-1;
-        }
-    }
-           
-    setInterval(function(){ countdown(); },1500);
-    </script>
+    };
+
+    cinterval = setInterval(timeDec, 1000);
+})();
+
+</script>
 
 </div>
