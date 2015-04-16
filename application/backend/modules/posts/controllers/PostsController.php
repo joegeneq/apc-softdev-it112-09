@@ -33,13 +33,39 @@ class PostsController extends Controller
      */
     public function actionIndex()
     {
-        $searchModel = new PostsSearch();
+        if(Yii::$app->user->isGuest==false){
+            if(Yii::$app->user->identity->roles == 20){
+                $searchModel = new PostsSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
+        } else{
+                Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+                throw new ForbiddenHttpException;
+            }   
+        }else{
+                            Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+            throw new ForbiddenHttpException;
+        }
     }
 
     /**
@@ -49,9 +75,35 @@ class PostsController extends Controller
      */
     public function actionView($id)
     {
-        return $this->render('view', [
+        if(Yii::$app->user->isGuest==false){
+            if(Yii::$app->user->identity->roles == 20){
+                return $this->render('view', [
             'model' => $this->findModel($id),
         ]);
+        } else{
+                Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+                throw new ForbiddenHttpException;
+            }   
+        }else{
+                            Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+            throw new ForbiddenHttpException;
+        }
     }
 
     /**
@@ -61,7 +113,9 @@ class PostsController extends Controller
      */
     public function actionCreate()
     {
-        $model = new Posts();
+        if(Yii::$app->user->isGuest==false){
+            if(Yii::$app->user->identity->roles == 20){
+                $model = new Posts();
         $model->author = Yii::$app->user->identity->id;
         $model->author_role = Yii::$app->user->identity->roles;
 
@@ -81,6 +135,31 @@ class PostsController extends Controller
                 'model' => $model,
             ]);
         }
+
+        } else{
+                Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+                throw new ForbiddenHttpException;
+            }   
+        }else{
+                            Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+            throw new ForbiddenHttpException;
+        }
     }
 
     /**
@@ -92,7 +171,8 @@ class PostsController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-
+        if(Yii::$app->user->isGuest==false){
+            if(Yii::$app->user->identity->roles == 20){
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
                 $model->file = UploadedFile::getInstance($model,'file');
                 if($model->file != null){
@@ -108,6 +188,31 @@ class PostsController extends Controller
                 'model' => $model,
             ]);
         }
+
+        } else{
+                Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+                throw new ForbiddenHttpException;
+            }   
+        }else{
+                            Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+            throw new ForbiddenHttpException;
+        }
     }
 
     /**
@@ -118,9 +223,36 @@ class PostsController extends Controller
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
+        if(Yii::$app->user->isGuest==false){
+            if(Yii::$app->user->identity->roles == 20){
+                $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
+
+        } else{
+                Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+                throw new ForbiddenHttpException;
+            }   
+        }else{
+                            Yii::$app->getSession()->setFlash('error', [
+                            'type' => 'danger',
+                            'duration' => 3000,
+                            'icon' => 'fa fa-users',
+                            'message' => 'You are not allowed here.',
+                            'title' => 'Administration',
+                            'positonY' => 'top',
+                            'positonX' => 'center'
+            ]);
+            throw new ForbiddenHttpException;
+        }
     }
 
     /**
