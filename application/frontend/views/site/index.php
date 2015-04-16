@@ -72,7 +72,7 @@ $this->title = 'APC Career Placement Office';
       <img class="img-circle" src="images/contact.png">
       <h2>Contact Us</h2>
       <p>Do you have any problems or inquiries? You can ask the CPO through this site.</p>
-      <p><a class="btn btn-default" href="#">View details »</a></p>
+      <p><?='<a class="btn btn-default" href="'.Yii::$app->homeUrl.'site/contact">'?>View details »</a></p>
     </div>
   </div><!-- /.row -->
 

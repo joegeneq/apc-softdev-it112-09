@@ -20,7 +20,7 @@ $this->title = $name;
         Looks like you're lost! <br/>
         Please <?= '<a href="'.Yii::$app->homeUrl.'site/contact">contact us</a>' ?> if you think this is a server error. Thank you.
     </p>
-    <p>You will be redirected to our homepage in a few<span id="countdown">5</span> seconds.<br/>
+    <p>You will be redirected to our homepage in <span id="countdown">5</span> seconds.<br/>
        <?='Click <a href="'.Yii::$app->homeUrl.'../">here</a> if the browser won\'t redirect you.'?>
     </p>
 <script type="text/javascript">
