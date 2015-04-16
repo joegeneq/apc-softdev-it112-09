@@ -53,11 +53,11 @@ class InternshipController extends Controller
             ]);
                 throw new ForbiddenHttpException;    
 		} else{
-                Yii::$app->getSession()->setFlash('error', [
+                        Yii::$app->getSession()->setFlash('error', [
                             'type' => 'danger',
                             'duration' => 3000,
                             'icon' => 'fa fa-users',
-                            'message' => 'You are not allowed here.',
+                            'message' => 'This Feature is yet to be developed.',
                             'title' => 'Administration',
                             'positonY' => 'top',
                             'positonX' => 'center'
@@ -65,11 +65,11 @@ class InternshipController extends Controller
                 throw new ForbiddenHttpException;
             }   
         }else{
-                            Yii::$app->getSession()->setFlash('error', [
+                        Yii::$app->getSession()->setFlash('error', [
                             'type' => 'danger',
                             'duration' => 3000,
                             'icon' => 'fa fa-users',
-                            'message' => 'You are not allowed here.',
+                            'message' => 'This Feature is yet to be developed.',
                             'title' => 'Administration',
                             'positonY' => 'top',
                             'positonX' => 'center'

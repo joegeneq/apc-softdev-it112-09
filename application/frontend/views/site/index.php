@@ -66,7 +66,7 @@ $this->title = 'APC Career Placement Office';
       <img class="img-circle" src="images/uploadreq.png">
       <h2>Upload Requirements</h2>
       <p>You can now upload requirements here at the CPO Communication Site!</p>
-      <p><a class="btn btn-default" href="#">View details »</a></p>
+      <p><?='<a class="btn btn-default" href="'.Yii::$app->homeUrl.'backend/internships/index">'?>View details »</a></p>
     </div>
     <div class="col-md-4 text-center">
       <img class="img-circle" src="images/contact.png">
