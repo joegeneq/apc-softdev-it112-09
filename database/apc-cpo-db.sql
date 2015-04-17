@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 16, 2015 at 11:44 PM
+-- Generation Time: Apr 17, 2015 at 07:51 AM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -124,7 +124,7 @@ CREATE TABLE IF NOT EXISTS `iprofessor` (
   `contact_num` varchar(15) NOT NULL,
   `company_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -161,14 +161,6 @@ CREATE TABLE IF NOT EXISTS `partner_hr` (
   `contact_num` varchar(15) NOT NULL,
   `company_id` int(11) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `partner_hr`
---
-
-INSERT INTO `partner_hr` (`id`, `user_id`, `username`, `firstname`, `lastname`, `email`, `contact_num`, `company_id`) VALUES
-(10, 77, 'partnerhr1', 'HR', 'PartnerOne', 'parterhr1@sample.com', '', 0),
-(17, 89, 'kensbyn1', 'Kenneth', 'Sibayan', 'kensbyn@gmail.com', '21341231', 1);
 
 -- --------------------------------------------------------
 
@@ -235,8 +227,6 @@ CREATE TABLE IF NOT EXISTS `student` (
 --
 
 INSERT INTO `student` (`id`, `user_id`, `student_pic`, `username`, `firstname`, `lastname`, `student_id`, `course`, `intern_year`, `term`, `contact_num`, `email`, `address`) VALUES
-(9, 84, 'images/profile_images/demo.jpeg', 'demo', 'demo', 'demo', '2135234123', 0, '', 0, '2332', 'demo@demonstration.com', 'fghjyhfdf'),
-(10, 85, '', 'alyftw', 'Alyssa', 'Acle', '', 0, '', 0, '', 'amcacle101@gmail.com', ''),
 (15, 7, '', 'kosibayan', 'Kenneth', 'Sibayan', '', 0, '', 0, '', 'kosibayan@student.apc.edu.ph', ''),
 (19, 9, '', 'joshrramos', 'Josh', 'Ramos', '', 0, '', 0, '', 'jrramos@student.apc.edu.ph', '');
 
@@ -281,7 +271,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `status` smallint(6) NOT NULL DEFAULT '10',
   `created_at` int(11) NOT NULL,
   `updated_at` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=90 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=93 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `user`
@@ -291,11 +281,7 @@ INSERT INTO `user` (`id`, `username`, `firstname`, `lastname`, `auth_key`, `pass
 (1, 'apccpowebadmin', 'CPO', 'Admin', 'RNwH815ZzRffOVn8I6SmJQCTc5eHNK-5', '$2y$13$Hkw5VzXsJVxP2nJA7RFp9.mG5cnZIh6uYF6vdRWkOCB5bfdXZUAIS', NULL, 'cpo@apc.edu.ph', 20, 10, 1424616849, 1424616849),
 (7, 'kosibayan', 'Kenneth', 'Sibayan', 'ub32EOfN5mwImO_KhgkIKJrG2yl1iKyQ', '$2y$13$HFfEB/CDV5UvYappUC7lEOYLrI0Hifsk.w9i6E8MNeZstQTGy.cYK', NULL, 'kosibayan@student.apc.edu.ph', 10, 10, 1424617778, 1424617778),
 (8, 'acacle', 'Alyssa Mae', 'Acle', 'gqL-AVQT30QEWz83aeo3PJeW03vh3G7P', '$2y$13$ENcnW8KBe/OAawudFbDi2Og5Bj2K7yDkt0ZuRXYqDW.Lrhj12UK7G', NULL, 'acacle@student.apc.edu.ph', 20, 10, 1424660697, 1424660697),
-(9, 'joshrramos', 'Josh', 'Ramos', '954kHhtkPlKz45KxIlSWodr1DWY-bIRu', '$2y$13$jtimqQghNQk/ge3oslXPz.KhBnn9LLdp1UJhCpdCBAl1AcfBur46y', NULL, 'jrramos@student.apc.edu.ph', 10, 10, 1425884101, 1425884101),
-(77, 'partnerhr1', 'HR', 'PartnerOne', 'E_yg68arEyl4_wBUjIBmbTQlIJCP5TKr', '$2y$13$YJXTpUxRqKzVMdbGTms/tO1kTAQBYsvEkIx8gvq1r1VTP84OCPwl2', NULL, 'parterhr1@sample.com', 25, 10, 1427439184, 1427439184),
-(84, 'demo', 'demo', 'demo', 'FVSG0BDXHBHpIC_fWG_UASaNpsZf5atA', '$2y$13$tJEVxT9qbZsUi9IPz8kqxeAtQnKtKUgoQs1HsihzHSAAiLtAHlCga', NULL, 'demo@demonstration.com', 10, 10, 1427628224, 1427628224),
-(85, 'alyftw', 'Alyssa', 'Acle', 'D_bKhxfVY0xOgy26jQ7tI_bic-ed3q2m', '$2y$13$LT9duVOy71d.MoG8b07UJODQpvjpAAumvuLsrKvTmNIAVfP./F.yO', NULL, 'amcacle101@gmail.com', 10, 10, 1427665137, 1427665137),
-(89, 'kensbyn1', 'Kenneth', 'Sibayan', 'dlct2lCkNOLBGMavMaLj_ytt3MFH9gsM', '$2y$13$p5aFZBaWtDI.uZmqkVa7juxqcRY62LTOrAHNnyyqsB4Ouh4Yw8BE6', NULL, 'kensbyn@gmail.com', 25, 10, 1428437712, 1428437712);
+(9, 'joshrramos', 'Josh', 'Ramos', '954kHhtkPlKz45KxIlSWodr1DWY-bIRu', '$2y$13$jtimqQghNQk/ge3oslXPz.KhBnn9LLdp1UJhCpdCBAl1AcfBur46y', NULL, 'jrramos@student.apc.edu.ph', 10, 10, 1425884101, 1425884101);
 
 --
 -- Triggers `user`
@@ -322,26 +308,6 @@ delete from student where user_id in (select user.id from user where user.roles 
 delete from iprofessor where user_id in (select user.id from user where user.roles != 15);
 
 delete from partner_hr where user_id in (select user.id from user where user.roles != 25);
-
-        INSERT IGNORE INTO auth_assignment (item_name, user_id) 
-    values('admin',(SELECT user.id from user where user.id not in (
-            Select * from(
-                SELECT user.id FROM user JOIN auth_assignment ON user.id = auth_assignment.user_id) tempTbl
-            ) && roles = 20
-        )
-	);
-       
-               INSERT IGNORE INTO auth_assignment (item_name, user_id) 
-    values('partnerhr',(SELECT user.id from user where user.id not in (
-            Select * from(
-                SELECT user.id FROM user JOIN auth_assignment ON user.id = auth_assignment.user_id) tempTbl
-            ) && roles = 25
-        )
-	);
-
-delete from auth_assignment where user_id in (select user.id from user where user.roles != 20);
-
-delete from auth_assignment where user_id in (select user.id from user where user.roles != 25);
 
 end
 //
@@ -372,24 +338,6 @@ delete from student where user_id in (select user.id from user where user.roles 
 delete from iprofessor where user_id in (select user.id from user where user.roles != 15);
 
 delete from partner_hr where user_id in (select user.id from user where user.roles != 25);
-
-            INSERT IGNORE INTO auth_assignment (item_name, user_id) 
-    values('admin',(SELECT user.id from user where user.id not in (
-            Select * from(
-                SELECT user.id FROM user JOIN auth_assignment ON user.id = auth_assignment.user_id) tempTbl
-            ) && roles = 20
-        )
-	);
-    
-            INSERT IGNORE INTO auth_assignment (item_name, user_id) 
-    values('partnerhr',(SELECT user.id from user where user.id not in (
-            Select * from(
-                SELECT user.id FROM user JOIN auth_assignment ON user.id = auth_assignment.user_id) tempTbl1
-            ) && roles = 25
-        )
-	);
-
-delete from auth_assignment where user_id in (select user.id from user where user.roles != 20);
 
 end
 //
@@ -510,7 +458,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `iprofessor`
 --
 ALTER TABLE `iprofessor`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `partner_hr`
 --
@@ -540,7 +488,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=90;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=93;
 --
 -- Constraints for dumped tables
 --
