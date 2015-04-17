@@ -56,15 +56,16 @@ $this->params['breadcrumbs'][] = $this->title;?>
     </div>
     <div class='col-lg-5'>
     <p>
-    <h3>Latest Posts</h3>
          <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'columns' => [
-            ['label'=>'Title','value'=>function($data){
+            ['label'=>'Latest Posts','value'=>function($data){
                                             return '<a href=\'view?id='.$data->id.'\'>'.$data->posts_title.'</a>';
                                         },
-             'attribute' => 'posts_title', 'format' => 'raw'],
+             'format' => 'raw'],
+             ['label' => 'Posted by', 'value' => 'author0.username'],
         ],
+        'summary'=>"this",
     ]); ?>
     </p>
     </div>
