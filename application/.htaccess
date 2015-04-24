@@ -1,4 +1,8 @@
-RewriteEngine on
+Options +FollowSymLinks -MultiViews
+# Turn mod_rewrite on
+RewriteEngine On
+RewriteBase /
+
 # If a directory or a file exists, use it directly
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
@@ -7,6 +11,7 @@ RewriteRule . index.php
 
 <IfModule mod_autoindex.c>
   Options -Indexes
+
 </IfModule>
 
 <IfModule mod_rewrite.c>
