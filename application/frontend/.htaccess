@@ -6,3 +6,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 # otherwise forward the request to index.php
 RewriteRule . index.php
+
+<IfModule mod_autoindex.c>
+  Options -Indexes
+</IfModule>
